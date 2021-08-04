@@ -1,0 +1,97 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.global ArmPlatformStackSet ; .section ".text.ArmPlatformStackSet", "ax" ; .type ArmPlatformStackSet, %function ; .p2align 2 ; ArmPlatformStackSet:
+
+  mov r6, r3
+  mov r5, r2
+  mov r4, r1
+  mov r3, r0
+
+
+  mov r7, lr
+
+
+  mov r0, r1
+  bl ArmPlatformIsPrimaryCore
+  cmp r0, #1
+
+
+  mov r0, r3
+  mov r1, r4
+  mov r2, r5
+  mov r3, r6
+
+
+  mov lr, r7
+
+  beq ArmPlatformStackSetPrimary
+  bne ArmPlatformStackSetSecondary
+
+
+
+
+
+
+
+
+.global ArmPlatformStackSetPrimary ; .section ".text.ArmPlatformStackSetPrimary", "ax" ; .type ArmPlatformStackSetPrimary, %function ; .p2align 2 ; ArmPlatformStackSetPrimary:
+  mov r4, lr
+
+
+  add r0, r0, r2
+
+
+  movw r1, #(1 - 1) & 0xffff ; movt r1, #(1 - 1) >> 16
+  mul r3, r3, r1
+
+
+  add sp, r0, r3
+
+  bx r4
+
+
+
+
+
+
+
+
+.global ArmPlatformStackSetSecondary ; .section ".text.ArmPlatformStackSetSecondary", "ax" ; .type ArmPlatformStackSetSecondary, %function ; .p2align 2 ; ArmPlatformStackSetSecondary:
+  mov r4, lr
+  mov sp, r0
+
+
+  mov r0, r1
+  bl ArmPlatformGetCorePosition
+  mov r5, r0
+
+
+  bl ArmPlatformGetPrimaryCoreMpId
+  bl ArmPlatformGetCorePosition
+
+
+  cmp r5, r0
+  subhi r5, r5, #1
+  add r5, r5, #1
+
+
+  mul r3, r3, r5
+
+
+  add sp, sp, r3
+
+  bx r4

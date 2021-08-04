@@ -1,0 +1,141 @@
+
+# Copyright (c) 2014-2018, Linaro Limited. All rights reserved.
+
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+
+
+
+.global MmioRead8Internal ; .type MmioRead8Internal, %function
+.global MmioWrite8Internal ; .type MmioWrite8Internal, %function
+.global MmioRead16Internal ; .type MmioRead16Internal, %function
+.global MmioWrite16Internal ; .type MmioWrite16Internal, %function
+.global MmioRead32Internal ; .type MmioRead32Internal, %function
+.global MmioWrite32Internal ; .type MmioWrite32Internal, %function
+.global MmioRead64Internal ; .type MmioRead64Internal, %function
+.global MmioWrite64Internal ; .type MmioWrite64Internal, %function
+
+
+
+
+
+
+
+
+
+
+
+
+MmioRead8Internal:
+  ldrb r0, [r0]
+  dmb
+  bx lr
+
+
+
+
+
+
+
+
+
+
+
+MmioWrite8Internal:
+  dmb st
+  strb r1, [r0]
+  bx lr
+
+
+
+
+
+
+
+
+
+
+
+
+MmioRead16Internal:
+  ldrh r0, [r0]
+  dmb
+  bx lr
+
+
+
+
+
+
+
+
+
+
+
+MmioWrite16Internal:
+  dmb st
+  strh r1, [r0]
+  bx lr
+
+
+
+
+
+
+
+
+
+
+
+
+MmioRead32Internal:
+  ldr r0, [r0]
+  dmb
+  bx lr
+
+
+
+
+
+
+
+
+
+
+
+MmioWrite32Internal:
+  dmb st
+  str r1, [r0]
+  bx lr
+
+
+
+
+
+
+
+
+
+
+
+
+MmioRead64Internal:
+  ldr r1, [r0, #4]
+  ldr r0, [r0]
+  dmb
+  bx lr
+
+
+
+
+
+
+
+
+
+
+
+MmioWrite64Internal:
+  dmb st
+  str r2, [r0]
+  str r3, [r0, #4]
+  bx lr

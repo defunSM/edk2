@@ -1,0 +1,109 @@
+
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/X64/GccInline.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/X64/LongJump.nasm.trim.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/X64/RdRand.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/X64/SwitchStack.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/X64/Non-existing.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/X64/SetJump.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/X64/SetJump.nasm.trim.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/X64/LongJump.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/GetPowerOfTwo64.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/FilePaths.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/RRotU32.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/LRotU32.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/RShiftU64.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/ModU64x32.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/SafeString.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/X86FxRestore.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/DivU64x64Remainder.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/DivU64x32.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/LowBitSet32.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/Cpu.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/BitField.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/Math64.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/X86UnitTestHost.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/UnitTestHost.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/HighBitSet64.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/GetPowerOfTwo32.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/LinkedList.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/ARShiftU64.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/SwapBytes16.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/Unaligned.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/LRotU64.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/SwapBytes64.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/RRotU64.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/X86Msr.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/SwitchStack.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/MultU64x32.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/CpuDeadLoop.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/ChkStkGcc.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/String.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/DivS64x64Remainder.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/SwapBytes32.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/LowBitSet64.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/DivU64x32Remainder.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/X86RdRand.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/SetJump.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/HighBitSet32.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/X86SpeculationBarrier.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/X86FxSave.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/LShiftU64.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/MultU64x64.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/LongJump.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/CheckSum.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/UefiCpuPkg/HostTest/NOOPT_GCC5/X64/MdePkg/Library/BaseLib/UnitTestHostBaseLib/OUTPUT/MultS64x64.obj.deps
+
+               

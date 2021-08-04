@@ -1,0 +1,145 @@
+## @file
+#  Provides ACPI methods for TPM 2.0 support
+#
+#  Spec Compliance Info:
+#     "TCG ACPI Specification Version 1.2 Revision 8"
+#     "Physical Presence Interface Specification Version 1.30 Revision 00.52"
+#       along with
+#     "Errata Version 0.4 for TCG PC Client Platform Physical Presence Interface Specification"
+#     "Platform Reset Attack Mitigation Specification Version 1.00"
+#    TPM2.0 ACPI device object
+#     "TCG PC Client Platform Firmware Profile Specification for TPM Family 2.0 Level 00 Revision 1.03 v51"
+#       along with
+#     "Errata for PC Client Specific Platform Firmware Profile Specification Version 1.0 Revision 1.03"
+#
+#  This driver implements TPM 2.0 definition block in ACPI table and
+#  registers SMI callback functions for Tcg2 physical presence and
+#  MemoryClear to handle the requests from ACPI method.
+#
+#  Caution: This module requires additional review when modified.
+#  This driver will have external input - variable and ACPINvs data in SMM mode.
+#  This external input must be validated carefully to avoid security issue.
+#
+# Copyright (c) 2015 - 2019, Intel Corporation. All rights reserved.<BR>
+# Copyright (c) Microsoft Corporation.<BR>
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+##
+
+# DO NOT EDIT
+# FILE auto-generated
+
+[Defines]
+  INF_VERSION                = 0x00010017
+  BASE_NAME                  = Tcg2StandaloneMm
+  FILE_GUID                  = D40F321F-5349-4724-B667-131670587861
+  MODULE_TYPE                = MM_STANDALONE
+  VERSION_STRING             = 1.0
+  PI_SPECIFICATION_VERSION   = 0x00010032
+  ENTRY_POINT                = InitializeTcgStandaloneMm
+
+[Packages.X64]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  SecurityPkg/SecurityPkg.dec
+  StandaloneMmPkg/StandaloneMmPkg.dec
+
+[Binaries.X64]
+  PE32|Tcg2StandaloneMm.efi
+
+[PatchPcd.X64]
+
+[Protocols.X64]
+  ## CONSUMES
+  gEfiSmmSwDispatch2ProtocolGuid
+
+  ## CONSUMES
+  ## CONSUMES
+  gEfiSmmVariableProtocolGuid
+
+  ## CONSUMES
+  gEfiMmReadyToLockProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiLoadedImageProtocolGuid
+
+
+[Ppis.X64]
+
+[Guids.X64]
+  ## SOMETIMES_PRODUCES ## Variable:L"MemoryOverwriteRequestControl"
+  ## SOMETIMES_CONSUMES ## Variable:L"MemoryOverwriteRequestControl"
+  gEfiMemoryOverwriteControlDataGuid
+
+  ## PRODUCES           ## GUID       # TPM device identifier
+  gEfiTpmDeviceInstanceTpm20DtpmGuid
+
+  ## CONSUMES
+  gTpmNvsMmGuid
+
+  ## CONSUMES  ## SystemTable
+  gEfiHobListGuid
+
+  ## CONSUMES
+  gEfiHobMemoryAllocModuleGuid
+
+  ## SOMETIMES_PRODUCES ## Variable:L"PhysicalPresence"
+  ## SOMETIMES_CONSUMES ## Variable:L"PhysicalPresence"
+  ## SOMETIMES_CONSUMES ## Variable:L"PhysicalPresenceFlags"
+  gEfiTcg2PhysicalPresenceGuid
+
+  ## SOMETIMES_CONSUMES ## HOB
+  gMmCoreDataHobGuid
+
+  ## SOMETIMES_CONSUMES ## HOB
+  gEfiMmPeiMmramMemoryReserveGuid
+
+
+[PcdEx.X64]
+
+[LibraryClasses.X64]
+## @LIB_INSTANCES
+#  MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull.inf
+#  MdePkg/Library/BasePcdLibNull/BasePcdLibNull.inf
+#  MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull.inf
+#  MdePkg/Library/BaseMemoryLib/BaseMemoryLib.inf
+#  MdePkg/Library/BaseLib/BaseLib.inf
+#  MdePkg/Library/StandaloneMmServicesTableLib/StandaloneMmServicesTableLib.inf
+#  SecurityPkg/Library/Tcg2PpVendorLibNull/Tcg2PpVendorLibNull.inf
+#  StandaloneMmPkg/Library/StandaloneMmMemoryAllocationLib/StandaloneMmMemoryAllocationLib.inf
+#  StandaloneMmPkg/Library/StandaloneMmHobLib/StandaloneMmHobLib.inf
+#  MdePkg/Library/StandaloneMmDriverEntryPoint/StandaloneMmDriverEntryPoint.inf
+#  SecurityPkg/Library/SmmTcg2PhysicalPresenceLib/StandaloneMmTcg2PhysicalPresenceLib.inf
+#  StandaloneMmPkg/Library/StandaloneMmMemLib/StandaloneMmMemLib.inf
+
+[Depex.X64]
+#  (gEfiSmmSwDispatch2ProtocolGuid AND gEfiSmmVariableProtocolGuid) AND (gEfiSmmVariableProtocolGuid)
+
+
+
+
+
+[BuildOptions.X64]
+## @AsBuilt
+##   GCC:DEBUG_GCC5_X64_ASMLINK_FLAGS = /nologo /tiny
+##   GCC:DEBUG_GCC5_X64_OPTROM_FLAGS = -e
+##   GCC:DEBUG_GCC5_X64_DTC_FLAGS = -H epapr
+##   GCC:DEBUG_GCC5_X64_APP_FLAGS = 
+##   GCC:DEBUG_GCC5_X64_OBJCOPY_FLAGS = 
+##   GCC:DEBUG_GCC5_X64_ASL_FLAGS = 
+##   GCC:DEBUG_GCC5_X64_GENFW_FLAGS = 
+##   GCC:DEBUG_GCC5_X64_ASLDLINK_FLAGS = -nostdlib -Wl,-n,-q,--gc-sections -z common-page-size=0x40 -Wl,--defsym=PECOFF_HEADER_SIZE=0 -Wl,--script=$(EDK_TOOLS_PATH)/Scripts/GccBase.lds -Wl,--entry,ReferenceAcpiTable -u ReferenceAcpiTable -Wl,-m,elf_x86_64
+##   GCC:DEBUG_GCC5_X64_ASM_FLAGS = -c -x assembler -imacros AutoGen.h -m64
+##   GCC:DEBUG_GCC5_X64_RC_FLAGS = -I binary -O elf64-x86-64        -B i386    --rename-section .data=.hii
+##   GCC:DEBUG_GCC5_X64_SYMRENAME_FLAGS = Symbol renaming not needed for
+##   GCC:DEBUG_GCC5_X64_NASM_FLAGS = -f elf64
+##   GCC:DEBUG_GCC5_X64_DEPS_FLAGS = -MMD -MF $@.deps
+##   GCC:DEBUG_GCC5_X64_ASLPP_FLAGS = -x c -E -include AutoGen.h
+##   GCC:DEBUG_GCC5_X64_ASLCC_FLAGS = -x c -fno-lto -m64
+##   GCC:DEBUG_GCC5_X64_CC_FLAGS = -g -Os -fshort-wchar -fno-builtin -fno-strict-aliasing -Wall -Werror -Wno-array-bounds -include AutoGen.h -fno-common -ffunction-sections -fdata-sections -DSTRING_ARRAY_NAME=$(BASE_NAME)Strings -m64 -fno-stack-protector "-DEFIAPI=__attribute__((ms_abi))" -maccumulate-outgoing-args -mno-red-zone -Wno-address -mcmodel=small -fpie -fno-asynchronous-unwind-tables -Wno-address -flto -DUSING_LTO -Os -D DISABLE_NEW_DEPRECATED_INTERFACES
+##   GCC:DEBUG_GCC5_X64_PP_FLAGS = -E -x assembler-with-cpp -include AutoGen.h -DOPENSBI_EXTERNAL_SBI_TYPES=OpensbiTypes.h
+##   GCC:DEBUG_GCC5_X64_VFRPP_FLAGS = -x c -E -P -DVFRCOMPILE --include $(MODULE_NAME)StrDefs.h
+##   GCC:DEBUG_GCC5_X64_VFR_FLAGS = -l -n
+##   GCC:DEBUG_GCC5_X64_DLINK2_FLAGS = -Wl,--defsym=PECOFF_HEADER_SIZE=0x228 -Wl,--script=$(EDK_TOOLS_PATH)/Scripts/GccBase.lds -Wno-error
+##   GCC:DEBUG_GCC5_X64_DLINK_FLAGS = -nostdlib -Wl,-n,-q,--gc-sections -z common-page-size=0x40 -Wl,--entry,$(IMAGE_ENTRY_POINT) -u $(IMAGE_ENTRY_POINT) -Wl,-Map,$(DEST_DIR_DEBUG)/$(BASE_NAME).map,--whole-archive -Wl,-melf_x86_64,--oformat=elf64-x86-64,-pie -flto -Os
+##   GCC:DEBUG_GCC5_X64_NASMB_FLAGS = -f bin

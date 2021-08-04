@@ -1,0 +1,509 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib(memcpy.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (memcpy)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib(memset.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (memset)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseStackCheckLib/BaseStackCheckLib/OUTPUT/BaseStackCheckLib.lib(BaseStackCheckGcc.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (__stack_chk_fail)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull/OUTPUT/BaseDebugLibNull.lib(DebugLib.obj)
+                              BaseStackCheckGcc.obj (symbol from plugin) (DebugPrint)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuDeadLoop.obj)
+                              BaseStackCheckGcc.obj (symbol from plugin) (CpuDeadLoop)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+                              CpuDeadLoop.obj (symbol from plugin) (CpuPause)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+                              BaseStackCheckGcc.obj (symbol from plugin) (CpuBreakpoint)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint/OUTPUT/UefiDriverEntryPoint.lib(DriverEntryPoint.obj)
+                              (_ModuleEntryPoint)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/ArmPkg/Universal/Smbios/SmbiosMiscDxe/SmbiosMiscDxe/OUTPUT/SmbiosMiscDxe.lib(AutoGen.obj)
+                              DriverEntryPoint.obj (symbol from plugin) (ProcessLibraryConstructorList)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/ArmPkg/Universal/Smbios/SmbiosMiscDxe/SmbiosMiscDxe/OUTPUT/SmbiosMiscDxe.lib(SmbiosMiscEntryPoint.obj)
+                              AutoGen.obj (symbol from plugin) (SmbiosMiscEntryPoint)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/ArmPkg/Universal/Smbios/SmbiosMiscDxe/SmbiosMiscDxe/OUTPUT/SmbiosMiscDxe.lib(SmbiosMiscDataTable.obj)
+                              SmbiosMiscEntryPoint.obj (symbol from plugin) (mSmbiosMiscDataTableEntries)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/ArmPkg/Universal/Smbios/SmbiosMiscDxe/SmbiosMiscDxe/OUTPUT/SmbiosMiscDxe.lib(MiscBiosVendorData.obj)
+                              SmbiosMiscDataTable.obj (symbol from plugin) (MiscBiosVendorData)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/ArmPkg/Universal/Smbios/SmbiosMiscDxe/SmbiosMiscDxe/OUTPUT/SmbiosMiscDxe.lib(MiscBiosVendorFunction.obj)
+                              SmbiosMiscDataTable.obj (symbol from plugin) (MiscBiosVendorFunction)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/ArmPkg/Universal/Smbios/SmbiosMiscDxe/SmbiosMiscDxe/OUTPUT/SmbiosMiscDxe.lib(MiscSystemManufacturerData.obj)
+                              SmbiosMiscDataTable.obj (symbol from plugin) (MiscSystemManufacturerData)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/ArmPkg/Universal/Smbios/SmbiosMiscDxe/SmbiosMiscDxe/OUTPUT/SmbiosMiscDxe.lib(MiscSystemManufacturerFunction.obj)
+                              SmbiosMiscDataTable.obj (symbol from plugin) (MiscSystemManufacturerFunction)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/ArmPkg/Universal/Smbios/SmbiosMiscDxe/SmbiosMiscDxe/OUTPUT/SmbiosMiscDxe.lib(MiscBaseBoardManufacturerData.obj)
+                              SmbiosMiscDataTable.obj (symbol from plugin) (MiscBaseBoardManufacturerData)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/ArmPkg/Universal/Smbios/SmbiosMiscDxe/SmbiosMiscDxe/OUTPUT/SmbiosMiscDxe.lib(MiscBaseBoardManufacturerFunction.obj)
+                              SmbiosMiscDataTable.obj (symbol from plugin) (MiscBaseBoardManufacturerFunction)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/ArmPkg/Universal/Smbios/SmbiosMiscDxe/SmbiosMiscDxe/OUTPUT/SmbiosMiscDxe.lib(MiscChassisManufacturerData.obj)
+                              SmbiosMiscDataTable.obj (symbol from plugin) (MiscChassisManufacturerData)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/ArmPkg/Universal/Smbios/SmbiosMiscDxe/SmbiosMiscDxe/OUTPUT/SmbiosMiscDxe.lib(MiscChassisManufacturerFunction.obj)
+                              SmbiosMiscDataTable.obj (symbol from plugin) (MiscChassisManufacturerFunction)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/ArmPkg/Universal/Smbios/SmbiosMiscDxe/SmbiosMiscDxe/OUTPUT/SmbiosMiscDxe.lib(MiscNumberOfInstallableLanguagesData.obj)
+                              SmbiosMiscDataTable.obj (symbol from plugin) (MiscNumberOfInstallableLanguagesData)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/ArmPkg/Universal/Smbios/SmbiosMiscDxe/SmbiosMiscDxe/OUTPUT/SmbiosMiscDxe.lib(MiscNumberOfInstallableLanguagesFunction.obj)
+                              SmbiosMiscDataTable.obj (symbol from plugin) (MiscNumberOfInstallableLanguagesFunction)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/ArmPkg/Universal/Smbios/SmbiosMiscDxe/SmbiosMiscDxe/OUTPUT/SmbiosMiscDxe.lib(MiscBootInformationData.obj)
+                              SmbiosMiscDataTable.obj (symbol from plugin) (MiscBootInformationData)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/ArmPkg/Universal/Smbios/SmbiosMiscDxe/SmbiosMiscDxe/OUTPUT/SmbiosMiscDxe.lib(MiscBootInformationFunction.obj)
+                              SmbiosMiscDataTable.obj (symbol from plugin) (MiscBootInformationFunction)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ZeroMemWrapper.obj)
+                              MiscNumberOfInstallableLanguagesFunction.obj (symbol from plugin) (ZeroMem)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMemWrapper.obj)
+                              MiscBiosVendorFunction.obj (symbol from plugin) (CopyMem)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGeneric.obj)
+                              ZeroMemWrapper.obj (symbol from plugin) (InternalMemZeroMem)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGuid.obj)
+                              MiscSystemManufacturerFunction.obj (symbol from plugin) (CopyGuid)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMem.obj)
+                              CopyMemWrapper.obj (symbol from plugin) (InternalMemCopyMem)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem.obj)
+                              MemLibGeneric.obj (symbol from plugin) (InternalMemSetMem)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LShiftU64.obj)
+                              SetMem.obj (symbol from plugin) (LShiftU64)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SafeString.obj)
+                              MiscNumberOfInstallableLanguagesFunction.obj (symbol from plugin) (AsciiStrCpyS)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(String.obj)
+                              MiscBiosVendorFunction.obj (symbol from plugin) (StrLen)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Unaligned.obj)
+                              MemLibGuid.obj (symbol from plugin) (ReadUnaligned64)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Math64.obj)
+                              LShiftU64.obj (symbol from plugin) (InternalMathLShiftU64)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes32.obj)
+                              SafeString.obj (symbol from plugin) (SwapBytes32)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes16.obj)
+                              SafeString.obj (symbol from plugin) (SwapBytes16)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RShiftU64.obj)
+                              SafeString.obj (symbol from plugin) (RShiftU64)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultU64x32.obj)
+                              SafeString.obj (symbol from plugin) (MultU64x32)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32.obj)
+                              SafeString.obj (symbol from plugin) (DivU64x32)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib(UefiBootServicesTableLib.obj)
+                              AutoGen.obj (symbol from plugin) (UefiBootServicesTableLibConstructor)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib(PrintLib.obj)
+                              MiscBiosVendorFunction.obj (symbol from plugin) (UnicodeSPrintAsciiFormat)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib(PrintLibInternal.obj)
+                              PrintLib.obj (symbol from plugin) (BasePrintLibConvertValueToStringS)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib/OUTPUT/UefiMemoryAllocationLib.lib(MemoryAllocationLib.obj)
+                              MiscNumberOfInstallableLanguagesFunction.obj (symbol from plugin) (AllocatePool)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib/OUTPUT/UefiRuntimeServicesTableLib.lib(UefiRuntimeServicesTableLib.obj)
+                              AutoGen.obj (symbol from plugin) (UefiRuntimeServicesTableLibConstructor)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib/OUTPUT/UefiHiiServicesLib.lib(UefiHiiServicesLib.obj)
+                              AutoGen.obj (symbol from plugin) (UefiHiiServicesLibConstructor)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(UefiLib.obj)
+                              AutoGen.obj (symbol from plugin) (UefiLibConstructor)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdeModulePkg/Library/UefiHiiLib/UefiHiiLib/OUTPUT/UefiHiiLib.lib(HiiLib.obj)
+                              SmbiosMiscEntryPoint.obj (symbol from plugin) (HiiAddPackages)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdeModulePkg/Library/UefiHiiLib/UefiHiiLib/OUTPUT/UefiHiiLib.lib(HiiString.obj)
+                              MiscBiosVendorFunction.obj (symbol from plugin) (HiiSetString)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdeModulePkg/Library/UefiHiiLib/UefiHiiLib/OUTPUT/UefiHiiLib.lib(HiiLanguage.obj)
+                              MiscNumberOfInstallableLanguagesFunction.obj (symbol from plugin) (HiiGetSupportedLanguages)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/DxeHobLib/DxeHobLib/OUTPUT/DxeHobLib.lib(HobLib.obj)
+                              AutoGen.obj (symbol from plugin) (HobLibConstructor)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/ArmPkg/Universal/Smbios/OemMiscLibNull/OemMiscLibNull/OUTPUT/OemMiscLibNull.lib(OemMiscLib.obj)
+                              MiscChassisManufacturerFunction.obj (symbol from plugin) (OemGetChassisType)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CompareMemWrapper.obj)
+                              HiiLib.obj (symbol from plugin) (CompareMem)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32Remainder.obj)
+                              PrintLibInternal.obj (symbol from plugin) (DivU64x32Remainder)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(BitField.obj)
+                              HiiLib.obj (symbol from plugin) (BitFieldRead32)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LinkedList.obj)
+                              HiiLib.obj (symbol from plugin) (InitializeListHead)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(DevicePathUtilities.obj)
+                              UefiLib.obj (symbol from plugin) (DevicePathType)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(DevicePathUtilitiesDxeSmm.obj)
+                              HiiLib.obj (symbol from plugin) (DevicePathFromHandle)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(UefiDevicePathLib.obj)
+                              HiiLib.obj (symbol from plugin) (GetDevicePathSize)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(DevicePathToText.obj)
+                              UefiDevicePathLib.obj (symbol from plugin) (UefiDevicePathLibConvertDeviceNodeToText)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(DevicePathFromText.obj)
+                              UefiDevicePathLib.obj (symbol from plugin) (UefiDevicePathLibConvertTextToDeviceNode)
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes64.obj)
+                              DevicePathFromText.obj (symbol from plugin) (SwapBytes64)
+
+Discarded input sections
+
+ .text          0x0000000000000000       0x10 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .text          0x0000000000000000        0x0 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.DebugPrint.constprop.39
+                0x0000000000000000        0x4 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.DebugPrintLevelEnabled.constprop.38
+                0x0000000000000000        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.DebugAssert.constprop.37
+                0x0000000000000000        0x4 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.OemUpdateSmbiosInfo.constprop.2
+                0x0000000000000000        0x4 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text._DriverUnloadHandler
+                0x0000000000000000        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.__stack_chk_fail
+                0x0000000000000000        0x4 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.__memset
+                0x0000000000000000       0x1c /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.memcpy   0x0000000000000000       0x20 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .data.__stack_chk_guard
+                0x0000000000000000        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .comment       0x0000000000000000       0x75 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text          0x0000000000000000        0x0 memcpy.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 memset.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 BaseStackCheckGcc.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DebugLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CpuDeadLoop.obj (symbol from plugin)
+ .text          0x0000000000000000       0x30 /home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .text          0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .text          0x0000000000000000        0x0 DriverEntryPoint.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AutoGen.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SmbiosMiscEntryPoint.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SmbiosMiscDataTable.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MiscBiosVendorData.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MiscBiosVendorFunction.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MiscSystemManufacturerData.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MiscSystemManufacturerFunction.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MiscBaseBoardManufacturerData.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MiscBaseBoardManufacturerFunction.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MiscChassisManufacturerData.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MiscChassisManufacturerFunction.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MiscNumberOfInstallableLanguagesData.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MiscNumberOfInstallableLanguagesFunction.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MiscBootInformationData.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MiscBootInformationFunction.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ZeroMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CopyMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MemLibGeneric.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MemLibGuid.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CopyMem.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SetMem.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 LShiftU64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SafeString.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 String.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Unaligned.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Math64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SwapBytes32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SwapBytes16.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 RShiftU64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MultU64x32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DivU64x32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UefiBootServicesTableLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 PrintLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 PrintLibInternal.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MemoryAllocationLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UefiRuntimeServicesTableLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UefiHiiServicesLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UefiLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 HiiLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 HiiString.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 HiiLanguage.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 HobLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 OemMiscLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CompareMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DivU64x32Remainder.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 BitField.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 LinkedList.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DevicePathUtilities.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DevicePathUtilitiesDxeSmm.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UefiDevicePathLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DevicePathToText.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DevicePathFromText.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SwapBytes64.obj (symbol from plugin)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+LOAD /tmp/ccHwkf2x.ltrans0.ltrans.o
+START GROUP
+LOAD /home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/ArmPkg/Universal/Smbios/SmbiosMiscDxe/SmbiosMiscDxe/OUTPUT/SmbiosMiscDxe.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseStackCheckLib/BaseStackCheckLib/OUTPUT/BaseStackCheckLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePcdLibNull/BasePcdLibNull/OUTPUT/BasePcdLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull/OUTPUT/BaseDebugLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib/OUTPUT/UefiMemoryAllocationLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib/OUTPUT/UefiRuntimeServicesTableLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib/OUTPUT/UefiHiiServicesLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdeModulePkg/Library/UefiHiiLib/UefiHiiLib/OUTPUT/UefiHiiLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/DxeHobLib/DxeHobLib/OUTPUT/DxeHobLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/ArmPkg/Universal/Smbios/OemMiscLibNull/OemMiscLibNull/OUTPUT/OemMiscLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint/OUTPUT/UefiDriverEntryPoint.lib
+END GROUP
+                0x0000000000000228                . = PECOFF_HEADER_SIZE
+
+.text           0x0000000000001000     0x3032
+ *(.text .text.* .stub .gnu.linkonce.t.*)
+ .text.InternalAllocatePool.constprop.29
+                0x0000000000001000       0x38 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.SmbiosMiscAddRecord.constprop.19
+                0x0000000000001038       0x38 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.DebugAssertEnabled
+                0x0000000000001070        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.OemGetChassisNumPowerCords
+                0x0000000000001078        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.OemGetChassisHeight
+                0x0000000000001080        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.OemGetChassisSecurityStatus
+                0x0000000000001088        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.OemGetChassisThermalState
+                0x0000000000001090        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.OemGetChassisPowerSupplyState
+                0x0000000000001098        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.OemGetChassisBootupState
+                0x00000000000010a0        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.OemGetBootStatus
+                0x00000000000010a8        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.OemGetChassisType
+                0x00000000000010b0        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.BasePrintLibFillBuffer
+                0x00000000000010b8       0x34 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.WriteUnaligned32
+                0x00000000000010ec       0x2c /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.ReadUnaligned16
+                0x0000000000001118       0x30 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.ReadUnaligned32
+                0x0000000000001148       0x28 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.AsciiStrLen
+                0x0000000000001170       0x1c /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.AsciiStrSize
+                0x000000000000118c       0x18 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.AsciiStrnCmp
+                0x00000000000011a4       0x44 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.StrLen   0x00000000000011e8       0x1c /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.AsciiStrnLenS
+                0x0000000000001204       0x3c /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.AsciiStrDecimalToUintn
+                0x0000000000001240       0xa0 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.StrnLenS
+                0x00000000000012e0       0x3c /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.UnicodeStrToAsciiStrS
+                0x000000000000131c       0xbc /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.CopyMem  0x00000000000013d8      0x224 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.FreePool
+                0x00000000000015fc       0x10 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.AsciiStrCpyS.constprop.0
+                0x000000000000160c       0xa4 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.WriteUnaligned64
+                0x00000000000016b0       0x2c /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.ZeroMem  0x00000000000016dc       0xa0 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.AllocateZeroPool
+                0x000000000000177c       0x34 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.HiiGetSupportedLanguages
+                0x00000000000017b0       0x98 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.HiiSetString.constprop.3
+                0x0000000000001848      0x11c /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.MiscBootInformationFunction
+                0x0000000000001964       0x78 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.MiscNumberOfInstallableLanguagesFunction
+                0x00000000000019dc      0x154 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.ReadUnaligned64
+                0x0000000000001b30       0x28 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.CompareGuid
+                0x0000000000001b58       0x4c /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.CopyGuid
+                0x0000000000001ba4       0x44 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.HiiAddPackages.constprop.27
+                0x0000000000001be8      0x18c /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.unlikely.BasePrintLibSPrint.constprop.16
+                0x0000000000001d74       0x54 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.BasePrintLibSPrintMarker.constprop.15
+                0x0000000000001dc8      0xbb4 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.UnicodeSPrintAsciiFormat.constprop.13
+                0x000000000000297c       0x68 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.GetBestLanguage.constprop.12
+                0x00000000000029e4      0x140 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.HiiGetPackageString.constprop.6
+                0x0000000000002b24      0x2f4 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.MiscChassisManufacturerFunction
+                0x0000000000002e18      0x234 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.MiscBaseBoardManufacturerFunction
+                0x000000000000304c      0x368 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.MiscSystemManufacturerFunction
+                0x00000000000033b4      0x260 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text.MiscBiosVendorFunction
+                0x0000000000003614      0x288 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .text._ModuleEntryPoint
+                0x000000000000389c      0x1e8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+                0x000000000000389c                _ModuleEntryPoint
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.BasePrintLibSPrintMarker.constprop.15.str1.1
+                0x0000000000003a84       0x7b /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .rodata.HiiGetPackageString.constprop.6.str1.1
+                0x0000000000003aff       0x7b /tmp/ccHwkf2x.ltrans0.ltrans.o
+                                          0x1 (size before relaxing)
+ *fill*         0x0000000000003aff        0x1 
+ .rodata.HiiGetPackageString.constprop.6.str2.2
+                0x0000000000003b00       0x1a /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .rodata.HiiSetString.constprop.3.str1.1
+                0x0000000000003b1a        0x7 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .rodata.MiscBiosVendorFunction.str1.1
+                0x0000000000003b21       0x15 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .rodata.MiscNumberOfInstallableLanguagesFunction.str1.1
+                0x0000000000003b36       0x10 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .rodata.UnicodeSPrintAsciiFormat.constprop.13.str1.1
+                0x0000000000003b46        0xe /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .rodata._gPcd_FixedAtBuild_PcdBaseBoardManufacturer
+                0x0000000000003b54        0x2 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .rodata._gPcd_FixedAtBuild_PcdBaseBoardProductName
+                0x0000000000003b56        0x2 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .rodata._gPcd_FixedAtBuild_PcdBaseBoardVersion
+                0x0000000000003b58        0x2 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .rodata._gPcd_FixedAtBuild_PcdFirmwareVendor
+                0x0000000000003b5a        0xe /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .rodata._gPcd_FixedAtBuild_PcdFirmwareVersionString
+                0x0000000000003b68        0x2 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .rodata._gPcd_FixedAtBuild_PcdSystemProductName
+                0x0000000000003b6a        0x2 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .rodata._gPcd_FixedAtBuild_PcdSystemVersion
+                0x0000000000003b6c        0x2 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .rodata.mEndOfPakageList
+                0x0000000000003b6e        0x4 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .rodata.mErrorString
+                0x0000000000003b72      0x2b5 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .rodata.mHexStr
+                0x0000000000003e27       0x10 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ *fill*         0x0000000000003e37        0x1 
+ .rodata.mMonthDescription
+                0x0000000000003e38       0xd0 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .rodata.mSmbiosMiscDataTable
+                0x0000000000003f08       0x60 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .rodata.mWarningString
+                0x0000000000003f68       0x96 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .rodata.str1.1
+                0x0000000000003ffe       0x34 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ *(.got .got.*)
+ *:AutoGen.obj(.data.g*Guid)
+
+.iplt           0x0000000000004034        0x0
+ .iplt          0x0000000000004034        0x0 /tmp/ccHwkf2x.ltrans0.ltrans.o
+
+.data           0x0000000000005000      0x420
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.MiscBaseBoardManufacturerData
+                0x0000000000005000       0x11 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .data.MiscBiosVendorData
+                0x0000000000005011       0x1a /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .data.MiscBootInformationData
+                0x000000000000502b        0xb /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .data.MiscChassisManufacturerData
+                0x0000000000005036       0x18 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .data.MiscNumberOfInstallableLanguagesData
+                0x000000000000504e       0x16 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .data.MiscSystemManufacturerData
+                0x0000000000005064       0x1b /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .data.SmbiosMiscDxeStrings
+                0x000000000000507f      0x2a5 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .data.gEfiCallerIdGuid
+                0x0000000000005324       0x10 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .data.gEfiGlobalVariableGuid
+                0x0000000000005334       0x10 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .data.gEfiHiiConfigRoutingProtocolGuid
+                0x0000000000005344       0x10 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .data.gEfiHiiDatabaseProtocolGuid
+                0x0000000000005354       0x10 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .data.gEfiHiiFontProtocolGuid
+                0x0000000000005364       0x10 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .data.gEfiHiiImageProtocolGuid
+                0x0000000000005374       0x10 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .data.gEfiHiiStringProtocolGuid
+                0x0000000000005384       0x10 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .data.gEfiHobListGuid
+                0x0000000000005394       0x10 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .data.gEfiSmbiosProtocolGuid
+                0x00000000000053a4       0x10 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ *(.bss .bss.*)
+ *fill*         0x00000000000053b4        0x4 
+ .bss.gBS       0x00000000000053b8        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .bss.gHiiConfigRouting
+                0x00000000000053c0        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .bss.gHiiDatabase
+                0x00000000000053c8        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .bss.gHiiFont  0x00000000000053d0        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .bss.gHiiImage
+                0x00000000000053d8        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .bss.gHiiString
+                0x00000000000053e0        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .bss.gImageHandle
+                0x00000000000053e8        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .bss.gRT       0x00000000000053f0        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .bss.gST       0x00000000000053f8        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .bss.mHobList  0x0000000000005400        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .bss.mSmbiosMiscHiiHandle
+                0x0000000000005408        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .bss.mSmbiosMiscImageHandle
+                0x0000000000005410        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+ .bss.mSmbiosMiscSmbios
+                0x0000000000005418        0x8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+
+.igot.plt       0x0000000000005420        0x0
+ .igot.plt      0x0000000000005420        0x0 /tmp/ccHwkf2x.ltrans0.ltrans.o
+
+.eh_frame
+ *(.eh_frame)
+
+.rela           0x0000000000005420        0x0
+ *(.rela .rela.*)
+ .rela.iplt     0x0000000000005420        0x0 /tmp/ccHwkf2x.ltrans0.ltrans.o
+
+.hii
+ *(.hii)
+
+.build-id       0x0000000000005420       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x0000000000005420       0x24 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.interp)
+ *(.dynsym)
+ *(.dynstr)
+ *(.dynamic)
+ *(.hash .gnu.hash)
+ *(.comment)
+                0x0000000000000228                PECOFF_HEADER_SIZE = 0x228
+OUTPUT(/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/ArmPkg/Universal/Smbios/SmbiosMiscDxe/SmbiosMiscDxe/DEBUG/SmbiosMiscDxe.dll elf64-littleaarch64)
+
+.debug_info     0x0000000000000000     0x8579
+ .debug_info    0x0000000000000000     0x8579 /tmp/ccHwkf2x.ltrans0.ltrans.o
+
+.debug_abbrev   0x0000000000000000      0x574
+ .debug_abbrev  0x0000000000000000      0x574 /tmp/ccHwkf2x.ltrans0.ltrans.o
+
+.debug_loc      0x0000000000000000     0x7f53
+ .debug_loc     0x0000000000000000     0x7f53 /tmp/ccHwkf2x.ltrans0.ltrans.o
+
+.debug_aranges  0x0000000000000000      0x390
+ .debug_aranges
+                0x0000000000000000      0x390 /tmp/ccHwkf2x.ltrans0.ltrans.o
+
+.debug_ranges   0x0000000000000000      0x9c0
+ .debug_ranges  0x0000000000000000      0x9c0 /tmp/ccHwkf2x.ltrans0.ltrans.o
+
+.debug_line     0x0000000000000000     0x199b
+ .debug_line    0x0000000000000000     0x199b /tmp/ccHwkf2x.ltrans0.ltrans.o
+
+.debug_str      0x0000000000000000     0x40f8
+ .debug_str     0x0000000000000000     0x40f8 /tmp/ccHwkf2x.ltrans0.ltrans.o
+                                       0x461e (size before relaxing)
+
+.debug_frame    0x0000000000000000      0x8d0
+ .debug_frame   0x0000000000000000      0x8d0 /tmp/ccHwkf2x.ltrans0.ltrans.o

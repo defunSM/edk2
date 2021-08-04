@@ -1,0 +1,1 @@
+/home/xephyr/Documents/edk2/Build/SecurityPkg/DEBUG_GCC5/X64/SecurityPkg/Library/SmmTcg2PhysicalPresenceLib/StandaloneMmTcg2PhysicalPresenceLib/GNUmakefile

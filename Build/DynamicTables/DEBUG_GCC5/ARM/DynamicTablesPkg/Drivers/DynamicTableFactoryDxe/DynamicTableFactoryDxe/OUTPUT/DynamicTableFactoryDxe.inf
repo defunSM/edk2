@@ -1,0 +1,110 @@
+## @file
+#  Module to manage the list of available table factories.
+#
+#  Copyright (c) 2017 - 2021, Arm Limited. All rights reserved.
+#
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+##
+
+# DO NOT EDIT
+# FILE auto-generated
+
+[Defines]
+  INF_VERSION                = 0x00010019
+  BASE_NAME                  = DynamicTableFactoryDxe
+  FILE_GUID                  = FE846898-7403-4932-B8AD-A0491F0C2CBA
+  MODULE_TYPE                = DXE_DRIVER
+  VERSION_STRING             = 1.0
+  ENTRY_POINT                = DynamicTableFactoryDxeInitialize
+
+[Packages.ARM]
+  MdePkg/MdePkg.dec
+  DynamicTablesPkg/DynamicTablesPkg.dec
+
+[Binaries.ARM]
+  PE32|DynamicTableFactoryDxe.efi
+  DXE_DEPEX|DynamicTableFactoryDxe.depex
+
+[PatchPcd.ARM]
+
+[Protocols.ARM]
+  # PRODUCES
+  gEdkiiDynamicTableFactoryProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiLoadedImageProtocolGuid
+
+
+[Ppis.ARM]
+
+[Guids.ARM]
+
+[PcdEx.ARM]
+
+[LibraryClasses.ARM]
+## @LIB_INSTANCES
+#  MdePkg/Library/BaseMemoryLib/BaseMemoryLib.inf
+#  MdePkg/Library/BasePcdLibNull/BasePcdLibNull.inf
+#  MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull.inf
+#  MdePkg/Library/BaseLib/BaseLib.inf
+#  MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull.inf
+#  MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic.inf
+#  DynamicTablesPkg/Library/Common/AmlLib/AmlLib.inf
+#  MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib.inf
+#  ArmPlatformPkg/Library/PL011UartLib/PL011UartLib.inf
+#  DynamicTablesPkg/Library/Common/SsdtSerialPortFixupLib/SsdtSerialPortFixupLib.inf
+#  ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib.inf
+#  DynamicTablesPkg/Library/Common/TableHelperLib/TableHelperLib.inf
+#  MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib.inf
+#  MdePkg/Library/BasePrintLib/BasePrintLib.inf
+#  MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint.inf
+#  DynamicTablesPkg/Library/Acpi/Arm/AcpiDbg2LibArm/AcpiDbg2LibArm.inf
+#  DynamicTablesPkg/Library/Acpi/Arm/AcpiFadtLibArm/AcpiFadtLibArm.inf
+#  DynamicTablesPkg/Library/Acpi/Arm/AcpiGtdtLibArm/AcpiGtdtLibArm.inf
+#  DynamicTablesPkg/Library/Acpi/Arm/AcpiIortLibArm/AcpiIortLibArm.inf
+#  DynamicTablesPkg/Library/Acpi/Arm/AcpiMadtLibArm/AcpiMadtLibArm.inf
+#  DynamicTablesPkg/Library/Acpi/Arm/AcpiMcfgLibArm/AcpiMcfgLibArm.inf
+#  DynamicTablesPkg/Library/Acpi/Arm/AcpiPpttLibArm/AcpiPpttLibArm.inf
+#  DynamicTablesPkg/Library/Acpi/Arm/AcpiRawLibArm/AcpiRawLibArm.inf
+#  DynamicTablesPkg/Library/Acpi/Arm/AcpiSpcrLibArm/AcpiSpcrLibArm.inf
+#  DynamicTablesPkg/Library/Acpi/Arm/AcpiSratLibArm/AcpiSratLibArm.inf
+#  DynamicTablesPkg/Library/Acpi/Arm/AcpiSsdtSerialPortLibArm/SsdtSerialPortLibArm.inf
+#  DynamicTablesPkg/Library/Acpi/Arm/AcpiSsdtCmn600LibArm/SsdtCmn600LibArm.inf
+
+[Depex.ARM]
+#  (TRUE) AND (gEfiBdsArchProtocolGuid AND gEfiCpuArchProtocolGuid AND gEfiMetronomeArchProtocolGuid AND gEfiMonotonicCounterArchProtocolGuid AND gEfiRealTimeClockArchProtocolGuid AND gEfiResetArchProtocolGuid AND gEfiRuntimeArchProtocolGuid AND gEfiSecurityArchProtocolGuid AND gEfiTimerArchProtocolGuid AND gEfiVariableWriteArchProtocolGuid AND gEfiVariableArchProtocolGuid AND gEfiWatchdogTimerArchProtocolGuid)
+
+
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = ARM AARCH64
+#
+
+[BuildOptions.ARM]
+## @AsBuilt
+##   GCC:DEBUG_GCC5_ARM_ASMLINK_FLAGS = /nologo /tiny
+##   GCC:DEBUG_GCC5_ARM_OPTROM_FLAGS = -e
+##   GCC:DEBUG_GCC5_ARM_PLATFORM_FLAGS = -march=armv7-a
+##   GCC:DEBUG_GCC5_ARM_DTC_FLAGS = -H epapr
+##   GCC:DEBUG_GCC5_ARM_APP_FLAGS = 
+##   GCC:DEBUG_GCC5_ARM_OBJCOPY_FLAGS = objcopy not needed for
+##   GCC:DEBUG_GCC5_ARM_ASL_FLAGS = 
+##   GCC:DEBUG_GCC5_ARM_GENFW_FLAGS = 
+##   GCC:DEBUG_GCC5_ARM_ASLDLINK_FLAGS = -Wl,--emit-relocs -nostdlib -Wl,--gc-sections -u $(IMAGE_ENTRY_POINT) -Wl,-e,$(IMAGE_ENTRY_POINT),-Map,$(DEST_DIR_DEBUG)/$(BASE_NAME).map -z common-page-size=0x20 -Wl,--pic-veneer -Wl,--entry,ReferenceAcpiTable -u $(IMAGE_ENTRY_POINT) -Wl,--defsym=PECOFF_HEADER_SIZE=0 -Wl,--script=$(EDK_TOOLS_PATH)/Scripts/GccBase.lds -z common-page-size=0x20 -Wl,--oformat=elf32-littlearm
+##   GCC:DEBUG_GCC5_ARM_ASM_FLAGS = $(ARCHASM_FLAGS) $(PLATFORM_FLAGS) -c -x assembler -imacros AutoGen.h -mlittle-endian
+##   GCC:DEBUG_GCC5_ARM_ARCHCC_FLAGS = -mthumb
+##   GCC:DEBUG_GCC5_ARM_RC_FLAGS = -I binary -O elf32-littlearm     -B arm     --rename-section .data=.hii
+##   GCC:DEBUG_GCC5_ARM_SYMRENAME_FLAGS = Symbol renaming not needed for
+##   GCC:DEBUG_GCC5_ARM_DTCPP_FLAGS = -E -x assembler-with-cpp -imacros AutoGen.h -nostdinc -undef
+##   GCC:DEBUG_GCC5_ARM_DEPS_FLAGS = -MMD -MF $@.deps
+##   GCC:DEBUG_GCC5_ARM_ASLPP_FLAGS = -x c -E -include AutoGen.h
+##   GCC:DEBUG_GCC5_ARM_ASLCC_FLAGS = -x c -fno-lto
+##   GCC:DEBUG_GCC5_ARM_CC_FLAGS = $(ARCHCC_FLAGS) $(PLATFORM_FLAGS) -g -Os -fshort-wchar -fno-builtin -fno-strict-aliasing -Wall -Werror -Wno-array-bounds -include AutoGen.h -fno-common -mlittle-endian -mabi=aapcs -fno-short-enums -funsigned-char -ffunction-sections -fdata-sections -fomit-frame-pointer -Wno-address -mthumb -mfloat-abi=soft -fno-pic -fno-pie -fstack-protector -mword-relocations -flto -Wno-unused-but-set-variable -Wno-unused-const-variable -D DISABLE_NEW_DEPRECATED_INTERFACES
+##   GCC:DEBUG_GCC5_ARM_PP_FLAGS = $(ARCHCC_FLAGS) $(PLATFORM_FLAGS) -E -x assembler-with-cpp -include AutoGen.h -DOPENSBI_EXTERNAL_SBI_TYPES=OpensbiTypes.h
+##   GCC:DEBUG_GCC5_ARM_VFRPP_FLAGS = $(ARCHCC_FLAGS) $(PLATFORM_FLAGS) -x c -E -P -DVFRCOMPILE --include $(MODULE_NAME)StrDefs.h
+##   GCC:DEBUG_GCC5_ARM_VFR_FLAGS = -l -n
+##   GCC:DEBUG_GCC5_ARM_DLINK2_FLAGS = -Wl,--script=$(EDK_TOOLS_PATH)/Scripts/GccBase.lds -Wl,--defsym=PECOFF_HEADER_SIZE=0x220 -Wno-error
+##   GCC:DEBUG_GCC5_ARM_DLINK_FLAGS = -Wl,--emit-relocs -nostdlib -Wl,--gc-sections -u $(IMAGE_ENTRY_POINT) -Wl,-e,$(IMAGE_ENTRY_POINT),-Map,$(DEST_DIR_DEBUG)/$(BASE_NAME).map -z common-page-size=0x20 -Wl,--pic-veneer -Wl,--oformat=elf32-littlearm -flto -Os -L/home/xephyr/Documents/edk2/ArmPkg/Library/GccLto -llto-arm -Wl,-plugin-opt=-pass-through=-llto-arm
+##   GCC:DEBUG_GCC5_ARM_NASMB_FLAGS = -f bin

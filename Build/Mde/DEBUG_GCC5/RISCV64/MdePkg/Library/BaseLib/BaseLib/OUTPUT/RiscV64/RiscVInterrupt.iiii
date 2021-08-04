@@ -1,0 +1,62 @@
+
+
+
+
+
+
+
+
+
+
+.globl RiscVDisableSupervisorModeInterrupts
+.globl RiscVEnableSupervisorModeInterrupt
+.globl RiscVGetSupervisorModeInterrupts
+
+
+
+
+
+
+
+
+RiscVDisableSupervisorModeInterrupts:
+  add sp, sp, -(8)
+  sd a1, (sp)
+  li a1, 0x00000002
+  csrc 0x100, a1
+  ld a1, (sp)
+  add sp, sp, (8)
+  ret
+
+
+
+
+RiscVEnableSupervisorModeInterrupt:
+  add sp, sp, -2*(8)
+  sd a0, (0*8)(sp)
+  sd a1, (1*8)(sp)
+
+  csrr a0, 0x100
+  and a0, a0, (1 << 8)
+  bnez a0, InTrap
+
+
+
+
+
+  li a1, 0x00000002
+  csrs 0x100, a1
+InTrap:
+  ld a0, (0*8)(sp)
+  ld a1, (1*8)(sp)
+  add sp, sp, 2*(8)
+  ret
+
+
+
+
+
+RiscVGetSupervisorModeInterrupts:
+  csrr a0, 0x100
+  andi a0, a0, 0x00000002
+  ret

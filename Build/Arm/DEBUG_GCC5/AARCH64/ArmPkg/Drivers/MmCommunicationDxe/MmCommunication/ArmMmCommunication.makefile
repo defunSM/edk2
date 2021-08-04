@@ -1,0 +1,1 @@
+/home/xephyr/Documents/edk2/Build/Arm/DEBUG_GCC5/AARCH64/ArmPkg/Drivers/MmCommunicationDxe/MmCommunication/GNUmakefile

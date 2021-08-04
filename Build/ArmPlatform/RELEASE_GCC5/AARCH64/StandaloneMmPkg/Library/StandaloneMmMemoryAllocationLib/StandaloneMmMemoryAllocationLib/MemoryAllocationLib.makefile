@@ -1,0 +1,1 @@
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/StandaloneMmPkg/Library/StandaloneMmMemoryAllocationLib/StandaloneMmMemoryAllocationLib/GNUmakefile

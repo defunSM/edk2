@@ -1,0 +1,1 @@
+/home/xephyr/Documents/edk2/Build/SecurityPkg/RELEASE_GCC5/X64/SecurityPkg/Tcg/Tcg2Smm/Tcg2StandaloneMm/GNUmakefile

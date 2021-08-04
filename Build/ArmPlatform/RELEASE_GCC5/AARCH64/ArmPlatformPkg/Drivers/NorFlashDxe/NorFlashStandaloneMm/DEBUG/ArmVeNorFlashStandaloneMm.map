@@ -1,0 +1,289 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib(memcpy.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (memcpy)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib(memset.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (memset)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseStackCheckLib/BaseStackCheckLib/OUTPUT/BaseStackCheckLib.lib(BaseStackCheckGcc.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (__stack_chk_fail)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/StandaloneMmDriverEntryPoint/StandaloneMmDriverEntryPoint/OUTPUT/StandaloneMmDriverEntryPoint.lib(StandaloneMmDriverEntryPoint.obj)
+                              (_ModuleEntryPoint)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/ArmPlatformPkg/Drivers/NorFlashDxe/NorFlashStandaloneMm/OUTPUT/ArmVeNorFlashStandaloneMm.lib(AutoGen.obj)
+                              StandaloneMmDriverEntryPoint.obj (symbol from plugin) (ProcessLibraryConstructorList)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/ArmPlatformPkg/Drivers/NorFlashDxe/NorFlashStandaloneMm/OUTPUT/ArmVeNorFlashStandaloneMm.lib(NorFlashStandaloneMm.obj)
+                              AutoGen.obj (symbol from plugin) (NorFlashInitialise)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/ArmPlatformPkg/Drivers/NorFlashDxe/NorFlashStandaloneMm/OUTPUT/ArmVeNorFlashStandaloneMm.lib(NorFlashFvb.obj)
+                              NorFlashStandaloneMm.obj (symbol from plugin) (ValidateFvHeader)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/ArmPlatformPkg/Drivers/NorFlashDxe/NorFlashStandaloneMm/OUTPUT/ArmVeNorFlashStandaloneMm.lib(NorFlash.obj)
+                              NorFlashStandaloneMm.obj (symbol from plugin) (NorFlashUnlockSingleBlockIfNecessary)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMemWrapper.obj)
+                              NorFlash.obj (symbol from plugin) (CopyMem)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGuid.obj)
+                              NorFlashStandaloneMm.obj (symbol from plugin) (CopyGuid)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMem.obj)
+                              CopyMemWrapper.obj (symbol from plugin) (InternalMemCopyMem)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CheckSum.obj)
+                              NorFlashFvb.obj (symbol from plugin) (CalculateSum16)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32Remainder.obj)
+                              NorFlash.obj (symbol from plugin) (DivU64x32Remainder)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuDeadLoop.obj)
+                              BaseStackCheckGcc.obj (symbol from plugin) (CpuDeadLoop)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Unaligned.obj)
+                              MemLibGuid.obj (symbol from plugin) (ReadUnaligned64)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Math64.obj)
+                              DivU64x32Remainder.obj (symbol from plugin) (InternalMathDivRemU64x32)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+                              CpuDeadLoop.obj (symbol from plugin) (CpuPause)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+                              BaseStackCheckGcc.obj (symbol from plugin) (CpuBreakpoint)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes32.obj)
+                              Math64.obj (symbol from plugin) (SwapBytes32)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes16.obj)
+                              SwapBytes32.obj (symbol from plugin) (SwapBytes16)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RShiftU64.obj)
+                              Unaligned.obj (symbol from plugin) (RShiftU64)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LShiftU64.obj)
+                              Unaligned.obj (symbol from plugin) (LShiftU64)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/StandaloneMmServicesTableLib/StandaloneMmServicesTableLib/OUTPUT/StandaloneMmServicesTableLib.lib(StandaloneMmServicesTableLib.obj)
+                              AutoGen.obj (symbol from plugin) (StandaloneMmServicesTableLibConstructor)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib(IoLibNoIo.obj)
+                              NorFlash.obj (symbol from plugin) (MmioRead32)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/StandaloneMmPkg/Library/StandaloneMmMemoryAllocationLib/StandaloneMmMemoryAllocationLib/OUTPUT/MemoryAllocationLib.lib(StandaloneMmMemoryAllocationLib.obj)
+                              NorFlashStandaloneMm.obj (symbol from plugin) (AllocatePool)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/ArmPlatformPkg/Library/NorFlashPlatformNullLib/NorFlashPlatformNullLib/OUTPUT/NorFlashPlatformNullLib.lib(NorFlashPlatformNullLib.obj)
+                              NorFlashStandaloneMm.obj (symbol from plugin) (NorFlashPlatformInitialization)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ZeroMemWrapper.obj)
+                              StandaloneMmMemoryAllocationLib.obj (symbol from plugin) (ZeroMem)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGeneric.obj)
+                              ZeroMemWrapper.obj (symbol from plugin) (InternalMemZeroMem)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem.obj)
+                              MemLibGeneric.obj (symbol from plugin) (InternalMemSetMem)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull/OUTPUT/FilterLibNull.lib(RegisterFilterLibNull.obj)
+                              IoLibNoIo.obj (symbol from plugin) (FilterBeforeMmIoRead)
+
+Discarded input sections
+
+ .text          0x0000000000000000       0x10 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .text          0x0000000000000000        0x0 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.CalculateCheckSum16.constprop.9
+                0x0000000000000000       0x1c /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text._DriverUnloadHandler
+                0x0000000000000000        0x8 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.__stack_chk_fail
+                0x0000000000000000        0x4 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.__memset
+                0x0000000000000000       0x1c /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.memcpy   0x0000000000000000       0x20 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .data.__stack_chk_guard
+                0x0000000000000000        0x8 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .comment       0x0000000000000000       0x75 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text          0x0000000000000000        0x0 memcpy.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 memset.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 BaseStackCheckGcc.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 StandaloneMmDriverEntryPoint.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AutoGen.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 NorFlashStandaloneMm.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 NorFlashFvb.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 NorFlash.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CopyMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MemLibGuid.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CopyMem.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CheckSum.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DivU64x32Remainder.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CpuDeadLoop.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Unaligned.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Math64.obj (symbol from plugin)
+ .text          0x0000000000000000       0x30 /home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .text          0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .text          0x0000000000000000        0x0 SwapBytes32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SwapBytes16.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 RShiftU64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 LShiftU64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 StandaloneMmServicesTableLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 IoLibNoIo.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 StandaloneMmMemoryAllocationLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 NorFlashPlatformNullLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ZeroMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MemLibGeneric.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SetMem.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 RegisterFilterLibNull.obj (symbol from plugin)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+LOAD /tmp/cc4qzVK0.ltrans0.ltrans.o
+START GROUP
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/ArmPlatformPkg/Drivers/NorFlashDxe/NorFlashStandaloneMm/OUTPUT/ArmVeNorFlashStandaloneMm.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BasePcdLibNull/BasePcdLibNull/OUTPUT/BasePcdLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull/OUTPUT/BaseDebugLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull/OUTPUT/FilterLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/StandaloneMmServicesTableLib/StandaloneMmServicesTableLib/OUTPUT/StandaloneMmServicesTableLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseStackCheckLib/BaseStackCheckLib/OUTPUT/BaseStackCheckLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/StandaloneMmPkg/Library/StandaloneMmMemoryAllocationLib/StandaloneMmMemoryAllocationLib/OUTPUT/MemoryAllocationLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/ArmPlatformPkg/Library/NorFlashPlatformNullLib/NorFlashPlatformNullLib/OUTPUT/NorFlashPlatformNullLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/MdePkg/Library/StandaloneMmDriverEntryPoint/StandaloneMmDriverEntryPoint/OUTPUT/StandaloneMmDriverEntryPoint.lib
+END GROUP
+                0x0000000000000228                . = PECOFF_HEADER_SIZE
+
+.text           0x0000000000001000     0x1200
+ *(.text .text.* .stub .gnu.linkonce.t.*)
+ .text.InternalAllocatePool.constprop.17
+                0x0000000000001000       0x3c /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.ZeroMem.constprop.6
+                0x000000000000103c       0x7c /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.FreePool
+                0x00000000000010b8       0x10 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.MmioWrite32
+                0x00000000000010c8        0xc /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.MmioRead32
+                0x00000000000010d4        0x8 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.NorFlashReadStatusRegister.constprop.14
+                0x00000000000010dc       0x24 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.WriteUnaligned64
+                0x0000000000001100       0x54 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.ReadUnaligned32
+                0x0000000000001154       0x58 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.ReadUnaligned64
+                0x00000000000011ac       0x28 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.CalculateSum16
+                0x00000000000011d4       0x30 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.CompareGuid
+                0x0000000000001204       0x4c /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.CopyGuid
+                0x0000000000001250       0x44 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.CopyMem  0x0000000000001294      0x214 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.NorFlashWriteBuffer.part.1
+                0x00000000000014a8       0xf8 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.NorFlashBlockIsLocked.isra.0
+                0x00000000000015a0       0x38 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.AlignedCopyMem
+                0x00000000000015d8       0xb0 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.NorFlashReadBlocks
+                0x0000000000001688       0x88 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.NorFlashWriteSingleWord
+                0x0000000000001710       0x90 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.NorFlashUnlockSingleBlock
+                0x00000000000017a0       0x5c /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.FvbRead  0x00000000000017fc       0xb8 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.FvbGetBlockSize
+                0x00000000000018b4       0x3c /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.FvbGetPhysicalAddress
+                0x00000000000018f0       0x14 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.FvbSetAttributes
+                0x0000000000001904        0x8 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.FvbGetAttributes
+                0x000000000000190c       0x20 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.NorFlashUnlockAndEraseSingleBlock
+                0x000000000000192c       0xf0 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.FvbWrite
+                0x0000000000001a1c      0x394 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text.FvbEraseBlocks
+                0x0000000000001db0      0x1cc /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .text._ModuleEntryPoint
+                0x0000000000001f7c      0x284 /tmp/cc4qzVK0.ltrans0.ltrans.o
+                0x0000000000001f7c                _ModuleEntryPoint
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ *(.got .got.*)
+ *:AutoGen.obj(.data.g*Guid)
+
+.iplt           0x0000000000002200        0x0
+ .iplt          0x0000000000002200        0x0 /tmp/cc4qzVK0.ltrans0.ltrans.o
+
+.data           0x0000000000003000      0x180
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.gEfiAuthenticatedVariableGuid
+                0x0000000000003000       0x10 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .data.gEfiCallerIdGuid
+                0x0000000000003010       0x10 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .data.gEfiSmmFirmwareVolumeBlockProtocolGuid
+                0x0000000000003020       0x10 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .data.gEfiSystemNvDataFvGuid
+                0x0000000000003030       0x10 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .data.gEfiVariableGuid
+                0x0000000000003040       0x10 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .data.mNorFlashInstanceTemplate
+                0x0000000000003050      0x110 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ *(.bss .bss.*)
+ .bss.gMmst     0x0000000000003160        0x8 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .bss.mFlashNvStorageVariableBase
+                0x0000000000003168        0x8 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ .bss.mNorFlashDeviceCount
+                0x0000000000003170        0x4 /tmp/cc4qzVK0.ltrans0.ltrans.o
+ *fill*         0x0000000000003174        0x4 
+ .bss.mNorFlashInstances
+                0x0000000000003178        0x8 /tmp/cc4qzVK0.ltrans0.ltrans.o
+
+.igot.plt       0x0000000000003180        0x0
+ .igot.plt      0x0000000000003180        0x0 /tmp/cc4qzVK0.ltrans0.ltrans.o
+
+.eh_frame
+ *(.eh_frame)
+
+.rela           0x0000000000003180        0x0
+ *(.rela .rela.*)
+ .rela.iplt     0x0000000000003180        0x0 /tmp/cc4qzVK0.ltrans0.ltrans.o
+
+.hii
+ *(.hii)
+
+.build-id       0x0000000000003180       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x0000000000003180       0x24 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.interp)
+ *(.dynsym)
+ *(.dynstr)
+ *(.dynamic)
+ *(.hash .gnu.hash)
+ *(.comment)
+                0x0000000000000228                PECOFF_HEADER_SIZE = 0x228
+OUTPUT(/home/xephyr/Documents/edk2/Build/ArmPlatform/RELEASE_GCC5/AARCH64/ArmPlatformPkg/Drivers/NorFlashDxe/NorFlashStandaloneMm/DEBUG/ArmVeNorFlashStandaloneMm.dll elf64-littleaarch64)
+
+.debug_info     0x0000000000000000     0x4ffd
+ .debug_info    0x0000000000000000     0x4ffd /tmp/cc4qzVK0.ltrans0.ltrans.o
+
+.debug_abbrev   0x0000000000000000      0x54e
+ .debug_abbrev  0x0000000000000000      0x54e /tmp/cc4qzVK0.ltrans0.ltrans.o
+
+.debug_loc      0x0000000000000000     0x4e6b
+ .debug_loc     0x0000000000000000     0x4e6b /tmp/cc4qzVK0.ltrans0.ltrans.o
+
+.debug_aranges  0x0000000000000000      0x230
+ .debug_aranges
+                0x0000000000000000      0x230 /tmp/cc4qzVK0.ltrans0.ltrans.o
+
+.debug_ranges   0x0000000000000000      0x9e0
+ .debug_ranges  0x0000000000000000      0x9e0 /tmp/cc4qzVK0.ltrans0.ltrans.o
+
+.debug_line     0x0000000000000000      0xfad
+ .debug_line    0x0000000000000000      0xfad /tmp/cc4qzVK0.ltrans0.ltrans.o
+
+.debug_str      0x0000000000000000     0x252e
+ .debug_str     0x0000000000000000     0x252e /tmp/cc4qzVK0.ltrans0.ltrans.o
+                                       0x2913 (size before relaxing)
+
+.debug_frame    0x0000000000000000      0x498
+ .debug_frame   0x0000000000000000      0x498 /tmp/cc4qzVK0.ltrans0.ltrans.o

@@ -1,0 +1,170 @@
+#------------------------------------------------------------------------------
+
+# Copyright (c) 2008 - 2009, Apple Inc. All rights reserved.<BR>
+# Copyright (c) 2011 - 2016, ARM Limited. All rights reserved.
+# Copyright (c) 2016, Linaro Limited. All rights reserved.
+
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+
+#------------------------------------------------------------------------------
+
+
+
+.global ArmReadMidr ; .section ".text.ArmReadMidr", "ax" ; .type ArmReadMidr, %function ; .p2align 2 ; ArmReadMidr:
+  mrc p15,0,R0,c0,c0,0
+  bx LR
+
+.global ArmCacheInfo ; .section ".text.ArmCacheInfo", "ax" ; .type ArmCacheInfo, %function ; .p2align 2 ; ArmCacheInfo:
+  mrc p15,0,R0,c0,c0,1
+  bx LR
+
+.global ArmGetInterruptState ; .section ".text.ArmGetInterruptState", "ax" ; .type ArmGetInterruptState, %function ; .p2align 2 ; ArmGetInterruptState:
+  mrs R0,CPSR
+  tst R0,#0x80 @Check if IRQ is enabled.
+  moveq R0,#1
+  movne R0,#0
+  bx LR
+
+.global ArmGetFiqState ; .section ".text.ArmGetFiqState", "ax" ; .type ArmGetFiqState, %function ; .p2align 2 ; ArmGetFiqState:
+  mrs R0,CPSR
+  tst R0,#0x40 @Check if FIQ is enabled.
+  moveq R0,#1
+  movne R0,#0
+  bx LR
+
+.global ArmSetDomainAccessControl ; .section ".text.ArmSetDomainAccessControl", "ax" ; .type ArmSetDomainAccessControl, %function ; .p2align 2 ; ArmSetDomainAccessControl:
+  mcr p15,0,r0,c3,c0,0
+  bx lr
+
+.global CPSRMaskInsert ; .section ".text.CPSRMaskInsert", "ax" ; .type CPSRMaskInsert, %function ; .p2align 2 ; CPSRMaskInsert: @ on entry, r0 is the mask and r1 is the field to insert
+  stmfd sp!, {r4-r12, lr} @ save all the banked registers
+  mov r3, sp @ copy the stack pointer into a non-banked register
+  mrs r2, cpsr @ read the cpsr
+  bic r2, r2, r0 @ clear mask in the cpsr
+  and r1, r1, r0 @ clear bits outside the mask in the input
+  orr r2, r2, r1 @ set field
+  msr cpsr_cxsf, r2 @ write back cpsr (may have caused a mode switch)
+  isb
+  mov sp, r3 @ restore stack pointer
+  ldmfd sp!, {r4-r12, lr} @ restore registers
+  bx lr @ return (hopefully thumb-safe!)
+
+.global CPSRRead ; .section ".text.CPSRRead", "ax" ; .type CPSRRead, %function ; .p2align 2 ; CPSRRead:
+  mrs r0, cpsr
+  bx lr
+
+.global ArmReadCpacr ; .section ".text.ArmReadCpacr", "ax" ; .type ArmReadCpacr, %function ; .p2align 2 ; ArmReadCpacr:
+  mrc p15, 0, r0, c1, c0, 2
+  bx lr
+
+.global ArmWriteCpacr ; .section ".text.ArmWriteCpacr", "ax" ; .type ArmWriteCpacr, %function ; .p2align 2 ; ArmWriteCpacr:
+  mcr p15, 0, r0, c1, c0, 2
+  isb
+  bx lr
+
+.global ArmWriteAuxCr ; .section ".text.ArmWriteAuxCr", "ax" ; .type ArmWriteAuxCr, %function ; .p2align 2 ; ArmWriteAuxCr:
+  mcr p15, 0, r0, c1, c0, 1
+  bx lr
+
+.global ArmReadAuxCr ; .section ".text.ArmReadAuxCr", "ax" ; .type ArmReadAuxCr, %function ; .p2align 2 ; ArmReadAuxCr:
+  mrc p15, 0, r0, c1, c0, 1
+  bx lr
+
+.global ArmSetTTBR0 ; .section ".text.ArmSetTTBR0", "ax" ; .type ArmSetTTBR0, %function ; .p2align 2 ; ArmSetTTBR0:
+  mcr p15,0,r0,c2,c0,0
+  isb
+  bx lr
+
+.global ArmSetTTBCR ; .section ".text.ArmSetTTBCR", "ax" ; .type ArmSetTTBCR, %function ; .p2align 2 ; ArmSetTTBCR:
+  mcr p15, 0, r0, c2, c0, 2
+  isb
+  bx lr
+
+.global ArmGetTTBR0BaseAddress ; .section ".text.ArmGetTTBR0BaseAddress", "ax" ; .type ArmGetTTBR0BaseAddress, %function ; .p2align 2 ; ArmGetTTBR0BaseAddress:
+  mrc p15,0,r0,c2,c0,0
+  movw r1, #(0xFFFFC000) & 0xffff ; movt r1, #(0xFFFFC000) >> 16
+  and r0, r0, r1
+  isb
+  bx lr
+
+
+
+
+
+
+
+.global ArmUpdateTranslationTableEntry ; .section ".text.ArmUpdateTranslationTableEntry", "ax" ; .type ArmUpdateTranslationTableEntry, %function ; .p2align 2 ; ArmUpdateTranslationTableEntry:
+  mcr p15,0,R1,c8,c7,1 @ TLBIMVA TLB Invalidate MVA
+  mcr p15,0,R9,c7,c5,6 @ BPIALL Invalidate Branch predictor array. R9 == NoOp
+  dsb
+  isb
+  bx lr
+
+.global ArmInvalidateTlb ; .section ".text.ArmInvalidateTlb", "ax" ; .type ArmInvalidateTlb, %function ; .p2align 2 ; ArmInvalidateTlb:
+  mov r0,#0
+  mcr p15,0,r0,c8,c7,0
+  mcr p15,0,R9,c7,c5,6 @ BPIALL Invalidate Branch predictor array. R9 == NoOp
+  dsb
+  isb
+  bx lr
+
+.global ArmReadScr ; .section ".text.ArmReadScr", "ax" ; .type ArmReadScr, %function ; .p2align 2 ; ArmReadScr:
+  mrc p15, 0, r0, c1, c1, 0
+  bx lr
+
+.global ArmWriteScr ; .section ".text.ArmWriteScr", "ax" ; .type ArmWriteScr, %function ; .p2align 2 ; ArmWriteScr:
+  mcr p15, 0, r0, c1, c1, 0
+  isb
+  bx lr
+
+.global ArmReadHVBar ; .section ".text.ArmReadHVBar", "ax" ; .type ArmReadHVBar, %function ; .p2align 2 ; ArmReadHVBar:
+  mrc p15, 4, r0, c12, c0, 0
+  bx lr
+
+.global ArmWriteHVBar ; .section ".text.ArmWriteHVBar", "ax" ; .type ArmWriteHVBar, %function ; .p2align 2 ; ArmWriteHVBar:
+  mcr p15, 4, r0, c12, c0, 0
+  bx lr
+
+.global ArmReadMVBar ; .section ".text.ArmReadMVBar", "ax" ; .type ArmReadMVBar, %function ; .p2align 2 ; ArmReadMVBar:
+  mrc p15, 0, r0, c12, c0, 1
+  bx lr
+
+.global ArmWriteMVBar ; .section ".text.ArmWriteMVBar", "ax" ; .type ArmWriteMVBar, %function ; .p2align 2 ; ArmWriteMVBar:
+  mcr p15, 0, r0, c12, c0, 1
+  bx lr
+
+.global ArmCallWFE ; .section ".text.ArmCallWFE", "ax" ; .type ArmCallWFE, %function ; .p2align 2 ; ArmCallWFE:
+  wfe
+  bx lr
+
+.global ArmCallSEV ; .section ".text.ArmCallSEV", "ax" ; .type ArmCallSEV, %function ; .p2align 2 ; ArmCallSEV:
+  sev
+  bx lr
+
+.global ArmReadSctlr ; .section ".text.ArmReadSctlr", "ax" ; .type ArmReadSctlr, %function ; .p2align 2 ; ArmReadSctlr:
+  mrc p15, 0, r0, c1, c0, 0 @ Read SCTLR into R0 (Read control register configuration data)
+  bx lr
+
+.global ArmWriteSctlr ; .section ".text.ArmWriteSctlr", "ax" ; .type ArmWriteSctlr, %function ; .p2align 2 ; ArmWriteSctlr:
+  mcr p15, 0, r0, c1, c0, 0
+  bx lr
+
+.global ArmReadCpuActlr ; .section ".text.ArmReadCpuActlr", "ax" ; .type ArmReadCpuActlr, %function ; .p2align 2 ; ArmReadCpuActlr:
+  mrc p15, 0, r0, c1, c0, 1
+  bx lr
+
+.global ArmWriteCpuActlr ; .section ".text.ArmWriteCpuActlr", "ax" ; .type ArmWriteCpuActlr, %function ; .p2align 2 ; ArmWriteCpuActlr:
+  mcr p15, 0, r0, c1, c0, 1
+  dsb
+  isb
+  bx lr
+
+.global ArmGetPhysicalAddressBits ; .section ".text.ArmGetPhysicalAddressBits", "ax" ; .type ArmGetPhysicalAddressBits, %function ; .p2align 2 ; ArmGetPhysicalAddressBits:
+  mrc p15, 0, r0, c0, c1, 4
+  and r0, r0, #0xf
+  cmp r0, #5
+  movlt r0, #32
+  movge r0, #40
+  bx lr
+
+

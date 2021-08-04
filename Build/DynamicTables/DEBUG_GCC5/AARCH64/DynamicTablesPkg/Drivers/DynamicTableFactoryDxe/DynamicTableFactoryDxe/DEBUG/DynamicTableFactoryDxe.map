@@ -1,0 +1,901 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib(memcpy.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (memcpy)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib(memset.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (memset)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint/OUTPUT/UefiDriverEntryPoint.lib(DriverEntryPoint.obj)
+                              (_ModuleEntryPoint)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Drivers/DynamicTableFactoryDxe/DynamicTableFactoryDxe/OUTPUT/DynamicTableFactoryDxe.lib(AutoGen.obj)
+                              DriverEntryPoint.obj (symbol from plugin) (ProcessLibraryConstructorList)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Drivers/DynamicTableFactoryDxe/DynamicTableFactoryDxe/OUTPUT/DynamicTableFactoryDxe.lib(DynamicTableFactoryDxe.obj)
+                              AutoGen.obj (symbol from plugin) (DynamicTableFactoryDxeInitialize)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Drivers/DynamicTableFactoryDxe/DynamicTableFactoryDxe/OUTPUT/DynamicTableFactoryDxe.lib(SmbiosTableFactory.obj)
+                              DynamicTableFactoryDxe.obj (symbol from plugin) (GetSmbiosTableGenerator)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Drivers/DynamicTableFactoryDxe/DynamicTableFactoryDxe/OUTPUT/DynamicTableFactoryDxe.lib(AcpiTableFactory.obj)
+                              DynamicTableFactoryDxe.obj (symbol from plugin) (GetAcpiTableGenerator)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Drivers/DynamicTableFactoryDxe/DynamicTableFactoryDxe/OUTPUT/DynamicTableFactoryDxe.lib(DeviceTreeTableFactory.obj)
+                              DynamicTableFactoryDxe.obj (symbol from plugin) (GetDtTableGenerator)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull/OUTPUT/BaseDebugLibNull.lib(DebugLib.obj)
+                              DriverEntryPoint.obj (symbol from plugin) (DebugPrint)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib(UefiBootServicesTableLib.obj)
+                              AutoGen.obj (symbol from plugin) (UefiBootServicesTableLibConstructor)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiDbg2LibArm/AcpiDbg2LibArm/OUTPUT/AcpiDbg2LibArm.lib(Dbg2Generator.obj)
+                              AutoGen.obj (symbol from plugin) (AcpiDbg2LibConstructor)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiFadtLibArm/AcpiFadtLibArm/OUTPUT/AcpiFadtLibArm.lib(FadtGenerator.obj)
+                              AutoGen.obj (symbol from plugin) (AcpiFadtLibConstructor)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiGtdtLibArm/AcpiGtdtLibArm/OUTPUT/AcpiGtdtLibArm.lib(GtdtGenerator.obj)
+                              AutoGen.obj (symbol from plugin) (AcpiGtdtLibConstructor)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiIortLibArm/AcpiIortLibArm/OUTPUT/AcpiIortLibArm.lib(IortGenerator.obj)
+                              AutoGen.obj (symbol from plugin) (AcpiIortLibConstructor)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiMadtLibArm/AcpiMadtLibArm/OUTPUT/AcpiMadtLibArm.lib(MadtGenerator.obj)
+                              AutoGen.obj (symbol from plugin) (AcpiMadtLibConstructor)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiMcfgLibArm/AcpiMcfgLibArm/OUTPUT/AcpiMcfgLibArm.lib(McfgGenerator.obj)
+                              AutoGen.obj (symbol from plugin) (AcpiMcfgLibConstructor)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiPpttLibArm/AcpiPpttLibArm/OUTPUT/AcpiPpttLibArm.lib(PpttGenerator.obj)
+                              AutoGen.obj (symbol from plugin) (AcpiPpttLibConstructor)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiRawLibArm/AcpiRawLibArm/OUTPUT/AcpiRawLibArm.lib(RawGenerator.obj)
+                              AutoGen.obj (symbol from plugin) (AcpiRawLibConstructor)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiSpcrLibArm/AcpiSpcrLibArm/OUTPUT/AcpiSpcrLibArm.lib(SpcrGenerator.obj)
+                              AutoGen.obj (symbol from plugin) (AcpiSpcrLibConstructor)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiSratLibArm/AcpiSratLibArm/OUTPUT/AcpiSratLibArm.lib(SratGenerator.obj)
+                              AutoGen.obj (symbol from plugin) (AcpiSratLibConstructor)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiSsdtSerialPortLibArm/SsdtSerialPortLibArm/OUTPUT/SsdtSerialPortLibArm.lib(SsdtSerialPortGenerator.obj)
+                              AutoGen.obj (symbol from plugin) (AcpiSsdtSerialPortLibConstructor)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiSsdtCmn600LibArm/SsdtCmn600LibArm/OUTPUT/SsdtCmn600LibArm.lib(SsdtCmn600Generator.obj)
+                              AutoGen.obj (symbol from plugin) (AcpiSsdtCmn600LibConstructor)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiSsdtCmn600LibArm/SsdtCmn600LibArm/OUTPUT/SsdtCmn600LibArm.lib(SsdtCmn600Template.obj)
+                              SsdtCmn600Generator.obj (symbol from plugin) (ssdtcmn600template_aml_code)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SafeString.obj)
+                              IortGenerator.obj (symbol from plugin) (AsciiStrCpyS)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(String.obj)
+                              SafeString.obj (symbol from plugin) (InternalIsDecimalDigitCharacter)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes32.obj)
+                              SafeString.obj (symbol from plugin) (SwapBytes32)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes16.obj)
+                              SafeString.obj (symbol from plugin) (SwapBytes16)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RShiftU64.obj)
+                              SafeString.obj (symbol from plugin) (RShiftU64)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultU64x32.obj)
+                              SafeString.obj (symbol from plugin) (MultU64x32)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LShiftU64.obj)
+                              SafeString.obj (symbol from plugin) (LShiftU64)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32.obj)
+                              SafeString.obj (symbol from plugin) (DivU64x32)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Math64.obj)
+                              LShiftU64.obj (symbol from plugin) (InternalMathLShiftU64)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/AmlLib/AmlLib/OUTPUT/DynamicAmlLib.lib(AmlApi.obj)
+                              SsdtCmn600Generator.obj (symbol from plugin) (AmlDeviceOpUpdateName)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/AmlLib/AmlLib/OUTPUT/DynamicAmlLib.lib(AmlApiHelper.obj)
+                              AmlApi.obj (symbol from plugin) (AmlNodeHasOpCode)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/AmlLib/AmlLib/OUTPUT/DynamicAmlLib.lib(AmlResourceDataApi.obj)
+                              SsdtCmn600Generator.obj (symbol from plugin) (AmlUpdateRdQWord)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/AmlLib/AmlLib/OUTPUT/DynamicAmlLib.lib(AmlResourceDataCodeGen.obj)
+                              SsdtCmn600Generator.obj (symbol from plugin) (AmlCodeGenCrsAddRdInterrupt)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/AmlLib/AmlLib/OUTPUT/DynamicAmlLib.lib(AmlNameSpace.obj)
+                              SsdtCmn600Generator.obj (symbol from plugin) (AmlFindNode)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/AmlLib/AmlLib/OUTPUT/DynamicAmlLib.lib(AmlParser.obj)
+                              SsdtCmn600Generator.obj (symbol from plugin) (AmlParseDefinitionBlock)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/AmlLib/AmlLib/OUTPUT/DynamicAmlLib.lib(AmlResourceDataParser.obj)
+                              AmlParser.obj (symbol from plugin) (AmlRdIsResourceDataBuffer)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/AmlLib/AmlLib/OUTPUT/DynamicAmlLib.lib(AmlResourceData.obj)
+                              AmlApiHelper.obj (symbol from plugin) (AmlRdCompareDescId)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/AmlLib/AmlLib/OUTPUT/DynamicAmlLib.lib(AmlSerialize.obj)
+                              SsdtCmn600Generator.obj (symbol from plugin) (AmlSerializeDefinitionBlock)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/AmlLib/AmlLib/OUTPUT/DynamicAmlLib.lib(AmlStream.obj)
+                              AmlNameSpace.obj (symbol from plugin) (AmlStreamInit)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/AmlLib/AmlLib/OUTPUT/DynamicAmlLib.lib(AmlString.obj)
+                              AmlNameSpace.obj (symbol from plugin) (AmlParseNameStringInfo)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/AmlLib/AmlLib/OUTPUT/DynamicAmlLib.lib(AmlNode.obj)
+                              AmlParser.obj (symbol from plugin) (AmlCreateRootNode)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/AmlLib/AmlLib/OUTPUT/DynamicAmlLib.lib(AmlNodeInterface.obj)
+                              AmlApi.obj (symbol from plugin) (AmlGetNodeType)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/AmlLib/AmlLib/OUTPUT/DynamicAmlLib.lib(AmlTree.obj)
+                              AmlApi.obj (symbol from plugin) (AmlGetParent)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/AmlLib/AmlLib/OUTPUT/DynamicAmlLib.lib(AmlTreeEnumerator.obj)
+                              AmlNameSpace.obj (symbol from plugin) (AmlEnumTree)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/AmlLib/AmlLib/OUTPUT/DynamicAmlLib.lib(AmlTreeTraversal.obj)
+                              AmlApi.obj (symbol from plugin) (AmlGetNextVariableArgument)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/AmlLib/AmlLib/OUTPUT/DynamicAmlLib.lib(AmlUtility.obj)
+                              AmlSerialize.obj (symbol from plugin) (AcpiPlatformChecksum)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/AmlLib/AmlLib/OUTPUT/DynamicAmlLib.lib(AmlDbgPrint.obj)
+                              AmlNameSpace.obj (symbol from plugin) (AmlDbgPrintChars)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/AmlLib/AmlLib/OUTPUT/DynamicAmlLib.lib(Aml.obj)
+                              AmlParser.obj (symbol from plugin) (AmlGetByteEncoding)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/AmlLib/AmlLib/OUTPUT/DynamicAmlLib.lib(AmlFieldListParser.obj)
+                              AmlParser.obj (symbol from plugin) (AmlParseFieldList)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/AmlLib/AmlLib/OUTPUT/DynamicAmlLib.lib(AmlMethodParser.obj)
+                              AmlParser.obj (symbol from plugin) (AmlDeleteNameSpaceRefList)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Library/PL011UartLib/PL011UartLib/OUTPUT/PL011UartLib.lib(PL011UartLib.obj)
+                              Dbg2Generator.obj (symbol from plugin) (PL011UartInitializePort)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/SsdtSerialPortFixupLib/SsdtSerialPortFixupLib/OUTPUT/DynamicSsdtSerialPortFixupLib.lib(SsdtSerialPortFixupLib.obj)
+                              Dbg2Generator.obj (symbol from plugin) (ValidateSerialPortInfo)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/SsdtSerialPortFixupLib/SsdtSerialPortFixupLib/OUTPUT/DynamicSsdtSerialPortFixupLib.lib(SsdtSerialPortTemplate.obj)
+                              SsdtSerialPortFixupLib.obj (symbol from plugin) (ssdtserialporttemplate_aml_code)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/TableHelperLib/TableHelperLib/OUTPUT/DynamicTableHelperLib.lib(TableHelper.obj)
+                              Dbg2Generator.obj (symbol from plugin) (AddAcpiHeader)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib/OUTPUT/UefiMemoryAllocationLib.lib(MemoryAllocationLib.obj)
+                              AmlResourceDataApi.obj (symbol from plugin) (AllocatePool)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ZeroMemWrapper.obj)
+                              SafeString.obj (symbol from plugin) (ZeroMem)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CompareMemWrapper.obj)
+                              AmlNameSpace.obj (symbol from plugin) (CompareMem)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMemWrapper.obj)
+                              AmlString.obj (symbol from plugin) (SetMem)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMemWrapper.obj)
+                              SafeString.obj (symbol from plugin) (CopyMem)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGeneric.obj)
+                              ZeroMemWrapper.obj (symbol from plugin) (InternalMemZeroMem)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGuid.obj)
+                              SafeString.obj (symbol from plugin) (CopyGuid)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMem.obj)
+                              CopyMemWrapper.obj (symbol from plugin) (InternalMemCopyMem)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem.obj)
+                              SetMemWrapper.obj (symbol from plugin) (InternalMemSetMem)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem64Wrapper.obj)
+                              SetMemWrapper.obj (symbol from plugin) (SetMem64)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LinkedList.obj)
+                              AmlTree.obj (symbol from plugin) (IsNodeInList)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Unaligned.obj)
+                              MemLibGuid.obj (symbol from plugin) (ReadUnaligned64)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib(IoLibNoIo.obj)
+                              PL011UartLib.obj (symbol from plugin) (MmioRead8)
+/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull/OUTPUT/FilterLibNull.lib(RegisterFilterLibNull.obj)
+                              IoLibNoIo.obj (symbol from plugin) (FilterBeforeMmIoRead)
+
+Discarded input sections
+
+ .text          0x0000000000000000       0x10 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .text          0x0000000000000000        0x0 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .comment       0x0000000000000000       0x75 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text._DriverUnloadHandler
+                0x0000000000000000       0x20 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.__memset
+                0x0000000000000000       0x1c /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.memcpy   0x0000000000000000       0x20 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .comment       0x0000000000000000       0x75 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text.InternalBaseLibIsListValid
+                0x0000000000000000       0x38 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text.DebugAssert.constprop.97
+                0x0000000000000000        0x4 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text.DebugPrint.constprop.96
+                0x0000000000000000        0x4 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text.DebugPrintLevelEnabled.constprop.95
+                0x0000000000000000        0x8 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text.AmlDbgPrintChars.constprop.44
+                0x0000000000000000        0x4 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text.AmlDbgDumpRaw
+                0x0000000000000000        0x4 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .rodata._gDriverUnloadImageCount
+                0x0000000000000000        0x1 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .rodata._gPcd_FixedAtBuild_PcdMaximumAsciiStringLength
+                0x0000000000000000        0x4 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .comment       0x0000000000000000       0x75 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text          0x0000000000000000        0x0 memcpy.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 memset.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DriverEntryPoint.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AutoGen.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DynamicTableFactoryDxe.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SmbiosTableFactory.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AcpiTableFactory.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DeviceTreeTableFactory.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DebugLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UefiBootServicesTableLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Dbg2Generator.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 FadtGenerator.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 GtdtGenerator.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 IortGenerator.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MadtGenerator.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 McfgGenerator.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 PpttGenerator.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 RawGenerator.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SpcrGenerator.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SratGenerator.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SsdtSerialPortGenerator.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SsdtCmn600Generator.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SsdtCmn600Template.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SafeString.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 String.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SwapBytes32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SwapBytes16.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 RShiftU64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MultU64x32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 LShiftU64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DivU64x32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Math64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AmlApi.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AmlApiHelper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AmlResourceDataApi.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AmlResourceDataCodeGen.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AmlNameSpace.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AmlParser.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AmlResourceDataParser.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AmlResourceData.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AmlSerialize.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AmlStream.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AmlString.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AmlNode.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AmlNodeInterface.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AmlTree.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AmlTreeEnumerator.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AmlTreeTraversal.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AmlUtility.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AmlDbgPrint.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Aml.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AmlFieldListParser.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AmlMethodParser.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 PL011UartLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SsdtSerialPortFixupLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SsdtSerialPortTemplate.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 TableHelper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MemoryAllocationLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ZeroMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CompareMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SetMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CopyMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MemLibGeneric.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MemLibGuid.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CopyMem.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SetMem.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SetMem64Wrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 LinkedList.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Unaligned.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 IoLibNoIo.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 RegisterFilterLibNull.obj (symbol from plugin)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+LOAD /tmp/ccoLea2c.ltrans0.ltrans.o
+LOAD /tmp/ccoLea2c.ltrans1.ltrans.o
+LOAD /tmp/ccoLea2c.ltrans2.ltrans.o
+START GROUP
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Drivers/DynamicTableFactoryDxe/DynamicTableFactoryDxe/OUTPUT/DynamicTableFactoryDxe.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePcdLibNull/BasePcdLibNull/OUTPUT/BasePcdLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull/OUTPUT/BaseDebugLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull/OUTPUT/FilterLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/AmlLib/AmlLib/OUTPUT/DynamicAmlLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Library/PL011UartLib/PL011UartLib/OUTPUT/PL011UartLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/SsdtSerialPortFixupLib/SsdtSerialPortFixupLib/OUTPUT/DynamicSsdtSerialPortFixupLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Common/TableHelperLib/TableHelperLib/OUTPUT/DynamicTableHelperLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib/OUTPUT/UefiMemoryAllocationLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint/OUTPUT/UefiDriverEntryPoint.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiDbg2LibArm/AcpiDbg2LibArm/OUTPUT/AcpiDbg2LibArm.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiFadtLibArm/AcpiFadtLibArm/OUTPUT/AcpiFadtLibArm.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiGtdtLibArm/AcpiGtdtLibArm/OUTPUT/AcpiGtdtLibArm.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiIortLibArm/AcpiIortLibArm/OUTPUT/AcpiIortLibArm.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiMadtLibArm/AcpiMadtLibArm/OUTPUT/AcpiMadtLibArm.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiMcfgLibArm/AcpiMcfgLibArm/OUTPUT/AcpiMcfgLibArm.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiPpttLibArm/AcpiPpttLibArm/OUTPUT/AcpiPpttLibArm.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiRawLibArm/AcpiRawLibArm/OUTPUT/AcpiRawLibArm.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiSpcrLibArm/AcpiSpcrLibArm/OUTPUT/AcpiSpcrLibArm.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiSratLibArm/AcpiSratLibArm/OUTPUT/AcpiSratLibArm.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiSsdtSerialPortLibArm/SsdtSerialPortLibArm/OUTPUT/SsdtSerialPortLibArm.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Library/Acpi/Arm/AcpiSsdtCmn600LibArm/SsdtCmn600LibArm/OUTPUT/SsdtCmn600LibArm.lib
+END GROUP
+                0x0000000000000228                . = PECOFF_HEADER_SIZE
+
+.text           0x0000000000001000     0xc505
+ *(.text .text.* .stub .gnu.linkonce.t.*)
+ .text.AsciiStrLen
+                0x0000000000001000       0x1c /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000001000                AsciiStrLen
+ .text.unlikely.AsciiStrSize
+                0x000000000000101c       0x18 /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x000000000000101c                AsciiStrSize
+ .text.AmlStreamGetCurrPos
+                0x0000000000001034       0x48 /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000001034                AmlStreamGetCurrPos
+ .text.AmlStreamGetIndex
+                0x000000000000107c       0x1c /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x000000000000107c                AmlStreamGetIndex
+ .text.AmlStreamGetMaxBufferSize
+                0x0000000000001098       0x1c /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000001098                AmlStreamGetMaxBufferSize
+ .text.AmlStreamInitSubStream
+                0x00000000000010b4       0x80 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .text.AmlStreamInit
+                0x0000000000001134       0x28 /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000001134                AmlStreamInit
+ .text.AmlSerializeTree
+                0x000000000000115c      0x120 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .text.AmlSerializeDefinitionBlock
+                0x000000000000127c       0xb4 /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x000000000000127c                AmlSerializeDefinitionBlock
+ .text.AmlSerializeNodeCallback
+                0x0000000000001330      0x1d4 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .text.AmlRdGetSize
+                0x0000000000001504       0x30 /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000001504                AmlRdGetSize
+ .text.AmlRdCompareDescId
+                0x0000000000001534       0x2c /tmp/ccoLea2c.ltrans0.ltrans.o
+ .text.AmlRdStreamGetRdSize
+                0x0000000000001560       0x7c /tmp/ccoLea2c.ltrans0.ltrans.o
+ .text.AmlParseArgument
+                0x00000000000015dc      0x240 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .text.AmlParseFixedArguments
+                0x000000000000181c      0x180 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .text.AmlParseStream
+                0x000000000000199c      0x5bc /tmp/ccoLea2c.ltrans0.ltrans.o
+ .text.AmlParseDefinitionBlock.part.7
+                0x0000000000001f58      0x158 /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000001f58                AmlParseDefinitionBlock.part.7
+ .text.AmlParseVariableArguments
+                0x00000000000020b0      0x1cc /tmp/ccoLea2c.ltrans0.ltrans.o
+ .text.AmlParseFieldPkgLen
+                0x000000000000227c       0xd0 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .text.AmlParseString
+                0x000000000000234c       0xfc /tmp/ccoLea2c.ltrans0.ltrans.o
+ .text.AmlParseNameString
+                0x0000000000002448       0xf0 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .text.AmlParseObject
+                0x0000000000002538      0x184 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .text.AmlParseUIntX
+                0x00000000000026bc       0xf4 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .text.AmlGetFirstAncestorNameSpaceNode
+                0x00000000000027b0       0x8c /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x00000000000027b0                AmlGetFirstAncestorNameSpaceNode
+ .text.AmlGetRawNameSpacePath
+                0x000000000000283c      0x27c /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x000000000000283c                AmlGetRawNameSpacePath
+ .text.AmlEnumeratePathCallback
+                0x0000000000002ab8      0x160 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .text.AmlFindNode
+                0x0000000000002c18      0x30c /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000002c18                AmlFindNode
+ .text.AmlNodeHasRdDataType
+                0x0000000000002f24       0x40 /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000002f24                AmlNodeHasRdDataType
+ .text.AmlNodeHasDataType
+                0x0000000000002f64       0x28 /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000002f64                AmlNodeHasDataType
+ .text.AmlUpdateRdQWord
+                0x0000000000002f8c       0xf8 /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000002f8c                AmlUpdateRdQWord
+ .text.AmlNodeHasOpCode
+                0x0000000000003084       0x40 /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000003084                AmlNodeHasOpCode
+ .text.AmlNameOpCrsGetNextRdNode
+                0x00000000000030c4       0xe8 /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x00000000000030c4                AmlNameOpCrsGetNextRdNode
+ .text.AmlNameOpCrsGetFirstRdNode
+                0x00000000000031ac       0xe8 /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x00000000000031ac                AmlNameOpCrsGetFirstRdNode
+ .text.AmlNameOpUpdateString
+                0x0000000000003294       0xbc /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000003294                AmlNameOpUpdateString
+ .text.AmlNameOpUpdateInteger
+                0x0000000000003350       0xf4 /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000003350                AmlNameOpUpdateInteger
+ .text.AmlDeviceOpUpdateName
+                0x0000000000003444       0xdc /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000003444                AmlDeviceOpUpdateName
+ .text.BuildSsdtCmn600TableEx.lto_priv.114
+                0x0000000000003520      0x53c /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000003520                BuildSsdtCmn600TableEx.lto_priv.114
+ .text.FreeSsdtCmn600TableResourcesEx.lto_priv.115
+                0x0000000000003a5c       0x98 /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000003a5c                FreeSsdtCmn600TableResourcesEx.lto_priv.115
+ .text.BuildSsdtSerialPortTableEx.lto_priv.112
+                0x0000000000003af4      0x160 /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000003af4                BuildSsdtSerialPortTableEx.lto_priv.112
+ .text.FreeSsdtSerialPortTableEx.lto_priv.113
+                0x0000000000003c54       0x9c /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000003c54                FreeSsdtSerialPortTableEx.lto_priv.113
+ .text.FreeSratTableResources.lto_priv.111
+                0x0000000000003cf0       0x40 /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000003cf0                FreeSratTableResources.lto_priv.111
+ .text.BuildSratTable.lto_priv.110
+                0x0000000000003d30      0x5d4 /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000003d30                BuildSratTable.lto_priv.110
+ .text.BuildSpcrTableEx.lto_priv.108
+                0x0000000000004304      0x238 /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000004304                BuildSpcrTableEx.lto_priv.108
+ .text.FreeSpcrTableEx.lto_priv.109
+                0x000000000000453c       0x6c /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x000000000000453c                FreeSpcrTableEx.lto_priv.109
+ .text.BuildRawTable.lto_priv.107
+                0x00000000000045a8       0x24 /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x00000000000045a8                BuildRawTable.lto_priv.107
+ .text.FreePpttTableResources.lto_priv.106
+                0x00000000000045cc       0x54 /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x00000000000045cc                FreePpttTableResources.lto_priv.106
+ .text.IsGicCTokenEqual
+                0x0000000000004620       0x3c /tmp/ccoLea2c.ltrans0.ltrans.o
+ .text.GetPpttNodeReferencedByToken
+                0x000000000000465c       0x3c /tmp/ccoLea2c.ltrans0.ltrans.o
+ .text.GetProcHierarchyNodeSize
+                0x0000000000004698       0x10 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .text.GetEArmObjGicCInfo.lto_priv.98
+                0x00000000000046a8       0xa0 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .text.BuildPpttTable.lto_priv.105
+                0x0000000000004748      0x7d4 /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000004748                BuildPpttTable.lto_priv.105
+ .text.FreeMcfgTableResources.lto_priv.104
+                0x0000000000004f1c       0x40 /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000004f1c                FreeMcfgTableResources.lto_priv.104
+ .text.BuildMcfgTable.lto_priv.103
+                0x0000000000004f5c      0x18c /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000004f5c                BuildMcfgTable.lto_priv.103
+ .text.FreeMadtTableResources.lto_priv.102
+                0x00000000000050e8       0x40 /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x00000000000050e8                FreeMadtTableResources.lto_priv.102
+ .text.unlikely.AsciiStrCpyS
+                0x0000000000005128       0xb4 /tmp/ccoLea2c.ltrans0.ltrans.o
+                0x0000000000005128                AsciiStrCpyS
+ .text.DebugAssertEnabled
+                0x00000000000051dc        0x8 /tmp/ccoLea2c.ltrans1.ltrans.o
+                0x00000000000051dc                DebugPrintEnabled
+                0x00000000000051dc                DebugAssertEnabled
+                0x00000000000051dc                DebugCodeEnabled
+ .text.unlikely.GetNodeOffsetReferencedByToken
+                0x00000000000051e4       0x40 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.IsAcpiUidEqual
+                0x0000000000005224       0x14 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.BuildMadtTable
+                0x0000000000005238      0x590 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.FreeIortTableResources
+                0x00000000000057c8       0x54 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.unlikely.AddSmmuInterruptArray
+                0x000000000000581c       0xd4 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.unlikely.AddIdMappingArray
+                0x00000000000058f0      0x108 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.unlikely.GetPmcgNodeSize
+                0x00000000000059f8       0x14 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.unlikely.GetSmmuV3NodeSize
+                0x0000000000005a0c       0x14 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.unlikely.GetSmmuV1V2NodeSize
+                0x0000000000005a20       0x24 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.unlikely.GetRootComplexNodeSize
+                0x0000000000005a44       0x14 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.unlikely.GetNamedComponentNodeSize
+                0x0000000000005a58       0x44 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.unlikely.GetItsGroupNodeSize
+                0x0000000000005a9c       0x10 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.BuildIortTable
+                0x0000000000005aac      0xdb8 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.FreeGtdtTableResources
+                0x0000000000006864       0x40 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.IsGtFrameNumberEqual
+                0x00000000000068a4       0x14 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.BuildGtdtTable
+                0x00000000000068b8      0x530 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.BuildFadtTable
+                0x0000000000006de8      0x264 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.BuildDbg2TableEx
+                0x000000000000704c      0x220 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.FreeDbg2TableEx
+                0x000000000000726c       0x6c /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.DeregisterDtTableGenerator
+                0x00000000000072d8       0x84 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.RegisterDtTableGenerator
+                0x000000000000735c       0x7c /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.GetDtTableGenerator
+                0x00000000000073d8       0x68 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.DeregisterAcpiTableGenerator
+                0x0000000000007440       0x88 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.RegisterAcpiTableGenerator
+                0x00000000000074c8       0x78 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.GetAcpiTableGenerator
+                0x0000000000007540       0x60 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.DeregisterSmbiosTableGenerator
+                0x00000000000075a0       0x78 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.RegisterSmbiosTableGenerator
+                0x0000000000007618       0x70 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.GetSmbiosTableGenerator
+                0x0000000000007688       0x68 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text.ProcessLibraryDestructorList
+                0x00000000000076f0       0x9c /tmp/ccoLea2c.ltrans1.ltrans.o
+ .text._ModuleEntryPoint
+                0x000000000000778c      0x10c /tmp/ccoLea2c.ltrans1.ltrans.o
+                0x000000000000778c                _ModuleEntryPoint
+ .text.MmioWrite32
+                0x0000000000007898        0xc /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text.MmioRead32
+                0x00000000000078a4        0x8 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text.IsNodeInList
+                0x00000000000078ac       0x44 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text.AmlNodeGetVariableArgList
+                0x00000000000078f0       0x24 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text.AmlIsLeadNameChar
+                0x0000000000007914       0x34 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text.AslIsNameSeg
+                0x0000000000007948       0x80 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text.AmlIsNameString
+                0x00000000000079c8       0x40 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text.InternalMemSetMem
+                0x0000000000007a08       0xc8 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text.SetMem   0x0000000000007ad0       0x10 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text.ZeroMem  0x0000000000007ae0       0x10 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text.PL011UartInitializePort.constprop.65
+                0x0000000000007af0      0x1bc /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000007af0                PL011UartInitializePort.constprop.65
+ .text.InternalAllocatePool.constprop.62
+                0x0000000000007cac       0x38 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000007cac                InternalAllocatePool.constprop.62
+ .text.AmlGetByteEncodingByOpCode.constprop.57
+                0x0000000000007ce4       0x50 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000007ce4                AmlGetByteEncodingByOpCode.constprop.57
+ .text.AmlNodeCompareOpCode.constprop.58
+                0x0000000000007d34       0x4c /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000007d34                AmlNodeCompareOpCode.constprop.58
+ .text.AmlComputePkgLengthWidth
+                0x0000000000007d80       0x48 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text.IsListEmpty
+                0x0000000000007dc8       0x10 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000007dc8                IsListEmpty
+ .text.RemoveEntryList
+                0x0000000000007dd8       0x18 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000007dd8                RemoveEntryList
+ .text.InsertTailList
+                0x0000000000007df0       0x18 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000007df0                InsertTailList
+ .text.InitializeListHead
+                0x0000000000007e08        0x8 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000007e08                InitializeListHead
+ .text.CopyMem  0x0000000000007e10      0x224 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000007e10                CopyMem
+ .text.InternalAllocateCopyPool.constprop.56
+                0x0000000000008034       0x3c /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000008034                InternalAllocateCopyPool.constprop.56
+ .text.CompareMem
+                0x0000000000008070       0x44 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000008070                CompareMem
+ .text.FreePool
+                0x00000000000080b4       0x10 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x00000000000080b4                FreePool
+ .text.AmlDeleteDataNode
+                0x00000000000080c4       0x54 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text.AllocateZeroPool
+                0x0000000000008118       0x34 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000008118                AllocateZeroPool
+ .text.AsciiFromHex
+                0x000000000000814c       0x2c /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x000000000000814c                AsciiFromHex
+ .text.FindDuplicateValue
+                0x0000000000008178       0xcc /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000008178                FindDuplicateValue
+ .text.AddAcpiHeader
+                0x0000000000008244      0x11c /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000008244                AddAcpiHeader
+ .text.FreeSsdtSerialPortTable
+                0x0000000000008360       0x18 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000008360                FreeSsdtSerialPortTable
+ .text.ValidateSerialPortInfo
+                0x0000000000008378       0x68 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000008378                ValidateSerialPortInfo
+ .text.AmlGetPkgLength
+                0x00000000000083e0       0x74 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x00000000000083e0                AmlGetPkgLength
+ .text.AmlGetByteEncoding
+                0x0000000000008454       0x84 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000008454                AmlGetByteEncoding
+ .text.AmlGetNextVariableArgument
+                0x00000000000084d8       0x84 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x00000000000084d8                AmlGetNextVariableArgument
+ .text.AmlVarListAddTailInternal
+                0x000000000000855c       0x8c /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x000000000000855c                AmlVarListAddTailInternal
+ .text.AmlGetRootNode
+                0x00000000000085e8       0x1c /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x00000000000085e8                AmlGetRootNode
+ .text.AmlGetParent
+                0x0000000000008604       0x24 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000008604                AmlGetParent
+ .text.AmlGetDataNodeBuffer
+                0x0000000000008628       0x74 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000008628                AmlGetDataNodeBuffer
+ .text.AmlGetResourceDataType
+                0x000000000000869c       0x50 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x000000000000869c                AmlGetResourceDataType
+ .text.AmlGetFixedArgumentCount
+                0x00000000000086ec       0x28 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x00000000000086ec                AmlGetFixedArgumentCount
+ .text.AmlSetFixedArgument
+                0x0000000000008714       0x74 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000008714                AmlSetFixedArgument
+ .text.AmlGetFixedArgument
+                0x0000000000008788       0x4c /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000008788                AmlGetFixedArgument
+ .text.AmlEnumTree
+                0x00000000000087d4       0xf4 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x00000000000087d4                AmlEnumTree
+ .text.AmlComputeSize
+                0x00000000000088c8       0x3c /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x00000000000088c8                AmlComputeSize
+ .text.AmlIsNodeFixedArgument
+                0x0000000000008904       0x94 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000008904                AmlIsNodeFixedArgument
+ .text.AmlGetNodeType
+                0x0000000000008998       0x14 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000008998                AmlGetNodeType
+ .text.unlikely.AmlIsMethodDefinitionNode
+                0x00000000000089ac       0x88 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x00000000000089ac                AmlIsMethodDefinitionNode
+ .text.IsSpecialIntegerNode
+                0x0000000000008a34       0x38 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000008a34                IsSpecialIntegerNode
+ .text.IsIntegerNode
+                0x0000000000008a6c       0x3c /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000008a6c                IsIntegerNode
+ .text.AmlNodeHasAttribute
+                0x0000000000008aa8       0x30 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000008aa8                AmlNodeHasAttribute
+ .text.AmlComputeSizeCallback
+                0x0000000000008ad8      0x12c /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text.AmlNodeGetNameIndex
+                0x0000000000008c04       0x60 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text.AmlNodeGetName
+                0x0000000000008c64       0x68 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000008c64                AmlNodeGetName
+ .text.AmlDeleteRootNode.lto_priv.101
+                0x0000000000008ccc       0x54 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000008ccc                AmlDeleteRootNode.lto_priv.101
+ .text.AmlDeleteNode
+                0x0000000000008d20       0xc8 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000008d20                AmlDeleteNode
+ .text.AmlDeleteTree
+                0x0000000000008de8      0x110 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000008de8                AmlDeleteTree
+ .text.AmlInitializeNodeHeader.lto_priv.100
+                0x0000000000008ef8       0x34 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000008ef8                AmlInitializeNodeHeader.lto_priv.100
+ .text.AmlCreateDataNode
+                0x0000000000008f2c       0xc0 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000008f2c                AmlCreateDataNode
+ .text.AmlNodeSetIntegerValue
+                0x0000000000008fec      0x234 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000008fec                AmlNodeSetIntegerValue
+ .text.AmlNodeUpdateIntegerValue
+                0x0000000000009220      0x124 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text.AmlPropagateSize
+                0x0000000000009344      0x1dc /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text.AmlPropagateInformation
+                0x0000000000009520      0x154 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000009520                AmlPropagateInformation
+ .text.AmlCreateObjectNode
+                0x0000000000009674       0x94 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000009674                AmlCreateObjectNode
+ .text.AmlGetFirstNameSeg
+                0x0000000000009708       0x34 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000009708                AmlGetFirstNameSeg
+ .text.AmlComputeNameStringSize
+                0x000000000000973c       0x58 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x000000000000973c                AmlComputeNameStringSize
+ .text.ConvertAslNameToAmlName.part.9
+                0x0000000000009794      0x260 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000009794                ConvertAslNameToAmlName.part.9
+ .text.AmlParseNameStringInfo
+                0x00000000000099f4      0x110 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x00000000000099f4                AmlParseNameStringInfo
+ .text.AmlGetNameStringSize
+                0x0000000000009b04       0x64 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000009b04                AmlGetNameStringSize
+ .text.AmlNameOpCompareName.constprop.49
+                0x0000000000009b68      0x260 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000009b68                AmlNameOpCompareName.constprop.49
+ .text.AmlUpdateDataNode
+                0x0000000000009dc8      0x218 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000009dc8                AmlUpdateDataNode
+ .text.BuildSsdtSerialPortTable
+                0x0000000000009fe0      0x3a4 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x0000000000009fe0                BuildSsdtSerialPortTable
+ .text.AmlStreamGetFreeSpace
+                0x000000000000a384       0x28 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x000000000000a384                AmlStreamGetFreeSpace
+ .text.unlikely.AmlStreamCmp
+                0x000000000000a3ac       0xe8 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text.AmlStreamWrite
+                0x000000000000a494       0xb0 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x000000000000a494                AmlStreamWrite
+ .text.AmlBuildRawMethodAbsolutePath
+                0x000000000000a544      0x138 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .text.AmlAddNameSpaceReference
+                0x000000000000a67c      0x198 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x000000000000a67c                AmlAddNameSpaceReference
+ .text.AmlStreamProgress
+                0x000000000000a814       0x64 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x000000000000a814                AmlStreamProgress
+ .text.unlikely.AmlIsMethodInvocation
+                0x000000000000a878      0x46c /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x000000000000a878                AmlIsMethodInvocation
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.BuildSpcrTableEx.lto_priv.108.str1.1
+                0x000000000000ace4        0x5 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .rodata.BuildSsdtCmn600TableEx.lto_priv.114.str1.1
+                0x000000000000ace9       0x2a /tmp/ccoLea2c.ltrans0.ltrans.o
+ *fill*         0x000000000000ad13        0x5 
+ .rodata.mAmlFieldEncoding
+                0x000000000000ad18       0xf0 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .rodata.mAmlTypeToNodeDataType
+                0x000000000000ae08       0x24 /tmp/ccoLea2c.ltrans0.ltrans.o
+ *fill*         0x000000000000ae2c        0x4 
+ .rodata.mParseType
+                0x000000000000ae30       0x48 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .rodata.str1.1
+                0x000000000000ae78       0x4c /tmp/ccoLea2c.ltrans0.ltrans.o
+ .rodata.BuildDbg2TableEx.str1.1
+                0x000000000000aec4       0x4c /tmp/ccoLea2c.ltrans1.ltrans.o
+                                          0x5 (size before relaxing)
+ .rodata.Dbg2Generator
+                0x000000000000aec4       0x3a /tmp/ccoLea2c.ltrans1.ltrans.o
+ .rodata.DynamicTableFactoryProtocol
+                0x000000000000aefe       0x54 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .rodata.FadtGenerator
+                0x000000000000af52       0x3a /tmp/ccoLea2c.ltrans1.ltrans.o
+ .rodata.GtdtGenerator
+                0x000000000000af8c       0x3a /tmp/ccoLea2c.ltrans1.ltrans.o
+ .rodata.MadtGenerator
+                0x000000000000afc6       0x3a /tmp/ccoLea2c.ltrans1.ltrans.o
+ .rodata.McfgGenerator
+                0x000000000000b000       0x3a /tmp/ccoLea2c.ltrans1.ltrans.o
+ .rodata.RawGenerator
+                0x000000000000b03a       0x3a /tmp/ccoLea2c.ltrans1.ltrans.o
+ .rodata.SpcrGenerator
+                0x000000000000b074       0x3a /tmp/ccoLea2c.ltrans1.ltrans.o
+ .rodata.SratGenerator
+                0x000000000000b0ae       0x3a /tmp/ccoLea2c.ltrans1.ltrans.o
+ .rodata.SsdtCmn600Generator
+                0x000000000000b0e8       0x3a /tmp/ccoLea2c.ltrans1.ltrans.o
+ .rodata.SsdtSerialPortGenerator
+                0x000000000000b122       0x3a /tmp/ccoLea2c.ltrans1.ltrans.o
+ .rodata.str2.2
+                0x000000000000b15c      0x264 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .rodata.PL011UartInitializePort.constprop.65
+                0x000000000000b3c0       0x11 /tmp/ccoLea2c.ltrans2.ltrans.o
+ *fill*         0x000000000000b3d1        0x3 
+ .rodata.AmlNodeUpdateIntegerValue
+                0x000000000000b3d4        0x8 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .rodata.AmlUpdateDataNode
+                0x000000000000b3dc        0x4 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .rodata.AmlNameOpCompareName.constprop.49.str1.1
+                0x000000000000b3e0       0x4c /tmp/ccoLea2c.ltrans2.ltrans.o
+                                          0x5 (size before relaxing)
+ .rodata.BuildSsdtSerialPortTable.str1.1
+                0x000000000000b3e0       0x6d /tmp/ccoLea2c.ltrans2.ltrans.o
+                                         0x6e (size before relaxing)
+ .rodata._gPcd_FixedAtBuild_PcdNonBsaCompliant16550SerialHid
+                0x000000000000b44d        0x1 /tmp/ccoLea2c.ltrans2.ltrans.o
+ *fill*         0x000000000000b44e        0x2 
+ .rodata.mAmlByteEncoding
+                0x000000000000b450     0x1b30 /tmp/ccoLea2c.ltrans2.ltrans.o
+ .rodata.str1.1
+                0x000000000000cf80      0x585 /tmp/ccoLea2c.ltrans2.ltrans.o
+                                        0x5c4 (size before relaxing)
+ *(.got .got.*)
+ *:AutoGen.obj(.data.g*Guid)
+
+.iplt           0x000000000000d508        0x0
+ .iplt          0x000000000000d508        0x0 /tmp/ccoLea2c.ltrans0.ltrans.o
+
+.data           0x000000000000e000      0x888
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.AcpiSpcr
+                0x000000000000e000       0x50 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .data.ssdtcmn600template_aml_code
+                0x000000000000e050       0xb0 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .data.AcpiDbg2
+                0x000000000000e100       0x57 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .data.AcpiFadt
+                0x000000000000e157      0x114 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .data.IortGenerator
+                0x000000000000e26b       0x46 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .data.PpttGenerator
+                0x000000000000e2b1       0x6a /tmp/ccoLea2c.ltrans1.ltrans.o
+ *fill*         0x000000000000e31b        0x1 
+ .data.gEdkiiDynamicTableFactoryProtocolGuid
+                0x000000000000e31c       0x10 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .data.ssdtserialporttemplate_aml_code
+                0x000000000000e32c       0xa1 /tmp/ccoLea2c.ltrans2.ltrans.o
+ *(.bss .bss.*)
+ .bss.TableFactoryInfo
+                0x000000000000e3cd      0x4a0 /tmp/ccoLea2c.ltrans1.ltrans.o
+ *fill*         0x000000000000e86d        0x3 
+ .bss.gImageHandle
+                0x000000000000e870        0x8 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .bss.gST       0x000000000000e878        0x8 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .bss.gBS       0x000000000000e880        0x8 /tmp/ccoLea2c.ltrans2.ltrans.o
+                0x000000000000e880                gBS
+
+.igot.plt       0x000000000000e888        0x0
+ .igot.plt      0x000000000000e888        0x0 /tmp/ccoLea2c.ltrans0.ltrans.o
+
+.eh_frame
+ *(.eh_frame)
+
+.rela           0x000000000000e888        0x0
+ *(.rela .rela.*)
+ .rela.iplt     0x000000000000e888        0x0 /tmp/ccoLea2c.ltrans0.ltrans.o
+
+.hii
+ *(.hii)
+
+.build-id       0x000000000000e888       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x000000000000e888       0x24 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.interp)
+ *(.dynsym)
+ *(.dynstr)
+ *(.dynamic)
+ *(.hash .gnu.hash)
+ *(.comment)
+                0x0000000000000228                PECOFF_HEADER_SIZE = 0x228
+OUTPUT(/home/xephyr/Documents/edk2/Build/DynamicTables/DEBUG_GCC5/AARCH64/DynamicTablesPkg/Drivers/DynamicTableFactoryDxe/DynamicTableFactoryDxe/DEBUG/DynamicTableFactoryDxe.dll elf64-littleaarch64)
+
+.debug_info     0x0000000000000000    0x1c61a
+ .debug_info    0x0000000000000000     0xa994 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .debug_info    0x000000000000a994     0x9014 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .debug_info    0x00000000000139a8     0x8c72 /tmp/ccoLea2c.ltrans2.ltrans.o
+
+.debug_abbrev   0x0000000000000000     0x1079
+ .debug_abbrev  0x0000000000000000      0x575 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .debug_abbrev  0x0000000000000575      0x4d8 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .debug_abbrev  0x0000000000000a4d      0x62c /tmp/ccoLea2c.ltrans2.ltrans.o
+
+.debug_loc      0x0000000000000000    0x21950
+ .debug_loc     0x0000000000000000     0xdadb /tmp/ccoLea2c.ltrans0.ltrans.o
+ .debug_loc     0x000000000000dadb     0x9118 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .debug_loc     0x0000000000016bf3     0xad5d /tmp/ccoLea2c.ltrans2.ltrans.o
+
+.debug_aranges  0x0000000000000000      0xb20
+ .debug_aranges
+                0x0000000000000000      0x390 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .debug_aranges
+                0x0000000000000390      0x240 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .debug_aranges
+                0x00000000000005d0      0x550 /tmp/ccoLea2c.ltrans2.ltrans.o
+
+.debug_ranges   0x0000000000000000     0x3680
+ .debug_ranges  0x0000000000000000     0x15f0 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .debug_ranges  0x00000000000015f0     0x1040 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .debug_ranges  0x0000000000002630     0x1050 /tmp/ccoLea2c.ltrans2.ltrans.o
+
+.debug_line     0x0000000000000000     0x55c4
+ .debug_line    0x0000000000000000     0x1f69 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .debug_line    0x0000000000001f69     0x182e /tmp/ccoLea2c.ltrans1.ltrans.o
+ .debug_line    0x0000000000003797     0x1e2d /tmp/ccoLea2c.ltrans2.ltrans.o
+
+.debug_str      0x0000000000000000     0x8613
+ .debug_str     0x0000000000000000     0x3770 /tmp/ccoLea2c.ltrans0.ltrans.o
+                                       0x3cb1 (size before relaxing)
+ .debug_str     0x0000000000003770     0x36f5 /tmp/ccoLea2c.ltrans1.ltrans.o
+                                       0x47f2 (size before relaxing)
+ .debug_str     0x0000000000006e65     0x17ae /tmp/ccoLea2c.ltrans2.ltrans.o
+                                       0x34df (size before relaxing)
+
+.debug_frame    0x0000000000000000     0x1ef0
+ .debug_frame   0x0000000000000000      0xbc8 /tmp/ccoLea2c.ltrans0.ltrans.o
+ .debug_frame   0x0000000000000bc8      0x550 /tmp/ccoLea2c.ltrans1.ltrans.o
+ .debug_frame   0x0000000000001118      0xdd8 /tmp/ccoLea2c.ltrans2.ltrans.o

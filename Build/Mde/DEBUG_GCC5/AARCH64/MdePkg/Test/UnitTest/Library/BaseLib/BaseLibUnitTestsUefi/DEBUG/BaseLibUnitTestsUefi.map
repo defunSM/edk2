@@ -1,0 +1,561 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseStackCheckLib/BaseStackCheckLib/OUTPUT/BaseStackCheckLib.lib(BaseStackCheckGcc.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (__stack_chk_fail)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib(memcpy.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (memcpy)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib(memset.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (memset)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdeModulePkg/Library/PeiDxeDebugLibReportStatusCode/PeiDxeDebugLibReportStatusCode/OUTPUT/PeiDxeDebugLibReportStatusCode.lib(DebugLib.obj)
+                              BaseStackCheckGcc.obj (symbol from plugin) (DebugPrint)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMemWrapper.obj)
+                              DebugLib.obj (symbol from plugin) (SetMem)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMemWrapper.obj)
+                              DebugLib.obj (symbol from plugin) (CopyMem)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMem.obj)
+                              CopyMemWrapper.obj (symbol from plugin) (InternalMemCopyMem)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem.obj)
+                              SetMemWrapper.obj (symbol from plugin) (InternalMemSetMem)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem64Wrapper.obj)
+                              SetMemWrapper.obj (symbol from plugin) (SetMem64)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGeneric.obj)
+                              SetMem64Wrapper.obj (symbol from plugin) (InternalMemSetMem64)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LShiftU64.obj)
+                              SetMem.obj (symbol from plugin) (LShiftU64)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuDeadLoop.obj)
+                              BaseStackCheckGcc.obj (symbol from plugin) (CpuDeadLoop)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SafeString.obj)
+                              DebugLib.obj (symbol from plugin) (AsciiStrnCpyS)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(String.obj)
+                              SafeString.obj (symbol from plugin) (InternalIsDecimalDigitCharacter)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Math64.obj)
+                              LShiftU64.obj (symbol from plugin) (InternalMathLShiftU64)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+                              CpuDeadLoop.obj (symbol from plugin) (CpuPause)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+                              BaseStackCheckGcc.obj (symbol from plugin) (CpuBreakpoint)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes32.obj)
+                              SafeString.obj (symbol from plugin) (SwapBytes32)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes16.obj)
+                              SafeString.obj (symbol from plugin) (SwapBytes16)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RShiftU64.obj)
+                              SafeString.obj (symbol from plugin) (RShiftU64)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultU64x32.obj)
+                              SafeString.obj (symbol from plugin) (MultU64x32)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32.obj)
+                              SafeString.obj (symbol from plugin) (DivU64x32)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiApplicationEntryPoint/UefiApplicationEntryPoint/OUTPUT/UefiApplicationEntryPoint.lib(ApplicationEntryPoint.obj)
+                              (_ModuleEntryPoint)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Test/UnitTest/Library/BaseLib/BaseLibUnitTestsUefi/OUTPUT/BaseLibUnitTestsUefi.lib(AutoGen.obj)
+                              ApplicationEntryPoint.obj (symbol from plugin) (ProcessLibraryConstructorList)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Test/UnitTest/Library/BaseLib/BaseLibUnitTestsUefi/OUTPUT/BaseLibUnitTestsUefi.lib(Base64UnitTest.obj)
+                              AutoGen.obj (symbol from plugin) (BaseLibUnitTestAppEntry)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib/OUTPUT/BaseDebugPrintErrorLevelLib.lib(BaseDebugPrintErrorLevelLib.obj)
+                              DebugLib.obj (symbol from plugin) (GetDebugPrintErrorLevel)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseReportStatusCodeLibNull/BaseReportStatusCodeLibNull/OUTPUT/BaseReportStatusCodeLibNull.lib(BaseReportStatusCodeLib.obj)
+                              DebugLib.obj (symbol from plugin) (ReportStatusCodeEx)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib/OUTPUT/UefiMemoryAllocationLib.lib(MemoryAllocationLib.obj)
+                              Base64UnitTest.obj (symbol from plugin) (AllocatePool)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/UnitTestFrameworkPkg/Library/UnitTestDebugAssertLib/UnitTestDebugAssertLib/OUTPUT/UnitTestDebugAssertLib.lib(UnitTestDebugAssertLib.obj)
+                              DebugLib.obj (symbol from plugin) (UnitTestDebugAssert)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/UnitTestFrameworkPkg/Library/UnitTestLib/UnitTestLib/OUTPUT/UnitTestLib.lib(UnitTestLib.obj)
+                              Base64UnitTest.obj (symbol from plugin) (FreeUnitTestFramework)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/UnitTestFrameworkPkg/Library/UnitTestLib/UnitTestLib/OUTPUT/UnitTestLib.lib(RunTests.obj)
+                              UnitTestLib.obj (symbol from plugin) (GetActiveFrameworkHandle)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/UnitTestFrameworkPkg/Library/UnitTestLib/UnitTestLib/OUTPUT/UnitTestLib.lib(Assert.obj)
+                              UnitTestDebugAssertLib.obj (symbol from plugin) (UnitTestAssertTrue)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/UnitTestFrameworkPkg/Library/UnitTestLib/UnitTestLib/OUTPUT/UnitTestLib.lib(Log.obj)
+                              UnitTestLib.obj (symbol from plugin) (UnitTestLogInit)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ZeroMemWrapper.obj)
+                              SafeString.obj (symbol from plugin) (ZeroMem)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CompareMemWrapper.obj)
+                              Base64UnitTest.obj (symbol from plugin) (CompareMem)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGuid.obj)
+                              SafeString.obj (symbol from plugin) (CopyGuid)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CheckSum.obj)
+                              UnitTestLib.obj (symbol from plugin) (CalculateCrc32)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LongJump.obj)
+                              UnitTestDebugAssertLib.obj (symbol from plugin) (LongJump)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SetJump.obj)
+                              LongJump.obj (symbol from plugin) (InternalAssertJumpBuffer)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LinkedList.obj)
+                              UnitTestLib.obj (symbol from plugin) (InitializeListHead)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Unaligned.obj)
+                              MemLibGuid.obj (symbol from plugin) (ReadUnaligned64)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SetJumpLongJump.obj)
+                              RunTests.obj (symbol from plugin) (SetJump)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib(UefiBootServicesTableLib.obj)
+                              AutoGen.obj (symbol from plugin) (UefiBootServicesTableLibConstructor)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib(PrintLib.obj)
+                              Assert.obj (symbol from plugin) (AsciiVSPrint)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib(PrintLibInternal.obj)
+                              PrintLib.obj (symbol from plugin) (BasePrintLibConvertValueToStringS)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/UnitTestFrameworkPkg/Library/UnitTestResultReportLib/UnitTestResultReportLibConOut/OUTPUT/UnitTestResultReportLibConOut.lib(UnitTestResultReportLib.obj)
+                              RunTests.obj (symbol from plugin) (OutputUnitTestFrameworkReport)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/UnitTestFrameworkPkg/Library/UnitTestResultReportLib/UnitTestResultReportLibConOut/OUTPUT/UnitTestResultReportLibConOut.lib(UnitTestResultReportLibConOut.obj)
+                              UnitTestResultReportLib.obj (symbol from plugin) (ReportPrint)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/UnitTestFrameworkPkg/Library/UnitTestPersistenceLibNull/UnitTestPersistenceLibNull/OUTPUT/UnitTestPersistenceLibNull.lib(UnitTestPersistenceLibNull.obj)
+                              UnitTestLib.obj (symbol from plugin) (DoesCacheExist)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32Remainder.obj)
+                              PrintLibInternal.obj (symbol from plugin) (DivU64x32Remainder)
+
+Discarded input sections
+
+ .text          0x0000000000000000       0x10 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .text          0x0000000000000000        0x0 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.IsNodeInList
+                0x0000000000000000       0xb0 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.__memset
+                0x0000000000000000       0x1c /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.__stack_chk_fail
+                0x0000000000000000       0x34 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .data.__stack_chk_guard
+                0x0000000000000000        0x8 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.IsNodeInList.str1.1
+                0x0000000000000000       0x44 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.__stack_chk_fail.str1.1
+                0x0000000000000000       0x2e /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .comment       0x0000000000000000       0x75 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text          0x0000000000000000        0x0 BaseStackCheckGcc.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 memcpy.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 memset.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DebugLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SetMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CopyMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CopyMem.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SetMem.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SetMem64Wrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MemLibGeneric.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 LShiftU64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CpuDeadLoop.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SafeString.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 String.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Math64.obj (symbol from plugin)
+ .text          0x0000000000000000       0x30 /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .text          0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .text          0x0000000000000000        0x0 SwapBytes32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SwapBytes16.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 RShiftU64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MultU64x32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DivU64x32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ApplicationEntryPoint.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AutoGen.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Base64UnitTest.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 BaseDebugPrintErrorLevelLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 BaseReportStatusCodeLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MemoryAllocationLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UnitTestDebugAssertLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UnitTestLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 RunTests.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Assert.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Log.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ZeroMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CompareMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MemLibGuid.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CheckSum.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 LongJump.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SetJump.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 LinkedList.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Unaligned.obj (symbol from plugin)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SetJumpLongJump.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SetJumpLongJump.obj)
+ .text          0x0000000000000000        0x0 UefiBootServicesTableLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 PrintLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 PrintLibInternal.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UnitTestResultReportLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UnitTestResultReportLibConOut.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UnitTestPersistenceLibNull.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DivU64x32Remainder.obj (symbol from plugin)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+LOAD /tmp/ccfiGDM7.ltrans0.ltrans.o
+START GROUP
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Test/UnitTest/Library/BaseLib/BaseLibUnitTestsUefi/OUTPUT/BaseLibUnitTestsUefi.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib/OUTPUT/BaseDebugPrintErrorLevelLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseReportStatusCodeLibNull/BaseReportStatusCodeLibNull/OUTPUT/BaseReportStatusCodeLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/UnitTestFrameworkPkg/Library/UnitTestResultReportLib/UnitTestResultReportLibConOut/OUTPUT/UnitTestResultReportLibConOut.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/UnitTestFrameworkPkg/Library/UnitTestPersistenceLibNull/UnitTestPersistenceLibNull/OUTPUT/UnitTestPersistenceLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib/OUTPUT/UefiMemoryAllocationLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePcdLibNull/BasePcdLibNull/OUTPUT/BasePcdLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseStackCheckLib/BaseStackCheckLib/OUTPUT/BaseStackCheckLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/UnitTestFrameworkPkg/Library/UnitTestDebugAssertLib/UnitTestDebugAssertLib/OUTPUT/UnitTestDebugAssertLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/UnitTestFrameworkPkg/Library/UnitTestLib/UnitTestLib/OUTPUT/UnitTestLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdeModulePkg/Library/PeiDxeDebugLibReportStatusCode/PeiDxeDebugLibReportStatusCode/OUTPUT/PeiDxeDebugLibReportStatusCode.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiApplicationEntryPoint/UefiApplicationEntryPoint/OUTPUT/UefiApplicationEntryPoint.lib
+END GROUP
+                0x0000000000000228                . = PECOFF_HEADER_SIZE
+
+.text           0x0000000000001000     0x6fb0
+ *(.text .text.* .stub .gnu.linkonce.t.*)
+ .text.InternalAllocatePool.constprop.32
+                0x0000000000001000       0x38 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.DebugPrintLevelEnabled
+                0x0000000000001038        0x8 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.BasePrintLibFillBuffer
+                0x0000000000001040       0x34 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.Base64Encode
+                0x0000000000001074      0x180 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.AsciiStrnLenS
+                0x00000000000011f4       0x3c /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.AsciiStrnSizeS.constprop.20
+                0x0000000000001230       0x28 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.InternalSafeStringNoAsciiStrOverlap
+                0x0000000000001258       0x3c /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.DebugPrintEnabled
+                0x0000000000001294        0x8 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.DebugAssertEnabled
+                0x000000000000129c        0x8 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.DebugPrint
+                0x00000000000012a4      0x2b0 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.AsciiStrnCatS.constprop.24
+                0x0000000000001554      0x200 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.AsciiStrCatS.constprop.22
+                0x0000000000001754      0x1ac /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.AsciiStrnCpyS
+                0x0000000000001900      0x16c /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.AsciiStrCpyS
+                0x0000000000001a6c      0x1dc /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.AllocateAndCopyString
+                0x0000000000001c48       0x50 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.UnitTestDebugAssert
+                0x0000000000001c98       0x94 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.LongJump.constprop.31
+                0x0000000000001d2c       0x6c /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.unlikely.ReadUnaligned16
+                0x0000000000001d98       0x68 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.InitializeListHead
+                0x0000000000001e00       0x4c /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.InternalBaseLibIsListValid
+                0x0000000000001e4c       0xb8 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.GetFirstNode
+                0x0000000000001f04       0x54 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.GetNextNode
+                0x0000000000001f58       0x58 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.InsertTailList
+                0x0000000000001fb0       0x6c /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.CalculateCrc32
+                0x000000000000201c       0xa4 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.CompareMem
+                0x00000000000020c0       0xfc /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.ZeroMem  0x00000000000021bc      0x10c /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.InternalAllocateZeroPool.constprop.25
+                0x00000000000022c8       0x34 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.GetActiveFrameworkHandle
+                0x00000000000022fc       0x4c /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.FreePool
+                0x0000000000002348       0x7c /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.CleanUpB64TestContext
+                0x00000000000023c4       0x38 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.Base64Decode
+                0x00000000000023fc      0x268 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.AsciiStrLen
+                0x0000000000002664       0xa0 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.AsciiStrnCmp
+                0x0000000000002704       0xf0 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.StrnLenS
+                0x00000000000027f4       0x7c /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.BasePrintLibSPrintMarker.constprop.28
+                0x0000000000002870      0xce8 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.unlikely.BasePrintLibSPrint.constprop.29
+                0x0000000000003558       0x54 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.UnicodeVSPrintAsciiFormat.constprop.17
+                0x00000000000035ac       0x7c /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.ReportPrint
+                0x0000000000003628       0xe8 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.AsciiVSPrint
+                0x0000000000003710       0x54 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.AsciiSPrint.constprop.30
+                0x0000000000003764       0x5c /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.UnitTestLogFailure
+                0x00000000000037c0       0xc8 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.CopyMem  0x0000000000003888      0x2a8 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.CreateUnitTestSuite.part.4.constprop.11
+                0x0000000000003b30      0x118 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.UnitTestLogInit
+                0x0000000000003c48       0xf0 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.AddTestCase.constprop.12
+                0x0000000000003d38      0x220 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.UnitTestLog
+                0x0000000000003f58      0x1d0 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.UnitTestAssertEqual.constprop.5
+                0x0000000000004128       0xa4 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.UnitTestAssertStatusEqual.constprop.4
+                0x00000000000041cc       0x9c /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.UnitTestAssertMemEqual.constprop.1
+                0x0000000000004268       0xa0 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.RfcDecodeTest
+                0x0000000000004308      0x228 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.RfcEncodeTest
+                0x0000000000004530      0x1f8 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.StrCpyS  0x0000000000004728      0x250 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.SafeStringContraintCheckTest
+                0x0000000000004978      0x3b4 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text.RunTestSuite
+                0x0000000000004d2c      0x2dc /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .text._ModuleEntryPoint
+                0x0000000000005008      0xcf8 /tmp/ccfiGDM7.ltrans0.ltrans.o
+                0x0000000000005008                _ModuleEntryPoint
+ .text.memcpy   0x0000000000005d00       0x20 /tmp/ccfiGDM7.ltrans0.ltrans.o
+                0x0000000000005d00                memcpy
+ .text          0x0000000000005d20       0x78 /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SetJumpLongJump.obj)
+                0x0000000000005d20                SetJump
+                0x0000000000005d58                InternalLongJump
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.AsciiSPrint.constprop.30.str1.1
+                0x0000000000005d98        0x5 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.AsciiStrCpyS.str1.1
+                0x0000000000005d9d       0x2c /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.AsciiStrLen.str1.1
+                0x0000000000005dc9       0x4f /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.AsciiStrnCatS.constprop.24.str1.1
+                0x0000000000005e18      0x127 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.AsciiStrnCmp.str1.1
+                0x0000000000005f3f       0x70 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.AsciiStrnCpyS.str1.1
+                0x0000000000005faf       0x16 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.Base64Decode.str1.1
+                0x0000000000005fc5       0x72 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.BasePrintLibSPrintMarker.constprop.28.str1.1
+                0x0000000000006037      0x17b /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.CalculateCrc32.str1.1
+                0x00000000000061b2       0x77 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.CompareMem.str1.1
+                0x0000000000006229      0x10d /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.CopyMem.str1.1
+                0x0000000000006336       0x4a /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.DebugPrint.str1.1
+                0x0000000000006380       0x8a /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.EncodingTable
+                0x000000000000640a       0x41 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.FreePool.str1.1
+                0x000000000000644b       0x8e /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.GetActiveFrameworkHandle.str1.1
+                0x00000000000064d9       0x71 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.GetFirstNode.str1.1
+                0x000000000000654a       0x22 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.InitializeListHead.str1.1
+                0x000000000000656c       0x59 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.InsertTailList.str1.1
+                0x00000000000065c5       0x26 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.InternalBaseLibIsListValid.str1.1
+                0x00000000000065eb       0x56 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.LongJump.constprop.31.str1.1
+                0x0000000000006641       0x7b /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.ReadUnaligned16.str1.1
+                0x00000000000066bc       0x43 /tmp/ccfiGDM7.ltrans0.ltrans.o
+                                         0x5a (size before relaxing)
+ .rodata.ReportPrint.str1.1
+                0x00000000000066ff       0x21 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.RfcDecodeTest.str1.1
+                0x0000000000006720       0x95 /tmp/ccfiGDM7.ltrans0.ltrans.o
+                                         0xb7 (size before relaxing)
+ .rodata.RfcEncodeTest.str1.1
+                0x00000000000067b5       0x46 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.RunTestSuite.str1.1
+                0x00000000000067fb       0xf6 /tmp/ccfiGDM7.ltrans0.ltrans.o
+                                        0x131 (size before relaxing)
+ .rodata.SafeStringContraintCheckTest.str1.1
+                0x00000000000068f1       0x4b /tmp/ccfiGDM7.ltrans0.ltrans.o
+                                         0x72 (size before relaxing)
+ .rodata.SafeStringContraintCheckTest.str2.2
+                0x000000000000693c        0xc /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.StrCpyS.str1.1
+                0x0000000000006948       0xb9 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.StrnLenS.str1.1
+                0x0000000000006a01       0x23 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.UnicodeVSPrintAsciiFormat.constprop.17.str1.1
+                0x0000000000006a24       0x6b /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.UnitTestAssertEqual.constprop.5.str1.1
+                0x0000000000006a8f       0x83 /tmp/ccfiGDM7.ltrans0.ltrans.o
+                                         0xa6 (size before relaxing)
+ .rodata.UnitTestAssertMemEqual.constprop.1.str1.1
+                0x0000000000006b12       0x76 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.UnitTestAssertStatusEqual.constprop.4.str1.1
+                0x0000000000006b88       0x37 /tmp/ccfiGDM7.ltrans0.ltrans.o
+                                         0x67 (size before relaxing)
+ .rodata.UnitTestDebugAssert.str1.1
+                0x0000000000006bbf       0x4f /tmp/ccfiGDM7.ltrans0.ltrans.o
+                                         0x76 (size before relaxing)
+ .rodata.UnitTestLog.str1.1
+                0x0000000000006c0e       0xc7 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.UnitTestLogInit.str1.1
+                0x0000000000006cd5       0x4e /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.ZeroMem.str1.1
+                0x0000000000006d23       0x80 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata._ModuleEntryPoint.str1.1
+                0x0000000000006da3      0x732 /tmp/ccfiGDM7.ltrans0.ltrans.o
+                                        0x735 (size before relaxing)
+ .rodata.__FUNCTION__.10927
+                0x00000000000074d5       0x10 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.__FUNCTION__.1893
+                0x00000000000074e5        0x8 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.__FUNCTION__.2067
+                0x00000000000074ed        0xd /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.__FUNCTION__.2078
+                0x00000000000074fa        0xe /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.__FUNCTION__.2090
+                0x0000000000007508        0xd /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.__FUNCTION__.2103
+                0x0000000000007515        0xe /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.__FUNCTION__.9305
+                0x0000000000007523        0xc /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.__FUNCTION__.9434
+                0x000000000000752f       0x18 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.__FUNCTION__.9810
+                0x0000000000007547       0x13 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ *fill*         0x000000000000755a        0x2 
+ .rodata.mCrcTable
+                0x000000000000755c      0x400 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.mErrorString
+                0x000000000000795c      0x2b5 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ *fill*         0x0000000000007c11        0x7 
+ .rodata.mFailureTypeStrings
+                0x0000000000007c18       0xb0 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.mHexStr
+                0x0000000000007cc8       0x10 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.mLogPrefixStrings
+                0x0000000000007cd8       0x40 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.mStatusStrings
+                0x0000000000007d18       0x60 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.mWarningString
+                0x0000000000007d78       0x96 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .rodata.str1.1
+                0x0000000000007e0e      0x1a2 /tmp/ccfiGDM7.ltrans0.ltrans.o
+                                        0x1c5 (size before relaxing)
+ *(.got .got.*)
+ *:AutoGen.obj(.data.g*Guid)
+
+.iplt           0x0000000000007fb0        0x0
+ .iplt          0x0000000000007fb0        0x0 /tmp/ccfiGDM7.ltrans0.ltrans.o
+
+.data           0x0000000000008000      0x410
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.mBasicDecodeError1
+                0x0000000000008000       0x28 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .data.mBasicDecodeError2
+                0x0000000000008028       0x28 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .data.mBasicDecodeError3
+                0x0000000000008050       0x28 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .data.mBasicDecodeError4
+                0x0000000000008078       0x28 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .data.mBasicDecodeError5
+                0x00000000000080a0       0x28 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .data.mBasicDecodeTest1
+                0x00000000000080c8       0x28 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .data.mBasicDecodeTest2
+                0x00000000000080f0       0x28 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .data.mBasicDecodeTest3
+                0x0000000000008118       0x28 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .data.mBasicDecodeTest4
+                0x0000000000008140       0x28 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .data.mBasicDecodeTest5
+                0x0000000000008168       0x28 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .data.mBasicDecodeTest6
+                0x0000000000008190       0x28 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .data.mBasicDecodeTest7
+                0x00000000000081b8       0x28 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .data.mBasicDecodeTest8
+                0x00000000000081e0       0x28 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .data.mBasicEncodeError1
+                0x0000000000008208       0x28 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .data.mBasicEncodeTest1
+                0x0000000000008230       0x28 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .data.mBasicEncodeTest2
+                0x0000000000008258       0x28 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .data.mBasicEncodeTest3
+                0x0000000000008280       0x28 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .data.mBasicEncodeTest4
+                0x00000000000082a8       0x28 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .data.mBasicEncodeTest5
+                0x00000000000082d0       0x28 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .data.mBasicEncodeTest6
+                0x00000000000082f8       0x28 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .data.mBasicEncodeTest7
+                0x0000000000008320       0x28 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ *(.bss .bss.*)
+ .bss.gBS       0x0000000000008348        0x8 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .bss.gImageHandle
+                0x0000000000008350        0x8 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .bss.gST       0x0000000000008358        0x8 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .bss.gUnitTestJumpBuffer
+                0x0000000000008360       0xa8 /tmp/ccfiGDM7.ltrans0.ltrans.o
+ .bss.mFrameworkHandle
+                0x0000000000008408        0x8 /tmp/ccfiGDM7.ltrans0.ltrans.o
+
+.igot.plt       0x0000000000008410        0x0
+ .igot.plt      0x0000000000008410        0x0 /tmp/ccfiGDM7.ltrans0.ltrans.o
+
+.eh_frame
+ *(.eh_frame)
+
+.rela           0x0000000000008410        0x0
+ *(.rela .rela.*)
+ .rela.iplt     0x0000000000008410        0x0 /tmp/ccfiGDM7.ltrans0.ltrans.o
+
+.hii
+ *(.hii)
+
+.build-id       0x0000000000008410       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x0000000000008410       0x24 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.interp)
+ *(.dynsym)
+ *(.dynstr)
+ *(.dynamic)
+ *(.hash .gnu.hash)
+ *(.comment)
+                0x0000000000000228                PECOFF_HEADER_SIZE = 0x228
+OUTPUT(/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Test/UnitTest/Library/BaseLib/BaseLibUnitTestsUefi/DEBUG/BaseLibUnitTestsUefi.dll elf64-littleaarch64)
+
+.debug_info     0x0000000000000000     0xa26c
+ .debug_info    0x0000000000000000     0xa26c /tmp/ccfiGDM7.ltrans0.ltrans.o
+
+.debug_abbrev   0x0000000000000000      0x5ef
+ .debug_abbrev  0x0000000000000000      0x5ef /tmp/ccfiGDM7.ltrans0.ltrans.o
+
+.debug_loc      0x0000000000000000     0xb885
+ .debug_loc     0x0000000000000000     0xb885 /tmp/ccfiGDM7.ltrans0.ltrans.o
+
+.debug_aranges  0x0000000000000000      0x3d0
+ .debug_aranges
+                0x0000000000000000      0x3d0 /tmp/ccfiGDM7.ltrans0.ltrans.o
+
+.debug_ranges   0x0000000000000000      0xe00
+ .debug_ranges  0x0000000000000000      0xe00 /tmp/ccfiGDM7.ltrans0.ltrans.o
+
+.debug_line     0x0000000000000000     0x1a64
+ .debug_line    0x0000000000000000     0x1a64 /tmp/ccfiGDM7.ltrans0.ltrans.o
+
+.debug_str      0x0000000000000000     0x2923
+ .debug_str     0x0000000000000000     0x2923 /tmp/ccfiGDM7.ltrans0.ltrans.o
+                                       0x2c28 (size before relaxing)
+
+.debug_frame    0x0000000000000000      0xc10
+ .debug_frame   0x0000000000000000      0xc10 /tmp/ccfiGDM7.ltrans0.ltrans.o

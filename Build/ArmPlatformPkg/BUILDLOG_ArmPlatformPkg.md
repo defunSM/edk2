@@ -1,0 +1,82 @@
+  # Build Report
+[Go to table of contents](#table-of-contents)
+=====
+ [Go to Error List](#error-list)
+=====
+    Running ArmPlatformPkg: License Check Test NO-TARGET
+    Cmd to run is: git diff --unified=0 origin/master HEAD
+    Cmd Output Starting
+    Cmd Output Finished
+    Running Time (mm:ss): 00:00
+    Return Code: 0x00000000
+    >Test Success: License Check Test NO-TARGET
+    Running ArmPlatformPkg: Library Class Check Test NO-TARGET
+    >Test Success: Library Class Check Test NO-TARGET
+    Running ArmPlatformPkg: Guid Check Test NO-TARGET
+    >Test Success: Guid Check Test NO-TARGET
+    Running ArmPlatformPkg: Host Unit Test Dsc Complete Check Test NO-TARGET
+    >Test Success: Host Unit Test Dsc Complete Check Test NO-TARGET
+    Running ArmPlatformPkg: Host Unit Test Compiler Plugin NOOPT
+  _ WARNING: >Test Skipped: in plugin! Host Unit Test Compiler Plugin NOOPT_
+    Running ArmPlatformPkg: Spell Check Test NO-TARGET
+    Cmd to run is: node --version
+    Cmd Output Starting
+    v12.21.0
+    Cmd Output Finished
+    Running Time (mm:ss): 00:00
+    Return Code: 0x00000000
+    version_aggregator: NodeJs re-registered at None
+    Cmd to run is: cspell --version
+    Cmd Output Starting
+    /bin/sh: 1: cspell: not found
+    Cmd Output Finished
+    Running Time (mm:ss): 00:00
+    Return Code: 0x0000007f
+  _ WARNING: cspell not installed.  Test can't run_
+  _ WARNING: >Test Skipped: in plugin! Spell Check Test NO-TARGET_
+    Running ArmPlatformPkg: Char Encoding Check Test NO-TARGET
+    >Test Success: Char Encoding Check Test NO-TARGET
+    Running ArmPlatformPkg: Compiler Plugin DEBUG
+    Building ArmPlatformPkg/ArmPlatformPkg.dsc
+  _ WARNING: >Test Skipped: in plugin! Compiler Plugin DEBUG_
+    Running ArmPlatformPkg: Compiler Plugin RELEASE
+    Building ArmPlatformPkg/ArmPlatformPkg.dsc
+  _ WARNING: >Test Skipped: in plugin! Compiler Plugin RELEASE_
+    Running ArmPlatformPkg: Dsc Complete Check Test NO-TARGET
+    >Test Success: Dsc Complete Check Test NO-TARGET
+    Running ArmPlatformPkg: Dependency Check Test NO-TARGET
+    >Test Success: Dependency Check Test NO-TARGET
+    Running ArmPlatformPkg: EccCheck Test NO-TARGET
+    Ignoring Files /home/xephyr/Documents/edk2/ArmPlatformPkg/Scripts/Ds5/
+    Appending exceptions
+    Cmd to run is: git diff --name-status HEAD origin/master
+    Cmd Output Starting
+    Cmd Output Finished
+    Running Time (mm:ss): 00:00
+    Return Code: 0x00000000
+    Cmd to run is: git diff --unified=0 origin/master HEAD
+    Cmd Output Starting
+    Cmd Output Finished
+    Running Time (mm:ss): 00:00
+    Return Code: 0x00000000
+    Doesn't need run ECC check
+    Cmd to run is: git checkout -- /home/xephyr/Documents/edk2/BaseTools/Source/Python/Ecc/exception.xml
+    Cmd Output Starting
+    Cmd Output Finished
+    Running Time (mm:ss): 00:00
+    Return Code: 0x00000000
+    Cmd to run is: git submodule update --init
+    Cmd Output Starting
+    Cmd Output Finished
+    Running Time (mm:ss): 00:00
+    Return Code: 0x00000000
+    Cmd to run is: git reset HEAD --hard
+    Cmd Output Starting
+    HEAD is now at 55266a9b8a SecurityPkg: Add option to reset secure boot keys.
+    Cmd Output Finished
+    Running Time (mm:ss): 00:00
+    Return Code: 0x00000000
+    >Test Success: EccCheck Test NO-TARGET
+## Table of Contents
+## Error List
+   No errors found

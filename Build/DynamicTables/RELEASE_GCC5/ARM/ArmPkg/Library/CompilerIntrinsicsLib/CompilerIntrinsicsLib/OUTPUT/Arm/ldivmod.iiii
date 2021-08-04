@@ -1,0 +1,47 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.global __aeabi_ldivmod ; .section ".text.__aeabi_ldivmod", "ax" ; .type __aeabi_ldivmod, %function ; .p2align 2 ; __aeabi_ldivmod:
+    push {r4,lr}
+    asrs r4,r1,#1
+    eor r4,r4,r3,LSR #1
+    bpl L_Test1
+    rsbs r0,r0,#0
+    rsc r1,r1,#0
+L_Test1:
+    tst r3,r3
+    bpl L_Test2
+    rsbs r2,r2,#0
+    rsc r3,r3,#0
+L_Test2:
+    bl __aeabi_uldivmod
+    tst r4,#0x40000000
+    beq L_Test3
+    rsbs r0,r0,#0
+    rsc r1,r1,#0
+L_Test3:
+    tst r4,#0x80000000
+    beq L_Exit
+    rsbs r2,r2,#0
+    rsc r3,r3,#0
+L_Exit:
+    pop {r4,pc}

@@ -1,0 +1,114 @@
+
+# Copyright (c) 2011-2021, Arm Limited. All rights reserved.<BR>
+
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+
+
+
+
+
+
+
+
+.text
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section .text.PeiVectorTable,"ax"; .align 11; .org 0x0; .global PeiVectorTable ; .type PeiVectorTable, %function; PeiVectorTable:
+
+.org 0x000
+_DefaultSyncExceptHandler_t:
+  mov x0, #0
+  mrs x1, CurrentEL ; cmp x1, #0x8 ; b.gt . ; b.eq 2f ; cbnz x1, 1f ; b . ; 1: mrs x1, elr_el1 ; b 3f ;2: mrs x1, elr_el2 ;3: bl PeiCommonExceptionEntry ;
+
+.org 0x080
+_DefaultIrq_t:
+  mov x0, #1
+  mrs x1, CurrentEL ; cmp x1, #0x8 ; b.gt . ; b.eq 2f ; cbnz x1, 1f ; b . ; 1: mrs x1, elr_el1 ; b 3f ;2: mrs x1, elr_el2 ;3: bl PeiCommonExceptionEntry ;
+
+.org 0x100
+_DefaultFiq_t:
+  mov x0, #2
+  mrs x1, CurrentEL ; cmp x1, #0x8 ; b.gt . ; b.eq 2f ; cbnz x1, 1f ; b . ; 1: mrs x1, elr_el1 ; b 3f ;2: mrs x1, elr_el2 ;3: bl PeiCommonExceptionEntry ;
+
+.org 0x180
+_DefaultSError_t:
+  mov x0, #3
+  mrs x1, CurrentEL ; cmp x1, #0x8 ; b.gt . ; b.eq 2f ; cbnz x1, 1f ; b . ; 1: mrs x1, elr_el1 ; b 3f ;2: mrs x1, elr_el2 ;3: bl PeiCommonExceptionEntry ;
+
+.org 0x200
+_DefaultSyncExceptHandler_h:
+  mov x0, #0
+  mrs x1, CurrentEL ; cmp x1, #0x8 ; b.gt . ; b.eq 2f ; cbnz x1, 1f ; b . ; 1: mrs x1, elr_el1 ; b 3f ;2: mrs x1, elr_el2 ;3: bl PeiCommonExceptionEntry ;
+
+.org 0x280
+_DefaultIrq_h:
+  mov x0, #1
+  mrs x1, CurrentEL ; cmp x1, #0x8 ; b.gt . ; b.eq 2f ; cbnz x1, 1f ; b . ; 1: mrs x1, elr_el1 ; b 3f ;2: mrs x1, elr_el2 ;3: bl PeiCommonExceptionEntry ;
+
+.org 0x300
+_DefaultFiq_h:
+  mov x0, #2
+  mrs x1, CurrentEL ; cmp x1, #0x8 ; b.gt . ; b.eq 2f ; cbnz x1, 1f ; b . ; 1: mrs x1, elr_el1 ; b 3f ;2: mrs x1, elr_el2 ;3: bl PeiCommonExceptionEntry ;
+
+.org 0x380
+_DefaultSError_h:
+  mov x0, #3
+  mrs x1, CurrentEL ; cmp x1, #0x8 ; b.gt . ; b.eq 2f ; cbnz x1, 1f ; b . ; 1: mrs x1, elr_el1 ; b 3f ;2: mrs x1, elr_el2 ;3: bl PeiCommonExceptionEntry ;
+
+.org 0x400
+_DefaultSyncExceptHandler_LowerA64:
+  mov x0, #0
+  mrs x1, CurrentEL ; cmp x1, #0x8 ; b.gt . ; b.eq 2f ; cbnz x1, 1f ; b . ; 1: mrs x1, elr_el1 ; b 3f ;2: mrs x1, elr_el2 ;3: bl PeiCommonExceptionEntry ;
+
+.org 0x480
+_DefaultIrq_LowerA64:
+  mov x0, #1
+  mrs x1, CurrentEL ; cmp x1, #0x8 ; b.gt . ; b.eq 2f ; cbnz x1, 1f ; b . ; 1: mrs x1, elr_el1 ; b 3f ;2: mrs x1, elr_el2 ;3: bl PeiCommonExceptionEntry ;
+
+.org 0x500
+_DefaultFiq_LowerA64:
+  mov x0, #2
+  mrs x1, CurrentEL ; cmp x1, #0x8 ; b.gt . ; b.eq 2f ; cbnz x1, 1f ; b . ; 1: mrs x1, elr_el1 ; b 3f ;2: mrs x1, elr_el2 ;3: bl PeiCommonExceptionEntry ;
+
+.org 0x580
+_DefaultSError_LowerA64:
+  mov x0, #3
+  mrs x1, CurrentEL ; cmp x1, #0x8 ; b.gt . ; b.eq 2f ; cbnz x1, 1f ; b . ; 1: mrs x1, elr_el1 ; b 3f ;2: mrs x1, elr_el2 ;3: bl PeiCommonExceptionEntry ;
+
+.org 0x600
+_DefaultSyncExceptHandler_LowerA32:
+  mov x0, #0
+  mrs x1, CurrentEL ; cmp x1, #0x8 ; b.gt . ; b.eq 2f ; cbnz x1, 1f ; b . ; 1: mrs x1, elr_el1 ; b 3f ;2: mrs x1, elr_el2 ;3: bl PeiCommonExceptionEntry ;
+
+.org 0x680
+_DefaultIrq_LowerA32:
+  mov x0, #1
+  mrs x1, CurrentEL ; cmp x1, #0x8 ; b.gt . ; b.eq 2f ; cbnz x1, 1f ; b . ; 1: mrs x1, elr_el1 ; b 3f ;2: mrs x1, elr_el2 ;3: bl PeiCommonExceptionEntry ;
+
+.org 0x700
+_DefaultFiq_LowerA32:
+  mov x0, #2
+  mrs x1, CurrentEL ; cmp x1, #0x8 ; b.gt . ; b.eq 2f ; cbnz x1, 1f ; b . ; 1: mrs x1, elr_el1 ; b 3f ;2: mrs x1, elr_el2 ;3: bl PeiCommonExceptionEntry ;
+
+.org 0x780
+_DefaultSError_LowerA32:
+  mov x0, #3
+  mrs x1, CurrentEL ; cmp x1, #0x8 ; b.gt . ; b.eq 2f ; cbnz x1, 1f ; b . ; 1: mrs x1, elr_el1 ; b 3f ;2: mrs x1, elr_el2 ;3: bl PeiCommonExceptionEntry ;
+
+.org 0x800; .previous

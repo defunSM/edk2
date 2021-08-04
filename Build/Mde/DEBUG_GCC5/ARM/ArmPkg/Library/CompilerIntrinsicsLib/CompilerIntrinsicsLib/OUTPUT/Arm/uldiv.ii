@@ -1,0 +1,364 @@
+# 1 "/home/xephyr/Documents/edk2/ArmPkg/Library/CompilerIntrinsicsLib/Arm/uldiv.S"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "/home/xephyr/Documents/edk2/BaseTools/Bin/gcc_arm_linux_extdep/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h" 1 3 4
+# 1 "<command-line>" 2
+# 1 "/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/ARM/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/DEBUG/AutoGen.h" 1
+# 16 "/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/ARM/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/DEBUG/AutoGen.h"
+# 1 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h" 1
+# 22 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h"
+# 1 "/home/xephyr/Documents/edk2/MdePkg/Include/Arm/ProcessorBind.h" 1
+# 101 "/home/xephyr/Documents/edk2/MdePkg/Include/Arm/ProcessorBind.h"
+  typedef unsigned long long UINT64;
+  typedef long long INT64;
+  typedef unsigned int UINT32;
+  typedef int INT32;
+  typedef unsigned short UINT16;
+  typedef unsigned short CHAR16;
+  typedef short INT16;
+  typedef unsigned char BOOLEAN;
+  typedef unsigned char UINT8;
+  typedef char CHAR8;
+  typedef signed char INT8;
+
+
+
+
+
+
+typedef UINT32 UINTN;
+
+
+
+
+
+typedef INT32 INTN;
+# 23 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h" 2
+# 222 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h"
+typedef struct {
+  UINT32 Data1;
+  UINT16 Data2;
+  UINT16 Data3;
+  UINT8 Data4[8];
+} GUID;
+
+
+
+
+typedef struct {
+  UINT8 Addr[4];
+} IPv4_ADDRESS;
+
+
+
+
+typedef struct {
+  UINT8 Addr[16];
+} IPv6_ADDRESS;
+
+
+
+
+typedef UINT64 PHYSICAL_ADDRESS;
+
+
+
+
+typedef struct _LIST_ENTRY LIST_ENTRY;
+
+
+
+
+struct _LIST_ENTRY {
+  LIST_ENTRY *ForwardLink;
+  LIST_ENTRY *BackLink;
+};
+# 657 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h"
+typedef __builtin_va_list VA_LIST;
+# 742 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h"
+typedef UINTN *BASE_LIST;
+# 813 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h"
+_Static_assert (sizeof (BOOLEAN) == 1, "sizeof (BOOLEAN) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (INT8) == 1, "sizeof (INT8) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (UINT8) == 1, "sizeof (UINT8) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (INT16) == 2, "sizeof (INT16) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (UINT16) == 2, "sizeof (UINT16) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (INT32) == 4, "sizeof (INT32) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (UINT32) == 4, "sizeof (UINT32) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (INT64) == 8, "sizeof (INT64) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (UINT64) == 8, "sizeof (UINT64) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (CHAR8) == 1, "sizeof (CHAR8) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (CHAR16) == 2, "sizeof (CHAR16) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (L'A') == 2, "sizeof (L'A') does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (L"A") == 4, "sizeof (L\"A\") does not meet UEFI Specification Data Type requirements");
+# 834 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h"
+typedef enum {
+  __VerifyUint8EnumValue = 0xff
+} __VERIFY_UINT8_ENUM_SIZE;
+
+typedef enum {
+  __VerifyUint16EnumValue = 0xffff
+} __VERIFY_UINT16_ENUM_SIZE;
+
+typedef enum {
+  __VerifyUint32EnumValue = 0xffffffff
+} __VERIFY_UINT32_ENUM_SIZE;
+
+_Static_assert (sizeof (__VERIFY_UINT8_ENUM_SIZE) == 4, "Size of enum does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (__VERIFY_UINT16_ENUM_SIZE) == 4, "Size of enum does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (__VERIFY_UINT32_ENUM_SIZE) == 4, "Size of enum does not meet UEFI Specification Data Type requirements");
+# 962 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h"
+typedef UINTN RETURN_STATUS;
+# 17 "/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/ARM/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/DEBUG/AutoGen.h" 2
+
+extern GUID gEfiCallerIdGuid;
+extern GUID gEdkiiDscPlatformGuid;
+extern CHAR8 *gEfiCallerBaseName;
+
+
+
+extern UINT64 _gPcd_SkuId_Array[];
+# 1 "<command-line>" 2
+# 1 "/home/xephyr/Documents/edk2/ArmPkg/Library/CompilerIntrinsicsLib/Arm/uldiv.S"
+# 11 "/home/xephyr/Documents/edk2/ArmPkg/Library/CompilerIntrinsicsLib/Arm/uldiv.S"
+  .text
+  .align 2
+  .global __aeabi_uldivmod ; .type __aeabi_uldivmod, %function
+# 23 "/home/xephyr/Documents/edk2/ArmPkg/Library/CompilerIntrinsicsLib/Arm/uldiv.S"
+__aeabi_uldivmod:
+  stmdb sp!, {r4, r5, r6, lr}
+  mov r4, r1
+  mov r5, r0
+  mov r6, #0
+  orrs ip, r3, r2, lsr #31
+  bne __aeabi_uldivmod_label1
+  tst r2, r2
+  beq _ll_div0
+  movs ip, r2, lsr #15
+  addeq r6, r6, #16
+  mov ip, r2, lsl r6
+  movs lr, ip, lsr #23
+  moveq ip, ip, lsl #8
+  addeq r6, r6, #8
+  movs lr, ip, lsr #27
+  moveq ip, ip, lsl #4
+  addeq r6, r6, #4
+  movs lr, ip, lsr #29
+  moveq ip, ip, lsl #2
+  addeq r6, r6, #2
+  movs lr, ip, lsr #30
+  moveq ip, ip, lsl #1
+  addeq r6, r6, #1
+  b _ll_udiv_small
+__aeabi_uldivmod_label1:
+  tst r3, #-2147483648
+  bne __aeabi_uldivmod_label2
+  movs ip, r3, lsr #15
+  addeq r6, r6, #16
+  mov ip, r3, lsl r6
+  movs lr, ip, lsr #23
+  moveq ip, ip, lsl #8
+  addeq r6, r6, #8
+  movs lr, ip, lsr #27
+  moveq ip, ip, lsl #4
+  addeq r6, r6, #4
+  movs lr, ip, lsr #29
+  moveq ip, ip, lsl #2
+  addeq r6, r6, #2
+  movs lr, ip, lsr #30
+  addeq r6, r6, #1
+  rsb r3, r6, #32
+  moveq ip, ip, lsl #1
+  orr ip, ip, r2, lsr r3
+  mov lr, r2, lsl r6
+  b _ll_udiv_big
+__aeabi_uldivmod_label2:
+  mov ip, r3
+  mov lr, r2
+  b _ll_udiv_ginormous
+
+_ll_udiv_small:
+  cmp r4, ip, lsl #1
+  mov r3, #0
+  subcs r4, r4, ip, lsl #1
+  addcs r3, r3, #2
+  cmp r4, ip
+  subcs r4, r4, ip
+  adcs r3, r3, #0
+  add r2, r6, #32
+  cmp r2, #32
+  rsb ip, ip, #0
+  bcc _ll_udiv_small_label1
+  orrs r0, r4, r5, lsr #30
+  moveq r4, r5
+  moveq r5, #0
+  subeq r2, r2, #32
+_ll_udiv_small_label1:
+  mov r1, #0
+  cmp r2, #16
+  bcc _ll_udiv_small_label2
+  movs r0, r4, lsr #14
+  moveq r4, r4, lsl #16
+  addeq r1, r1, #16
+_ll_udiv_small_label2:
+  sub lr, r2, r1
+  cmp lr, #8
+  bcc _ll_udiv_small_label3
+  movs r0, r4, lsr #22
+  moveq r4, r4, lsl #8
+  addeq r1, r1, #8
+_ll_udiv_small_label3:
+  rsb r0, r1, #32
+  sub r2, r2, r1
+  orr r4, r4, r5, lsr r0
+  mov r5, r5, lsl r1
+  cmp r2, #1
+  bcc _ll_udiv_small_label5
+  sub r2, r2, #1
+  and r0, r2, #7
+  eor r0, r0, #7
+  adds r0, r0, r0, lsl #1
+  add pc, pc, r0, lsl #2
+  nop
+_ll_udiv_small_label4:
+  adcs r5, r5, r5
+  adcs r4, ip, r4, lsl #1
+  rsbcc r4, ip, r4
+  adcs r5, r5, r5
+  adcs r4, ip, r4, lsl #1
+  rsbcc r4, ip, r4
+  adcs r5, r5, r5
+  adcs r4, ip, r4, lsl #1
+  rsbcc r4, ip, r4
+  adcs r5, r5, r5
+  adcs r4, ip, r4, lsl #1
+  rsbcc r4, ip, r4
+  adcs r5, r5, r5
+  adcs r4, ip, r4, lsl #1
+  rsbcc r4, ip, r4
+  adcs r5, r5, r5
+  adcs r4, ip, r4, lsl #1
+  rsbcc r4, ip, r4
+  adcs r5, r5, r5
+  adcs r4, ip, r4, lsl #1
+  rsbcc r4, ip, r4
+  adcs r5, r5, r5
+  adcs r4, ip, r4, lsl #1
+  sub r2, r2, #8
+  tst r2, r2
+  rsbcc r4, ip, r4
+  bpl _ll_udiv_small_label4
+_ll_udiv_small_label5:
+  mov r2, r4, lsr r6
+  bic r4, r4, r2, lsl r6
+  adcs r0, r5, r5
+  adc r1, r4, r4
+  add r1, r1, r3, lsl r6
+  mov r3, #0
+  ldmia sp!, {r4, r5, r6, pc}
+
+_ll_udiv_big:
+  subs r0, r5, lr
+  mov r3, #0
+  sbcs r1, r4, ip
+  movcs r5, r0
+  movcs r4, r1
+  adcs r3, r3, #0
+  subs r0, r5, lr
+  sbcs r1, r4, ip
+  movcs r5, r0
+  movcs r4, r1
+  adcs r3, r3, #0
+  subs r0, r5, lr
+  sbcs r1, r4, ip
+  movcs r5, r0
+  movcs r4, r1
+  adcs r3, r3, #0
+  mov r1, #0
+  rsbs lr, lr, #0
+  rsc ip, ip, #0
+  cmp r6, #16
+  bcc _ll_udiv_big_label1
+  movs r0, r4, lsr #14
+  moveq r4, r4, lsl #16
+  addeq r1, r1, #16
+_ll_udiv_big_label1:
+  sub r2, r6, r1
+  cmp r2, #8
+  bcc _ll_udiv_big_label2
+  movs r0, r4, lsr #22
+  moveq r4, r4, lsl #8
+  addeq r1, r1, #8
+_ll_udiv_big_label2:
+  rsb r0, r1, #32
+  sub r2, r6, r1
+  orr r4, r4, r5, lsr r0
+  mov r5, r5, lsl r1
+  cmp r2, #1
+  bcc _ll_udiv_big_label4
+  sub r2, r2, #1
+  and r0, r2, #3
+  rsb r0, r0, #3
+  adds r0, r0, r0, lsl #1
+  add pc, pc, r0, lsl #3
+  nop
+_ll_udiv_big_label3:
+  adcs r5, r5, r5
+  adcs r4, r4, r4
+  adcs r0, lr, r5
+  adcs r1, ip, r4
+  movcs r5, r0
+  movcs r4, r1
+  adcs r5, r5, r5
+  adcs r4, r4, r4
+  adcs r0, lr, r5
+  adcs r1, ip, r4
+  movcs r5, r0
+  movcs r4, r1
+  adcs r5, r5, r5
+  adcs r4, r4, r4
+  adcs r0, lr, r5
+  adcs r1, ip, r4
+  movcs r5, r0
+  movcs r4, r1
+  sub r2, r2, #4
+  adcs r5, r5, r5
+  adcs r4, r4, r4
+  adcs r0, lr, r5
+  adcs r1, ip, r4
+  tst r2, r2
+  movcs r5, r0
+  movcs r4, r1
+  bpl _ll_udiv_big_label3
+_ll_udiv_big_label4:
+  mov r1, #0
+  mov r2, r5, lsr r6
+  bic r5, r5, r2, lsl r6
+  adcs r0, r5, r5
+  adc r1, r1, #0
+  movs lr, r3, lsl r6
+  mov r3, r4, lsr r6
+  bic r4, r4, r3, lsl r6
+  adc r1, r1, #0
+  adds r0, r0, lr
+  orr r2, r2, r4, ror r6
+  adc r1, r1, #0
+  ldmia sp!, {r4, r5, r6, pc}
+
+_ll_udiv_ginormous:
+  subs r2, r5, lr
+  mov r1, #0
+  sbcs r3, r4, ip
+  adc r0, r1, r1
+  movcc r2, r5
+  movcc r3, r4
+  ldmia sp!, {r4, r5, r6, pc}
+
+_ll_div0:
+  ldmia sp!, {r4, r5, r6, lr}
+  mov r0, #0
+  mov r1, #0
+  b __aeabi_ldiv0
+
+__aeabi_ldiv0:
+  bx r14

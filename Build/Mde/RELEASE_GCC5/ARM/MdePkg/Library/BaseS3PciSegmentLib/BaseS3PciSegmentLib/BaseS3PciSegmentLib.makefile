@@ -1,0 +1,1 @@
+/home/xephyr/Documents/edk2/Build/Mde/RELEASE_GCC5/ARM/MdePkg/Library/BaseS3PciSegmentLib/BaseS3PciSegmentLib/GNUmakefile

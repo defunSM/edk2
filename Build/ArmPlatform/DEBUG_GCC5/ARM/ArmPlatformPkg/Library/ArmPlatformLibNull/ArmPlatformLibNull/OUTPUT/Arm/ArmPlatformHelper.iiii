@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+
+
+
+.global ArmPlatformPeiBootAction ; .section ".text.ArmPlatformPeiBootAction", "ax" ; .type ArmPlatformPeiBootAction, %function ; .p2align 2 ; ArmPlatformPeiBootAction:
+  bx lr
+
+
+
+
+
+.global ArmPlatformGetCorePosition ; .section ".text.ArmPlatformGetCorePosition", "ax" ; .type ArmPlatformGetCorePosition, %function ; .p2align 2 ; ArmPlatformGetCorePosition:
+  and r1, r0, #0xFF
+  and r0, r0, #(0xFF << 8)
+  add r0, r1, r0, LSR #7
+  bx lr
+
+
+
+
+
+.global ArmPlatformGetPrimaryCoreMpId ; .section ".text.ArmPlatformGetPrimaryCoreMpId", "ax" ; .type ArmPlatformGetPrimaryCoreMpId, %function ; .p2align 2 ; ArmPlatformGetPrimaryCoreMpId:
+  movw r0, #(0) & 0xffff ; movt r0, #(0) >> 16
+  bx lr
+
+
+
+
+
+.global ArmPlatformIsPrimaryCore ; .section ".text.ArmPlatformIsPrimaryCore", "ax" ; .type ArmPlatformIsPrimaryCore, %function ; .p2align 2 ; ArmPlatformIsPrimaryCore:
+  movw r1, #(0xF03) & 0xffff ; movt r1, #(0xF03) >> 16
+  and r0, r0, r1
+  movw r1, #(0) & 0xffff ; movt r1, #(0) >> 16
+  cmp r0, r1
+  moveq r0, #1
+  movne r0, #0
+  bx lr

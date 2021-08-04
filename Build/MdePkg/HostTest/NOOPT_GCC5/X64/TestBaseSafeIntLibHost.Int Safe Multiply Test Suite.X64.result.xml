@@ -1,0 +1,24 @@
+<testsuites>
+  <testsuite name="Int Safe Multiply Test Suite" time="0.000" tests="10" failures="0" errors="0" skipped="0" >
+    <testcase name="Test SafeUint8Mult" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint16Mult" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint32Mult" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUintnMult" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint64Mult" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt8Mult" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt16Mult" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt32Mult" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeIntnMult" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt64Mult" time="0.000" >
+    </testcase>
+  </testsuite>
+</testsuites>

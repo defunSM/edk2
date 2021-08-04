@@ -1,0 +1,186 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint/OUTPUT/UefiDriverEntryPoint.lib(DriverEntryPoint.obj)
+                              (_ModuleEntryPoint)
+/home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib(memcpy.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (memcpy)
+/home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib(memset.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (memset)
+/home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/DynamicTablesPkg/Drivers/DynamicTableManagerDxe/DynamicTableManagerDxe/OUTPUT/DynamicTableManagerDxe.lib(AutoGen.obj)
+                              DriverEntryPoint.obj (symbol from plugin) (ProcessLibraryConstructorList)
+/home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/DynamicTablesPkg/Drivers/DynamicTableManagerDxe/DynamicTableManagerDxe/OUTPUT/DynamicTableManagerDxe.lib(DynamicTableManagerDxe.obj)
+                              AutoGen.obj (symbol from plugin) (DynamicTableManagerDxeInitialize)
+/home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib(UefiBootServicesTableLib.obj)
+                              AutoGen.obj (symbol from plugin) (UefiBootServicesTableLibConstructor)
+/home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/DynamicTablesPkg/Library/Common/TableHelperLib/TableHelperLib/OUTPUT/DynamicTableHelperLib.lib(TableHelper.obj)
+                              DynamicTableManagerDxe.obj (symbol from plugin) (GetCgfMgrInfo)
+/home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMemWrapper.obj)
+                              TableHelper.obj (symbol from plugin) (CopyMem)
+/home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMem.obj)
+                              CopyMemWrapper.obj (symbol from plugin) (InternalMemCopyMem)
+/home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(String.obj)
+                              TableHelper.obj (symbol from plugin) (AsciiStrLen)
+/home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SafeString.obj)
+                              String.obj (symbol from plugin) (StrDecimalToUintnS)
+/home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes32.obj)
+                              SafeString.obj (symbol from plugin) (SwapBytes32)
+/home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes16.obj)
+                              SafeString.obj (symbol from plugin) (SwapBytes16)
+/home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RShiftU64.obj)
+                              SafeString.obj (symbol from plugin) (RShiftU64)
+/home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultU64x32.obj)
+                              SafeString.obj (symbol from plugin) (MultU64x32)
+/home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LShiftU64.obj)
+                              SafeString.obj (symbol from plugin) (LShiftU64)
+/home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32.obj)
+                              SafeString.obj (symbol from plugin) (DivU64x32)
+/home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Math64.obj)
+                              LShiftU64.obj (symbol from plugin) (InternalMathLShiftU64)
+/home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ZeroMemWrapper.obj)
+                              SafeString.obj (symbol from plugin) (ZeroMem)
+/home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGeneric.obj)
+                              ZeroMemWrapper.obj (symbol from plugin) (InternalMemZeroMem)
+/home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGuid.obj)
+                              SafeString.obj (symbol from plugin) (CopyGuid)
+/home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem.obj)
+                              MemLibGeneric.obj (symbol from plugin) (InternalMemSetMem)
+/home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Unaligned.obj)
+                              MemLibGuid.obj (symbol from plugin) (ReadUnaligned64)
+
+Discarded input sections
+
+ .text          0x0000000000000000       0x10 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .text          0x0000000000000000        0x0 /tmp/ccRikj2T.ltrans0.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccRikj2T.ltrans0.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccRikj2T.ltrans0.ltrans.o
+ .text._DriverUnloadHandler
+                0x0000000000000000        0x8 /tmp/ccRikj2T.ltrans0.ltrans.o
+ .text.__memset
+                0x0000000000000000       0x1c /tmp/ccRikj2T.ltrans0.ltrans.o
+ .text.memcpy   0x0000000000000000       0x20 /tmp/ccRikj2T.ltrans0.ltrans.o
+ .comment       0x0000000000000000       0x75 /tmp/ccRikj2T.ltrans0.ltrans.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /tmp/ccRikj2T.ltrans0.ltrans.o
+ .text          0x0000000000000000        0x0 DriverEntryPoint.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 memcpy.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 memset.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AutoGen.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DynamicTableManagerDxe.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UefiBootServicesTableLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 TableHelper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CopyMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CopyMem.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 String.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SafeString.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SwapBytes32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SwapBytes16.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 RShiftU64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MultU64x32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 LShiftU64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DivU64x32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Math64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ZeroMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MemLibGeneric.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MemLibGuid.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SetMem.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Unaligned.obj (symbol from plugin)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+LOAD /tmp/ccRikj2T.ltrans0.ltrans.o
+START GROUP
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/DynamicTablesPkg/Drivers/DynamicTableManagerDxe/DynamicTableManagerDxe/OUTPUT/DynamicTableManagerDxe.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/BasePcdLibNull/BasePcdLibNull/OUTPUT/BasePcdLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull/OUTPUT/BaseDebugLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/DynamicTablesPkg/Library/Common/TableHelperLib/TableHelperLib/OUTPUT/DynamicTableHelperLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint/OUTPUT/UefiDriverEntryPoint.lib
+LOAD /home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib
+END GROUP
+                0x0000000000000228                . = PECOFF_HEADER_SIZE
+
+.text           0x0000000000001000      0x414
+ *(.text .text.* .stub .gnu.linkonce.t.*)
+ .text.BuildAndInstallAcpiTable
+                0x0000000000001000      0x198 /tmp/ccRikj2T.ltrans0.ltrans.o
+ .text._ModuleEntryPoint
+                0x0000000000001198      0x27c /tmp/ccRikj2T.ltrans0.ltrans.o
+                0x0000000000001198                _ModuleEntryPoint
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ *(.got .got.*)
+ *:AutoGen.obj(.data.g*Guid)
+
+.data           0x0000000000002000       0x40
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.gEdkiiConfigurationManagerProtocolGuid
+                0x0000000000002000       0x10 /tmp/ccRikj2T.ltrans0.ltrans.o
+ .data.gEdkiiDynamicTableFactoryProtocolGuid
+                0x0000000000002010       0x10 /tmp/ccRikj2T.ltrans0.ltrans.o
+ .data.gEfiAcpiTableProtocolGuid
+                0x0000000000002020       0x10 /tmp/ccRikj2T.ltrans0.ltrans.o
+ *(.bss .bss.*)
+ .bss.gBS       0x0000000000002030        0x8 /tmp/ccRikj2T.ltrans0.ltrans.o
+ .bss.gST       0x0000000000002038        0x8 /tmp/ccRikj2T.ltrans0.ltrans.o
+
+.eh_frame
+ *(.eh_frame)
+
+.rela
+ *(.rela .rela.*)
+
+.hii
+ *(.hii)
+
+.build-id       0x0000000000002040       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x0000000000002040       0x24 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.interp)
+ *(.dynsym)
+ *(.dynstr)
+ *(.dynamic)
+ *(.hash .gnu.hash)
+ *(.comment)
+                0x0000000000000228                PECOFF_HEADER_SIZE = 0x228
+OUTPUT(/home/xephyr/Documents/edk2/Build/DynamicTables/RELEASE_GCC5/AARCH64/DynamicTablesPkg/Drivers/DynamicTableManagerDxe/DynamicTableManagerDxe/DEBUG/DynamicTableManagerDxe.dll elf64-littleaarch64)
+
+.debug_info     0x0000000000000000     0x2b55
+ .debug_info    0x0000000000000000     0x2b55 /tmp/ccRikj2T.ltrans0.ltrans.o
+
+.debug_abbrev   0x0000000000000000      0x3d0
+ .debug_abbrev  0x0000000000000000      0x3d0 /tmp/ccRikj2T.ltrans0.ltrans.o
+
+.debug_loc      0x0000000000000000      0xe67
+ .debug_loc     0x0000000000000000      0xe67 /tmp/ccRikj2T.ltrans0.ltrans.o
+
+.debug_aranges  0x0000000000000000       0x70
+ .debug_aranges
+                0x0000000000000000       0x70 /tmp/ccRikj2T.ltrans0.ltrans.o
+
+.debug_ranges   0x0000000000000000      0x320
+ .debug_ranges  0x0000000000000000      0x320 /tmp/ccRikj2T.ltrans0.ltrans.o
+
+.debug_line     0x0000000000000000      0x731
+ .debug_line    0x0000000000000000      0x731 /tmp/ccRikj2T.ltrans0.ltrans.o
+
+.debug_str      0x0000000000000000     0x1f25
+ .debug_str     0x0000000000000000     0x1f25 /tmp/ccRikj2T.ltrans0.ltrans.o
+                                       0x2127 (size before relaxing)
+
+.debug_frame    0x0000000000000000       0xd8
+ .debug_frame   0x0000000000000000       0xd8 /tmp/ccRikj2T.ltrans0.ltrans.o

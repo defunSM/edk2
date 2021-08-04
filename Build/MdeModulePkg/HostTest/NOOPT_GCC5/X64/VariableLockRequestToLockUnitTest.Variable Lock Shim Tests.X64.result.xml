@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite name="Variable Lock Shim Tests" time="0.000" tests="7" failures="0" errors="0" skipped="0" >
+    <testcase name="Locking a variable with no matching policies should always work" time="0.000" >
+    </testcase>
+    <testcase name="Locking a variable twice should always work" time="0.000" >
+    </testcase>
+    <testcase name="Locking a variable that's already locked by another policy should work" time="0.000" >
+    </testcase>
+    <testcase name="Locking a variable that already has an unlocked policy should fail" time="0.000" >
+    </testcase>
+    <testcase name="Locking a variable that already has an locked policy should succeed" time="0.000" >
+    </testcase>
+    <testcase name="Locking a variable that already has an locked policy with matching data should succeed" time="0.000" >
+    </testcase>
+    <testcase name="Adding a policy for a variable that has previously been locked should always fail" time="0.000" >
+    </testcase>
+  </testsuite>
+</testsuites>

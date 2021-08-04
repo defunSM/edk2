@@ -1,0 +1,92 @@
+#------------------------------------------------------------------------------
+
+# Copyright (c) 2011, ARM Limited. All rights reserved.
+# Copyright (c) 2016, Linaro Limited. All rights reserved.
+
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+
+#------------------------------------------------------------------------------
+
+
+
+.global ArmReadCntFrq ; .section ".text.ArmReadCntFrq", "ax" ; .type ArmReadCntFrq, %function ; .p2align 2 ; ArmReadCntFrq:
+  mrc p15, 0, r0, c14, c0, 0 @ Read CNTFRQ
+  bx lr
+
+.global ArmWriteCntFrq ; .section ".text.ArmWriteCntFrq", "ax" ; .type ArmWriteCntFrq, %function ; .p2align 2 ; ArmWriteCntFrq:
+  mcr p15, 0, r0, c14, c0, 0 @ Write to CNTFRQ
+  bx lr
+
+.global ArmReadCntPct ; .section ".text.ArmReadCntPct", "ax" ; .type ArmReadCntPct, %function ; .p2align 2 ; ArmReadCntPct:
+  mrrc p15, 0, r0, r1, c14 @ Read CNTPT (Physical counter register)
+  bx lr
+
+.global ArmReadCntkCtl ; .section ".text.ArmReadCntkCtl", "ax" ; .type ArmReadCntkCtl, %function ; .p2align 2 ; ArmReadCntkCtl:
+  mrc p15, 0, r0, c14, c1, 0 @ Read CNTK_CTL (Timer PL1 Control Register)
+  bx lr
+
+.global ArmWriteCntkCtl ; .section ".text.ArmWriteCntkCtl", "ax" ; .type ArmWriteCntkCtl, %function ; .p2align 2 ; ArmWriteCntkCtl:
+  mcr p15, 0, r0, c14, c1, 0 @ Write to CNTK_CTL (Timer PL1 Control Register)
+  bx lr
+
+.global ArmReadCntpTval ; .section ".text.ArmReadCntpTval", "ax" ; .type ArmReadCntpTval, %function ; .p2align 2 ; ArmReadCntpTval:
+  mrc p15, 0, r0, c14, c2, 0 @ Read CNTP_TVAL (PL1 physical timer value register)
+  bx lr
+
+.global ArmWriteCntpTval ; .section ".text.ArmWriteCntpTval", "ax" ; .type ArmWriteCntpTval, %function ; .p2align 2 ; ArmWriteCntpTval:
+  mcr p15, 0, r0, c14, c2, 0 @ Write to CNTP_TVAL (PL1 physical timer value register)
+  bx lr
+
+.global ArmReadCntpCtl ; .section ".text.ArmReadCntpCtl", "ax" ; .type ArmReadCntpCtl, %function ; .p2align 2 ; ArmReadCntpCtl:
+  mrc p15, 0, r0, c14, c2, 1 @ Read CNTP_CTL (PL1 Physical Timer Control Register)
+  bx lr
+
+.global ArmWriteCntpCtl ; .section ".text.ArmWriteCntpCtl", "ax" ; .type ArmWriteCntpCtl, %function ; .p2align 2 ; ArmWriteCntpCtl:
+  mcr p15, 0, r0, c14, c2, 1 @ Write to CNTP_CTL (PL1 Physical Timer Control Register)
+  bx lr
+
+.global ArmReadCntvTval ; .section ".text.ArmReadCntvTval", "ax" ; .type ArmReadCntvTval, %function ; .p2align 2 ; ArmReadCntvTval:
+  mrc p15, 0, r0, c14, c3, 0 @ Read CNTV_TVAL (Virtual Timer Value register)
+  bx lr
+
+.global ArmWriteCntvTval ; .section ".text.ArmWriteCntvTval", "ax" ; .type ArmWriteCntvTval, %function ; .p2align 2 ; ArmWriteCntvTval:
+  mcr p15, 0, r0, c14, c3, 0 @ Write to CNTV_TVAL (Virtual Timer Value register)
+  bx lr
+
+.global ArmReadCntvCtl ; .section ".text.ArmReadCntvCtl", "ax" ; .type ArmReadCntvCtl, %function ; .p2align 2 ; ArmReadCntvCtl:
+  mrc p15, 0, r0, c14, c3, 1 @ Read CNTV_CTL (Virtual Timer Control Register)
+  bx lr
+
+.global ArmWriteCntvCtl ; .section ".text.ArmWriteCntvCtl", "ax" ; .type ArmWriteCntvCtl, %function ; .p2align 2 ; ArmWriteCntvCtl:
+  mcr p15, 0, r0, c14, c3, 1 @ Write to CNTV_CTL (Virtual Timer Control Register)
+  bx lr
+
+.global ArmReadCntvCt ; .section ".text.ArmReadCntvCt", "ax" ; .type ArmReadCntvCt, %function ; .p2align 2 ; ArmReadCntvCt:
+  mrrc p15, 1, r0, r1, c14 @ Read CNTVCT (Virtual Count Register)
+  bx lr
+
+.global ArmReadCntpCval ; .section ".text.ArmReadCntpCval", "ax" ; .type ArmReadCntpCval, %function ; .p2align 2 ; ArmReadCntpCval:
+  mrrc p15, 2, r0, r1, c14 @ Read CNTP_CTVAL (Physical Timer Compare Value Register)
+  bx lr
+
+.global ArmWriteCntpCval ; .section ".text.ArmWriteCntpCval", "ax" ; .type ArmWriteCntpCval, %function ; .p2align 2 ; ArmWriteCntpCval:
+  mcrr p15, 2, r0, r1, c14 @ Write to CNTP_CTVAL (Physical Timer Compare Value Register)
+  bx lr
+
+.global ArmReadCntvCval ; .section ".text.ArmReadCntvCval", "ax" ; .type ArmReadCntvCval, %function ; .p2align 2 ; ArmReadCntvCval:
+  mrrc p15, 3, r0, r1, c14 @ Read CNTV_CTVAL (Virtual Timer Compare Value Register)
+  bx lr
+
+.global ArmWriteCntvCval ; .section ".text.ArmWriteCntvCval", "ax" ; .type ArmWriteCntvCval, %function ; .p2align 2 ; ArmWriteCntvCval:
+  mcrr p15, 3, r0, r1, c14 @ write to CNTV_CTVAL (Virtual Timer Compare Value Register)
+  bx lr
+
+.global ArmReadCntvOff ; .section ".text.ArmReadCntvOff", "ax" ; .type ArmReadCntvOff, %function ; .p2align 2 ; ArmReadCntvOff:
+  mrrc p15, 4, r0, r1, c14 @ Read CNTVOFF (virtual Offset register)
+  bx lr
+
+.global ArmWriteCntvOff ; .section ".text.ArmWriteCntvOff", "ax" ; .type ArmWriteCntvOff, %function ; .p2align 2 ; ArmWriteCntvOff:
+  mcrr p15, 4, r0, r1, c14 @ Write to CNTVOFF (Virtual Offset register)
+  bx lr
+
+

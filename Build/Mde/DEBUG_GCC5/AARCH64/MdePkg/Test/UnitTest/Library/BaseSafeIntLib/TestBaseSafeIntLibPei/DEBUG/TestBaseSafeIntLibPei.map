@@ -1,0 +1,773 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseStackCheckLib/BaseStackCheckLib/OUTPUT/BaseStackCheckLib.lib(BaseStackCheckGcc.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (__stack_chk_fail)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib(memcpy.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (memcpy)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib(memset.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (memset)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdeModulePkg/Library/PeiDxeDebugLibReportStatusCode/PeiDxeDebugLibReportStatusCode/OUTPUT/PeiDxeDebugLibReportStatusCode.lib(DebugLib.obj)
+                              BaseStackCheckGcc.obj (symbol from plugin) (DebugPrint)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuDeadLoop.obj)
+                              BaseStackCheckGcc.obj (symbol from plugin) (CpuDeadLoop)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SafeString.obj)
+                              DebugLib.obj (symbol from plugin) (AsciiStrnCpyS)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(String.obj)
+                              SafeString.obj (symbol from plugin) (InternalIsDecimalDigitCharacter)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+                              CpuDeadLoop.obj (symbol from plugin) (CpuPause)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+                              BaseStackCheckGcc.obj (symbol from plugin) (CpuBreakpoint)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes32.obj)
+                              SafeString.obj (symbol from plugin) (SwapBytes32)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes16.obj)
+                              SafeString.obj (symbol from plugin) (SwapBytes16)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RShiftU64.obj)
+                              SafeString.obj (symbol from plugin) (RShiftU64)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultU64x32.obj)
+                              SafeString.obj (symbol from plugin) (MultU64x32)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LShiftU64.obj)
+                              SafeString.obj (symbol from plugin) (LShiftU64)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32.obj)
+                              SafeString.obj (symbol from plugin) (DivU64x32)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Math64.obj)
+                              LShiftU64.obj (symbol from plugin) (InternalMathLShiftU64)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/PeimEntryPoint/PeimEntryPoint/OUTPUT/PeimEntryPoint.lib(PeimEntryPoint.obj)
+                              (_ModuleEntryPoint)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Test/UnitTest/Library/BaseSafeIntLib/TestBaseSafeIntLibPei/OUTPUT/TestBaseSafeIntLibPei.lib(AutoGen.obj)
+                              PeimEntryPoint.obj (symbol from plugin) (ProcessLibraryConstructorList)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Test/UnitTest/Library/BaseSafeIntLib/TestBaseSafeIntLibPei/OUTPUT/TestBaseSafeIntLibPei.lib(TestBaseSafeIntLib.obj)
+                              AutoGen.obj (symbol from plugin) (PeiEntryPoint)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Test/UnitTest/Library/BaseSafeIntLib/TestBaseSafeIntLibPei/OUTPUT/TestBaseSafeIntLibPei.lib(SafeIntLibUintnIntnUnitTests64.obj)
+                              TestBaseSafeIntLib.obj (symbol from plugin) (TestSafeInt32ToUintn)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib/OUTPUT/BaseDebugPrintErrorLevelLib.lib(BaseDebugPrintErrorLevelLib.obj)
+                              DebugLib.obj (symbol from plugin) (GetDebugPrintErrorLevel)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseReportStatusCodeLibNull/BaseReportStatusCodeLibNull/OUTPUT/BaseReportStatusCodeLibNull.lib(BaseReportStatusCodeLib.obj)
+                              DebugLib.obj (symbol from plugin) (ReportStatusCodeEx)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ZeroMemWrapper.obj)
+                              SafeString.obj (symbol from plugin) (ZeroMem)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMemWrapper.obj)
+                              DebugLib.obj (symbol from plugin) (SetMem)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMemWrapper.obj)
+                              DebugLib.obj (symbol from plugin) (CopyMem)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGeneric.obj)
+                              ZeroMemWrapper.obj (symbol from plugin) (InternalMemZeroMem)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGuid.obj)
+                              SafeString.obj (symbol from plugin) (CopyGuid)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMem.obj)
+                              CopyMemWrapper.obj (symbol from plugin) (InternalMemCopyMem)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem.obj)
+                              SetMemWrapper.obj (symbol from plugin) (InternalMemSetMem)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem64Wrapper.obj)
+                              SetMemWrapper.obj (symbol from plugin) (SetMem64)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/UnitTestFrameworkPkg/Library/UnitTestDebugAssertLib/UnitTestDebugAssertLib/OUTPUT/UnitTestDebugAssertLib.lib(UnitTestDebugAssertLib.obj)
+                              DebugLib.obj (symbol from plugin) (UnitTestDebugAssert)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/UnitTestFrameworkPkg/Library/UnitTestLib/UnitTestLib/OUTPUT/UnitTestLib.lib(UnitTestLib.obj)
+                              TestBaseSafeIntLib.obj (symbol from plugin) (FreeUnitTestFramework)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/UnitTestFrameworkPkg/Library/UnitTestLib/UnitTestLib/OUTPUT/UnitTestLib.lib(RunTests.obj)
+                              UnitTestLib.obj (symbol from plugin) (GetActiveFrameworkHandle)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/UnitTestFrameworkPkg/Library/UnitTestLib/UnitTestLib/OUTPUT/UnitTestLib.lib(Assert.obj)
+                              UnitTestDebugAssertLib.obj (symbol from plugin) (UnitTestAssertTrue)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/UnitTestFrameworkPkg/Library/UnitTestLib/UnitTestLib/OUTPUT/UnitTestLib.lib(Log.obj)
+                              UnitTestLib.obj (symbol from plugin) (UnitTestLogInit)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CheckSum.obj)
+                              UnitTestLib.obj (symbol from plugin) (CalculateCrc32)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LongJump.obj)
+                              UnitTestDebugAssertLib.obj (symbol from plugin) (LongJump)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SetJump.obj)
+                              LongJump.obj (symbol from plugin) (InternalAssertJumpBuffer)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LinkedList.obj)
+                              UnitTestLib.obj (symbol from plugin) (InitializeListHead)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Unaligned.obj)
+                              MemLibGuid.obj (symbol from plugin) (ReadUnaligned64)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SetJumpLongJump.obj)
+                              RunTests.obj (symbol from plugin) (SetJump)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/PeiServicesTablePointerLib/PeiServicesTablePointerLib/OUTPUT/PeiServicesTablePointerLib.lib(PeiServicesTablePointer.obj)
+                              AutoGen.obj (symbol from plugin) (PeiServicesTablePointerLibConstructor)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseSafeIntLib/BaseSafeIntLib/OUTPUT/BaseSafeIntLib.lib(SafeIntLib.obj)
+                              TestBaseSafeIntLib.obj (symbol from plugin) (SafeInt8ToUint8)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseSafeIntLib/BaseSafeIntLib/OUTPUT/BaseSafeIntLib.lib(SafeIntLib64.obj)
+                              SafeIntLibUintnIntnUnitTests64.obj (symbol from plugin) (SafeInt32ToUintn)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib(PrintLib.obj)
+                              Assert.obj (symbol from plugin) (AsciiVSPrint)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib(PrintLibInternal.obj)
+                              PrintLib.obj (symbol from plugin) (BasePrintLibConvertValueToStringS)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/UnitTestFrameworkPkg/Library/UnitTestResultReportLib/UnitTestResultReportLibDebugLib/OUTPUT/UnitTestResultReportLibDebugLib.lib(UnitTestResultReportLib.obj)
+                              RunTests.obj (symbol from plugin) (OutputUnitTestFrameworkReport)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/UnitTestFrameworkPkg/Library/UnitTestResultReportLib/UnitTestResultReportLibDebugLib/OUTPUT/UnitTestResultReportLibDebugLib.lib(UnitTestResultReportLibDebugLib.obj)
+                              UnitTestResultReportLib.obj (symbol from plugin) (ReportPrint)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/UnitTestFrameworkPkg/Library/UnitTestPersistenceLibNull/UnitTestPersistenceLibNull/OUTPUT/UnitTestPersistenceLibNull.lib(UnitTestPersistenceLibNull.obj)
+                              UnitTestLib.obj (symbol from plugin) (DoesCacheExist)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/PeiMemoryAllocationLib/PeiMemoryAllocationLib/OUTPUT/PeiMemoryAllocationLib.lib(MemoryAllocationLib.obj)
+                              UnitTestLib.obj (symbol from plugin) (AllocatePool)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CompareMemWrapper.obj)
+                              UnitTestLib.obj (symbol from plugin) (CompareMem)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultU64x64.obj)
+                              SafeIntLib.obj (symbol from plugin) (MultU64x64)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultS64x64.obj)
+                              SafeIntLib.obj (symbol from plugin) (MultS64x64)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32Remainder.obj)
+                              PrintLibInternal.obj (symbol from plugin) (DivU64x32Remainder)
+/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/PeiServicesLib/PeiServicesLib/OUTPUT/PeiServicesLib.lib(PeiServicesLib.obj)
+                              MemoryAllocationLib.obj (symbol from plugin) (PeiServicesAllocatePages)
+
+Discarded input sections
+
+ .text          0x0000000000000000       0x10 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .text          0x0000000000000000        0x0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.FreePool.constprop.33
+                0x0000000000000000        0x4 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.IsNodeInList
+                0x0000000000000000       0xb0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.StrnLenS
+                0x0000000000000000       0x7c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.__memset
+                0x0000000000000000       0x1c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.__stack_chk_fail
+                0x0000000000000000       0x34 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .data.__stack_chk_guard
+                0x0000000000000000        0x8 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.IsNodeInList.str1.1
+                0x0000000000000000       0x44 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.StrnLenS.str1.1
+                0x0000000000000000       0x23 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.__stack_chk_fail.str1.1
+                0x0000000000000000       0x2e /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .comment       0x0000000000000000       0x75 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text          0x0000000000000000        0x0 BaseStackCheckGcc.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 memcpy.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 memset.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DebugLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CpuDeadLoop.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SafeString.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 String.obj (symbol from plugin)
+ .text          0x0000000000000000       0x30 /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .text          0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .text          0x0000000000000000        0x0 SwapBytes32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SwapBytes16.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 RShiftU64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MultU64x32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 LShiftU64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DivU64x32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Math64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 PeimEntryPoint.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AutoGen.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 TestBaseSafeIntLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SafeIntLibUintnIntnUnitTests64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 BaseDebugPrintErrorLevelLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 BaseReportStatusCodeLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ZeroMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SetMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CopyMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MemLibGeneric.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MemLibGuid.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CopyMem.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SetMem.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SetMem64Wrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UnitTestDebugAssertLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UnitTestLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 RunTests.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Assert.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Log.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CheckSum.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 LongJump.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SetJump.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 LinkedList.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Unaligned.obj (symbol from plugin)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SetJumpLongJump.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SetJumpLongJump.obj)
+ .text          0x0000000000000000        0x0 PeiServicesTablePointer.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SafeIntLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SafeIntLib64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 PrintLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 PrintLibInternal.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UnitTestResultReportLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UnitTestResultReportLibDebugLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UnitTestPersistenceLibNull.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MemoryAllocationLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CompareMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MultU64x64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MultS64x64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DivU64x32Remainder.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 PeiServicesLib.obj (symbol from plugin)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+LOAD /tmp/ccoMNFrT.ltrans0.ltrans.o
+START GROUP
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Test/UnitTest/Library/BaseSafeIntLib/TestBaseSafeIntLibPei/OUTPUT/TestBaseSafeIntLibPei.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib/OUTPUT/BaseDebugPrintErrorLevelLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseReportStatusCodeLibNull/BaseReportStatusCodeLibNull/OUTPUT/BaseReportStatusCodeLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/PeiHobLib/PeiHobLib/OUTPUT/PeiHobLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/PeiServicesLib/PeiServicesLib/OUTPUT/PeiServicesLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/UnitTestFrameworkPkg/Library/UnitTestResultReportLib/UnitTestResultReportLibDebugLib/OUTPUT/UnitTestResultReportLibDebugLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/UnitTestFrameworkPkg/Library/UnitTestPersistenceLibNull/UnitTestPersistenceLibNull/OUTPUT/UnitTestPersistenceLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/PeiMemoryAllocationLib/PeiMemoryAllocationLib/OUTPUT/PeiMemoryAllocationLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePcdLibNull/BasePcdLibNull/OUTPUT/BasePcdLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseStackCheckLib/BaseStackCheckLib/OUTPUT/BaseStackCheckLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/UnitTestFrameworkPkg/Library/UnitTestDebugAssertLib/UnitTestDebugAssertLib/OUTPUT/UnitTestDebugAssertLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/UnitTestFrameworkPkg/Library/UnitTestLib/UnitTestLib/OUTPUT/UnitTestLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdeModulePkg/Library/PeiDxeDebugLibReportStatusCode/PeiDxeDebugLibReportStatusCode/OUTPUT/PeiDxeDebugLibReportStatusCode.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/PeiServicesTablePointerLib/PeiServicesTablePointerLib/OUTPUT/PeiServicesTablePointerLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/PeimEntryPoint/PeimEntryPoint/OUTPUT/PeimEntryPoint.lib
+LOAD /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseSafeIntLib/BaseSafeIntLib/OUTPUT/BaseSafeIntLib.lib
+END GROUP
+                0x0000000000000228                . = PECOFF_HEADER_SIZE
+
+.text           0x0000000000000240     0xc249
+ *(.text .text.* .stub .gnu.linkonce.t.*)
+ .text.DebugPrintLevelEnabled
+                0x0000000000000240        0x8 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.BasePrintLibFillBuffer
+                0x0000000000000248       0x34 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.AsciiStrnLenS
+                0x000000000000027c       0x3c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.InternalSafeStringNoAsciiStrOverlap
+                0x00000000000002b8       0x3c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.DebugPrintEnabled
+                0x00000000000002f4        0x8 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.DebugAssertEnabled
+                0x00000000000002fc        0x8 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.SafeUint64Mult
+                0x0000000000000304       0x7c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.SafeInt64Mult.constprop.6
+                0x0000000000000380       0x54 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.DebugPrint
+                0x00000000000003d4      0x2b0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.AsciiStrnCatS.constprop.40
+                0x0000000000000684      0x200 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.AsciiStrCatS.constprop.38
+                0x0000000000000884      0x1ac /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.AsciiStrnCpyS
+                0x0000000000000a30      0x16c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.AsciiStrCpyS
+                0x0000000000000b9c      0x1dc /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.UnitTestDebugAssert
+                0x0000000000000d78       0x94 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.LongJump.constprop.46
+                0x0000000000000e0c       0x6c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.CompareMem.constprop.27
+                0x0000000000000e78       0xe4 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.AllocatePool
+                0x0000000000000f5c       0x70 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.AllocateZeroPool
+                0x0000000000000fcc      0x100 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.AllocateAndCopyString
+                0x00000000000010cc       0x50 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.unlikely.ReadUnaligned16
+                0x000000000000111c       0x68 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.InitializeListHead
+                0x0000000000001184       0x4c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.InternalBaseLibIsListValid
+                0x00000000000011d0       0xb8 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.GetFirstNode
+                0x0000000000001288       0x54 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.GetNextNode
+                0x00000000000012dc       0x58 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.InsertTailList
+                0x0000000000001334       0x6c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.CalculateCrc32
+                0x00000000000013a0       0xa4 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.GetActiveFrameworkHandle
+                0x0000000000001444       0x4c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.CopyMem  0x0000000000001490      0x2a8 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.UnitTestLogInit
+                0x0000000000001738       0xf0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.AsciiStrLen
+                0x0000000000001828       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.AddTestCase.constprop.25
+                0x00000000000018c8      0x210 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.CreateUnitTestSuite.constprop.23
+                0x0000000000001ad8      0x124 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.BasePrintLibSPrintMarker.constprop.43
+                0x0000000000001bfc      0xc88 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.unlikely.BasePrintLibSPrint.constprop.44
+                0x0000000000002884       0x54 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.AsciiVSPrint
+                0x00000000000028d8       0x50 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.AsciiSPrint.constprop.45
+                0x0000000000002928       0x5c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.ReportPrint
+                0x0000000000002984       0xec /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.UnitTestLog
+                0x0000000000002a70      0x1d0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.UnitTestLogFailure
+                0x0000000000002c40       0xc8 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.UnitTestAssertEqual.constprop.17
+                0x0000000000002d08       0x98 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.UnitTestAssertNotEfiError.constprop.16
+                0x0000000000002da0       0x7c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeIntnMult
+                0x0000000000002e1c       0xd0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUintnMult
+                0x0000000000002eec       0xe8 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeIntnSub
+                0x0000000000002fd4      0x120 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUintnSub
+                0x00000000000030f4       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeIntnAdd
+                0x0000000000003194      0x134 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUintnAdd
+                0x00000000000032c8       0xac /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint64ToUintn
+                0x0000000000003374       0x7c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint64ToIntn
+                0x00000000000033f0       0xac /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt64ToUintn
+                0x000000000000349c       0xac /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt64ToIntn
+                0x0000000000003548       0x7c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUintnToInt64
+                0x00000000000035c4       0xac /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUintnToIntn
+                0x0000000000003670       0xac /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUintnToUint32
+                0x000000000000371c       0xa4 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeIntnToUint32
+                0x00000000000037c0       0xdc /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeIntnToInt32
+                0x000000000000389c      0x124 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint32ToIntn
+                0x00000000000039c0       0x74 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt32ToUintn
+                0x0000000000003a34       0xa4 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt64Mult
+                0x0000000000003ad8       0xd0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt32Mult
+                0x0000000000003ba8       0xa4 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt16Mult
+                0x0000000000003c4c       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt8Mult
+                0x0000000000003cec       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint64Mult
+                0x0000000000003d8c       0xe8 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint32Mult
+                0x0000000000003e74       0xa4 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint16Mult
+                0x0000000000003f18       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint8Mult
+                0x0000000000003fb8       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt64Sub
+                0x0000000000004058      0x120 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt32Sub
+                0x0000000000004178      0x120 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt16Sub
+                0x0000000000004298      0x11c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt8Sub
+                0x00000000000043b4      0x11c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint64Sub
+                0x00000000000044d0       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint32Sub
+                0x0000000000004570       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint16Sub
+                0x0000000000004610       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint8Sub
+                0x00000000000046b0       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt64Add
+                0x0000000000004750      0x134 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt32Add
+                0x0000000000004884      0x124 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt16Add
+                0x00000000000049a8      0x11c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt8Add
+                0x0000000000004ac4      0x11c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint64Add
+                0x0000000000004be0       0xac /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint32Add
+                0x0000000000004c8c       0xa4 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint16Add
+                0x0000000000004d30       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint8Add
+                0x0000000000004dd0       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint64ToInt64
+                0x0000000000004e70       0xac /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint64ToUint32
+                0x0000000000004f1c       0xa4 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint64ToInt32
+                0x0000000000004fc0       0xa4 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint64ToUint16
+                0x0000000000005064       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint64ToInt16
+                0x0000000000005104       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint64ToUint8
+                0x00000000000051a4       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint64ToChar8
+                0x0000000000005244       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint64ToInt8
+                0x00000000000052e4       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt64ToUint64
+                0x0000000000005384       0xac /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt64ToUint32
+                0x0000000000005430       0xdc /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt64ToInt32
+                0x000000000000550c      0x124 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt64ToUint16
+                0x0000000000005630       0xd8 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt64ToInt16
+                0x0000000000005708      0x11c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt64ToUint8
+                0x0000000000005824       0xd8 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt64ToChar8
+                0x00000000000058fc      0x184 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt64ToInt8
+                0x0000000000005a80      0x11c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUintnToInt32
+                0x0000000000005b9c       0xa4 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUintnToUint16
+                0x0000000000005c40       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUintnToInt16
+                0x0000000000005ce0       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUintnToUint8
+                0x0000000000005d80       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUintnToChar8
+                0x0000000000005e20       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUintnToInt8
+                0x0000000000005ec0       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeIntnToUint64
+                0x0000000000005f60       0xa4 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeIntnToUintn
+                0x0000000000006004       0xa4 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeIntnToUint16
+                0x00000000000060a8       0xd8 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeIntnToInt16
+                0x0000000000006180      0x11c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeIntnToUint8
+                0x000000000000629c       0xd8 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeIntnToChar8
+                0x0000000000006374      0x184 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeIntnToInt8
+                0x00000000000064f8      0x11c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint32ToInt32
+                0x0000000000006614       0xa4 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint32ToUint16
+                0x00000000000066b8       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint32ToInt16
+                0x0000000000006758       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint32ToUint8
+                0x00000000000067f8       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint32ToChar8
+                0x0000000000006898       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint32ToInt8
+                0x0000000000006938       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt32ToUint64
+                0x00000000000069d8       0xa4 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt32ToUint32
+                0x0000000000006a7c       0xa4 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt32ToUint16
+                0x0000000000006b20      0x100 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt32ToInt16
+                0x0000000000006c20      0x11c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt32ToUint8
+                0x0000000000006d3c      0x100 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt32ToChar8
+                0x0000000000006e3c      0x184 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt32ToInt8
+                0x0000000000006fc0      0x11c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint16ToInt16
+                0x00000000000070dc       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint16ToUint8
+                0x000000000000717c       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint16ToChar8
+                0x000000000000721c       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint16ToInt8
+                0x00000000000072bc       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt16ToUint64
+                0x000000000000735c       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt16ToUintn
+                0x00000000000073fc       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt16ToUint32
+                0x000000000000749c       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt16ToUint16
+                0x000000000000753c       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt16ToUint8
+                0x00000000000075dc       0xd8 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt16ToChar8
+                0x00000000000076b4      0x184 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt16ToInt8
+                0x0000000000007838      0x11c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint8ToChar8
+                0x0000000000007954       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeUint8ToInt8
+                0x00000000000079f4       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt8ToUint64
+                0x0000000000007a94       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt8ToUintn
+                0x0000000000007b34       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt8ToUint32
+                0x0000000000007bd4       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt8ToUint16
+                0x0000000000007c74       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.TestSafeInt8ToUint8
+                0x0000000000007d14       0xa0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text.RunTestSuite
+                0x0000000000007db4      0x2dc /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .text._ModuleEntryPoint
+                0x0000000000008090     0x152c /tmp/ccoMNFrT.ltrans0.ltrans.o
+                0x0000000000008090                _ModuleEntryPoint
+ .text.memcpy   0x00000000000095bc       0x20 /tmp/ccoMNFrT.ltrans0.ltrans.o
+                0x00000000000095bc                memcpy
+ *fill*         0x00000000000095dc        0x4 
+ .text          0x00000000000095e0       0x78 /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SetJumpLongJump.obj)
+                0x00000000000095e0                SetJump
+                0x0000000000009618                InternalLongJump
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.AllocatePool.str1.1
+                0x0000000000009658       0x7d /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.AllocateZeroPool.str1.1
+                0x00000000000096d5       0x80 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.AsciiSPrint.constprop.45.str1.1
+                0x0000000000009755        0x5 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.AsciiStrCpyS.str1.1
+                0x000000000000975a       0x2c /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.AsciiStrLen.str1.1
+                0x0000000000009786       0x8b /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.AsciiStrnCatS.constprop.40.str1.1
+                0x0000000000009811      0x127 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.AsciiStrnCpyS.str1.1
+                0x0000000000009938       0x16 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.BasePrintLibSPrintMarker.constprop.43.str1.1
+                0x000000000000994e      0x17b /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.CalculateCrc32.str1.1
+                0x0000000000009ac9       0x77 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.CompareMem.constprop.27.str1.1
+                0x0000000000009b40      0x10d /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.CopyMem.str1.1
+                0x0000000000009c4d       0x4a /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.DebugPrint.str1.1
+                0x0000000000009c97       0x8a /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.GetActiveFrameworkHandle.str1.1
+                0x0000000000009d21       0x71 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.GetFirstNode.str1.1
+                0x0000000000009d92       0x22 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.InitializeListHead.str1.1
+                0x0000000000009db4       0x59 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.InsertTailList.str1.1
+                0x0000000000009e0d       0x26 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.InternalBaseLibIsListValid.str1.1
+                0x0000000000009e33       0x56 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.LongJump.constprop.46.str1.1
+                0x0000000000009e89       0x7b /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.ReadUnaligned16.str1.1
+                0x0000000000009f04       0x43 /tmp/ccoMNFrT.ltrans0.ltrans.o
+                                         0x5a (size before relaxing)
+ .rodata.ReportPrint.str1.1
+                0x0000000000009f47       0x21 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.RunTestSuite.str1.1
+                0x0000000000009f68       0xf6 /tmp/ccoMNFrT.ltrans0.ltrans.o
+                                        0x131 (size before relaxing)
+ .rodata.TestSafeInt16Add.str1.1
+                0x000000000000a05e       0x10 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeInt16Mult.str1.1
+                0x000000000000a06e        0x7 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeInt16Sub.str1.1
+                0x000000000000a075        0xf /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeInt16ToInt8.str1.1
+                0x000000000000a084        0x6 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeInt32Add.str1.1
+                0x000000000000a08a       0x19 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeInt32Mult.str1.1
+                0x000000000000a0a3        0xb /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeInt32Sub.str1.1
+                0x000000000000a0ae       0x18 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeInt32ToInt16.str1.1
+                0x000000000000a0c6       0x10 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeInt32ToInt8.str1.1
+                0x000000000000a0d6        0x6 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeInt64Mult.str1.1
+                0x000000000000a0dc       0x5d /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeInt64ToChar8.str1.1
+                0x000000000000a139        0x9 /tmp/ccoMNFrT.ltrans0.ltrans.o
+                                          0xb (size before relaxing)
+ .rodata.TestSafeInt64ToInt16.str1.1
+                0x000000000000a142        0x9 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeInt64ToInt8.str1.1
+                0x000000000000a14b        0x6 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeInt8Add.str1.1
+                0x000000000000a151        0xc /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeInt8Mult.str1.1
+                0x000000000000a15d        0x5 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeInt8Sub.str1.1
+                0x000000000000a162        0xb /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeIntnAdd.str1.1
+                0x000000000000a16d       0x2a /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeIntnMult.str1.1
+                0x000000000000a197       0x9b /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeIntnSub.str1.1
+                0x000000000000a232       0x2a /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeIntnToInt32.str1.1
+                0x000000000000a25c       0x19 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeIntnToInt8.str1.1
+                0x000000000000a275        0x6 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeUint16Mult.str1.1
+                0x000000000000a27b        0x7 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeUint16Sub.str1.1
+                0x000000000000a282        0x7 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeUint32Mult.str1.1
+                0x000000000000a289        0xb /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeUint32Sub.str1.1
+                0x000000000000a294        0xb /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeUint64ToChar8.str1.1
+                0x000000000000a29f        0x5 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeUint64ToInt16.str1.1
+                0x000000000000a2a4        0x7 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeUint64ToIntn.str1.1
+                0x000000000000a2ab       0x13 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeUint64ToUint16.str1.1
+                0x000000000000a2be        0x7 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeUint64ToUint8.str1.1
+                0x000000000000a2c5        0x5 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeUint64ToUintn.str1.1
+                0x000000000000a2ca       0x13 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeUint8Mult.str1.1
+                0x000000000000a2dd        0x5 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeUint8Sub.str1.1
+                0x000000000000a2e2        0x5 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeUintnAdd.str1.1
+                0x000000000000a2e7       0x13 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeUintnMult.str1.1
+                0x000000000000a2fa       0x13 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeUintnSub.str1.1
+                0x000000000000a30d       0x13 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.TestSafeUintnToUint32.str1.1
+                0x000000000000a320        0xb /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.UnitTestAssertEqual.constprop.17.str1.1
+                0x000000000000a32b       0x31 /tmp/ccoMNFrT.ltrans0.ltrans.o
+                                         0x54 (size before relaxing)
+ .rodata.UnitTestAssertNotEfiError.constprop.16.str1.1
+                0x000000000000a35c       0x3c /tmp/ccoMNFrT.ltrans0.ltrans.o
+                                         0x63 (size before relaxing)
+ .rodata.UnitTestDebugAssert.str1.1
+                0x000000000000a398       0x4f /tmp/ccoMNFrT.ltrans0.ltrans.o
+                                         0x76 (size before relaxing)
+ .rodata.UnitTestLog.str1.1
+                0x000000000000a3e7       0xc7 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.UnitTestLogInit.str1.1
+                0x000000000000a4ae       0x4e /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata._ModuleEntryPoint.str1.1
+                0x000000000000a4fc     0x1519 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.__FUNCTION__.10927
+                0x000000000000ba15       0x10 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.__FUNCTION__.2067
+                0x000000000000ba25        0xd /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.__FUNCTION__.2078
+                0x000000000000ba32        0xe /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.__FUNCTION__.2090
+                0x000000000000ba40        0xd /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.__FUNCTION__.2103
+                0x000000000000ba4d        0xe /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.__FUNCTION__.9302
+                0x000000000000ba5b        0xc /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.__FUNCTION__.9434
+                0x000000000000ba67       0x18 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.__FUNCTION__.9810
+                0x000000000000ba7f       0x13 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ *fill*         0x000000000000ba92        0x2 
+ .rodata.mCrcTable
+                0x000000000000ba94      0x400 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.mErrorString
+                0x000000000000be94      0x2b5 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ *fill*         0x000000000000c149        0x7 
+ .rodata.mFailureTypeStrings
+                0x000000000000c150       0xb0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.mHexStr
+                0x000000000000c200       0x10 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.mLogPrefixStrings
+                0x000000000000c210       0x40 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.mStatusStrings
+                0x000000000000c250       0x60 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.mWarningString
+                0x000000000000c2b0       0x96 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .rodata.str1.1
+                0x000000000000c346      0x143 /tmp/ccoMNFrT.ltrans0.ltrans.o
+                                        0x14a (size before relaxing)
+ *(.got .got.*)
+ *:AutoGen.obj(.data.g*Guid)
+
+.iplt           0x000000000000c48c        0x0
+ .iplt          0x000000000000c48c        0x0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+
+.data           0x000000000000c4a0       0xb8
+ *(.data .data.* .gnu.linkonce.d.*)
+ *(.bss .bss.*)
+ .bss.gPeiServices
+                0x000000000000c4a0        0x8 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .bss.gUnitTestJumpBuffer
+                0x000000000000c4a8       0xa8 /tmp/ccoMNFrT.ltrans0.ltrans.o
+ .bss.mFrameworkHandle
+                0x000000000000c550        0x8 /tmp/ccoMNFrT.ltrans0.ltrans.o
+
+.igot.plt       0x000000000000c558        0x0
+ .igot.plt      0x000000000000c558        0x0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+
+.eh_frame
+ *(.eh_frame)
+
+.rela           0x000000000000c558        0x0
+ *(.rela .rela.*)
+ .rela.iplt     0x000000000000c558        0x0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+
+.hii
+ *(.hii)
+
+.build-id       0x000000000000c558       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x000000000000c558       0x24 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.interp)
+ *(.dynsym)
+ *(.dynstr)
+ *(.dynamic)
+ *(.hash .gnu.hash)
+ *(.comment)
+                0x0000000000000228                PECOFF_HEADER_SIZE = 0x228
+OUTPUT(/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/AARCH64/MdePkg/Test/UnitTest/Library/BaseSafeIntLib/TestBaseSafeIntLibPei/DEBUG/TestBaseSafeIntLibPei.dll elf64-littleaarch64)
+
+.debug_info     0x0000000000000000    0x1327a
+ .debug_info    0x0000000000000000    0x1327a /tmp/ccoMNFrT.ltrans0.ltrans.o
+
+.debug_abbrev   0x0000000000000000      0x619
+ .debug_abbrev  0x0000000000000000      0x619 /tmp/ccoMNFrT.ltrans0.ltrans.o
+
+.debug_loc      0x0000000000000000     0xfd72
+ .debug_loc     0x0000000000000000     0xfd72 /tmp/ccoMNFrT.ltrans0.ltrans.o
+
+.debug_aranges  0x0000000000000000      0x980
+ .debug_aranges
+                0x0000000000000000      0x980 /tmp/ccoMNFrT.ltrans0.ltrans.o
+
+.debug_ranges   0x0000000000000000     0x12a0
+ .debug_ranges  0x0000000000000000     0x12a0 /tmp/ccoMNFrT.ltrans0.ltrans.o
+
+.debug_line     0x0000000000000000     0x29ae
+ .debug_line    0x0000000000000000     0x29ae /tmp/ccoMNFrT.ltrans0.ltrans.o
+
+.debug_str      0x0000000000000000     0x2a89
+ .debug_str     0x0000000000000000     0x2a89 /tmp/ccoMNFrT.ltrans0.ltrans.o
+                                       0x3289 (size before relaxing)
+
+.debug_frame    0x0000000000000000     0x1d98
+ .debug_frame   0x0000000000000000     0x1d98 /tmp/ccoMNFrT.ltrans0.ltrans.o

@@ -1,0 +1,37 @@
+#------------------------------------------------------------------------------
+
+# ArmRndr() for AArch64
+
+# Copyright (c) 2021, NUVIA Inc. All rights reserved.<BR>
+
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+
+#------------------------------------------------------------------------------
+
+
+
+.text
+.p2align 2
+.global ArmRndr ; .type ArmRndr, %function
+
+
+
+
+
+
+
+
+
+
+
+ #BOOLEAN
+#
+ #ArmRndr (
+# UINT64 *Rand
+# );
+
+ArmRndr:
+  mrs x1, S3_3_C2_C4_0
+  str x1, [x0]
+  cset x0, ne
+  ret

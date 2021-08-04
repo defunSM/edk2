@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite name="DxeResetSystemLib Reset Tests" time="0.000" tests="5" failures="0" errors="0" skipped="0" >
+    <testcase name="ResetCold should issue a cold reset" time="0.000" >
+    </testcase>
+    <testcase name="ResetWarm should issue a warm reset" time="0.000" >
+    </testcase>
+    <testcase name="ResetShutdown should issue a shutdown" time="0.000" >
+    </testcase>
+    <testcase name="ResetPlatformSpecific should issue a platform-specific reset" time="0.000" >
+    </testcase>
+    <testcase name="ResetSystem should pass all parameters through" time="0.000" >
+    </testcase>
+  </testsuite>
+</testsuites>

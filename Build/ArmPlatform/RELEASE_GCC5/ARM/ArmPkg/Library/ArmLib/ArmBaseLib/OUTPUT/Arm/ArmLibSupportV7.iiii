@@ -1,0 +1,103 @@
+#------------------------------------------------------------------------------
+
+# Copyright (c) 2008 - 2009, Apple Inc. All rights reserved.<BR>
+# Copyright (c) 2011-2013, ARM Limited. All rights reserved.
+# Copyright (c) 2016, Linaro Limited. All rights reserved.
+
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+
+#------------------------------------------------------------------------------
+
+
+
+.global ArmIsMpCore ; .section ".text.ArmIsMpCore", "ax" ; .type ArmIsMpCore, %function ; .p2align 2 ; ArmIsMpCore:
+  mrc p15,0,R0,c0,c0,5
+
+  and R0, R0, #0xC0000000
+
+  cmp R0, #0x80000000
+  moveq R0, #1
+  movne R0, #0
+  bx LR
+
+.global ArmEnableAsynchronousAbort ; .section ".text.ArmEnableAsynchronousAbort", "ax" ; .type ArmEnableAsynchronousAbort, %function ; .p2align 2 ; ArmEnableAsynchronousAbort:
+  cpsie a
+  isb
+  bx LR
+
+.global ArmDisableAsynchronousAbort ; .section ".text.ArmDisableAsynchronousAbort", "ax" ; .type ArmDisableAsynchronousAbort, %function ; .p2align 2 ; ArmDisableAsynchronousAbort:
+  cpsid a
+  isb
+  bx LR
+
+.global ArmEnableIrq ; .section ".text.ArmEnableIrq", "ax" ; .type ArmEnableIrq, %function ; .p2align 2 ; ArmEnableIrq:
+  cpsie i
+  isb
+  bx LR
+
+.global ArmDisableIrq ; .section ".text.ArmDisableIrq", "ax" ; .type ArmDisableIrq, %function ; .p2align 2 ; ArmDisableIrq:
+  cpsid i
+  isb
+  bx LR
+
+.global ArmEnableFiq ; .section ".text.ArmEnableFiq", "ax" ; .type ArmEnableFiq, %function ; .p2align 2 ; ArmEnableFiq:
+  cpsie f
+  isb
+  bx LR
+
+.global ArmDisableFiq ; .section ".text.ArmDisableFiq", "ax" ; .type ArmDisableFiq, %function ; .p2align 2 ; ArmDisableFiq:
+  cpsid f
+  isb
+  bx LR
+
+.global ArmEnableInterrupts ; .section ".text.ArmEnableInterrupts", "ax" ; .type ArmEnableInterrupts, %function ; .p2align 2 ; ArmEnableInterrupts:
+  cpsie if
+  isb
+  bx LR
+
+.global ArmDisableInterrupts ; .section ".text.ArmDisableInterrupts", "ax" ; .type ArmDisableInterrupts, %function ; .p2align 2 ; ArmDisableInterrupts:
+  cpsid if
+  isb
+  bx LR
+
+.global ArmReadIdMmfr4 ; .section ".text.ArmReadIdMmfr4", "ax" ; .type ArmReadIdMmfr4, %function ; .p2align 2 ; ArmReadIdMmfr4:
+  mrc p15,0,r0,c0,c2,6 @ Read ID_MMFR4 Register
+  bx lr
+
+
+
+
+
+.global ReadCCSIDR ; .section ".text.ReadCCSIDR", "ax" ; .type ReadCCSIDR, %function ; .p2align 2 ; ReadCCSIDR:
+  mcr p15,2,r0,c0,c0,0 @ Write Cache Size Selection Register (CSSELR)
+  isb
+  mrc p15,1,r0,c0,c0,0 @ Read current CP15 Cache Size ID Register (CCSIDR)
+  bx lr
+
+
+
+
+
+.global ReadCCSIDR2 ; .section ".text.ReadCCSIDR2", "ax" ; .type ReadCCSIDR2, %function ; .p2align 2 ; ReadCCSIDR2:
+  mcr p15,2,r0,c0,c0,0 @ Write Cache Size Selection Register (CSSELR)
+  isb
+  mrc p15,1,r0,c0,c0,2 @ Read current CP15 Cache Size ID Register (CCSIDR2)
+  bx lr
+
+
+
+
+
+.global ReadCLIDR ; .section ".text.ReadCLIDR", "ax" ; .type ReadCLIDR, %function ; .p2align 2 ; ReadCLIDR:
+  mrc p15,1,r0,c0,c0,1 @ Read CP15 Cache Level ID Register
+  bx lr
+
+.global ArmReadNsacr ; .section ".text.ArmReadNsacr", "ax" ; .type ArmReadNsacr, %function ; .p2align 2 ; ArmReadNsacr:
+  mrc p15, 0, r0, c1, c1, 2
+  bx lr
+
+.global ArmWriteNsacr ; .section ".text.ArmWriteNsacr", "ax" ; .type ArmWriteNsacr, %function ; .p2align 2 ; ArmWriteNsacr:
+  mcr p15, 0, r0, c1, c1, 2
+  bx lr
+
+

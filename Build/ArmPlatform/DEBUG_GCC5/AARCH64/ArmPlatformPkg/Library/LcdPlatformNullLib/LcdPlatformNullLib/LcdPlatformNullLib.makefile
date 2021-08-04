@@ -1,0 +1,1 @@
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Library/LcdPlatformNullLib/LcdPlatformNullLib/GNUmakefile

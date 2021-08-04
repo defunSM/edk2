@@ -1,0 +1,140 @@
+INFO - Log Started: Wednesday, August 04, 2021 04:48PM
+SECTION - Init SDE
+DEBUG - --- self_describing_environment.load_workspace()
+DEBUG - Loading workspace: /home/xephyr/Documents/edk2
+DEBUG -   Including scopes: ovmf, edk2-build, global-nix, global
+DEBUG - Adding descriptor '/home/xephyr/Documents/edk2/BaseTools/Source/C/bin/basetoolsbin_path_env.yaml' to the environment with scope 'edk2-build'.
+DEBUG - Adding descriptor '/home/xephyr/Documents/edk2/BaseTools/BinWrappers/PosixLike/posix_path_env.yaml' to the environment with scope 'global-nix'.
+DEBUG - Adding descriptor '/home/xephyr/Documents/edk2/BaseTools/basetools_calling_path_env.yaml' to the environment with scope 'global'.
+DEBUG - Adding descriptor '/home/xephyr/Documents/edk2/BaseTools/basetools_path_env.yaml' to the environment with scope 'global'.
+DEBUG - Adding descriptor '/home/xephyr/Documents/edk2/BaseTools/Source/Python/basetool_tiano_python_path_env.yaml' to the environment with scope 'global'.
+DEBUG - Adding descriptor '/home/xephyr/Documents/edk2/OvmfPkg/PlatformCI/iasl_ext_dep.yaml' to the environment with scope 'ovmf'.
+DEBUG - Adding descriptor '/home/xephyr/Documents/edk2/BaseTools/Bin/nasm_ext_dep.yaml' to the environment with scope 'edk2-build'.
+DEBUG - Adding descriptor '/home/xephyr/Documents/edk2/BaseTools/Plugin/LinuxGcc5ToolChain/LinuxGcc5ToolChain_plug_in.yaml' to the environment with scope 'global-nix'.
+DEBUG - Adding descriptor '/home/xephyr/Documents/edk2/BaseTools/Plugin/BuildToolsReport/BuildToolsReportGenerator_plug_in.yaml' to the environment with scope 'global'.
+DEBUG - --- self_describing_environment.update_simple_paths()
+DEBUG - --- self_describing_environment.update_extdep_paths()
+DEBUG - Verify 'mu_nasm' returning 'True'.
+INFO - Computing path for mu_nasm located at /home/xephyr/Documents/edk2/BaseTools/Bin/mu_nasm_extdep on Host(os='Linux', arch='x86', bit='64')
+INFO - /home/xephyr/Documents/edk2/BaseTools/Bin/mu_nasm_extdep/Linux-x86-64 was found!
+DEBUG - Verify 'iasl' returning 'False'.
+DEBUG - --- self_describing_environment.report_extdep_version()
+DEBUG - Verify 'mu_nasm' returning 'True'.
+INFO - Computing path for mu_nasm located at /home/xephyr/Documents/edk2/BaseTools/Bin/mu_nasm_extdep on Host(os='Linux', arch='x86', bit='64')
+INFO - /home/xephyr/Documents/edk2/BaseTools/Bin/mu_nasm_extdep/Linux-x86-64 was found!
+DEBUG - Setting up version aggregator
+DEBUG - Verify 'iasl' returning 'False'.
+SECTION - Loading Plugins
+DEBUG - Loading Plugin from /home/xephyr/Documents/edk2/BaseTools/Plugin/LinuxGcc5ToolChain/LinuxGcc5ToolChain.py
+DEBUG - Loading Plugin from /home/xephyr/Documents/edk2/BaseTools/Plugin/BuildToolsReport/BuildToolsReportGenerator.py
+SECTION - Start Invocable Tool
+SECTION - Initial update of environment
+DEBUG - --- self_describing_environment.update_extdeps()
+DEBUG - Verify 'mu_nasm' returning 'True'.
+INFO - Computing path for mu_nasm located at /home/xephyr/Documents/edk2/BaseTools/Bin/mu_nasm_extdep on Host(os='Linux', arch='x86', bit='64')
+INFO - /home/xephyr/Documents/edk2/BaseTools/Bin/mu_nasm_extdep/Linux-x86-64 was found!
+DEBUG - Verify 'iasl' returning 'False'.
+DEBUG - Creating 2 threads for the SDE update
+DEBUG - Verify 'mu_nasm' returning 'True'.
+DEBUG - Verify 'iasl' returning 'False'.
+DEBUG - Cleaning dependency directory for 'iasl'...
+INFO - Cmd to run is: mono /home/xephyr/.local/lib/python3.9/site-packages/edk2toolext/bin/NuGet.exe locals global-packages -list
+INFO - ------------------------------------------------
+INFO - --------------Cmd Output Starting---------------
+INFO - ------------------------------------------------
+INFO - global-packages: /home/xephyr/.nuget/packages/
+INFO - ------------------------------------------------
+INFO - --------------Cmd Output Finished---------------
+INFO - --------- Running Time (mm:ss): 00:00 ----------
+INFO - ----------- Return Code: 0x00000000 ------------
+INFO - ------------------------------------------------
+INFO - Cmd to run is: mono /home/xephyr/.local/lib/python3.9/site-packages/edk2toolext/bin/NuGet.exe install iasl -Source https://api.nuget.org/v3/index.json -ExcludeVersion -NonInteractive -Version 20190215.0.0 -Verbosity detailed -OutputDirectory "/home/xephyr/Documents/edk2/OvmfPkg/PlatformCI/iasl_extdep_temp"
+INFO - ------------------------------------------------
+INFO - --------------Cmd Output Starting---------------
+INFO - ------------------------------------------------
+INFO - NuGet Version: 5.3.1.6268
+INFO - Feeds used:
+INFO -   /home/xephyr/.nuget/packages/
+INFO -   https://api.nuget.org/v3/index.json
+INFO - 
+INFO - 
+INFO - 
+INFO - Attempting to gather dependency information for package 'iasl.20190215.0.0' with respect to project '/home/xephyr/Documents/edk2/OvmfPkg/PlatformCI/iasl_extdep_temp', targeting 'Any,Version=v0.0'
+INFO - Missing /home/xephyr/.nuget/packages/iasl/20190215.0.0/iasl.20190215.0.0.nupkg
+INFO -   GET https://api.nuget.org/v3/registration5-gz-semver2/iasl/index.json
+INFO -   OK https://api.nuget.org/v3/registration5-gz-semver2/iasl/index.json 124ms
+INFO - Total number of results gathered : 2
+INFO - Gathering dependency information took 400.72 ms
+INFO - Summary of time taken to gather dependencies per source :
+INFO - /home/xephyr/.nuget/packages/	-	3.49 ms
+INFO - https://api.nuget.org/v3/index.json	-	145.91 ms
+INFO - Attempting to resolve dependencies for package 'iasl.20190215.0.0' with DependencyBehavior 'Lowest'
+INFO - Resolving dependency information took 0 ms
+INFO - Resolving actions to install package 'iasl.20190215.0.0'
+INFO - Resolved actions to install package 'iasl.20190215.0.0'
+INFO - Retrieving package 'iasl 20190215.0.0' from 'nuget.org'.
+INFO -   GET https://api.nuget.org/v3-flatcontainer/iasl/20190215.0.0/iasl.20190215.0.0.nupkg
+INFO -   OK https://api.nuget.org/v3-flatcontainer/iasl/20190215.0.0/iasl.20190215.0.0.nupkg 124ms
+INFO - Acquiring lock for the installation of iasl 20190215.0.0
+INFO - Acquired lock for the installation of iasl 20190215.0.0
+INFO - Installing iasl 20190215.0.0.
+INFO - Completed installation of iasl 20190215.0.0
+INFO - Adding package 'iasl.20190215.0.0' to folder '/home/xephyr/Documents/edk2/OvmfPkg/PlatformCI/iasl_extdep_temp'
+INFO - Added package 'iasl.20190215.0.0' to folder '/home/xephyr/Documents/edk2/OvmfPkg/PlatformCI/iasl_extdep_temp'
+INFO - Added package 'iasl.20190215.0.0' to folder '/home/xephyr/Documents/edk2/OvmfPkg/PlatformCI/iasl_extdep_temp' from source 'https://api.nuget.org/v3/index.json'
+INFO - Successfully installed 'iasl 20190215.0.0' to /home/xephyr/Documents/edk2/OvmfPkg/PlatformCI/iasl_extdep_temp
+INFO - Executing nuget actions took 280.59 ms
+INFO - ------------------------------------------------
+INFO - --------------Cmd Output Finished---------------
+INFO - --------- Running Time (mm:ss): 00:01 ----------
+INFO - ----------- Return Code: 0x00000000 ------------
+INFO - ------------------------------------------------
+DEBUG - Verify 'iasl' returning 'True'.
+INFO - Computing path for iasl located at /home/xephyr/Documents/edk2/OvmfPkg/PlatformCI/iasl_extdep on Host(os='Linux', arch='x86', bit='64')
+DEBUG - /home/xephyr/Documents/edk2/OvmfPkg/PlatformCI/iasl_extdep/Linux-x86-64 does not exist
+INFO - /home/xephyr/Documents/edk2/OvmfPkg/PlatformCI/iasl_extdep/Linux-x86 was found!
+SECTION - 	Updated/Verified 2 dependencies
+SECTION - Second pass update of environment
+DEBUG - --- self_describing_environment.load_workspace()
+DEBUG - Loading workspace: /home/xephyr/Documents/edk2
+DEBUG -   Including scopes: ovmf, edk2-build, global-nix, global
+DEBUG - Adding descriptor '/home/xephyr/Documents/edk2/BaseTools/Source/C/bin/basetoolsbin_path_env.yaml' to the environment with scope 'edk2-build'.
+DEBUG - Adding descriptor '/home/xephyr/Documents/edk2/BaseTools/BinWrappers/PosixLike/posix_path_env.yaml' to the environment with scope 'global-nix'.
+DEBUG - Adding descriptor '/home/xephyr/Documents/edk2/BaseTools/basetools_calling_path_env.yaml' to the environment with scope 'global'.
+DEBUG - Adding descriptor '/home/xephyr/Documents/edk2/BaseTools/basetools_path_env.yaml' to the environment with scope 'global'.
+DEBUG - Adding descriptor '/home/xephyr/Documents/edk2/BaseTools/Source/Python/basetool_tiano_python_path_env.yaml' to the environment with scope 'global'.
+DEBUG - Adding descriptor '/home/xephyr/Documents/edk2/OvmfPkg/PlatformCI/iasl_ext_dep.yaml' to the environment with scope 'ovmf'.
+DEBUG - Adding descriptor '/home/xephyr/Documents/edk2/BaseTools/Bin/nasm_ext_dep.yaml' to the environment with scope 'edk2-build'.
+DEBUG - Adding descriptor '/home/xephyr/Documents/edk2/BaseTools/Plugin/LinuxGcc5ToolChain/LinuxGcc5ToolChain_plug_in.yaml' to the environment with scope 'global-nix'.
+DEBUG - Adding descriptor '/home/xephyr/Documents/edk2/BaseTools/Plugin/BuildToolsReport/BuildToolsReportGenerator_plug_in.yaml' to the environment with scope 'global'.
+DEBUG - --- self_describing_environment.update_simple_paths()
+DEBUG - --- self_describing_environment.update_extdep_paths()
+DEBUG - Verify 'mu_nasm' returning 'True'.
+INFO - Computing path for mu_nasm located at /home/xephyr/Documents/edk2/BaseTools/Bin/mu_nasm_extdep on Host(os='Linux', arch='x86', bit='64')
+INFO - /home/xephyr/Documents/edk2/BaseTools/Bin/mu_nasm_extdep/Linux-x86-64 was found!
+DEBUG - Verify 'iasl' returning 'True'.
+INFO - Computing path for iasl located at /home/xephyr/Documents/edk2/OvmfPkg/PlatformCI/iasl_extdep on Host(os='Linux', arch='x86', bit='64')
+DEBUG - /home/xephyr/Documents/edk2/OvmfPkg/PlatformCI/iasl_extdep/Linux-x86-64 does not exist
+INFO - /home/xephyr/Documents/edk2/OvmfPkg/PlatformCI/iasl_extdep/Linux-x86 was found!
+DEBUG - --- self_describing_environment.report_extdep_version()
+DEBUG - Verify 'mu_nasm' returning 'True'.
+INFO - Computing path for mu_nasm located at /home/xephyr/Documents/edk2/BaseTools/Bin/mu_nasm_extdep on Host(os='Linux', arch='x86', bit='64')
+INFO - /home/xephyr/Documents/edk2/BaseTools/Bin/mu_nasm_extdep/Linux-x86-64 was found!
+DEBUG - Verify 'iasl' returning 'True'.
+INFO - Computing path for iasl located at /home/xephyr/Documents/edk2/OvmfPkg/PlatformCI/iasl_extdep on Host(os='Linux', arch='x86', bit='64')
+DEBUG - /home/xephyr/Documents/edk2/OvmfPkg/PlatformCI/iasl_extdep/Linux-x86-64 does not exist
+INFO - /home/xephyr/Documents/edk2/OvmfPkg/PlatformCI/iasl_extdep/Linux-x86 was found!
+DEBUG - --- self_describing_environment.update_extdeps()
+DEBUG - Verify 'mu_nasm' returning 'True'.
+INFO - Computing path for mu_nasm located at /home/xephyr/Documents/edk2/BaseTools/Bin/mu_nasm_extdep on Host(os='Linux', arch='x86', bit='64')
+INFO - /home/xephyr/Documents/edk2/BaseTools/Bin/mu_nasm_extdep/Linux-x86-64 was found!
+DEBUG - Verify 'iasl' returning 'True'.
+INFO - Computing path for iasl located at /home/xephyr/Documents/edk2/OvmfPkg/PlatformCI/iasl_extdep on Host(os='Linux', arch='x86', bit='64')
+DEBUG - /home/xephyr/Documents/edk2/OvmfPkg/PlatformCI/iasl_extdep/Linux-x86-64 does not exist
+INFO - /home/xephyr/Documents/edk2/OvmfPkg/PlatformCI/iasl_extdep/Linux-x86 was found!
+DEBUG - Creating 2 threads for the SDE update
+DEBUG - Verify 'mu_nasm' returning 'True'.
+DEBUG - Verify 'iasl' returning 'True'.
+SECTION - 	Updated/Verified 2 dependencies
+SECTION - Summary
+PROGRESS - Success

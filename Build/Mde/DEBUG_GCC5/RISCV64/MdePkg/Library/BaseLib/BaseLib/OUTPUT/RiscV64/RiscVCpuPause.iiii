@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+.globl RiscVCpuPause
+RiscVCpuPause:
+  nop
+  ret

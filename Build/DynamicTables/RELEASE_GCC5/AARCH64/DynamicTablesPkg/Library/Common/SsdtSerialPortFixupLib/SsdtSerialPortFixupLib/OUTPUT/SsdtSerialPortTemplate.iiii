@@ -1,0 +1,62 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DefinitionBlock ("SsdtSerialPortTemplate.aml", "SSDT", 2, "ARMLTD", "SERIAL", 1) {
+  Scope (_SB) {
+
+    Device (COM0) {
+      Name (_UID, 0x0)
+      Name (_HID, "HID0000")
+      Name (_CID, "CID0000")
+
+      Method(_STA) {
+        Return(0xF)
+      }
+
+      Name (_CRS, ResourceTemplate() {
+        QWordMemory (
+          ,
+          ,
+          ,
+          ,
+          ,
+          ReadWrite,
+          0x0,
+          0xA0000000,
+          0xAFFFFFFF,
+          0,
+          0x10000000,
+          ,
+          ,
+          ,
+          ,
+
+        )
+        Interrupt (
+          ResourceConsumer,
+          Level,
+          ActiveHigh,
+          Exclusive,
+          ,
+          ,
+
+          ) {
+            0xA5
+        }
+      })
+    }
+  }
+}

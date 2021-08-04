@@ -1,0 +1,1847 @@
+     1                                  ;------------------------------------------------------------------------------
+     2                                  ; @file
+     3                                  ; This file includes all other code files to assemble the reset vector code
+     4                                  ;
+     5                                  ; Copyright (c) 2008 - 2013, Intel Corporation. All rights reserved.<BR>
+     6                                  ; Copyright (c) 2020, Advanced Micro Devices, Inc. All rights reserved.<BR>
+     7                                  ; SPDX-License-Identifier: BSD-2-Clause-Patent
+     8                                  ;
+     9                                  ;------------------------------------------------------------------------------
+    10                                  
+    11                                  ;
+    12                                  ; If neither ARCH_IA32 nor ARCH_X64 are defined, then try to include
+    13                                  ; Base.h to use the C pre-processor to determine the architecture.
+    14                                  ;
+    15                                  %ifndef ARCH_IA32
+    16                                    %ifndef ARCH_X64
+    17                                  
+    18                                  
+    19                                  
+    20                                  
+    21                                        %define ARCH_X64
+    22                                  
+    23                                    %endif
+    24                                  %endif
+    25                                  
+    26                                  %ifdef ARCH_IA32
+    27                                    %ifdef ARCH_X64
+    28                                      %error "Only one of ARCH_IA32 or ARCH_X64 can be defined."
+    29                                    %endif
+    30                                  %elifdef ARCH_X64
+    31                                  %else
+    32                                    %error "Either ARCH_IA32 or ARCH_X64 must be defined."
+    33                                  %endif
+    34                                  
+    35                                  %include "CommonMacros.inc"
+    36                              <1> ;------------------------------------------------------------------------------
+    37                              <1> ; @file
+    38                              <1> ; Common macros used in the ResetVector VTF module.
+    39                              <1> ;
+    40                              <1> ; Copyright (c) 2008, Intel Corporation. All rights reserved.<BR>
+    41                              <1> ; SPDX-License-Identifier: BSD-2-Clause-Patent
+    42                              <1> ;
+    43                              <1> ;------------------------------------------------------------------------------
+    44                              <1> 
+    45                              <1> %define ADDR16_OF(x) (0x10000 - fourGigabytes + x)
+    46                              <1> %define ADDR_OF(x) (0x100000000 - fourGigabytes + x)
+    47                              <1> 
+    48                              <1> %macro  OneTimeCall 1
+    49                              <1>     jmp     %1
+    50                              <1> %1 %+ OneTimerCallReturn:
+    51                              <1> %endmacro
+    52                              <1> 
+    53                              <1> %macro  OneTimeCallRet 1
+    54                              <1>     jmp     %1 %+ OneTimerCallReturn
+    55                              <1> %endmacro
+    56                              <1> 
+    57                              <1> StartOfResetVectorCode:
+    58                              <1> 
+    59                              <1> %define ADDR_OF_START_OF_RESET_CODE ADDR_OF(StartOfResetVectorCode)
+    60                              <1> 
+    36                                  
+    37                                  %include "PostCodes.inc"
+    38                              <1> ;------------------------------------------------------------------------------
+    39                              <1> ; @file
+    40                              <1> ; Definitions of POST CODES for the reset vector module
+    41                              <1> ;
+    42                              <1> ; Copyright (c) 2009, Intel Corporation. All rights reserved.<BR>
+    43                              <1> ; SPDX-License-Identifier: BSD-2-Clause-Patent
+    44                              <1> ;
+    45                              <1> ;------------------------------------------------------------------------------
+    46                              <1> 
+    47                              <1> %define POSTCODE_16BIT_MODE     0x16
+    48                              <1> %define POSTCODE_32BIT_MODE     0x32
+    49                              <1> %define POSTCODE_64BIT_MODE     0x64
+    50                              <1> 
+    51                              <1> %define POSTCODE_BFV_NOT_FOUND  0xb0
+    52                              <1> %define POSTCODE_BFV_FOUND      0xb1
+    53                              <1> 
+    54                              <1> %define POSTCODE_SEC_NOT_FOUND  0xf0
+    55                              <1> %define POSTCODE_SEC_FOUND      0xf1
+    56                              <1> 
+    38                                  
+    39                                  %ifdef DEBUG_PORT80
+    40                                    %include "Port80Debug.asm"
+    41                                  %elifdef DEBUG_SERIAL
+    42                                    %include "SerialDebug.asm"
+    43                                  %else
+    44                                    %include "DebugDisabled.asm"
+    45                              <1> ;------------------------------------------------------------------------------
+    46                              <1> ; @file
+    47                              <1> ; Debug disabled
+    48                              <1> ;
+    49                              <1> ; Copyright (c) 2009, Intel Corporation. All rights reserved.<BR>
+    50                              <1> ; SPDX-License-Identifier: BSD-2-Clause-Patent
+    51                              <1> ;
+    52                              <1> ;------------------------------------------------------------------------------
+    53                              <1> 
+    54                              <1> BITS    16
+    55                              <1> 
+    56                              <1> %macro  debugInitialize 0
+    57                              <1>     ;
+    58                              <1>     ; No initialization is required
+    59                              <1>     ;
+    60                              <1> %endmacro
+    61                              <1> 
+    62                              <1> %macro  debugShowPostCode 1
+    63                              <1> %endmacro
+    64                              <1> 
+    45                                  %endif
+    46                                  
+    47                                  %include "Ia32/SearchForBfvBase.asm"
+    48                              <1> ;------------------------------------------------------------------------------
+    49                              <1> ; @file
+    50                              <1> ; Search for the Boot Firmware Volume (BFV) base address
+    51                              <1> ;
+    52                              <1> ; Copyright (c) 2008 - 2009, Intel Corporation. All rights reserved.<BR>
+    53                              <1> ; SPDX-License-Identifier: BSD-2-Clause-Patent
+    54                              <1> ;
+    55                              <1> ;------------------------------------------------------------------------------
+    56                              <1> 
+    57                              <1> ;#define EFI_FIRMWARE_FILE_SYSTEM2_GUID ;  { 0x8c8ce578, 0x8a3d, 0x4f1c, { 0x99, 0x35, 0x89, 0x61, 0x85, 0xc3, 0x2d, 0xd3 } }
+    59                              <1> %define FFS_GUID_DWORD0 0x8c8ce578
+    60                              <1> %define FFS_GUID_DWORD1 0x4f1c8a3d
+    61                              <1> %define FFS_GUID_DWORD2 0x61893599
+    62                              <1> %define FFS_GUID_DWORD3 0xd32dc385
+    63                              <1> 
+    64                              <1> BITS    32
+    65                              <1> 
+    66                              <1> ;
+    67                              <1> ; Modified:  EAX, EBX
+    68                              <1> ; Preserved: EDI, ESP
+    69                              <1> ;
+    70                              <1> ; @param[out]  EBP  Address of Boot Firmware Volume (BFV)
+    71                              <1> ;
+    72                              <1> Flat32SearchForBfvBase:
+    73                              <1> 
+    74 00000000 31C0                <1>     xor     eax, eax
+    75                              <1> searchingForBfvHeaderLoop:
+    76                              <1>     ;
+    77                              <1>     ; We check for a firmware volume at every 4KB address in the top 16MB
+    78                              <1>     ; just below 4GB.  (Addresses at 0xffHHH000 where H is any hex digit.)
+    79                              <1>     ;
+    80 00000002 2D00100000          <1>     sub     eax, 0x1000
+    81 00000007 3D000000FF          <1>     cmp     eax, 0xff000000
+    82 0000000C 7233                <1>     jb      searchedForBfvHeaderButNotFound
+    83                              <1> 
+    84                              <1>     ;
+    85                              <1>     ; Check FFS GUID
+    86                              <1>     ;
+    87 0000000E 81781078E58C8C      <1>     cmp     dword [eax + 0x10], FFS_GUID_DWORD0
+    88 00000015 75EB                <1>     jne     searchingForBfvHeaderLoop
+    89 00000017 8178143D8A1C4F      <1>     cmp     dword [eax + 0x14], FFS_GUID_DWORD1
+    90 0000001E 75E2                <1>     jne     searchingForBfvHeaderLoop
+    91 00000020 81781899358961      <1>     cmp     dword [eax + 0x18], FFS_GUID_DWORD2
+    92 00000027 75D9                <1>     jne     searchingForBfvHeaderLoop
+    93 00000029 81781C85C32DD3      <1>     cmp     dword [eax + 0x1c], FFS_GUID_DWORD3
+    94 00000030 75D0                <1>     jne     searchingForBfvHeaderLoop
+    95                              <1> 
+    96                              <1>     ;
+    97                              <1>     ; Check FV Length
+    98                              <1>     ;
+    99 00000032 83782400            <1>     cmp     dword [eax + 0x24], 0
+   100 00000036 75CA                <1>     jne     searchingForBfvHeaderLoop
+   101 00000038 89C3                <1>     mov     ebx, eax
+   102 0000003A 035820              <1>     add     ebx, dword [eax + 0x20]
+   103 0000003D 75C3                <1>     jnz     searchingForBfvHeaderLoop
+   104                              <1> 
+   105 0000003F EB09                <1>     jmp     searchedForBfvHeaderAndItWasFound
+   106                              <1> 
+   107                              <1> searchedForBfvHeaderButNotFound:
+   108                              <1>     ;
+   109                              <1>     ; Hang if the SEC entry point was not found
+   110                              <1>     ;
+   111                              <1>     debugShowPostCode POSTCODE_BFV_NOT_FOUND
+   112                              <1> 
+   113                              <1>     ;
+   114                              <1>     ; 0xbfbfbfbf in the EAX & EBP registers helps signal what failed
+   115                              <1>     ; for debugging purposes.
+   116                              <1>     ;
+   117 00000041 B8BFBFBFBF          <1>     mov     eax, 0xBFBFBFBF
+   118 00000046 89C5                <1>     mov     ebp, eax
+   119 00000048 EBFE                <1>     jmp     $
+   120                              <1> 
+   121                              <1> searchedForBfvHeaderAndItWasFound:
+   122 0000004A 89C5                <1>     mov     ebp, eax
+   123                              <1> 
+   124                              <1>     debugShowPostCode POSTCODE_BFV_FOUND
+   125                              <1> 
+   126                              <1>     OneTimeCallRet Flat32SearchForBfvBase
+    54 0000004C E95F050000          <2>  jmp %1 %+ OneTimerCallReturn
+   127                              <1> 
+    48                                  %include "Ia32/SearchForSecEntry.asm"
+    49                              <1> ;------------------------------------------------------------------------------
+    50                              <1> ; @file
+    51                              <1> ; Search for the SEC Core entry point
+    52                              <1> ;
+    53                              <1> ; Copyright (c) 2008 - 2011, Intel Corporation. All rights reserved.<BR>
+    54                              <1> ; SPDX-License-Identifier: BSD-2-Clause-Patent
+    55                              <1> ;
+    56                              <1> ;------------------------------------------------------------------------------
+    57                              <1> 
+    58                              <1> BITS    32
+    59                              <1> 
+    60                              <1> %define EFI_FV_FILETYPE_SECURITY_CORE         0x03
+    61                              <1> 
+    62                              <1> ;
+    63                              <1> ; Modified:  EAX, EBX, ECX, EDX
+    64                              <1> ; Preserved: EDI, EBP, ESP
+    65                              <1> ;
+    66                              <1> ; @param[in]   EBP  Address of Boot Firmware Volume (BFV)
+    67                              <1> ; @param[out]  ESI  SEC Core Entry Point Address
+    68                              <1> ;
+    69                              <1> Flat32SearchForSecEntryPoint:
+    70                              <1> 
+    71                              <1>     ;
+    72                              <1>     ; Initialize EBP and ESI to 0
+    73                              <1>     ;
+    74 00000051 31DB                <1>     xor     ebx, ebx
+    75 00000053 89DE                <1>     mov     esi, ebx
+    76                              <1> 
+    77                              <1>     ;
+    78                              <1>     ; Pass over the BFV header
+    79                              <1>     ;
+    80 00000055 89E8                <1>     mov     eax, ebp
+    81 00000057 668B5D30            <1>     mov     bx, [ebp + 0x30]
+    82 0000005B 01D8                <1>     add     eax, ebx
+    83 0000005D 723B                <1>     jc      secEntryPointWasNotFound
+    84                              <1> 
+    85 0000005F EB03                <1>     jmp     searchingForFfsFileHeaderLoop
+    86                              <1> 
+    87                              <1> moveForwardWhileSearchingForFfsFileHeaderLoop:
+    88                              <1>     ;
+    89                              <1>     ; Make forward progress in the search
+    90                              <1>     ;
+    91 00000061 40                  <1>     inc     eax
+    92 00000062 7236                <1>     jc      secEntryPointWasNotFound
+    93                              <1> 
+    94                              <1> searchingForFfsFileHeaderLoop:
+    95 00000064 85C0                <1>     test    eax, eax
+    96 00000066 7432                <1>     jz      secEntryPointWasNotFound
+    97                              <1> 
+    98                              <1>     ;
+    99                              <1>     ; Ensure 8 byte alignment
+   100                              <1>     ;
+   101 00000068 83C007              <1>     add     eax, 7
+   102 0000006B 722D                <1>     jc      secEntryPointWasNotFound
+   103 0000006D 24F8                <1>     and     al, 0xf8
+   104                              <1> 
+   105                              <1>     ;
+   106                              <1>     ; Look to see if there is an FFS file at eax
+   107                              <1>     ;
+   108 0000006F 8A5817              <1>     mov     bl, [eax + 0x17]
+   109 00000072 F6C320              <1>     test    bl, 0x20
+   110 00000075 74EA                <1>     jz      moveForwardWhileSearchingForFfsFileHeaderLoop
+   111 00000077 8B4814              <1>     mov     ecx, [eax + 0x14]
+   112 0000007A 81E1FFFFFF00        <1>     and     ecx, 0x00ffffff
+   113 00000080 09C9                <1>     or      ecx, ecx
+   114 00000082 74DD                <1>     jz      moveForwardWhileSearchingForFfsFileHeaderLoop
+   115 00000084 01C1                <1>     add     ecx, eax
+   116 00000086 7402                <1>     jz      jumpSinceWeFoundTheLastFfsFile
+   117 00000088 72D7                <1>     jc      moveForwardWhileSearchingForFfsFileHeaderLoop
+   118                              <1> jumpSinceWeFoundTheLastFfsFile:
+   119                              <1> 
+   120                              <1>     ;
+   121                              <1>     ; There seems to be a valid file at eax
+   122                              <1>     ;
+   123 0000008A 80781203            <1>     cmp     byte [eax + 0x12], EFI_FV_FILETYPE_SECURITY_CORE ; Check File Type
+   124 0000008E 7506                <1>     jne     readyToTryFfsFileAtEcx
+   125                              <1> 
+   126                              <1> fileTypeIsSecCore:
+   127                              <1>     OneTimeCall GetEntryPointOfFfsFile
+    49 00000090 EB17                <2>  jmp %1
+    50                              <2> %1 %+ OneTimerCallReturn:
+   128 00000092 85C0                <1>     test    eax, eax
+   129 00000094 7506                <1>     jnz     doneSeachingForSecEntryPoint
+   130                              <1> 
+   131                              <1> readyToTryFfsFileAtEcx:
+   132                              <1>     ;
+   133                              <1>     ; Try the next FFS file at ECX
+   134                              <1>     ;
+   135 00000096 89C8                <1>     mov     eax, ecx
+   136 00000098 EBCA                <1>     jmp     searchingForFfsFileHeaderLoop
+   137                              <1> 
+   138                              <1> secEntryPointWasNotFound:
+   139 0000009A 31C0                <1>     xor     eax, eax
+   140                              <1> 
+   141                              <1> doneSeachingForSecEntryPoint:
+   142 0000009C 89C6                <1>     mov     esi, eax
+   143                              <1> 
+   144 0000009E 85F6                <1>     test    esi, esi
+   145 000000A0 7502                <1>     jnz     secCoreEntryPointWasFound
+   146                              <1> 
+   147                              <1> secCoreEntryPointWasNotFound:
+   148                              <1>     ;
+   149                              <1>     ; Hang if the SEC entry point was not found
+   150                              <1>     ;
+   151                              <1>     debugShowPostCode POSTCODE_SEC_NOT_FOUND
+   152 000000A2 74FE                <1>     jz      $
+   153                              <1> 
+   154                              <1> secCoreEntryPointWasFound:
+   155                              <1>     debugShowPostCode POSTCODE_SEC_FOUND
+   156                              <1> 
+   157                              <1>     OneTimeCallRet Flat32SearchForSecEntryPoint
+    54 000000A4 E90C050000          <2>  jmp %1 %+ OneTimerCallReturn
+   158                              <1> 
+   159                              <1> %define EFI_SECTION_PE32                  0x10
+   160                              <1> %define EFI_SECTION_TE                    0x12
+   161                              <1> 
+   162                              <1> ;
+   163                              <1> ; Input:
+   164                              <1> ;   EAX - Start of FFS file
+   165                              <1> ;   ECX - End of FFS file
+   166                              <1> ;
+   167                              <1> ; Output:
+   168                              <1> ;   EAX - Entry point of PE32 (or 0 if not found)
+   169                              <1> ;
+   170                              <1> ; Modified:
+   171                              <1> ;   EBX
+   172                              <1> ;
+   173                              <1> GetEntryPointOfFfsFile:
+   174 000000A9 85C0                <1>     test    eax, eax
+   175 000000AB 745F                <1>     jz      getEntryPointOfFfsFileErrorReturn
+   176 000000AD 83C018              <1>     add     eax, 0x18       ; EAX = Start of section
+   177                              <1> 
+   178                              <1> getEntryPointOfFfsFileLoopForSections:
+   179 000000B0 39C8                <1>     cmp     eax, ecx
+   180 000000B2 7358                <1>     jae     getEntryPointOfFfsFileErrorReturn
+   181                              <1> 
+   182 000000B4 80780310            <1>     cmp     byte [eax + 3], EFI_SECTION_PE32
+   183 000000B8 741B                <1>     je      getEntryPointOfFfsFileFoundPe32Section
+   184                              <1> 
+   185 000000BA 80780312            <1>     cmp     byte [eax + 3], EFI_SECTION_TE
+   186 000000BE 7432                <1>     je      getEntryPointOfFfsFileFoundTeSection
+   187                              <1> 
+   188                              <1>     ;
+   189                              <1>     ; The section type was not PE32 or TE, so move to next section
+   190                              <1>     ;
+   191 000000C0 8B18                <1>     mov     ebx, dword [eax]
+   192 000000C2 81E3FFFFFF00        <1>     and     ebx, 0x00ffffff
+   193 000000C8 01D8                <1>     add     eax, ebx
+   194 000000CA 7240                <1>     jc      getEntryPointOfFfsFileErrorReturn
+   195                              <1> 
+   196                              <1>     ;
+   197                              <1>     ; Ensure that FFS section is 32-bit aligned
+   198                              <1>     ;
+   199 000000CC 83C003              <1>     add     eax, 3
+   200 000000CF 723B                <1>     jc      getEntryPointOfFfsFileErrorReturn
+   201 000000D1 24FC                <1>     and     al, 0xfc
+   202 000000D3 EBDB                <1>     jmp     getEntryPointOfFfsFileLoopForSections
+   203                              <1> 
+   204                              <1> getEntryPointOfFfsFileFoundPe32Section:
+   205 000000D5 83C004              <1>     add     eax, 4       ; EAX = Start of PE32 image
+   206                              <1> 
+   207 000000D8 6681384D5A          <1>     cmp     word [eax], 'MZ'
+   208 000000DD 752D                <1>     jne     getEntryPointOfFfsFileErrorReturn
+   209 000000DF 0FB7583C            <1>     movzx   ebx, word [eax + 0x3c]
+   210 000000E3 01C3                <1>     add     ebx, eax
+   211                              <1> 
+   212                              <1>     ; if (Hdr.Pe32->Signature == EFI_IMAGE_NT_SIGNATURE)
+   213 000000E5 813B50450000        <1>     cmp     dword [ebx], `PE\x00\x00`
+   214 000000EB 751F                <1>     jne     getEntryPointOfFfsFileErrorReturn
+   215                              <1> 
+   216                              <1>     ; *EntryPoint = (VOID *)((UINTN)Pe32Data +
+   217                              <1>     ;   (UINTN)(Hdr.Pe32->OptionalHeader.AddressOfEntryPoint & 0x0ffffffff));
+   218 000000ED 034328              <1>     add     eax, [ebx + 0x4 + 0x14 + 0x10]
+   219 000000F0 EB1F                <1>     jmp     getEntryPointOfFfsFileReturn
+   220                              <1> 
+   221                              <1> getEntryPointOfFfsFileFoundTeSection:
+   222 000000F2 83C004              <1>     add     eax, 4       ; EAX = Start of TE image
+   223 000000F5 89C3                <1>     mov     ebx, eax
+   224                              <1> 
+   225                              <1>     ; if (Hdr.Te->Signature == EFI_TE_IMAGE_HEADER_SIGNATURE)
+   226 000000F7 66813B565A          <1>     cmp     word [ebx], 'VZ'
+   227 000000FC 750E                <1>     jne     getEntryPointOfFfsFileErrorReturn
+   228                              <1>     ; *EntryPoint = (VOID *)((UINTN)Pe32Data +
+   229                              <1>     ;   (UINTN)(Hdr.Te->AddressOfEntryPoint & 0x0ffffffff) +
+   230                              <1>     ;   sizeof(EFI_TE_IMAGE_HEADER) - Hdr.Te->StrippedSize);
+   231 000000FE 034308              <1>     add     eax, [ebx + 0x8]
+   232 00000101 83C028              <1>     add     eax, 0x28
+   233 00000104 0FB75B06            <1>     movzx   ebx, word [ebx + 0x6]
+   234 00000108 29D8                <1>     sub     eax, ebx
+   235 0000010A EB05                <1>     jmp     getEntryPointOfFfsFileReturn
+   236                              <1> 
+   237                              <1> getEntryPointOfFfsFileErrorReturn:
+   238 0000010C B800000000          <1>     mov     eax, 0
+   239                              <1> 
+   240                              <1> getEntryPointOfFfsFileReturn:
+   241                              <1>     OneTimeCallRet GetEntryPointOfFfsFile
+    54 00000111 E97CFFFFFF          <2>  jmp %1 %+ OneTimerCallReturn
+   242                              <1> 
+    49                                  
+    50                                  %ifdef ARCH_X64
+    51                                  
+    52                                  
+    53                                    %if (000006000h != 06000h)
+    54                                      %error "This implementation inherently depends on PcdOvmfSecPageTablesSize"
+    55                                    %endif
+    56                                  
+    57                                    %if (000001000h != 01000h)
+    58                                      %error "This implementation inherently depends on PcdOvmfSecGhcbPageTableSize"
+    59                                    %endif
+    60                                  
+    61                                    %if (000002000h != 02000h)
+    62                                      %error "This implementation inherently depends on PcdOvmfSecGhcbSize"
+    63                                    %endif
+    64                                  
+    65                                    %if ((000809000h >> 21) != ((000809000h + 000002000h - 1) >> 21))
+    66                                  
+    67                                      %error "This implementation inherently depends on PcdOvmfSecGhcbBase not straddling a 2MB boundary"
+    68                                    %endif
+    69                                  
+    70                                    %define PT_ADDR(Offset) (000800000h + (Offset))
+    71                                  
+    72                                    %define GHCB_PT_ADDR (000808000h)
+    73                                    %define GHCB_BASE (000809000h)
+    74                                    %define GHCB_SIZE (000002000h)
+    75                                    %define SEV_ES_WORK_AREA (00080B000h)
+    76                                    %define SEV_ES_WORK_AREA_RDRAND (00080B000h + 8)
+    77                                    %define SEV_ES_WORK_AREA_ENC_MASK (00080B000h + 16)
+    78                                    %define SEV_ES_VC_TOP_OF_STACK (000810000h + 000010000h)
+    79                                  %include "Ia32/Flat32ToFlat64.asm"
+    80                              <1> ;------------------------------------------------------------------------------
+    81                              <1> ; @file
+    82                              <1> ; Transition from 32 bit flat protected mode into 64 bit flat protected mode
+    83                              <1> ;
+    84                              <1> ; Copyright (c) 2008 - 2018, Intel Corporation. All rights reserved.<BR>
+    85                              <1> ; Copyright (c) 2020, Advanced Micro Devices, Inc. All rights reserved.<BR>
+    86                              <1> ; SPDX-License-Identifier: BSD-2-Clause-Patent
+    87                              <1> ;
+    88                              <1> ;------------------------------------------------------------------------------
+    89                              <1> 
+    90                              <1> BITS    32
+    91                              <1> 
+    92                              <1> ;
+    93                              <1> ; Modified:  EAX, ECX, EDX
+    94                              <1> ;
+    95                              <1> Transition32FlatTo64Flat:
+    96                              <1> 
+    97                              <1>     OneTimeCall SetCr3ForPageTables64
+    49 00000116 E915030000          <2>  jmp %1
+    50                              <2> %1 %+ OneTimerCallReturn:
+    98                              <1> 
+    99 0000011B 0F20E0              <1>     mov     eax, cr4
+   100 0000011E 0FBAE805            <1>     bts     eax, 5                      ; enable PAE
+   101 00000122 0F22E0              <1>     mov     cr4, eax
+   102                              <1> 
+   103 00000125 B9800000C0          <1>     mov     ecx, 0xc0000080
+   104 0000012A 0F32                <1>     rdmsr
+   105 0000012C 0FBAE808            <1>     bts     eax, 8                      ; set LME
+   106 00000130 0F30                <1>     wrmsr
+   107                              <1> 
+   108                              <1>     ;
+   109                              <1>     ; SEV-ES mitigation check support
+   110                              <1>     ;
+   111 00000132 31DB                <1>     xor     ebx, ebx
+   112                              <1> 
+   113 00000134 803D00B0800000      <1>     cmp     byte[SEV_ES_WORK_AREA], 0
+   114 0000013B 741B                <1>     jz      EnablePaging
+   115                              <1> 
+   116                              <1>     ;
+   117                              <1>     ; SEV-ES is active, perform a quick sanity check against the reported
+   118                              <1>     ; encryption bit position. This is to help mitigate against attacks where
+   119                              <1>     ; the hypervisor reports an incorrect encryption bit position.
+   120                              <1>     ;
+   121                              <1>     ; This is the first step in a two step process. Before paging is enabled
+   122                              <1>     ; writes to memory are encrypted. Using the RDRAND instruction (available
+   123                              <1>     ; on all SEV capable processors), write 64-bits of random data to the
+   124                              <1>     ; SEV_ES_WORK_AREA and maintain the random data in registers (register
+   125                              <1>     ; state is protected under SEV-ES). This will be used in the second step.
+   126                              <1>     ;
+   127                              <1> RdRand1:
+   128 0000013D 0FC7F1              <1>     rdrand  ecx
+   129 00000140 73FB                <1>     jnc     RdRand1
+   130 00000142 890D08B08000        <1>     mov     dword[SEV_ES_WORK_AREA_RDRAND], ecx
+   131                              <1> RdRand2:
+   132 00000148 0FC7F2              <1>     rdrand  edx
+   133 0000014B 73FB                <1>     jnc     RdRand2
+   134 0000014D 89150CB08000        <1>     mov     dword[SEV_ES_WORK_AREA_RDRAND + 4], edx
+   135                              <1> 
+   136                              <1>     ;
+   137                              <1>     ; Use EBX instead of the SEV_ES_WORK_AREA memory to determine whether to
+   138                              <1>     ; perform the second step.
+   139                              <1>     ;
+   140 00000153 BB01000000          <1>     mov     ebx, 1
+   141                              <1> 
+   142                              <1> EnablePaging:
+   143 00000158 0F20C0              <1>     mov     eax, cr0
+   144 0000015B 0FBAE81F            <1>     bts     eax, 31                     ; set PG
+   145 0000015F 0F22C0              <1>     mov     cr0, eax                    ; enable paging
+   146                              <1> 
+   147 00000162 EA19FBFFFF1800      <1>     jmp     LINEAR_CODE64_SEL:ADDR_OF(jumpTo64BitAndLandHere)
+   148                              <1> BITS    64
+   149                              <1> jumpTo64BitAndLandHere:
+   150                              <1> 
+   151                              <1>     ;
+   152                              <1>     ; Check if the second step of the SEV-ES mitigation is to be performed.
+   153                              <1>     ;
+   154 00000169 85DB                <1>     test    ebx, ebx
+   155 0000016B 7412                <1>     jz      InsnCompare
+   156                              <1> 
+   157                              <1>     ;
+   158                              <1>     ; SEV-ES is active, perform the second step of the encryption bit postion
+   159                              <1>     ; mitigation check. The ECX and EDX register contain data from RDRAND that
+   160                              <1>     ; was stored to memory in encrypted form. If the encryption bit position is
+   161                              <1>     ; valid, the contents of ECX and EDX will match the memory location.
+   162                              <1>     ;
+   163 0000016D 390C2508B08000      <1>     cmp     dword[SEV_ES_WORK_AREA_RDRAND], ecx
+   164 00000174 7515                <1>     jne     SevEncBitHlt
+   165 00000176 3914250CB08000      <1>     cmp     dword[SEV_ES_WORK_AREA_RDRAND + 4], edx
+   166 0000017D 750C                <1>     jne     SevEncBitHlt
+   167                              <1> 
+   168                              <1>     ;
+   169                              <1>     ; If SEV or SEV-ES is active, perform a quick sanity check against
+   170                              <1>     ; the reported encryption bit position. This is to help mitigate
+   171                              <1>     ; against attacks where the hypervisor reports an incorrect encryption
+   172                              <1>     ; bit position. If SEV is not active, this check will always succeed.
+   173                              <1>     ;
+   174                              <1>     ; The cmp instruction compares the first four bytes of the cmp instruction
+   175                              <1>     ; itself (which will be read decrypted if SEV or SEV-ES is active and the
+   176                              <1>     ; encryption bit position is valid) against the immediate within the
+   177                              <1>     ; instruction (an instruction fetch is always decrypted correctly by
+   178                              <1>     ; hardware) based on RIP relative addressing.
+   179                              <1>     ;
+   180                              <1> InsnCompare:
+   181 0000017F 813DF6FFFFFF813DF6- <1>     cmp     dword[rel InsnCompare], 0xFFF63D81
+   181 00000188 FF                  <1>
+   182 00000189 7404                <1>     je      GoodCompare
+   183                              <1> 
+   184                              <1>     ;
+   185                              <1>     ; The hypervisor provided an incorrect encryption bit position, do not
+   186                              <1>     ; proceed.
+   187                              <1>     ;
+   188                              <1> SevEncBitHlt:
+   189 0000018B FA                  <1>     cli
+   190 0000018C F4                  <1>     hlt
+   191 0000018D EBFC                <1>     jmp     SevEncBitHlt
+   192                              <1> 
+   193                              <1> GoodCompare:
+   194                              <1>     debugShowPostCode POSTCODE_64BIT_MODE
+   195                              <1> 
+   196                              <1>     OneTimeCallRet Transition32FlatTo64Flat
+    54 0000018F E926040000          <2>  jmp %1 %+ OneTimerCallReturn
+   197                              <1> 
+    80                                  %include "Ia32/AmdSev.asm"
+    81                              <1> ;------------------------------------------------------------------------------
+    82                              <1> ; @file
+    83                              <1> ; Provide the functions to check whether SEV and SEV-ES is enabled.
+    84                              <1> ;
+    85                              <1> ; Copyright (c) 2017 - 2021, Advanced Micro Devices, Inc. All rights reserved.<BR>
+    86                              <1> ; SPDX-License-Identifier: BSD-2-Clause-Patent
+    87                              <1> ;
+    88                              <1> ;------------------------------------------------------------------------------
+    89                              <1> 
+    90                              <1> BITS    32
+    91                              <1> 
+    92                              <1> ;
+    93                              <1> ; SEV-ES #VC exception handler support
+    94                              <1> ;
+    95                              <1> ; #VC handler local variable locations
+    96                              <1> ;
+    97                              <1> %define VC_CPUID_RESULT_EAX         0
+    98                              <1> %define VC_CPUID_RESULT_EBX         4
+    99                              <1> %define VC_CPUID_RESULT_ECX         8
+   100                              <1> %define VC_CPUID_RESULT_EDX        12
+   101                              <1> %define VC_GHCB_MSR_EDX            16
+   102                              <1> %define VC_GHCB_MSR_EAX            20
+   103                              <1> %define VC_CPUID_REQUEST_REGISTER  24
+   104                              <1> %define VC_CPUID_FUNCTION          28
+   105                              <1> 
+   106                              <1> ; #VC handler total local variable size
+   107                              <1> ;
+   108                              <1> %define VC_VARIABLE_SIZE           32
+   109                              <1> 
+   110                              <1> ; #VC handler GHCB CPUID request/response protocol values
+   111                              <1> ;
+   112                              <1> %define GHCB_CPUID_REQUEST          4
+   113                              <1> %define GHCB_CPUID_RESPONSE         5
+   114                              <1> %define GHCB_CPUID_REGISTER_SHIFT  30
+   115                              <1> %define CPUID_INSN_LEN              2
+   116                              <1> 
+   117                              <1> 
+   118                              <1> %define SEV_GHCB_MSR                0xc0010130
+   119                              <1> %define SEV_STATUS_MSR              0xc0010131
+   120                              <1> 
+   121                              <1> ; The #VC was not for CPUID
+   122                              <1> %define TERM_VC_NOT_CPUID           1
+   123                              <1> 
+   124                              <1> ; The unexpected response code
+   125                              <1> %define TERM_UNEXPECTED_RESP_CODE   2
+   126                              <1> 
+   127                              <1> 
+   128                              <1> ; Macro is used to issue the MSR protocol based VMGEXIT. The caller is
+   129                              <1> ; responsible to populate values in the EDX:EAX registers. After the vmmcall
+   130                              <1> ; returns, it verifies that the response code matches with the expected
+   131                              <1> ; code. If it does not match then terminate the guest. The result of request
+   132                              <1> ; is returned in the EDX:EAX.
+   133                              <1> ;
+   134                              <1> ; args 1:Request code, 2: Response code
+   135                              <1> %macro VmgExit 2
+   136                              <1>     ;
+   137                              <1>     ; Add request code:
+   138                              <1>     ;   GHCB_MSR[11:0]  = Request code
+   139                              <1>     or      eax, %1
+   140                              <1> 
+   141                              <1>     mov     ecx, SEV_GHCB_MSR
+   142                              <1>     wrmsr
+   143                              <1> 
+   144                              <1>     ; Issue VMGEXIT - NASM doesn't support the vmmcall instruction in 32-bit
+   145                              <1>     ; mode, so work around this by temporarily switching to 64-bit mode.
+   146                              <1>     ;
+   147                              <1> BITS    64
+   148                              <1>     rep     vmmcall
+   149                              <1> BITS    32
+   150                              <1> 
+   151                              <1>     mov     ecx, SEV_GHCB_MSR
+   152                              <1>     rdmsr
+   153                              <1> 
+   154                              <1>     ;
+   155                              <1>     ; Verify the reponse code, if it does not match then request to terminate
+   156                              <1>     ;   GHCB_MSR[11:0]  = Response code
+   157                              <1>     mov     ecx, eax
+   158                              <1>     and     ecx, 0xfff
+   159                              <1>     cmp     ecx, %2
+   160                              <1>     jne     SevEsUnexpectedRespTerminate
+   161                              <1> %endmacro
+   162                              <1> 
+   163                              <1> ; Macro to terminate the guest using the VMGEXIT.
+   164                              <1> ; arg 1: reason code
+   165                              <1> %macro TerminateVmgExit 1
+   166                              <1>     mov     eax, %1
+   167                              <1>     ;
+   168                              <1>     ; Use VMGEXIT to request termination. At this point the reason code is
+   169                              <1>     ; located in EAX, so shift it left 16 bits to the proper location.
+   170                              <1>     ;
+   171                              <1>     ; EAX[11:0]  => 0x100 - request termination
+   172                              <1>     ; EAX[15:12] => 0x1   - OVMF
+   173                              <1>     ; EAX[23:16] => 0xXX  - REASON CODE
+   174                              <1>     ;
+   175                              <1>     shl     eax, 16
+   176                              <1>     or      eax, 0x1100
+   177                              <1>     xor     edx, edx
+   178                              <1>     mov     ecx, SEV_GHCB_MSR
+   179                              <1>     wrmsr
+   180                              <1>     ;
+   181                              <1>     ; Issue VMGEXIT - NASM doesn't support the vmmcall instruction in 32-bit
+   182                              <1>     ; mode, so work around this by temporarily switching to 64-bit mode.
+   183                              <1>     ;
+   184                              <1> BITS    64
+   185                              <1>     rep     vmmcall
+   186                              <1> BITS    32
+   187                              <1> 
+   188                              <1>     ;
+   189                              <1>     ; We shouldn't come back from the VMGEXIT, but if we do, just loop.
+   190                              <1>     ;
+   191                              <1> %%TerminateHlt:
+   192                              <1>     hlt
+   193                              <1>     jmp     %%TerminateHlt
+   194                              <1> %endmacro
+   195                              <1> 
+   196                              <1> ; Terminate the guest due to unexpected response code.
+   197                              <1> SevEsUnexpectedRespTerminate:
+   198                              <1>     TerminateVmgExit    TERM_UNEXPECTED_RESP_CODE
+   166 00000194 B802000000          <2>  mov eax, %1
+   167                              <2> 
+   168                              <2> 
+   169                              <2> 
+   170                              <2> 
+   171                              <2> 
+   172                              <2> 
+   173                              <2> 
+   174                              <2> 
+   175 00000199 C1E010              <2>  shl eax, 16
+   176 0000019C 0D00110000          <2>  or eax, 0x1100
+   177 000001A1 31D2                <2>  xor edx, edx
+   178 000001A3 B9300101C0          <2>  mov ecx, SEV_GHCB_MSR
+   179 000001A8 0F30                <2>  wrmsr
+   180                              <2> 
+   181                              <2> 
+   182                              <2> 
+   183                              <2> 
+   184                              <2> BITS 64
+   185 000001AA F30F01D9            <2>  rep vmmcall
+   186                              <2> BITS 32
+   187                              <2> 
+   188                              <2> 
+   189                              <2> 
+   190                              <2> 
+   191                              <2> %%TerminateHlt:
+   192 000001AE F4                  <2>  hlt
+   193 000001AF EBFD                <2>  jmp %%TerminateHlt
+   199                              <1> 
+   200                              <1> ; Check if Secure Encrypted Virtualization (SEV) features are enabled.
+   201                              <1> ;
+   202                              <1> ; Register usage is tight in this routine, so multiple calls for the
+   203                              <1> ; same CPUID and MSR data are performed to keep things simple.
+   204                              <1> ;
+   205                              <1> ; Modified:  EAX, EBX, ECX, EDX, ESP
+   206                              <1> ;
+   207                              <1> ; If SEV is enabled then EAX will be at least 32.
+   208                              <1> ; If SEV is disabled then EAX will be zero.
+   209                              <1> ;
+   210                              <1> CheckSevFeatures:
+   211                              <1>     ; Set the first byte of the workarea to zero to communicate to the SEC
+   212                              <1>     ; phase that SEV-ES is not enabled. If SEV-ES is enabled, the CPUID
+   213                              <1>     ; instruction will trigger a #VC exception where the first byte of the
+   214                              <1>     ; workarea will be set to one or, if CPUID is not being intercepted,
+   215                              <1>     ; the MSR check below will set the first byte of the workarea to one.
+   216 000001B1 C60500B0800000      <1>     mov     byte[SEV_ES_WORK_AREA], 0
+   217                              <1> 
+   218                              <1>     ;
+   219                              <1>     ; Set up exception handlers to check for SEV-ES
+   220                              <1>     ;   Load temporary RAM stack based on PCDs (see SevEsIdtVmmComm for
+   221                              <1>     ;   stack usage)
+   222                              <1>     ;   Establish exception handlers
+   223                              <1>     ;
+   224 000001B8 BC00008200          <1>     mov       esp, SEV_ES_VC_TOP_OF_STACK
+   225 000001BD B8CEFCFFFF          <1>     mov       eax, ADDR_OF(Idtr)
+   226 000001C2 2E0F0118            <1>     lidt      [cs:eax]
+   227                              <1> 
+   228                              <1>     ; Check if we have a valid (0x8000_001F) CPUID leaf
+   229                              <1>     ;   CPUID raises a #VC exception if running as an SEV-ES guest
+   230 000001C6 B800000080          <1>     mov       eax, 0x80000000
+   231 000001CB 0FA2                <1>     cpuid
+   232                              <1> 
+   233                              <1>     ; This check should fail on Intel or Non SEV AMD CPUs. In future if
+   234                              <1>     ; Intel CPUs supports this CPUID leaf then we are guranteed to have exact
+   235                              <1>     ; same bit definition.
+   236 000001CD 3D1F000080          <1>     cmp       eax, 0x8000001f
+   237 000001D2 7C60                <1>     jl        NoSev
+   238                              <1> 
+   239                              <1>     ; Check for SEV memory encryption feature:
+   240                              <1>     ; CPUID  Fn8000_001F[EAX] - Bit 1
+   241                              <1>     ;   CPUID raises a #VC exception if running as an SEV-ES guest
+   242 000001D4 B81F000080          <1>     mov       eax, 0x8000001f
+   243 000001D9 0FA2                <1>     cpuid
+   244 000001DB 0FBAE001            <1>     bt        eax, 1
+   245 000001DF 7353                <1>     jnc       NoSev
+   246                              <1> 
+   247                              <1>     ; Check if SEV memory encryption is enabled
+   248                              <1>     ;  MSR_0xC0010131 - Bit 0 (SEV enabled)
+   249 000001E1 B9310101C0          <1>     mov       ecx, SEV_STATUS_MSR
+   250 000001E6 0F32                <1>     rdmsr
+   251 000001E8 0FBAE000            <1>     bt        eax, 0
+   252 000001EC 7346                <1>     jnc       NoSev
+   253                              <1> 
+   254                              <1>     ; Check for SEV-ES memory encryption feature:
+   255                              <1>     ; CPUID  Fn8000_001F[EAX] - Bit 3
+   256                              <1>     ;   CPUID raises a #VC exception if running as an SEV-ES guest
+   257 000001EE B81F000080          <1>     mov       eax, 0x8000001f
+   258 000001F3 0FA2                <1>     cpuid
+   259 000001F5 0FBAE003            <1>     bt        eax, 3
+   260 000001F9 7314                <1>     jnc       GetSevEncBit
+   261                              <1> 
+   262                              <1>     ; Check if SEV-ES is enabled
+   263                              <1>     ;  MSR_0xC0010131 - Bit 1 (SEV-ES enabled)
+   264 000001FB B9310101C0          <1>     mov       ecx, SEV_STATUS_MSR
+   265 00000200 0F32                <1>     rdmsr
+   266 00000202 0FBAE001            <1>     bt        eax, 1
+   267 00000206 7307                <1>     jnc       GetSevEncBit
+   268                              <1> 
+   269                              <1>     ; Set the first byte of the workarea to one to communicate to the SEC
+   270                              <1>     ; phase that SEV-ES is enabled.
+   271 00000208 C60500B0800001      <1>     mov       byte[SEV_ES_WORK_AREA], 1
+   272                              <1> 
+   273                              <1> GetSevEncBit:
+   274                              <1>     ; Get pte bit position to enable memory encryption
+   275                              <1>     ; CPUID Fn8000_001F[EBX] - Bits 5:0
+   276                              <1>     ;
+   277 0000020F 83E33F              <1>     and       ebx, 0x3f
+   278 00000212 89D8                <1>     mov       eax, ebx
+   279                              <1> 
+   280                              <1>     ; The encryption bit position is always above 31
+   281 00000214 83EB20              <1>     sub       ebx, 32
+   282 00000217 7904                <1>     jns       SevSaveMask
+   283                              <1> 
+   284                              <1>     ; Encryption bit was reported as 31 or below, enter a HLT loop
+   285                              <1> SevEncBitLowHlt:
+   286 00000219 FA                  <1>     cli
+   287 0000021A F4                  <1>     hlt
+   288 0000021B EBFC                <1>     jmp       SevEncBitLowHlt
+   289                              <1> 
+   290                              <1> SevSaveMask:
+   291 0000021D 31D2                <1>     xor       edx, edx
+   292 0000021F 0FABDA              <1>     bts       edx, ebx
+   293                              <1> 
+   294 00000222 C70510B08000000000- <1>     mov       dword[SEV_ES_WORK_AREA_ENC_MASK], 0
+   294 0000022B 00                  <1>
+   295 0000022C 891514B08000        <1>     mov       dword[SEV_ES_WORK_AREA_ENC_MASK + 4], edx
+   296 00000232 EB0F                <1>     jmp       SevExit
+   297                              <1> 
+   298                              <1> NoSev:
+   299                              <1>     ;
+   300                              <1>     ; Perform an SEV-ES sanity check by seeing if a #VC exception occurred.
+   301                              <1>     ;
+   302 00000234 803D00B0800000      <1>     cmp       byte[SEV_ES_WORK_AREA], 0
+   303 0000023B 7404                <1>     jz        NoSevPass
+   304                              <1> 
+   305                              <1>     ;
+   306                              <1>     ; A #VC was received, yet CPUID indicates no SEV-ES support, something
+   307                              <1>     ; isn't right.
+   308                              <1>     ;
+   309                              <1> NoSevEsVcHlt:
+   310 0000023D FA                  <1>     cli
+   311 0000023E F4                  <1>     hlt
+   312 0000023F EBFC                <1>     jmp       NoSevEsVcHlt
+   313                              <1> 
+   314                              <1> NoSevPass:
+   315 00000241 31C0                <1>     xor       eax, eax
+   316                              <1> 
+   317                              <1> SevExit:
+   318                              <1>     ;
+   319                              <1>     ; Clear exception handlers and stack
+   320                              <1>     ;
+   321 00000243 50                  <1>     push      eax
+   322 00000244 B8D4FCFFFF          <1>     mov       eax, ADDR_OF(IdtrClear)
+   323 00000249 2E0F0118            <1>     lidt      [cs:eax]
+   324 0000024D 58                  <1>     pop       eax
+   325 0000024E BC00000000          <1>     mov       esp, 0
+   326                              <1> 
+   327                              <1>     OneTimeCallRet CheckSevFeatures
+    54 00000253 E9DD010000          <2>  jmp %1 %+ OneTimerCallReturn
+   328                              <1> 
+   329                              <1> ; Check if Secure Encrypted Virtualization - Encrypted State (SEV-ES) feature
+   330                              <1> ; is enabled.
+   331                              <1> ;
+   332                              <1> ; Modified:  EAX
+   333                              <1> ;
+   334                              <1> ; If SEV-ES is enabled then EAX will be non-zero.
+   335                              <1> ; If SEV-ES is disabled then EAX will be zero.
+   336                              <1> ;
+   337                              <1> IsSevEsEnabled:
+   338 00000258 31C0                <1>     xor       eax, eax
+   339                              <1> 
+   340                              <1>     ; During CheckSevFeatures, the SEV_ES_WORK_AREA was set to 1 if
+   341                              <1>     ; SEV-ES is enabled.
+   342 0000025A 803D00B0800001      <1>     cmp       byte[SEV_ES_WORK_AREA], 1
+   343 00000261 7505                <1>     jne       SevEsDisabled
+   344                              <1> 
+   345 00000263 B801000000          <1>     mov       eax, 1
+   346                              <1> 
+   347                              <1> SevEsDisabled:
+   348                              <1>     OneTimeCallRet IsSevEsEnabled
+    54 00000268 E959020000          <2>  jmp %1 %+ OneTimerCallReturn
+   349                              <1> 
+   350                              <1> ; Start of #VC exception handling routines
+   351                              <1> ;
+   352                              <1> 
+   353                              <1> SevEsIdtNotCpuid:
+   354                              <1>     TerminateVmgExit TERM_VC_NOT_CPUID
+   166 0000026D B801000000          <2>  mov eax, %1
+   167                              <2> 
+   168                              <2> 
+   169                              <2> 
+   170                              <2> 
+   171                              <2> 
+   172                              <2> 
+   173                              <2> 
+   174                              <2> 
+   175 00000272 C1E010              <2>  shl eax, 16
+   176 00000275 0D00110000          <2>  or eax, 0x1100
+   177 0000027A 31D2                <2>  xor edx, edx
+   178 0000027C B9300101C0          <2>  mov ecx, SEV_GHCB_MSR
+   179 00000281 0F30                <2>  wrmsr
+   180                              <2> 
+   181                              <2> 
+   182                              <2> 
+   183                              <2> 
+   184                              <2> BITS 64
+   185 00000283 F30F01D9            <2>  rep vmmcall
+   186                              <2> BITS 32
+   187                              <2> 
+   188                              <2> 
+   189                              <2> 
+   190                              <2> 
+   191                              <2> %%TerminateHlt:
+   192 00000287 F4                  <2>  hlt
+   193 00000288 EBFD                <2>  jmp %%TerminateHlt
+   355 0000028A CF                  <1>     iret
+   356                              <1> 
+   357                              <1>     ;
+   358                              <1>     ; Total stack usage for the #VC handler is 44 bytes:
+   359                              <1>     ;   - 12 bytes for the exception IRET (after popping error code)
+   360                              <1>     ;   - 32 bytes for the local variables.
+   361                              <1>     ;
+   362                              <1> SevEsIdtVmmComm:
+   363                              <1>     ;
+   364                              <1>     ; If we're here, then we are an SEV-ES guest and this
+   365                              <1>     ; was triggered by a CPUID instruction
+   366                              <1>     ;
+   367                              <1>     ; Set the first byte of the workarea to one to communicate that
+   368                              <1>     ; a #VC was taken.
+   369 0000028B C60500B0800001      <1>     mov     byte[SEV_ES_WORK_AREA], 1
+   370                              <1> 
+   371 00000292 59                  <1>     pop     ecx                     ; Error code
+   372 00000293 83F972              <1>     cmp     ecx, 0x72               ; Be sure it was CPUID
+   373 00000296 75D5                <1>     jne     SevEsIdtNotCpuid
+   374                              <1> 
+   375                              <1>     ; Set up local variable room on the stack
+   376                              <1>     ;   CPUID function         : + 28
+   377                              <1>     ;   CPUID request register : + 24
+   378                              <1>     ;   GHCB MSR (EAX)         : + 20
+   379                              <1>     ;   GHCB MSR (EDX)         : + 16
+   380                              <1>     ;   CPUID result (EDX)     : + 12
+   381                              <1>     ;   CPUID result (ECX)     : + 8
+   382                              <1>     ;   CPUID result (EBX)     : + 4
+   383                              <1>     ;   CPUID result (EAX)     : + 0
+   384 00000298 83EC20              <1>     sub     esp, VC_VARIABLE_SIZE
+   385                              <1> 
+   386                              <1>     ; Save the CPUID function being requested
+   387 0000029B 8944241C            <1>     mov     [esp + VC_CPUID_FUNCTION], eax
+   388                              <1> 
+   389                              <1>     ; The GHCB CPUID protocol uses the following mapping to request
+   390                              <1>     ; a specific register:
+   391                              <1>     ;   0 => EAX, 1 => EBX, 2 => ECX, 3 => EDX
+   392                              <1>     ;
+   393                              <1>     ; Set EAX as the first register to request. This will also be used as a
+   394                              <1>     ; loop variable to request all register values (EAX to EDX).
+   395 0000029F 31C0                <1>     xor     eax, eax
+   396 000002A1 89442418            <1>     mov     [esp + VC_CPUID_REQUEST_REGISTER], eax
+   397                              <1> 
+   398                              <1>     ; Save current GHCB MSR value
+   399 000002A5 B9300101C0          <1>     mov     ecx, SEV_GHCB_MSR
+   400 000002AA 0F32                <1>     rdmsr
+   401 000002AC 89442414            <1>     mov     [esp + VC_GHCB_MSR_EAX], eax
+   402 000002B0 89542410            <1>     mov     [esp + VC_GHCB_MSR_EDX], edx
+   403                              <1> 
+   404                              <1> NextReg:
+   405                              <1>     ;
+   406                              <1>     ; Setup GHCB MSR
+   407                              <1>     ;   GHCB_MSR[63:32] = CPUID function
+   408                              <1>     ;   GHCB_MSR[31:30] = CPUID register
+   409                              <1>     ;   GHCB_MSR[11:0]  = CPUID request protocol
+   410                              <1>     ;
+   411 000002B4 8B442418            <1>     mov     eax, [esp + VC_CPUID_REQUEST_REGISTER]
+   412 000002B8 83F804              <1>     cmp     eax, 4
+   413 000002BB 7D3A                <1>     jge     VmmDone
+   414                              <1> 
+   415 000002BD C1E01E              <1>     shl     eax, GHCB_CPUID_REGISTER_SHIFT
+   416 000002C0 8B54241C            <1>     mov     edx, [esp + VC_CPUID_FUNCTION]
+   417                              <1> 
+   418                              <1>     VmgExit GHCB_CPUID_REQUEST, GHCB_CPUID_RESPONSE
+   136                              <2> 
+   137                              <2> 
+   138                              <2> 
+   139 000002C4 83C804              <2>  or eax, %1
+   140                              <2> 
+   141 000002C7 B9300101C0          <2>  mov ecx, SEV_GHCB_MSR
+   142 000002CC 0F30                <2>  wrmsr
+   143                              <2> 
+   144                              <2> 
+   145                              <2> 
+   146                              <2> 
+   147                              <2> BITS 64
+   148 000002CE F30F01D9            <2>  rep vmmcall
+   149                              <2> BITS 32
+   150                              <2> 
+   151 000002D2 B9300101C0          <2>  mov ecx, SEV_GHCB_MSR
+   152 000002D7 0F32                <2>  rdmsr
+   153                              <2> 
+   154                              <2> 
+   155                              <2> 
+   156                              <2> 
+   157 000002D9 89C1                <2>  mov ecx, eax
+   158 000002DB 81E1FF0F0000        <2>  and ecx, 0xfff
+   159 000002E1 83F905              <2>  cmp ecx, %2
+   160 000002E4 0F85AAFEFFFF        <2>  jne SevEsUnexpectedRespTerminate
+   419                              <1> 
+   420                              <1>     ;
+   421                              <1>     ; Response GHCB MSR
+   422                              <1>     ;   GHCB_MSR[63:32] = CPUID register value
+   423                              <1>     ;   GHCB_MSR[31:30] = CPUID register
+   424                              <1>     ;   GHCB_MSR[11:0]  = CPUID response protocol
+   425                              <1>     ;
+   426                              <1> 
+   427                              <1>     ; Save returned value
+   428 000002EA C1E81E              <1>     shr     eax, GHCB_CPUID_REGISTER_SHIFT
+   429 000002ED 891484              <1>     mov     [esp + eax * 4], edx
+   430                              <1> 
+   431                              <1>     ; Next register
+   432 000002F0 66FF442418          <1>     inc     word [esp + VC_CPUID_REQUEST_REGISTER]
+   433                              <1> 
+   434 000002F5 EBBD                <1>     jmp     NextReg
+   435                              <1> 
+   436                              <1> VmmDone:
+   437                              <1>     ;
+   438                              <1>     ; At this point we have all CPUID register values. Restore the GHCB MSR,
+   439                              <1>     ; set the return register values and return.
+   440                              <1>     ;
+   441 000002F7 8B442414            <1>     mov     eax, [esp + VC_GHCB_MSR_EAX]
+   442 000002FB 8B542410            <1>     mov     edx, [esp + VC_GHCB_MSR_EDX]
+   443 000002FF B9300101C0          <1>     mov     ecx, SEV_GHCB_MSR
+   444 00000304 0F30                <1>     wrmsr
+   445                              <1> 
+   446 00000306 8B0424              <1>     mov     eax, [esp + VC_CPUID_RESULT_EAX]
+   447 00000309 8B5C2404            <1>     mov     ebx, [esp + VC_CPUID_RESULT_EBX]
+   448 0000030D 8B4C2408            <1>     mov     ecx, [esp + VC_CPUID_RESULT_ECX]
+   449 00000311 8B54240C            <1>     mov     edx, [esp + VC_CPUID_RESULT_EDX]
+   450                              <1> 
+   451 00000315 83C420              <1>     add     esp, VC_VARIABLE_SIZE
+   452                              <1> 
+   453                              <1>     ; Update the EIP value to skip over the now handled CPUID instruction
+   454                              <1>     ; (the CPUID instruction has a length of 2)
+   455 00000318 6683042402          <1>     add     word [esp], CPUID_INSN_LEN
+   456 0000031D CF                  <1>     iret
+   457                              <1> 
+   458                              <1> ALIGN   2
+   459                              <1> 
+   460                              <1> Idtr:
+   461 0000031E FF00                <1>     dw      IDT_END - IDT_BASE - 1  ; Limit
+   462 00000320 E0FCFFFF            <1>     dd      ADDR_OF(IDT_BASE)       ; Base
+   463                              <1> 
+   464                              <1> IdtrClear:
+   465 00000324 0000                <1>     dw      0                       ; Limit
+   466 00000326 00000000            <1>     dd      0                       ; Base
+   467                              <1> 
+   468 0000032A 90<rep 6h>          <1> ALIGN   16
+   469                              <1> 
+   470                              <1> ;
+   471                              <1> ; The Interrupt Descriptor Table (IDT)
+   472                              <1> ;   This will be used to determine if SEV-ES is enabled.  Upon execution
+   473                              <1> ;   of the CPUID instruction, a VMM Communication Exception will occur.
+   474                              <1> ;   This will tell us if SEV-ES is enabled.  We can use the current value
+   475                              <1> ;   of the GHCB MSR to determine the SEV attributes.
+   476                              <1> ;
+   477                              <1> IDT_BASE:
+   478                              <1> ;
+   479                              <1> ; Vectors 0 - 28 (No handlers)
+   480                              <1> ;
+   481                              <1> %rep 29
+   482                              <1>     dw      0                                    ; Offset low bits 15..0
+   483                              <1>     dw      0x10                                 ; Selector
+   484                              <1>     db      0                                    ; Reserved
+   485                              <1>     db      0x8E                                 ; Gate Type (IA32_IDT_GATE_TYPE_INTERRUPT_32)
+   486                              <1>     dw      0                                    ; Offset high bits 31..16
+   487                              <1> %endrep
+   482 00000330 0000                <2>  dw 0
+   483 00000332 1000                <2>  dw 0x10
+   484 00000334 00                  <2>  db 0
+   485 00000335 8E                  <2>  db 0x8E
+   486 00000336 0000                <2>  dw 0
+   482 00000338 0000                <2>  dw 0
+   483 0000033A 1000                <2>  dw 0x10
+   484 0000033C 00                  <2>  db 0
+   485 0000033D 8E                  <2>  db 0x8E
+   486 0000033E 0000                <2>  dw 0
+   482 00000340 0000                <2>  dw 0
+   483 00000342 1000                <2>  dw 0x10
+   484 00000344 00                  <2>  db 0
+   485 00000345 8E                  <2>  db 0x8E
+   486 00000346 0000                <2>  dw 0
+   482 00000348 0000                <2>  dw 0
+   483 0000034A 1000                <2>  dw 0x10
+   484 0000034C 00                  <2>  db 0
+   485 0000034D 8E                  <2>  db 0x8E
+   486 0000034E 0000                <2>  dw 0
+   482 00000350 0000                <2>  dw 0
+   483 00000352 1000                <2>  dw 0x10
+   484 00000354 00                  <2>  db 0
+   485 00000355 8E                  <2>  db 0x8E
+   486 00000356 0000                <2>  dw 0
+   482 00000358 0000                <2>  dw 0
+   483 0000035A 1000                <2>  dw 0x10
+   484 0000035C 00                  <2>  db 0
+   485 0000035D 8E                  <2>  db 0x8E
+   486 0000035E 0000                <2>  dw 0
+   482 00000360 0000                <2>  dw 0
+   483 00000362 1000                <2>  dw 0x10
+   484 00000364 00                  <2>  db 0
+   485 00000365 8E                  <2>  db 0x8E
+   486 00000366 0000                <2>  dw 0
+   482 00000368 0000                <2>  dw 0
+   483 0000036A 1000                <2>  dw 0x10
+   484 0000036C 00                  <2>  db 0
+   485 0000036D 8E                  <2>  db 0x8E
+   486 0000036E 0000                <2>  dw 0
+   482 00000370 0000                <2>  dw 0
+   483 00000372 1000                <2>  dw 0x10
+   484 00000374 00                  <2>  db 0
+   485 00000375 8E                  <2>  db 0x8E
+   486 00000376 0000                <2>  dw 0
+   482 00000378 0000                <2>  dw 0
+   483 0000037A 1000                <2>  dw 0x10
+   484 0000037C 00                  <2>  db 0
+   485 0000037D 8E                  <2>  db 0x8E
+   486 0000037E 0000                <2>  dw 0
+   482 00000380 0000                <2>  dw 0
+   483 00000382 1000                <2>  dw 0x10
+   484 00000384 00                  <2>  db 0
+   485 00000385 8E                  <2>  db 0x8E
+   486 00000386 0000                <2>  dw 0
+   482 00000388 0000                <2>  dw 0
+   483 0000038A 1000                <2>  dw 0x10
+   484 0000038C 00                  <2>  db 0
+   485 0000038D 8E                  <2>  db 0x8E
+   486 0000038E 0000                <2>  dw 0
+   482 00000390 0000                <2>  dw 0
+   483 00000392 1000                <2>  dw 0x10
+   484 00000394 00                  <2>  db 0
+   485 00000395 8E                  <2>  db 0x8E
+   486 00000396 0000                <2>  dw 0
+   482 00000398 0000                <2>  dw 0
+   483 0000039A 1000                <2>  dw 0x10
+   484 0000039C 00                  <2>  db 0
+   485 0000039D 8E                  <2>  db 0x8E
+   486 0000039E 0000                <2>  dw 0
+   482 000003A0 0000                <2>  dw 0
+   483 000003A2 1000                <2>  dw 0x10
+   484 000003A4 00                  <2>  db 0
+   485 000003A5 8E                  <2>  db 0x8E
+   486 000003A6 0000                <2>  dw 0
+   482 000003A8 0000                <2>  dw 0
+   483 000003AA 1000                <2>  dw 0x10
+   484 000003AC 00                  <2>  db 0
+   485 000003AD 8E                  <2>  db 0x8E
+   486 000003AE 0000                <2>  dw 0
+   482 000003B0 0000                <2>  dw 0
+   483 000003B2 1000                <2>  dw 0x10
+   484 000003B4 00                  <2>  db 0
+   485 000003B5 8E                  <2>  db 0x8E
+   486 000003B6 0000                <2>  dw 0
+   482 000003B8 0000                <2>  dw 0
+   483 000003BA 1000                <2>  dw 0x10
+   484 000003BC 00                  <2>  db 0
+   485 000003BD 8E                  <2>  db 0x8E
+   486 000003BE 0000                <2>  dw 0
+   482 000003C0 0000                <2>  dw 0
+   483 000003C2 1000                <2>  dw 0x10
+   484 000003C4 00                  <2>  db 0
+   485 000003C5 8E                  <2>  db 0x8E
+   486 000003C6 0000                <2>  dw 0
+   482 000003C8 0000                <2>  dw 0
+   483 000003CA 1000                <2>  dw 0x10
+   484 000003CC 00                  <2>  db 0
+   485 000003CD 8E                  <2>  db 0x8E
+   486 000003CE 0000                <2>  dw 0
+   482 000003D0 0000                <2>  dw 0
+   483 000003D2 1000                <2>  dw 0x10
+   484 000003D4 00                  <2>  db 0
+   485 000003D5 8E                  <2>  db 0x8E
+   486 000003D6 0000                <2>  dw 0
+   482 000003D8 0000                <2>  dw 0
+   483 000003DA 1000                <2>  dw 0x10
+   484 000003DC 00                  <2>  db 0
+   485 000003DD 8E                  <2>  db 0x8E
+   486 000003DE 0000                <2>  dw 0
+   482 000003E0 0000                <2>  dw 0
+   483 000003E2 1000                <2>  dw 0x10
+   484 000003E4 00                  <2>  db 0
+   485 000003E5 8E                  <2>  db 0x8E
+   486 000003E6 0000                <2>  dw 0
+   482 000003E8 0000                <2>  dw 0
+   483 000003EA 1000                <2>  dw 0x10
+   484 000003EC 00                  <2>  db 0
+   485 000003ED 8E                  <2>  db 0x8E
+   486 000003EE 0000                <2>  dw 0
+   482 000003F0 0000                <2>  dw 0
+   483 000003F2 1000                <2>  dw 0x10
+   484 000003F4 00                  <2>  db 0
+   485 000003F5 8E                  <2>  db 0x8E
+   486 000003F6 0000                <2>  dw 0
+   482 000003F8 0000                <2>  dw 0
+   483 000003FA 1000                <2>  dw 0x10
+   484 000003FC 00                  <2>  db 0
+   485 000003FD 8E                  <2>  db 0x8E
+   486 000003FE 0000                <2>  dw 0
+   482 00000400 0000                <2>  dw 0
+   483 00000402 1000                <2>  dw 0x10
+   484 00000404 00                  <2>  db 0
+   485 00000405 8E                  <2>  db 0x8E
+   486 00000406 0000                <2>  dw 0
+   482 00000408 0000                <2>  dw 0
+   483 0000040A 1000                <2>  dw 0x10
+   484 0000040C 00                  <2>  db 0
+   485 0000040D 8E                  <2>  db 0x8E
+   486 0000040E 0000                <2>  dw 0
+   482 00000410 0000                <2>  dw 0
+   483 00000412 1000                <2>  dw 0x10
+   484 00000414 00                  <2>  db 0
+   485 00000415 8E                  <2>  db 0x8E
+   486 00000416 0000                <2>  dw 0
+   488                              <1> ;
+   489                              <1> ; Vector 29 (VMM Communication Exception)
+   490                              <1> ;
+   491 00000418 3BFC                <1>     dw      (ADDR_OF(SevEsIdtVmmComm) & 0xffff)  ; Offset low bits 15..0
+   492 0000041A 1000                <1>     dw      0x10                                 ; Selector
+   493 0000041C 00                  <1>     db      0                                    ; Reserved
+   494 0000041D 8E                  <1>     db      0x8E                                 ; Gate Type (IA32_IDT_GATE_TYPE_INTERRUPT_32)
+   495 0000041E FFFF                <1>     dw      (ADDR_OF(SevEsIdtVmmComm) >> 16)     ; Offset high bits 31..16
+   496                              <1> ;
+   497                              <1> ; Vectors 30 - 31 (No handlers)
+   498                              <1> ;
+   499                              <1> %rep 2
+   500                              <1>     dw      0                                    ; Offset low bits 15..0
+   501                              <1>     dw      0x10                                 ; Selector
+   502                              <1>     db      0                                    ; Reserved
+   503                              <1>     db      0x8E                                 ; Gate Type (IA32_IDT_GATE_TYPE_INTERRUPT_32)
+   504                              <1>     dw      0                                    ; Offset high bits 31..16
+   505                              <1> %endrep
+   500 00000420 0000                <2>  dw 0
+   501 00000422 1000                <2>  dw 0x10
+   502 00000424 00                  <2>  db 0
+   503 00000425 8E                  <2>  db 0x8E
+   504 00000426 0000                <2>  dw 0
+   500 00000428 0000                <2>  dw 0
+   501 0000042A 1000                <2>  dw 0x10
+   502 0000042C 00                  <2>  db 0
+   503 0000042D 8E                  <2>  db 0x8E
+   504 0000042E 0000                <2>  dw 0
+   506                              <1> IDT_END:
+    81                                  %include "Ia32/PageTables64.asm"
+    82                              <1> ;------------------------------------------------------------------------------
+    83                              <1> ; @file
+    84                              <1> ; Sets the CR3 register for 64-bit paging
+    85                              <1> ;
+    86                              <1> ; Copyright (c) 2008 - 2013, Intel Corporation. All rights reserved.<BR>
+    87                              <1> ; Copyright (c) 2017 - 2020, Advanced Micro Devices, Inc. All rights reserved.<BR>
+    88                              <1> ; SPDX-License-Identifier: BSD-2-Clause-Patent
+    89                              <1> ;
+    90                              <1> ;------------------------------------------------------------------------------
+    91                              <1> 
+    92                              <1> BITS    32
+    93                              <1> 
+    94                              <1> %define PAGE_PRESENT            0x01
+    95                              <1> %define PAGE_READ_WRITE         0x02
+    96                              <1> %define PAGE_USER_SUPERVISOR    0x04
+    97                              <1> %define PAGE_WRITE_THROUGH      0x08
+    98                              <1> %define PAGE_CACHE_DISABLE     0x010
+    99                              <1> %define PAGE_ACCESSED          0x020
+   100                              <1> %define PAGE_DIRTY             0x040
+   101                              <1> %define PAGE_PAT               0x080
+   102                              <1> %define PAGE_GLOBAL           0x0100
+   103                              <1> %define PAGE_2M_MBO            0x080
+   104                              <1> %define PAGE_2M_PAT          0x01000
+   105                              <1> 
+   106                              <1> %define PAGE_4K_PDE_ATTR (PAGE_ACCESSED +                           PAGE_DIRTY +                           PAGE_READ_WRITE +                           PAGE_PRESENT)
+   110                              <1> 
+   111                              <1> %define PAGE_2M_PDE_ATTR (PAGE_2M_MBO +                           PAGE_ACCESSED +                           PAGE_DIRTY +                           PAGE_READ_WRITE +                           PAGE_PRESENT)
+   116                              <1> 
+   117                              <1> %define PAGE_PDP_ATTR (PAGE_ACCESSED +                        PAGE_READ_WRITE +                        PAGE_PRESENT)
+   120                              <1> 
+   121                              <1> ;
+   122                              <1> ; Modified:  EAX, EBX, ECX, EDX
+   123                              <1> ;
+   124                              <1> SetCr3ForPageTables64:
+   125                              <1> 
+   126                              <1>     OneTimeCall   CheckSevFeatures
+    49 00000430 E97CFDFFFF          <2>  jmp %1
+    50                              <2> %1 %+ OneTimerCallReturn:
+   127 00000435 31D2                <1>     xor     edx, edx
+   128 00000437 85C0                <1>     test    eax, eax
+   129 00000439 7406                <1>     jz      SevNotActive
+   130                              <1> 
+   131                              <1>     ; If SEV is enabled, C-bit is always above 31
+   132 0000043B 83E820              <1>     sub     eax, 32
+   133 0000043E 0FABC2              <1>     bts     edx, eax
+   134                              <1> 
+   135                              <1> SevNotActive:
+   136                              <1> 
+   137                              <1>     ;
+   138                              <1>     ; For OVMF, build some initial page tables at
+   139                              <1>     ; PcdOvmfSecPageTablesBase - (PcdOvmfSecPageTablesBase + 0x6000).
+   140                              <1>     ;
+   141                              <1>     ; This range should match with PcdOvmfSecPageTablesSize which is
+   142                              <1>     ; declared in the FDF files.
+   143                              <1>     ;
+   144                              <1>     ; At the end of PEI, the pages tables will be rebuilt into a
+   145                              <1>     ; more permanent location by DxeIpl.
+   146                              <1>     ;
+   147                              <1> 
+   148 00000441 B900180000          <1>     mov     ecx, 6 * 0x1000 / 4
+   149 00000446 31C0                <1>     xor     eax, eax
+   150                              <1> clearPageTablesMemoryLoop:
+   151 00000448 89048DFCFF7F00      <1>     mov     dword[ecx * 4 + PT_ADDR (0) - 4], eax
+   152 0000044F E2F7                <1>     loop    clearPageTablesMemoryLoop
+   153                              <1> 
+   154                              <1>     ;
+   155                              <1>     ; Top level Page Directory Pointers (1 * 512GB entry)
+   156                              <1>     ;
+   157 00000451 C70500008000231080- <1>     mov     dword[PT_ADDR (0)], PT_ADDR (0x1000) + PAGE_PDP_ATTR
+   157 0000045A 00                  <1>
+   158 0000045B 891504008000        <1>     mov     dword[PT_ADDR (4)], edx
+   159                              <1> 
+   160                              <1>     ;
+   161                              <1>     ; Next level Page Directory Pointers (4 * 1GB entries => 4GB)
+   162                              <1>     ;
+   163 00000461 C70500108000232080- <1>     mov     dword[PT_ADDR (0x1000)], PT_ADDR (0x2000) + PAGE_PDP_ATTR
+   163 0000046A 00                  <1>
+   164 0000046B 891504108000        <1>     mov     dword[PT_ADDR (0x1004)], edx
+   165 00000471 C70508108000233080- <1>     mov     dword[PT_ADDR (0x1008)], PT_ADDR (0x3000) + PAGE_PDP_ATTR
+   165 0000047A 00                  <1>
+   166 0000047B 89150C108000        <1>     mov     dword[PT_ADDR (0x100C)], edx
+   167 00000481 C70510108000234080- <1>     mov     dword[PT_ADDR (0x1010)], PT_ADDR (0x4000) + PAGE_PDP_ATTR
+   167 0000048A 00                  <1>
+   168 0000048B 891514108000        <1>     mov     dword[PT_ADDR (0x1014)], edx
+   169 00000491 C70518108000235080- <1>     mov     dword[PT_ADDR (0x1018)], PT_ADDR (0x5000) + PAGE_PDP_ATTR
+   169 0000049A 00                  <1>
+   170 0000049B 89151C108000        <1>     mov     dword[PT_ADDR (0x101C)], edx
+   171                              <1> 
+   172                              <1>     ;
+   173                              <1>     ; Page Table Entries (2048 * 2MB entries => 4GB)
+   174                              <1>     ;
+   175 000004A1 B900080000          <1>     mov     ecx, 0x800
+   176                              <1> pageTableEntriesLoop:
+   177 000004A6 89C8                <1>     mov     eax, ecx
+   178 000004A8 48                  <1>     dec     eax
+   179 000004A9 C1E015              <1>     shl     eax, 21
+   180 000004AC 05E3000000          <1>     add     eax, PAGE_2M_PDE_ATTR
+   181 000004B1 8904CDF81F8000      <1>     mov     [ecx * 8 + PT_ADDR (0x2000 - 8)], eax
+   182 000004B8 8914CDFC1F8000      <1>     mov     [(ecx * 8 + PT_ADDR (0x2000 - 8)) + 4], edx
+   183 000004BF E2E5                <1>     loop    pageTableEntriesLoop
+   184                              <1> 
+   185                              <1>     OneTimeCall   IsSevEsEnabled
+    49 000004C1 E992FDFFFF          <2>  jmp %1
+    50                              <2> %1 %+ OneTimerCallReturn:
+   186 000004C6 85C0                <1>     test    eax, eax
+   187 000004C8 7454                <1>     jz      SetCr3
+   188                              <1> 
+   189                              <1>     ;
+   190                              <1>     ; The initial GHCB will live at GHCB_BASE and needs to be un-encrypted.
+   191                              <1>     ; This requires the 2MB page for this range be broken down into 512 4KB
+   192                              <1>     ; pages.  All will be marked encrypted, except for the GHCB.
+   193                              <1>     ;
+   194 000004CA B904000000          <1>     mov     ecx, (GHCB_BASE >> 21)
+   195 000004CF B823808000          <1>     mov     eax, GHCB_PT_ADDR + PAGE_PDP_ATTR
+   196 000004D4 8904CD00208000      <1>     mov     [ecx * 8 + PT_ADDR (0x2000)], eax
+   197                              <1> 
+   198                              <1>     ;
+   199                              <1>     ; Page Table Entries (512 * 4KB entries => 2MB)
+   200                              <1>     ;
+   201 000004DB B900020000          <1>     mov     ecx, 512
+   202                              <1> pageTableEntries4kLoop:
+   203 000004E0 89C8                <1>     mov     eax, ecx
+   204 000004E2 48                  <1>     dec     eax
+   205 000004E3 C1E00C              <1>     shl     eax, 12
+   206 000004E6 0500008000          <1>     add     eax, GHCB_BASE & 0xFFE0_0000
+   207 000004EB 83C063              <1>     add     eax, PAGE_4K_PDE_ATTR
+   208 000004EE 8904CDF87F8000      <1>     mov     [ecx * 8 + GHCB_PT_ADDR - 8], eax
+   209 000004F5 8914CDFC7F8000      <1>     mov     [(ecx * 8 + GHCB_PT_ADDR - 8) + 4], edx
+   210 000004FC E2E2                <1>     loop    pageTableEntries4kLoop
+   211                              <1> 
+   212                              <1>     ;
+   213                              <1>     ; Clear the encryption bit from the GHCB entry
+   214                              <1>     ;
+   215 000004FE B909000000          <1>     mov     ecx, (GHCB_BASE & 0x1F_FFFF) >> 12
+   216 00000503 C704CD048080000000- <1>     mov     [ecx * 8 + GHCB_PT_ADDR + 4], strict dword 0
+   216 0000050C 0000                <1>
+   217                              <1> 
+   218 0000050E B900080000          <1>     mov     ecx, GHCB_SIZE / 4
+   219 00000513 31C0                <1>     xor     eax, eax
+   220                              <1> clearGhcbMemoryLoop:
+   221 00000515 89048DFC8F8000      <1>     mov     dword[ecx * 4 + GHCB_BASE - 4], eax
+   222 0000051C E2F7                <1>     loop    clearGhcbMemoryLoop
+   223                              <1> 
+   224                              <1> SetCr3:
+   225                              <1>     ;
+   226                              <1>     ; Set CR3 now that the paging structures are available
+   227                              <1>     ;
+   228 0000051E B800008000          <1>     mov     eax, PT_ADDR (0)
+   229 00000523 0F22D8              <1>     mov     cr3, eax
+   230                              <1> 
+   231                              <1>     OneTimeCallRet SetCr3ForPageTables64
+    54 00000526 E9F0FBFFFF          <2>  jmp %1 %+ OneTimerCallReturn
+    82                                  %endif
+    83                                  
+    84                                  %include "Ia16/Real16ToFlat32.asm"
+    85                              <1> ;------------------------------------------------------------------------------
+    86                              <1> ; @file
+    87                              <1> ; Transition from 16 bit real mode into 32 bit flat protected mode
+    88                              <1> ;
+    89                              <1> ; Copyright (c) 2008 - 2010, Intel Corporation. All rights reserved.<BR>
+    90                              <1> ; SPDX-License-Identifier: BSD-2-Clause-Patent
+    91                              <1> ;
+    92                              <1> ;------------------------------------------------------------------------------
+    93                              <1> 
+    94                              <1> %define SEC_DEFAULT_CR0  0x40000023
+    95                              <1> %define SEC_DEFAULT_CR4  0x640
+    96                              <1> 
+    97                              <1> BITS    16
+    98                              <1> 
+    99                              <1> ;
+   100                              <1> ; Modified:  EAX, EBX
+   101                              <1> ;
+   102                              <1> ; @param[out]     DS       Selector allowing flat access to all addresses
+   103                              <1> ; @param[out]     ES       Selector allowing flat access to all addresses
+   104                              <1> ; @param[out]     FS       Selector allowing flat access to all addresses
+   105                              <1> ; @param[out]     GS       Selector allowing flat access to all addresses
+   106                              <1> ; @param[out]     SS       Selector allowing flat access to all addresses
+   107                              <1> ;
+   108                              <1> TransitionFromReal16To32BitFlat:
+   109                              <1> 
+   110                              <1>     debugShowPostCode POSTCODE_16BIT_MODE
+   111                              <1> 
+   112 0000052B FA                  <1>     cli
+   113                              <1> 
+   114 0000052C BB00F0              <1>     mov     bx, 0xf000
+   115 0000052F 8EDB                <1>     mov     ds, bx
+   116                              <1> 
+   117 00000531 BB12FF              <1>     mov     bx, ADDR16_OF(gdtr)
+   118                              <1> 
+   119 00000534 2E660F0117          <1> o32 lgdt    [cs:bx]
+   120                              <1> 
+   121 00000539 66B823000040        <1>     mov     eax, SEC_DEFAULT_CR0
+   122 0000053F 0F22C0              <1>     mov     cr0, eax
+   123                              <1> 
+   124 00000542 66EAFAFEFFFF1000    <1>     jmp     LINEAR_CODE_SEL:dword ADDR_OF(jumpTo32BitAndLandHere)
+   125                              <1> BITS    32
+   126                              <1> jumpTo32BitAndLandHere:
+   127                              <1> 
+   128 0000054A B840060000          <1>     mov     eax, SEC_DEFAULT_CR4
+   129 0000054F 0F22E0              <1>     mov     cr4, eax
+   130                              <1> 
+   131                              <1>     debugShowPostCode POSTCODE_32BIT_MODE
+   132                              <1> 
+   133 00000552 66B80800            <1>     mov     ax, LINEAR_SEL
+   134 00000556 8ED8                <1>     mov     ds, ax
+   135 00000558 8EC0                <1>     mov     es, ax
+   136 0000055A 8EE0                <1>     mov     fs, ax
+   137 0000055C 8EE8                <1>     mov     gs, ax
+   138 0000055E 8ED0                <1>     mov     ss, ax
+   139                              <1> 
+   140                              <1>     OneTimeCallRet TransitionFromReal16To32BitFlat
+    54 00000560 EB49                <2>  jmp %1 %+ OneTimerCallReturn
+   141                              <1> 
+   142                              <1> ALIGN   2
+   143                              <1> 
+   144                              <1> gdtr:
+   145 00000562 2700                <1>     dw      GDT_END - GDT_BASE - 1   ; GDT limit
+   146 00000564 20FFFFFF            <1>     dd      ADDR_OF(GDT_BASE)
+   147                              <1> 
+   148 00000568 90<rep 8h>          <1> ALIGN   16
+   149                              <1> 
+   150                              <1> ;
+   151                              <1> ; Macros for GDT entries
+   152                              <1> ;
+   153                              <1> 
+   154                              <1> %define  PRESENT_FLAG(p) (p << 7)
+   155                              <1> %define  DPL(dpl) (dpl << 5)
+   156                              <1> %define  SYSTEM_FLAG(s) (s << 4)
+   157                              <1> %define  DESC_TYPE(t) (t)
+   158                              <1> 
+   159                              <1> ; Type: data, expand-up, writable, accessed
+   160                              <1> %define  DATA32_TYPE 3
+   161                              <1> 
+   162                              <1> ; Type: execute, readable, expand-up, accessed
+   163                              <1> %define  CODE32_TYPE 0xb
+   164                              <1> 
+   165                              <1> ; Type: execute, readable, expand-up, accessed
+   166                              <1> %define  CODE64_TYPE 0xb
+   167                              <1> 
+   168                              <1> %define  GRANULARITY_FLAG(g) (g << 7)
+   169                              <1> %define  DEFAULT_SIZE32(d) (d << 6)
+   170                              <1> %define  CODE64_FLAG(l) (l << 5)
+   171                              <1> %define  UPPER_LIMIT(l) (l)
+   172                              <1> 
+   173                              <1> ;
+   174                              <1> ; The Global Descriptor Table (GDT)
+   175                              <1> ;
+   176                              <1> 
+   177                              <1> GDT_BASE:
+   178                              <1> ; null descriptor
+   179                              <1> NULL_SEL            equ $-GDT_BASE
+   180 00000570 0000                <1>     DW      0            ; limit 15:0
+   181 00000572 0000                <1>     DW      0            ; base 15:0
+   182 00000574 00                  <1>     DB      0            ; base 23:16
+   183 00000575 00                  <1>     DB      0            ; sys flag, dpl, type
+   184 00000576 00                  <1>     DB      0            ; limit 19:16, flags
+   185 00000577 00                  <1>     DB      0            ; base 31:24
+   186                              <1> 
+   187                              <1> ; linear data segment descriptor
+   188                              <1> LINEAR_SEL          equ $-GDT_BASE
+   189 00000578 FFFF                <1>     DW      0xffff       ; limit 15:0
+   190 0000057A 0000                <1>     DW      0            ; base 15:0
+   191 0000057C 00                  <1>     DB      0            ; base 23:16
+   192 0000057D 93                  <1>     DB      PRESENT_FLAG(1)|DPL(0)|SYSTEM_FLAG(1)|DESC_TYPE(DATA32_TYPE)
+   193 0000057E CF                  <1>     DB      GRANULARITY_FLAG(1)|DEFAULT_SIZE32(1)|CODE64_FLAG(0)|UPPER_LIMIT(0xf)
+   194 0000057F 00                  <1>     DB      0            ; base 31:24
+   195                              <1> 
+   196                              <1> ; linear code segment descriptor
+   197                              <1> LINEAR_CODE_SEL     equ $-GDT_BASE
+   198 00000580 FFFF                <1>     DW      0xffff       ; limit 15:0
+   199 00000582 0000                <1>     DW      0            ; base 15:0
+   200 00000584 00                  <1>     DB      0            ; base 23:16
+   201 00000585 9B                  <1>     DB      PRESENT_FLAG(1)|DPL(0)|SYSTEM_FLAG(1)|DESC_TYPE(CODE32_TYPE)
+   202 00000586 CF                  <1>     DB      GRANULARITY_FLAG(1)|DEFAULT_SIZE32(1)|CODE64_FLAG(0)|UPPER_LIMIT(0xf)
+   203 00000587 00                  <1>     DB      0            ; base 31:24
+   204                              <1> 
+   205                              <1> %ifdef ARCH_X64
+   206                              <1> ; linear code (64-bit) segment descriptor
+   207                              <1> LINEAR_CODE64_SEL   equ $-GDT_BASE
+   208 00000588 FFFF                <1>     DW      0xffff       ; limit 15:0
+   209 0000058A 0000                <1>     DW      0            ; base 15:0
+   210 0000058C 00                  <1>     DB      0            ; base 23:16
+   211 0000058D 9B                  <1>     DB      PRESENT_FLAG(1)|DPL(0)|SYSTEM_FLAG(1)|DESC_TYPE(CODE64_TYPE)
+   212 0000058E AF                  <1>     DB      GRANULARITY_FLAG(1)|DEFAULT_SIZE32(0)|CODE64_FLAG(1)|UPPER_LIMIT(0xf)
+   213 0000058F 00                  <1>     DB      0            ; base 31:24
+   214                              <1> %endif
+   215                              <1> 
+   216                              <1> ; linear code segment descriptor
+   217                              <1> LINEAR_CODE16_SEL     equ $-GDT_BASE
+   218 00000590 FFFF                <1>     DW      0xffff       ; limit 15:0
+   219 00000592 0000                <1>     DW      0            ; base 15:0
+   220 00000594 00                  <1>     DB      0            ; base 23:16
+   221 00000595 9B                  <1>     DB      PRESENT_FLAG(1)|DPL(0)|SYSTEM_FLAG(1)|DESC_TYPE(CODE32_TYPE)
+   222 00000596 8F                  <1>     DB      GRANULARITY_FLAG(1)|DEFAULT_SIZE32(0)|CODE64_FLAG(0)|UPPER_LIMIT(0xf)
+   223 00000597 00                  <1>     DB      0            ; base 31:24
+   224                              <1> 
+   225                              <1> GDT_END:
+   226                              <1> 
+    85                                  %include "Ia16/Init16.asm"
+    86                              <1> ;------------------------------------------------------------------------------
+    87                              <1> ; @file
+    88                              <1> ; 16-bit initialization code
+    89                              <1> ;
+    90                              <1> ; Copyright (c) 2008 - 2009, Intel Corporation. All rights reserved.<BR>
+    91                              <1> ; SPDX-License-Identifier: BSD-2-Clause-Patent
+    92                              <1> ;
+    93                              <1> ;------------------------------------------------------------------------------
+    94                              <1> 
+    95                              <1> 
+    96                              <1> BITS    16
+    97                              <1> 
+    98                              <1> ;
+    99                              <1> ; @param[out] DI    'BP' to indicate boot-strap processor
+   100                              <1> ;
+   101                              <1> EarlyBspInitReal16:
+   102 00000598 BF4250              <1>     mov     di, 'BP'
+   103 0000059B EB0A                <1>     jmp     short Main16
+   104                              <1> 
+   105                              <1> ;
+   106                              <1> ; @param[out] DI    'AP' to indicate application processor
+   107                              <1> ;
+   108                              <1> EarlyApInitReal16:
+   109 0000059D BF4150              <1>     mov     di, 'AP'
+   110 000005A0 EB05                <1>     jmp     short Main16
+   111                              <1> 
+   112                              <1> ;
+   113                              <1> ; Modified:  EAX
+   114                              <1> ;
+   115                              <1> ; @param[in]  EAX   Initial value of the EAX register (BIST: Built-in Self Test)
+   116                              <1> ; @param[out] ESP   Initial value of the EAX register (BIST: Built-in Self Test)
+   117                              <1> ;
+   118                              <1> EarlyInit16:
+   119                              <1>     ;
+   120                              <1>     ; ESP -  Initial value of the EAX register (BIST: Built-in Self Test)
+   121                              <1>     ;
+   122 000005A2 6689C4              <1>     mov     esp, eax
+   123                              <1> 
+   124                              <1>     debugInitialize
+    57                              <2> 
+    58                              <2> 
+    59                              <2> 
+   125                              <1> 
+   126                              <1>     OneTimeCallRet EarlyInit16
+    54 000005A5 EB02                <2>  jmp %1 %+ OneTimerCallReturn
+   127                              <1> 
+    86                                  
+    87                                  %include "Main.asm"
+    88                              <1> ;------------------------------------------------------------------------------
+    89                              <1> ; @file
+    90                              <1> ; Main routine of the pre-SEC code up through the jump into SEC
+    91                              <1> ;
+    92                              <1> ; Copyright (c) 2008 - 2009, Intel Corporation. All rights reserved.<BR>
+    93                              <1> ; SPDX-License-Identifier: BSD-2-Clause-Patent
+    94                              <1> ;
+    95                              <1> ;------------------------------------------------------------------------------
+    96                              <1> 
+    97                              <1> 
+    98                              <1> BITS    16
+    99                              <1> 
+   100                              <1> ;
+   101                              <1> ; Modified:  EBX, ECX, EDX, EBP
+   102                              <1> ;
+   103                              <1> ; @param[in,out]  RAX/EAX  Initial value of the EAX register
+   104                              <1> ;                          (BIST: Built-in Self Test)
+   105                              <1> ; @param[in,out]  DI       'BP': boot-strap processor, or
+   106                              <1> ;                          'AP': application processor
+   107                              <1> ; @param[out]     RBP/EBP  Address of Boot Firmware Volume (BFV)
+   108                              <1> ; @param[out]     DS       Selector allowing flat access to all addresses
+   109                              <1> ; @param[out]     ES       Selector allowing flat access to all addresses
+   110                              <1> ; @param[out]     FS       Selector allowing flat access to all addresses
+   111                              <1> ; @param[out]     GS       Selector allowing flat access to all addresses
+   112                              <1> ; @param[out]     SS       Selector allowing flat access to all addresses
+   113                              <1> ;
+   114                              <1> ; @return         None  This routine jumps to SEC and does not return
+   115                              <1> ;
+   116                              <1> Main16:
+   117                              <1>     OneTimeCall EarlyInit16
+    49 000005A7 EBF9                <2>  jmp %1
+    50                              <2> %1 %+ OneTimerCallReturn:
+   118                              <1> 
+   119                              <1>     ;
+   120                              <1>     ; Transition the processor from 16-bit real mode to 32-bit flat mode
+   121                              <1>     ;
+   122                              <1>     OneTimeCall TransitionFromReal16To32BitFlat
+    49 000005A9 EB80                <2>  jmp %1
+    50                              <2> %1 %+ OneTimerCallReturn:
+   123                              <1> 
+   124                              <1> BITS    32
+   125                              <1> 
+   126                              <1>     ;
+   127                              <1>     ; Search for the Boot Firmware Volume (BFV)
+   128                              <1>     ;
+   129                              <1>     OneTimeCall Flat32SearchForBfvBase
+    49 000005AB E950FAFFFF          <2>  jmp %1
+    50                              <2> %1 %+ OneTimerCallReturn:
+   130                              <1> 
+   131                              <1>     ;
+   132                              <1>     ; EBP - Start of BFV
+   133                              <1>     ;
+   134                              <1> 
+   135                              <1>     ;
+   136                              <1>     ; Search for the SEC entry point
+   137                              <1>     ;
+   138                              <1>     OneTimeCall Flat32SearchForSecEntryPoint
+    49 000005B0 E99CFAFFFF          <2>  jmp %1
+    50                              <2> %1 %+ OneTimerCallReturn:
+   139                              <1> 
+   140                              <1>     ;
+   141                              <1>     ; ESI - SEC Core entry point
+   142                              <1>     ; EBP - Start of BFV
+   143                              <1>     ;
+   144                              <1> 
+   145                              <1> %ifdef ARCH_IA32
+   146                              <1> 
+   147                              <1>     ;
+   148                              <1>     ; Restore initial EAX value into the EAX register
+   149                              <1>     ;
+   150                              <1>     mov     eax, esp
+   151                              <1> 
+   152                              <1>     ;
+   153                              <1>     ; Jump to the 32-bit SEC entry point
+   154                              <1>     ;
+   155                              <1>     jmp     esi
+   156                              <1> 
+   157                              <1> %else
+   158                              <1> 
+   159                              <1>     ;
+   160                              <1>     ; Transition the processor from 32-bit flat mode to 64-bit flat mode
+   161                              <1>     ;
+   162                              <1>     OneTimeCall Transition32FlatTo64Flat
+    49 000005B5 E95CFBFFFF          <2>  jmp %1
+    50                              <2> %1 %+ OneTimerCallReturn:
+   163                              <1> 
+   164                              <1> BITS    64
+   165                              <1> 
+   166                              <1>     ;
+   167                              <1>     ; Some values were calculated in 32-bit mode.  Make sure the upper
+   168                              <1>     ; 32-bits of 64-bit registers are zero for these values.
+   169                              <1>     ;
+   170 000005BA B8FFFFFFFF          <1>     mov     rax, 0x00000000ffffffff
+   171 000005BF 4821C6              <1>     and     rsi, rax
+   172 000005C2 4821C5              <1>     and     rbp, rax
+   173 000005C5 4821C4              <1>     and     rsp, rax
+   174                              <1> 
+   175                              <1>     ;
+   176                              <1>     ; RSI - SEC Core entry point
+   177                              <1>     ; RBP - Start of BFV
+   178                              <1>     ;
+   179                              <1> 
+   180                              <1>     ;
+   181                              <1>     ; Restore initial EAX value into the RAX register
+   182                              <1>     ;
+   183 000005C8 4889E0              <1>     mov     rax, rsp
+   184                              <1> 
+   185                              <1>     ;
+   186                              <1>     ; Jump to the 64-bit SEC entry point
+   187                              <1>     ;
+   188 000005CB FFE6                <1>     jmp     rsi
+   189                              <1> 
+   190                              <1> %endif
+   191                              <1> 
+   192                              <1> 
+    88                                  
+    89                                    %define SEV_ES_AP_RESET_IP 00080B000h
+    90                                    %define SEV_LAUNCH_SECRET_BASE 00h
+    91                                    %define SEV_LAUNCH_SECRET_SIZE 00h
+    92                                    %define SEV_FW_HASH_BLOCK_BASE 00h
+    93                                    %define SEV_FW_HASH_BLOCK_SIZE 00h
+    94                                  %include "Ia16/ResetVectorVtf0.asm"
+    95                              <1> ;------------------------------------------------------------------------------
+    96                              <1> ; @file
+    97                              <1> ; First code executed by processor after resetting.
+    98                              <1> ; Derived from UefiCpuPkg/ResetVector/Vtf0/Ia16/ResetVectorVtf0.asm
+    99                              <1> ;
+   100                              <1> ; Copyright (c) 2008 - 2014, Intel Corporation. All rights reserved.<BR>
+   101                              <1> ; SPDX-License-Identifier: BSD-2-Clause-Patent
+   102                              <1> ;
+   103                              <1> ;------------------------------------------------------------------------------
+   104                              <1> 
+   105                              <1> BITS    16
+   106                              <1> 
+   107 000005CD 90<rep 3h>          <1> ALIGN   16
+   108                              <1> 
+   109                              <1> ;
+   110                              <1> ; Pad the image size to 4k when page tables are in VTF0
+   111                              <1> ;
+   112                              <1> ; If the VTF0 image has page tables built in, then we need to make
+   113                              <1> ; sure the end of VTF0 is 4k above where the page tables end.
+   114                              <1> ;
+   115                              <1> ; This is required so the page tables will be 4k aligned when VTF0 is
+   116                              <1> ; located just below 0x100000000 (4GB) in the firmware device.
+   117                              <1> ;
+   118                              <1> %ifdef ALIGN_TOP_TO_4K_FOR_PAGING
+   119                              <1>     TIMES (0x1000 - ($ - EndOfPageTables) - 0x20) DB 0
+   120                              <1> %endif
+   121                              <1> 
+   122                              <1> ;
+   123                              <1> ; Padding to ensure first guid starts at 0xffffffd0
+   124                              <1> ;
+   125 000005D0 00<rep 4h>          <1> TIMES (15 - ((guidedStructureEnd - guidedStructureStart + 15) % 16)) DB 0
+   126                              <1> 
+   127                              <1> ; GUIDed structure.  To traverse this you should first verify the
+   128                              <1> ; presence of the table footer guid
+   129                              <1> ; (96b582de-1fb2-45f7-baea-a366c55a082d) at 0xffffffd0.  If that
+   130                              <1> ; is found, the two bytes at 0xffffffce are the entire table length.
+   131                              <1> ;
+   132                              <1> ; The table is composed of structures with the form:
+   133                              <1> ;
+   134                              <1> ; Data (arbitrary bytes identified by guid)
+   135                              <1> ; length from start of data to end of guid (2 bytes)
+   136                              <1> ; guid (16 bytes)
+   137                              <1> ;
+   138                              <1> ; so work back from the footer using the length to traverse until you
+   139                              <1> ; either find the guid you're looking for or run off the beginning of
+   140                              <1> ; the table.
+   141                              <1> ;
+   142                              <1> guidedStructureStart:
+   143                              <1> 
+   144                              <1> ; SEV Hash Table Block
+   145                              <1> ;
+   146                              <1> ; This describes the guest ram area where the hypervisor should
+   147                              <1> ; install a table describing the hashes of certain firmware configuration
+   148                              <1> ; device files that would otherwise be passed in unchecked.  The current
+   149                              <1> ; use is for the kernel, initrd and command line values, but others may be
+   150                              <1> ; added.  The data format is:
+   151                              <1> ;
+   152                              <1> ; base physical address (32 bit word)
+   153                              <1> ; table length (32 bit word)
+   154                              <1> ;
+   155                              <1> ; GUID (SEV FW config hash block): 7255371f-3a3b-4b04-927b-1da6efa8d454
+   156                              <1> ;
+   157                              <1> sevFwHashBlockStart:
+   158 000005D4 00000000            <1>     DD      SEV_FW_HASH_BLOCK_BASE
+   159 000005D8 00000000            <1>     DD      SEV_FW_HASH_BLOCK_SIZE
+   160 000005DC 1A00                <1>     DW      sevFwHashBlockEnd - sevFwHashBlockStart
+   161 000005DE 1F3755723B3A044B    <1>     DB      0x1f, 0x37, 0x55, 0x72, 0x3b, 0x3a, 0x04, 0x4b
+   162 000005E6 927B1DA6EFA8D454    <1>     DB      0x92, 0x7b, 0x1d, 0xa6, 0xef, 0xa8, 0xd4, 0x54
+   163                              <1> sevFwHashBlockEnd:
+   164                              <1> 
+   165                              <1> ; SEV Secret block
+   166                              <1> ;
+   167                              <1> ; This describes the guest ram area where the hypervisor should
+   168                              <1> ; inject the secret.  The data format is:
+   169                              <1> ;
+   170                              <1> ; base physical address (32 bit word)
+   171                              <1> ; table length (32 bit word)
+   172                              <1> ;
+   173                              <1> ; GUID (SEV secret block): 4c2eb361-7d9b-4cc3-8081-127c90d3d294
+   174                              <1> ;
+   175                              <1> sevSecretBlockStart:
+   176 000005EE 00000000            <1>     DD      SEV_LAUNCH_SECRET_BASE
+   177 000005F2 00000000            <1>     DD      SEV_LAUNCH_SECRET_SIZE
+   178 000005F6 1A00                <1>     DW      sevSecretBlockEnd - sevSecretBlockStart
+   179 000005F8 61B32E4C9B7DC34C    <1>     DB      0x61, 0xB3, 0x2E, 0x4C, 0x9B, 0x7D, 0xC3, 0x4C
+   180 00000600 8081127C90D3D294    <1>     DB      0x80, 0x81, 0x12, 0x7C, 0x90, 0xD3, 0xD2, 0x94
+   181                              <1> sevSecretBlockEnd:
+   182                              <1> 
+   183                              <1> ;
+   184                              <1> ; SEV-ES Processor Reset support
+   185                              <1> ;
+   186                              <1> ; sevEsResetBlock:
+   187                              <1> ;   For the initial boot of an AP under SEV-ES, the "reset" RIP must be
+   188                              <1> ;   programmed to the RAM area defined by SEV_ES_AP_RESET_IP. The data
+   189                              <1> ;   format is:
+   190                              <1> ;
+   191                              <1> ;   IP value [0:15]
+   192                              <1> ;   CS segment base [31:16]
+   193                              <1> ;
+   194                              <1> ;   GUID (SEV-ES reset block): 00f771de-1a7e-4fcb-890e-68c77e2fb44e
+   195                              <1> ;
+   196                              <1> ;   A hypervisor reads the CS segement base and IP value. The CS segment base
+   197                              <1> ;   value represents the high order 16-bits of the CS segment base, so the
+   198                              <1> ;   hypervisor must left shift the value of the CS segement base by 16 bits to
+   199                              <1> ;   form the full CS segment base for the CS segment register. It would then
+   200                              <1> ;   program the EIP register with the IP value as read.
+   201                              <1> ;
+   202                              <1> 
+   203                              <1> sevEsResetBlockStart:
+   204 00000608 00B08000            <1>     DD      SEV_ES_AP_RESET_IP
+   205 0000060C 1600                <1>     DW      sevEsResetBlockEnd - sevEsResetBlockStart
+   206 0000060E DE71F7007E1ACB4F    <1>     DB      0xDE, 0x71, 0xF7, 0x00, 0x7E, 0x1A, 0xCB, 0x4F
+   207 00000616 890E68C77E2FB44E    <1>     DB      0x89, 0x0E, 0x68, 0xC7, 0x7E, 0x2F, 0xB4, 0x4E
+   208                              <1> sevEsResetBlockEnd:
+   209                              <1> 
+   210                              <1> ;
+   211                              <1> ; Table footer:
+   212                              <1> ;
+   213                              <1> ; length of whole table (16 bit word)
+   214                              <1> ; GUID (table footer): 96b582de-1fb2-45f7-baea-a366c55a082d
+   215                              <1> ;
+   216 0000061E 5C00                <1>     DW      guidedStructureEnd - guidedStructureStart
+   217 00000620 DE82B596B21FF745    <1>     DB      0xDE, 0x82, 0xB5, 0x96, 0xB2, 0x1F, 0xF7, 0x45
+   218 00000628 BAEAA366C55A082D    <1>     DB      0xBA, 0xEA, 0xA3, 0x66, 0xC5, 0x5A, 0x08, 0x2D
+   219                              <1> 
+   220                              <1> guidedStructureEnd:
+   221                              <1> 
+   222                              <1> ALIGN   16
+   223                              <1> 
+   224                              <1> applicationProcessorEntryPoint:
+   225                              <1> ;
+   226                              <1> ; Application Processors entry point
+   227                              <1> ;
+   228                              <1> ; GenFv generates code aligned on a 4k boundary which will jump to this
+   229                              <1> ; location.  (0xffffffe0)  This allows the Local APIC Startup IPI to be
+   230                              <1> ; used to wake up the application processors.
+   231                              <1> ;
+   232 00000630 E96AFF              <1>     jmp     EarlyApInitReal16
+   233                              <1> 
+   234 00000633 90<rep 5h>          <1> ALIGN   8
+   235                              <1> 
+   236 00000638 00000000            <1>     DD      0
+   237                              <1> 
+   238                              <1> ;
+   239                              <1> ; The VTF signature
+   240                              <1> ;
+   241                              <1> ; VTF-0 means that the VTF (Volume Top File) code does not require
+   242                              <1> ; any fixups.
+   243                              <1> ;
+   244                              <1> vtfSignature:
+   245 0000063C 56544600            <1>     DB      'V', 'T', 'F', 0
+   246                              <1> 
+   247                              <1> ALIGN   16
+   248                              <1> 
+   249                              <1> resetVector:
+   250                              <1> ;
+   251                              <1> ; Reset Vector
+   252                              <1> ;
+   253                              <1> ; This is where the processor will begin execution
+   254                              <1> ;
+   255 00000640 90                  <1>     nop
+   256 00000641 90                  <1>     nop
+   257 00000642 E953FF              <1>     jmp     EarlyBspInitReal16
+   258                              <1> 
+   259 00000645 90<rep Bh>          <1> ALIGN   16
+   260                              <1> 
+   261                              <1> fourGigabytes:
+   262                              <1> 

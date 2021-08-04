@@ -1,0 +1,90 @@
+
+
+
+
+
+
+
+
+
+.global _ModuleEntryPoint ; .section ".text._ModuleEntryPoint", "ax" ; .type _ModuleEntryPoint, %function ; _ModuleEntryPoint:
+
+  bl ArmPlatformPeiBootAction
+
+
+
+
+
+
+
+
+
+
+
+
+
+  mrs x0, CurrentEL ; cmp x0, #0x8 ; b.gt . ; b.eq 2f ; cbnz x0, 1f ; b . ;
+1:bl SetupExceptionLevel1
+  b MainEntryPoint
+2:bl SetupExceptionLevel2
+  b MainEntryPoint
+
+MainEntryPoint:
+
+  bl ArmReadMpidr
+
+  mov x5, x0
+
+
+  bl ArmPlatformIsPrimaryCore
+
+
+  movz x1, (0 + 0x10000) >> 48, lsl #48 ; movk x1, ((0 + 0x10000) >> 32) & 0xffff, lsl #32 ; movk x1, ((0 + 0x10000) >> 16) & 0xffff, lsl #16 ; movk x1, (0 + 0x10000) & 0xffff
+
+
+  cmp x0, #1
+  b.eq _SetupPrimaryCoreStack
+
+_SetupSecondaryCoreStack:
+
+
+
+  mov x6, x1
+  mov x0, x5
+  bl ArmPlatformGetCorePosition
+
+  add x0, x0, #1
+
+
+  movz x2, (0x1000) >> 16, lsl #16 ; movk x2, (0x1000) & 0xffff
+  mul x0, x0, x2
+
+  add sp, x6, x0
+
+_PrepareArguments:
+
+  movz x2, (0) >> 48, lsl #48 ; movk x2, ((0) >> 32) & 0xffff, lsl #32 ; movk x2, ((0) >> 16) & 0xffff, lsl #16 ; movk x2, (0) & 0xffff
+  ldr x1, [x2, #8]
+
+
+
+  ldr x3, =CEntryPoint
+
+
+  mov x29, xzr
+
+
+
+
+  mov x0, x5
+  blr x3
+
+_SetupPrimaryCoreStack:
+  mov sp, x1
+  movz x8, (0) >> 48, lsl #48 ; movk x8, ((0) >> 32) & 0xffff, lsl #32 ; movk x8, ((0) >> 16) & 0xffff, lsl #16 ; movk x8, (0) & 0xffff
+  movz x9, (0x5AA55AA5 | 0x5AA55AA5 << 32) >> 48, lsl #48 ; movk x9, ((0x5AA55AA5 | 0x5AA55AA5 << 32) >> 32) & 0xffff, lsl #32 ; movk x9, ((0x5AA55AA5 | 0x5AA55AA5 << 32) >> 16) & 0xffff, lsl #16 ; movk x9, (0x5AA55AA5 | 0x5AA55AA5 << 32) & 0xffff
+
+0:stp x9, x9, [x8], #16
+  cmp x8, x1
+  b.lt 0b
+  b _PrepareArguments

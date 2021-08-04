@@ -1,0 +1,1 @@
+/home/xephyr/Documents/edk2/Build/SecurityPkg/DEBUG_GCC5/X64/SecurityPkg/Tcg/Tcg2Config/Tcg2ConfigDxe/GNUmakefile

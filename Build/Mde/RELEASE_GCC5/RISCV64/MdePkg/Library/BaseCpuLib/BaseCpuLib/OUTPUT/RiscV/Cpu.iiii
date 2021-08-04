@@ -1,0 +1,17 @@
+
+
+
+
+
+
+
+
+.data
+.align 3
+.section .text
+
+.global _CpuSleep
+
+_CpuSleep:
+    wfi
+    ret

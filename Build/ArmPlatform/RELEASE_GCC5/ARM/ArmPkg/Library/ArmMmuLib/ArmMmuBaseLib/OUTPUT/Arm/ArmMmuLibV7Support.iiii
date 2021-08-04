@@ -1,0 +1,29 @@
+#------------------------------------------------------------------------------
+
+# Copyright (c) 2016, Linaro Limited. All rights reserved.
+
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+
+#------------------------------------------------------------------------------
+
+
+
+.text
+.align 2
+
+.global ArmReadIdMmfr0 ; .type ArmReadIdMmfr0, %function
+.global ArmHasMpExtensions ; .type ArmHasMpExtensions, %function
+
+ #------------------------------------------------------------------------------
+
+ArmHasMpExtensions:
+  mrc p15,0,R0,c0,c0,5
+
+  lsr R0, R0, #31
+  bx LR
+
+ArmReadIdMmfr0:
+  mrc p15, 0, r0, c0, c1, 4 @ Read ID_MMFR0 Register
+  bx lr
+
+

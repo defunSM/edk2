@@ -1,0 +1,21 @@
+
+
+-include /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/ARM/MdePkg/Library/BaseLib/BaseLib/OUTPUT/Arm/DisableInterrupts.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/ARM/MdePkg/Library/BaseLib/BaseLib/OUTPUT/Arm/SetJumpLongJump.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/ARM/MdePkg/Library/BaseLib/BaseLib/OUTPUT/Arm/MemoryFence.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/ARM/MdePkg/Library/BaseLib/BaseLib/OUTPUT/Arm/Math64.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/ARM/MdePkg/Library/BaseLib/BaseLib/OUTPUT/Arm/GetInterruptsState.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/ARM/MdePkg/Library/BaseLib/BaseLib/OUTPUT/Arm/SwitchStack.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/ARM/MdePkg/Library/BaseLib/BaseLib/OUTPUT/Arm/CpuBreakpoint.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/ARM/MdePkg/Library/BaseLib/BaseLib/OUTPUT/Arm/EnableInterrupts.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/ARM/MdePkg/Library/BaseLib/BaseLib/OUTPUT/Arm/SpeculationBarrier.obj.deps
+
+               

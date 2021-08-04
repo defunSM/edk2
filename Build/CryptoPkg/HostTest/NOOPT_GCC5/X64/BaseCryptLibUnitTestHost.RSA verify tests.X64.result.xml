@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite name="RSA verify tests" time="0.000" tests="3" failures="0" errors="0" skipped="0" >
+    <testcase name="TestVerifyRsaSetGetKeyComponents()" time="0.000" >
+    </testcase>
+    <testcase name="TestVerifyRsaGenerateKeyComponents()" time="0.000" >
+    </testcase>
+    <testcase name="TestVerifyRsaPkcs1SignVerify()" time="0.000" >
+    </testcase>
+  </testsuite>
+</testsuites>

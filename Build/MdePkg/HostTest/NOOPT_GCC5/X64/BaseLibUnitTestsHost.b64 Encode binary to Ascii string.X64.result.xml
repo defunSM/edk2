@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite name="b64 Encode binary to Ascii string" time="0.000" tests="8" failures="0" errors="0" skipped="0" >
+    <testcase name="RFC 4686 Test Vector - Empty" time="0.000" >
+    </testcase>
+    <testcase name="RFC 4686 Test Vector - f" time="0.000" >
+    </testcase>
+    <testcase name="RFC 4686 Test Vector - fo" time="0.000" >
+    </testcase>
+    <testcase name="RFC 4686 Test Vector - foo" time="0.000" >
+    </testcase>
+    <testcase name="RFC 4686 Test Vector - foob" time="0.000" >
+    </testcase>
+    <testcase name="RFC 4686 Test Vector - fooba" time="0.000" >
+    </testcase>
+    <testcase name="RFC 4686 Test Vector - foobar" time="0.000" >
+    </testcase>
+    <testcase name="Too small of output buffer" time="0.000" >
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,239 @@
+//
+//  VFR compiler version  2.01 (UEFI 2.4) Developer Build based on Revision: Unknown
+//
+extern unsigned char TcgConfigDxeStrings[];
+extern EFI_GUID gEfiHiiPlatformSetupFormsetGuid;
+extern EFI_GUID gEfiHiiDriverHealthFormsetGuid;
+extern EFI_GUID gEfiHiiUserCredentialFormsetGuid;
+extern EFI_GUID gEfiHiiRestStyleFormsetGuid;
+typedef struct {
+  UINT8 PPRequest;
+  UINT8 LastPPRequest;
+  UINT32 PPResponse;
+} EFI_PHYSICAL_PRESENCE;
+typedef struct {
+  UINT8 PPFlags;
+} EFI_PHYSICAL_PRESENCE_FLAGS;
+extern EFI_GUID { 0xf6499b1, 0xe9ad, 0x493d, { 0xb9, 0xc2, 0x2f, 0x90, 0x81, 0x5c, 0x6c, 0xbc }};
+extern EFI_GUID { 0xb0f901e4, 0xc424, 0x45de, { 0x90, 0x81, 0x95, 0xe2, 0xb, 0xde, 0x6f, 0xb5 }};
+typedef struct {
+  UINT8 TpmOperation;
+  BOOLEAN TpmEnable;
+  BOOLEAN TpmActivate;
+} TCG_CONFIGURATION;
+formset
+>00000000: 0E A7 E4 01 F9 B0 24 C4 DE 45 90 81 95 E2 0B DE 6F B5 02 00 03 00 01 71 99 03 93 45 85 04 4B B4 5E 32 EB 83 26 04 0E 
+>00000027: 5C 06 00 00 00 00 
+>0000002D: 5C 06 00 00 01 00 
+  guid = { 0xb0f901e4, 0xc424, 0x45de, {0x90, 0x81, 0x95, 0xe2, 0xb, 0xde, 0x6f, 0xb5 } },
+  title = STRING_TOKEN(0x0002),
+  help = STRING_TOKEN(0x0003),
+  classguid = { 0x93039971, 0x8545, 0x4b04, { 0xb4, 0x5e, 0x32, 0xeb, 0x83, 0x26, 0x4, 0xe } },
+  varstore TCG_CONFIGURATION,
+>00000033: 24 28 E4 01 F9 B0 24 C4 DE 45 90 81 95 E2 0B DE 6F B5 01 00 03 00 54 43 47 5F 43 4F 4E 46 49 47 55 52 41 54 49 4F 4E 00 
+    varid = 0x0001,
+    name = TCG_CONFIGURATION,
+    guid = { 0xb0f901e4, 0xc424, 0x45de, {0x90, 0x81, 0x95, 0xe2, 0xb, 0xde, 0x6f, 0xb5 } };
+  form formid = 0x0001,
+>0000005B: 01 86 01 00 02 00 
+    title = STRING_TOKEN(0x0002);
+    subtitle text = STRING_TOKEN(0x0014);
+>00000061: 02 87 14 00 00 00 00 
+>00000068: 29 02 
+    text
+>0000006A: 03 08 04 00 05 00 06 00 
+      help = STRING_TOKEN(0x0005),
+      text = STRING_TOKEN(0x0004),
+        text = STRING_TOKEN(0x0006);
+    subtitle text = STRING_TOKEN(0x0014);
+>00000072: 02 87 14 00 00 00 00 
+>00000079: 29 02 
+    oneof varid = TCG_CONFIGURATION.TpmOperation,
+>0000007B: 05 91 07 00 08 00 00 30 01 00 00 00 14 10 00 16 00 
+          questionid = 0x3000,
+          prompt = STRING_TOKEN(0x0007),
+          help = STRING_TOKEN(0x0008),
+          flags = INTERACTIVE | RESET_REQUIRED,
+          option text = STRING_TOKEN(0x0009), value = 0, flags = DEFAULT;
+>0000008C: 09 07 09 00 10 00 00 
+          suppressif ideqval TCG_CONFIGURATION.TpmEnable == 0;
+>00000093: 0A 82 
+>00000095: 12 06 02 00 00 00 
+            option text = STRING_TOKEN(0x000B), value = 2, flags = 0;
+>0000009B: 09 07 0B 00 00 00 02 
+            option text = STRING_TOKEN(0x000C), value = 3, flags = 0;
+>000000A2: 09 07 0C 00 00 00 03 
+            option text = STRING_TOKEN(0x000D), value = 4, flags = 0;
+>000000A9: 09 07 0D 00 00 00 04 
+            option text = STRING_TOKEN(0x0010), value = 7, flags = 0;
+>000000B0: 09 07 10 00 00 00 07 
+          endif
+>000000B7: 29 02 
+          suppressif ideqval TCG_CONFIGURATION.TpmEnable == 0 OR
+>000000B9: 0A 82 
+>000000BB: 12 86 02 00 00 00 
+>000000C7: 16 02 
+>000000C9: 29 02 
+                     ideqval TCG_CONFIGURATION.TpmActivate == 0;
+>000000C1: 12 06 01 00 00 00 
+            option text = STRING_TOKEN(0x000E), value = 5, flags = 0;
+>000000CB: 09 07 0E 00 00 00 05 
+            option text = STRING_TOKEN(0x0012), value = 14, flags = 0;
+>000000D2: 09 07 12 00 00 00 0E 
+          endif
+>000000D9: 29 02 
+          option text = STRING_TOKEN(0x000A), value = 1, flags = 0;
+>000000DB: 09 07 0A 00 00 00 01 
+          option text = STRING_TOKEN(0x000F), value = 6, flags = 0;
+>000000E2: 09 07 0F 00 00 00 06 
+          option text = STRING_TOKEN(0x0011), value = 21, flags = 0;
+>000000E9: 09 07 11 00 00 00 15 
+          option text = STRING_TOKEN(0x0013), value = 22, flags = 0;
+>000000F0: 09 07 13 00 00 00 16 
+    endoneof;
+>000000F7: 29 02 
+    subtitle text = STRING_TOKEN(0x0014);
+>000000F9: 02 87 14 00 00 00 00 
+>00000100: 29 02 
+  endform;
+>0000012E: 29 02 
+endformset;
+>00000102: 1E 82 
+>00000104: 46 02 
+>00000106: 07 91 00 00 00 00 01 00 01 00 02 00 00 10 00 FF 00 
+>00000117: 29 02 
+>00000119: 07 91 00 00 00 00 02 00 01 00 01 00 00 10 00 FF 00 
+>0000012A: 29 02 
+>0000012C: 29 02 
+>00000130: 29 02 
+
+//
+// All Opcode Record List 
+//
+>00000000: 0E A7 E4 01 F9 B0 24 C4 DE 45 90 81 95 E2 0B DE 6F B5 02 00 03 00 01 71 99 03 93 45 85 04 4B B4 5E 32 EB 83 26 04 0E 
+>00000027: 5C 06 00 00 00 00 
+>0000002D: 5C 06 00 00 01 00 
+>00000033: 24 28 E4 01 F9 B0 24 C4 DE 45 90 81 95 E2 0B DE 6F B5 01 00 03 00 54 43 47 5F 43 4F 4E 46 49 47 55 52 41 54 49 4F 4E 00 
+>0000005B: 01 86 01 00 02 00 
+>00000061: 02 87 14 00 00 00 00 
+>00000068: 29 02 
+>0000006A: 03 08 04 00 05 00 06 00 
+>00000072: 02 87 14 00 00 00 00 
+>00000079: 29 02 
+>0000007B: 05 91 07 00 08 00 00 30 01 00 00 00 14 10 00 16 00 
+>0000008C: 09 07 09 00 10 00 00 
+>00000093: 0A 82 
+>00000095: 12 06 02 00 00 00 
+>0000009B: 09 07 0B 00 00 00 02 
+>000000A2: 09 07 0C 00 00 00 03 
+>000000A9: 09 07 0D 00 00 00 04 
+>000000B0: 09 07 10 00 00 00 07 
+>000000B7: 29 02 
+>000000B9: 0A 82 
+>000000BB: 12 86 02 00 00 00 
+>000000C1: 12 06 01 00 00 00 
+>000000C7: 16 02 
+>000000C9: 29 02 
+>000000CB: 09 07 0E 00 00 00 05 
+>000000D2: 09 07 12 00 00 00 0E 
+>000000D9: 29 02 
+>000000DB: 09 07 0A 00 00 00 01 
+>000000E2: 09 07 0F 00 00 00 06 
+>000000E9: 09 07 11 00 00 00 15 
+>000000F0: 09 07 13 00 00 00 16 
+>000000F7: 29 02 
+>000000F9: 02 87 14 00 00 00 00 
+>00000100: 29 02 
+>00000102: 1E 82 
+>00000104: 46 02 
+>00000106: 07 91 00 00 00 00 01 00 01 00 02 00 00 10 00 FF 00 
+>00000117: 29 02 
+>00000119: 07 91 00 00 00 00 02 00 01 00 01 00 00 10 00 FF 00 
+>0000012A: 29 02 
+>0000012C: 29 02 
+>0000012E: 29 02 
+>00000130: 29 02 
+
+Total Size of all record is 0x00000132
+
+
+***************************************************************
+		mPackAlign = 8
+		struct TCG_CONFIGURATION : mAlign [1] mTotalSize [0x3]
+
+		struct TCG_CONFIGURATION {
+			+00000000[00000000] TpmOperation <UINT8>
+			+00000001[00000001] TpmEnable <BOOLEAN>
+			+00000002[00000002] TpmActivate <BOOLEAN>
+		};
+---------------------------------------------------------------
+		struct EFI_PHYSICAL_PRESENCE_FLAGS : mAlign [1] mTotalSize [0x1]
+
+		struct EFI_PHYSICAL_PRESENCE_FLAGS {
+			+00000000[00000000] PPFlags <UINT8>
+		};
+---------------------------------------------------------------
+		struct EFI_PHYSICAL_PRESENCE : mAlign [4] mTotalSize [0x8]
+
+		struct EFI_PHYSICAL_PRESENCE {
+			+00000000[00000000] PPRequest <UINT8>
+			+00000001[00000001] LastPPRequest <UINT8>
+			+00000004[00000004] PPResponse <UINT32>
+		};
+---------------------------------------------------------------
+		struct EFI_HII_REF : mAlign [16] mTotalSize [0x16]
+
+		struct EFI_HII_REF {
+			+00000000[00000000] QuestionId <UINT16>
+			+00000002[00000002] FormId <UINT16>
+			+00000004[00000004] FormSetGuid <(null)>
+			+00000020[00000014] DevicePath <EFI_STRING_ID>
+		};
+---------------------------------------------------------------
+		struct EFI_HII_TIME : mAlign [1] mTotalSize [0x3]
+
+		struct EFI_HII_TIME {
+			+00000000[00000000] Hours <UINT8>
+			+00000001[00000001] Minutes <UINT8>
+			+00000002[00000002] Seconds <UINT8>
+		};
+---------------------------------------------------------------
+		struct EFI_STRING_ID : mAlign [2] mTotalSize [0x2]
+
+		struct EFI_STRING_ID {
+		};
+---------------------------------------------------------------
+		struct EFI_HII_DATE : mAlign [2] mTotalSize [0x4]
+
+		struct EFI_HII_DATE {
+			+00000000[00000000] Year <UINT16>
+			+00000002[00000002] Month <UINT8>
+			+00000003[00000003] Day <UINT8>
+		};
+---------------------------------------------------------------
+		struct BOOLEAN : mAlign [1] mTotalSize [0x1]
+
+		struct BOOLEAN {
+		};
+---------------------------------------------------------------
+		struct UINT8 : mAlign [1] mTotalSize [0x1]
+
+		struct UINT8 {
+		};
+---------------------------------------------------------------
+		struct UINT16 : mAlign [2] mTotalSize [0x2]
+
+		struct UINT16 {
+		};
+---------------------------------------------------------------
+		struct UINT32 : mAlign [4] mTotalSize [0x4]
+
+		struct UINT32 {
+		};
+---------------------------------------------------------------
+		struct UINT64 : mAlign [8] mTotalSize [0x8]
+
+		struct UINT64 {
+		};
+---------------------------------------------------------------
+***************************************************************

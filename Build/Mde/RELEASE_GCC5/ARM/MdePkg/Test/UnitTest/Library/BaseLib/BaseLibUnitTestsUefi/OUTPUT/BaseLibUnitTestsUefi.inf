@@ -1,0 +1,93 @@
+## @file
+# Unit tests of Base64 conversion APIs in BaseLib that are run from UEFI Shell.
+#
+# Copyright (C) Microsoft Corporation.
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+##
+
+# DO NOT EDIT
+# FILE auto-generated
+
+[Defines]
+  INF_VERSION                = 0x00010017
+  BASE_NAME                  = BaseLibUnitTestsUefi
+  FILE_GUID                  = df5a6fed-8786-4a9d-9d02-eab39497b4a1
+  MODULE_TYPE                = UEFI_APPLICATION
+  VERSION_STRING             = 1.0
+  ENTRY_POINT                = BaseLibUnitTestAppEntry
+
+[Packages.ARM]
+  MdeModulePkg/MdeModulePkg.dec
+
+[Binaries.ARM]
+  PE32|BaseLibUnitTestsUefi.efi
+
+[PatchPcd.ARM]
+
+[Protocols.ARM]
+
+[Ppis.ARM]
+
+[Guids.ARM]
+  ## SOMETIMES_CONSUMES ## GUID
+  gEfiStatusCodeDataTypeDebugGuid
+
+
+[PcdEx.ARM]
+
+[LibraryClasses.ARM]
+## @LIB_INSTANCES
+#  MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib.inf
+#  MdePkg/Library/BaseReportStatusCodeLibNull/BaseReportStatusCodeLibNull.inf
+#  MdePkg/Library/BasePrintLib/BasePrintLib.inf
+#  UnitTestFrameworkPkg/Library/UnitTestResultReportLib/UnitTestResultReportLibConOut.inf
+#  UnitTestFrameworkPkg/Library/UnitTestPersistenceLibNull/UnitTestPersistenceLibNull.inf
+#  MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib.inf
+#  MdePkg/Library/BasePcdLibNull/BasePcdLibNull.inf
+#  MdePkg/Library/BaseStackCheckLib/BaseStackCheckLib.inf
+#  UnitTestFrameworkPkg/Library/UnitTestDebugAssertLib/UnitTestDebugAssertLib.inf
+#  ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib.inf
+#  UnitTestFrameworkPkg/Library/UnitTestLib/UnitTestLib.inf
+#  MdeModulePkg/Library/PeiDxeDebugLibReportStatusCode/PeiDxeDebugLibReportStatusCode.inf
+#  MdePkg/Library/BaseMemoryLib/BaseMemoryLib.inf
+#  MdePkg/Library/BaseLib/BaseLib.inf
+#  MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib.inf
+#  MdePkg/Library/UefiApplicationEntryPoint/UefiApplicationEntryPoint.inf
+
+[Depex.ARM]
+
+
+
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64
+#
+
+[BuildOptions.ARM]
+## @AsBuilt
+##   GCC:RELEASE_GCC5_ARM_ASMLINK_FLAGS = /nologo /tiny
+##   GCC:RELEASE_GCC5_ARM_OPTROM_FLAGS = -e
+##   GCC:RELEASE_GCC5_ARM_PLATFORM_FLAGS = -march=armv7-a
+##   GCC:RELEASE_GCC5_ARM_DTC_FLAGS = -H epapr
+##   GCC:RELEASE_GCC5_ARM_APP_FLAGS = 
+##   GCC:RELEASE_GCC5_ARM_OBJCOPY_FLAGS = objcopy not needed for
+##   GCC:RELEASE_GCC5_ARM_ASL_FLAGS = 
+##   GCC:RELEASE_GCC5_ARM_GENFW_FLAGS = 
+##   GCC:RELEASE_GCC5_ARM_ASLDLINK_FLAGS = -Wl,--emit-relocs -nostdlib -Wl,--gc-sections -u $(IMAGE_ENTRY_POINT) -Wl,-e,$(IMAGE_ENTRY_POINT),-Map,$(DEST_DIR_DEBUG)/$(BASE_NAME).map -z common-page-size=0x20 -Wl,--pic-veneer -Wl,--entry,ReferenceAcpiTable -u $(IMAGE_ENTRY_POINT) -Wl,--defsym=PECOFF_HEADER_SIZE=0 -Wl,--script=$(EDK_TOOLS_PATH)/Scripts/GccBase.lds -z common-page-size=0x20 -Wl,--oformat=elf32-littlearm
+##   GCC:RELEASE_GCC5_ARM_ASM_FLAGS = $(ARCHASM_FLAGS) $(PLATFORM_FLAGS) -c -x assembler -imacros AutoGen.h -mlittle-endian
+##   GCC:RELEASE_GCC5_ARM_ARCHCC_FLAGS = -mthumb
+##   GCC:RELEASE_GCC5_ARM_RC_FLAGS = -I binary -O elf32-littlearm     -B arm     --rename-section .data=.hii
+##   GCC:RELEASE_GCC5_ARM_SYMRENAME_FLAGS = Symbol renaming not needed for
+##   GCC:RELEASE_GCC5_ARM_DTCPP_FLAGS = -E -x assembler-with-cpp -imacros AutoGen.h -nostdinc -undef
+##   GCC:RELEASE_GCC5_ARM_DEPS_FLAGS = -MMD -MF $@.deps
+##   GCC:RELEASE_GCC5_ARM_ASLPP_FLAGS = -x c -E -include AutoGen.h
+##   GCC:RELEASE_GCC5_ARM_ASLCC_FLAGS = -x c -fno-lto
+##   GCC:RELEASE_GCC5_ARM_CC_FLAGS = $(ARCHCC_FLAGS) $(PLATFORM_FLAGS) -g -Os -fshort-wchar -fno-builtin -fno-strict-aliasing -Wall -Werror -Wno-array-bounds -include AutoGen.h -fno-common -mlittle-endian -mabi=aapcs -fno-short-enums -funsigned-char -ffunction-sections -fdata-sections -fomit-frame-pointer -Wno-address -mthumb -mfloat-abi=soft -fno-pic -fno-pie -fstack-protector -mword-relocations -flto -Wno-unused-but-set-variable -Wno-unused-const-variable -D DISABLE_NEW_DEPRECATED_INTERFACES -D EDKII_UNIT_TEST_FRAMEWORK_ENABLED
+##   GCC:RELEASE_GCC5_ARM_PP_FLAGS = $(ARCHCC_FLAGS) $(PLATFORM_FLAGS) -E -x assembler-with-cpp -include AutoGen.h -DOPENSBI_EXTERNAL_SBI_TYPES=OpensbiTypes.h
+##   GCC:RELEASE_GCC5_ARM_VFRPP_FLAGS = $(ARCHCC_FLAGS) $(PLATFORM_FLAGS) -x c -E -P -DVFRCOMPILE --include $(MODULE_NAME)StrDefs.h
+##   GCC:RELEASE_GCC5_ARM_VFR_FLAGS = -l -n
+##   GCC:RELEASE_GCC5_ARM_DLINK2_FLAGS = -Wl,--script=$(EDK_TOOLS_PATH)/Scripts/GccBase.lds -Wl,--defsym=PECOFF_HEADER_SIZE=0x220 -Wno-error
+##   GCC:RELEASE_GCC5_ARM_DLINK_FLAGS = -Wl,--emit-relocs -nostdlib -Wl,--gc-sections -u $(IMAGE_ENTRY_POINT) -Wl,-e,$(IMAGE_ENTRY_POINT),-Map,$(DEST_DIR_DEBUG)/$(BASE_NAME).map -z common-page-size=0x20 -Wl,--pic-veneer -Wl,--oformat=elf32-littlearm -flto -Os -L/home/xephyr/Documents/edk2/ArmPkg/Library/GccLto -llto-arm -Wl,-plugin-opt=-pass-through=-llto-arm
+##   GCC:RELEASE_GCC5_ARM_NASMB_FLAGS = -f bin

@@ -1,0 +1,78 @@
+
+
+
+
+
+
+
+
+
+
+
+.data
+
+.text
+.align 3
+
+.global InternalSyncCompareExchange32
+.global InternalSyncCompareExchange64
+.global InternalSyncIncrement
+.global InternalSyncDecrement
+
+
+
+
+
+
+
+
+InternalSyncCompareExchange32:
+    lr.w a3, (a0)
+
+    bne a3, a1, exit
+    sc.w a3, a2, (a0)
+    mv a3, a1
+exit:
+    mv a0, a3
+    ret
+
+.global InternalSyncCompareExchange64
+
+
+
+
+
+
+
+
+SyncCompareExchange64:
+    lr.d a3, (a0)
+
+    bne a3, a1, exit
+    sc.d a3, a2, (a0)
+    mv a3, a1
+exit2:
+    mv a0, a3
+    ret
+
+
+
+
+
+
+InternalSyncIncrement:
+    li a1, 1
+    amoadd.w a2, a1, (a0)
+    mv a0, a2
+    ret
+
+
+
+
+
+
+InternalSyncDecrement:
+    li a1, -1
+    amoadd.w a2, a1, (a0)
+    mv a0, a2
+    ret

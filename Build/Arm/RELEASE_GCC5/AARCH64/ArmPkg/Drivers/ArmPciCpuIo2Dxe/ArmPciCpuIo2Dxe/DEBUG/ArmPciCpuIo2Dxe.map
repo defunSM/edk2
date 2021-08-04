@@ -1,0 +1,214 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib(memcpy.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (memcpy)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib(memset.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (memset)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseStackCheckLib/BaseStackCheckLib/OUTPUT/BaseStackCheckLib.lib(BaseStackCheckGcc.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (__stack_chk_fail)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuDeadLoop.obj)
+                              BaseStackCheckGcc.obj (symbol from plugin) (CpuDeadLoop)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+                              CpuDeadLoop.obj (symbol from plugin) (CpuPause)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+                              BaseStackCheckGcc.obj (symbol from plugin) (CpuBreakpoint)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint/OUTPUT/UefiDriverEntryPoint.lib(DriverEntryPoint.obj)
+                              (_ModuleEntryPoint)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/ArmPkg/Drivers/ArmPciCpuIo2Dxe/ArmPciCpuIo2Dxe/OUTPUT/ArmPciCpuIo2Dxe.lib(AutoGen.obj)
+                              DriverEntryPoint.obj (symbol from plugin) (ProcessLibraryConstructorList)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/ArmPkg/Drivers/ArmPciCpuIo2Dxe/ArmPciCpuIo2Dxe/OUTPUT/ArmPciCpuIo2Dxe.lib(ArmPciCpuIo2Dxe.obj)
+                              AutoGen.obj (symbol from plugin) (ArmPciCpuIo2Initialize)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RShiftU64.obj)
+                              ArmPciCpuIo2Dxe.obj (symbol from plugin) (RShiftU64)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LShiftU64.obj)
+                              ArmPciCpuIo2Dxe.obj (symbol from plugin) (LShiftU64)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Math64.obj)
+                              LShiftU64.obj (symbol from plugin) (InternalMathLShiftU64)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes32.obj)
+                              Math64.obj (symbol from plugin) (SwapBytes32)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes16.obj)
+                              SwapBytes32.obj (symbol from plugin) (SwapBytes16)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib(UefiBootServicesTableLib.obj)
+                              AutoGen.obj (symbol from plugin) (UefiBootServicesTableLibConstructor)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib(IoLibNoIo.obj)
+                              ArmPciCpuIo2Dxe.obj (symbol from plugin) (MmioRead8)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull/OUTPUT/FilterLibNull.lib(RegisterFilterLibNull.obj)
+                              IoLibNoIo.obj (symbol from plugin) (FilterBeforeMmIoRead)
+
+Discarded input sections
+
+ .text          0x0000000000000000       0x10 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .text          0x0000000000000000        0x0 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .text._DriverUnloadHandler
+                0x0000000000000000        0x8 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .text.__stack_chk_fail
+                0x0000000000000000        0x4 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .text.__memset
+                0x0000000000000000       0x1c /tmp/cc6joY1n.ltrans0.ltrans.o
+ .text.memcpy   0x0000000000000000       0x20 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .data.__stack_chk_guard
+                0x0000000000000000        0x8 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .comment       0x0000000000000000       0x75 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .text          0x0000000000000000        0x0 memcpy.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 memset.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 BaseStackCheckGcc.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CpuDeadLoop.obj (symbol from plugin)
+ .text          0x0000000000000000       0x30 /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .text          0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .text          0x0000000000000000        0x0 DriverEntryPoint.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AutoGen.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ArmPciCpuIo2Dxe.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 RShiftU64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 LShiftU64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Math64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SwapBytes32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SwapBytes16.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UefiBootServicesTableLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 IoLibNoIo.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 RegisterFilterLibNull.obj (symbol from plugin)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+LOAD /tmp/cc6joY1n.ltrans0.ltrans.o
+START GROUP
+LOAD /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/ArmPkg/Drivers/ArmPciCpuIo2Dxe/ArmPciCpuIo2Dxe/OUTPUT/ArmPciCpuIo2Dxe.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseStackCheckLib/BaseStackCheckLib/OUTPUT/BaseStackCheckLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BasePcdLibNull/BasePcdLibNull/OUTPUT/BasePcdLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull/OUTPUT/BaseDebugLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull/OUTPUT/FilterLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint/OUTPUT/UefiDriverEntryPoint.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib
+END GROUP
+                0x0000000000000228                . = PECOFF_HEADER_SIZE
+
+.text           0x0000000000001000      0x440
+ *(.text .text.* .stub .gnu.linkonce.t.*)
+ .text.MmioWrite64
+                0x0000000000001000        0xc /tmp/cc6joY1n.ltrans0.ltrans.o
+ .text.MmioRead64
+                0x000000000000100c        0x8 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .text.MmioWrite32
+                0x0000000000001014        0xc /tmp/cc6joY1n.ltrans0.ltrans.o
+ .text.MmioRead32
+                0x0000000000001020        0x8 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .text.MmioWrite16
+                0x0000000000001028       0x10 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .text.MmioRead16
+                0x0000000000001038        0x8 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .text.MmioWrite8
+                0x0000000000001040       0x10 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .text.MmioRead8
+                0x0000000000001050        0x8 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .text.LShiftU64
+                0x0000000000001058        0x8 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .text.RShiftU64
+                0x0000000000001060        0x8 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .text.CpuIoCheckParameter
+                0x0000000000001068       0xe4 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .text.CpuIoServiceWrite
+                0x000000000000114c       0xa4 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .text.CpuIoServiceRead
+                0x00000000000011f0       0xa4 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .text.CpuMemoryServiceWrite
+                0x0000000000001294       0xb4 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .text.CpuMemoryServiceRead
+                0x0000000000001348       0xa8 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .text._ModuleEntryPoint
+                0x00000000000013f0       0x38 /tmp/cc6joY1n.ltrans0.ltrans.o
+                0x00000000000013f0                _ModuleEntryPoint
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.mInStride
+                0x0000000000001428        0xc /tmp/cc6joY1n.ltrans0.ltrans.o
+ .rodata.mOutStride
+                0x0000000000001434        0xc /tmp/cc6joY1n.ltrans0.ltrans.o
+ *(.got .got.*)
+ *:AutoGen.obj(.data.g*Guid)
+
+.iplt           0x0000000000001440        0x0
+ .iplt          0x0000000000001440        0x0 /tmp/cc6joY1n.ltrans0.ltrans.o
+
+.data           0x0000000000002000       0x48
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.gEfiCpuIo2ProtocolGuid
+                0x0000000000002000       0x10 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .data.mCpuIo2  0x0000000000002010       0x20 /tmp/cc6joY1n.ltrans0.ltrans.o
+ *(.bss .bss.*)
+ .bss.gBS       0x0000000000002030        0x8 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .bss.gST       0x0000000000002038        0x8 /tmp/cc6joY1n.ltrans0.ltrans.o
+ .bss.mHandle   0x0000000000002040        0x8 /tmp/cc6joY1n.ltrans0.ltrans.o
+
+.igot.plt       0x0000000000002048        0x0
+ .igot.plt      0x0000000000002048        0x0 /tmp/cc6joY1n.ltrans0.ltrans.o
+
+.eh_frame
+ *(.eh_frame)
+
+.rela           0x0000000000002048        0x0
+ *(.rela .rela.*)
+ .rela.iplt     0x0000000000002048        0x0 /tmp/cc6joY1n.ltrans0.ltrans.o
+
+.hii
+ *(.hii)
+
+.build-id       0x0000000000002048       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x0000000000002048       0x24 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.interp)
+ *(.dynsym)
+ *(.dynstr)
+ *(.dynamic)
+ *(.hash .gnu.hash)
+ *(.comment)
+                0x0000000000000228                PECOFF_HEADER_SIZE = 0x228
+OUTPUT(/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/ArmPkg/Drivers/ArmPciCpuIo2Dxe/ArmPciCpuIo2Dxe/DEBUG/ArmPciCpuIo2Dxe.dll elf64-littleaarch64)
+
+.debug_info     0x0000000000000000     0x2c73
+ .debug_info    0x0000000000000000     0x2c73 /tmp/cc6joY1n.ltrans0.ltrans.o
+
+.debug_abbrev   0x0000000000000000      0x3cf
+ .debug_abbrev  0x0000000000000000      0x3cf /tmp/cc6joY1n.ltrans0.ltrans.o
+
+.debug_loc      0x0000000000000000     0x1812
+ .debug_loc     0x0000000000000000     0x1812 /tmp/cc6joY1n.ltrans0.ltrans.o
+
+.debug_aranges  0x0000000000000000      0x160
+ .debug_aranges
+                0x0000000000000000      0x160 /tmp/cc6joY1n.ltrans0.ltrans.o
+
+.debug_ranges   0x0000000000000000      0x310
+ .debug_ranges  0x0000000000000000      0x310 /tmp/cc6joY1n.ltrans0.ltrans.o
+
+.debug_line     0x0000000000000000      0x78a
+ .debug_line    0x0000000000000000      0x78a /tmp/cc6joY1n.ltrans0.ltrans.o
+
+.debug_str      0x0000000000000000     0x18fd
+ .debug_str     0x0000000000000000     0x18fd /tmp/cc6joY1n.ltrans0.ltrans.o
+                                       0x1a22 (size before relaxing)
+
+.debug_frame    0x0000000000000000      0x268
+ .debug_frame   0x0000000000000000      0x268 /tmp/cc6joY1n.ltrans0.ltrans.o

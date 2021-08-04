@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite name="Int Safe Conversions Test Suite" time="0.000" tests="71" failures="0" errors="0" skipped="0" >
+    <testcase name="Test SafeInt8ToUint8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt8ToUint16" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt8ToUint32" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt8ToUintn" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt8ToUint64" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint8ToInt8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint8ToChar8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt16ToInt8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt16ToChar8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt16ToUint8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt16ToUint16" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt16ToUint32" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt16ToUintn" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt16ToUint64" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint16ToInt8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint16ToChar8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint16ToUint8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint16ToInt16" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt32ToInt8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt32ToChar8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt32ToUint8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt32ToInt16" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt32ToUint16" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt32ToUint32" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt32ToUintn" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt32ToUint64" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint32ToInt8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint32ToChar8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint32ToUint8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint32ToInt16" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint32ToUint16" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint32ToInt32" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint32ToIntn" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeIntnToInt8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeIntnToChar8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeIntnToUint8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeIntnToInt16" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeIntnToUint16" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeIntnToInt32" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeIntnToUint32" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeIntnToUintn" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeIntnToUint64" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUintnToInt8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUintnToChar8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUintnToUint8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUintnToInt16" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUintnToUint16" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUintnToInt32" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUintnToUint32" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUintnToIntn" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUintnToInt64" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt64ToInt8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt64ToChar8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt64ToUint8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt64ToInt16" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt64ToUint16" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt64ToInt32" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt64ToUint32" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt64ToIntn" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt64ToUintn" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeInt64ToUint64" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint64ToInt8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint64ToChar8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint64ToUint8" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint64ToInt16" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint64ToUint16" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint64ToInt32" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint64ToUint32" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint64ToIntn" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint64ToUintn" time="0.000" >
+    </testcase>
+    <testcase name="Test SafeUint64ToInt64" time="0.000" >
+    </testcase>
+  </testsuite>
+</testsuites>

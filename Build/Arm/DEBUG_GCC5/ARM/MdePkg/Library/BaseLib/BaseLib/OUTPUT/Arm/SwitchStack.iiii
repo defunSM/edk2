@@ -1,0 +1,62 @@
+
+
+
+
+
+
+
+
+
+.text
+.align 5
+
+.global InternalSwitchStackAsm ; .type InternalSwitchStackAsm, %function
+.global CpuPause ; .type CpuPause, %function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+InternalSwitchStackAsm:
+    MOV LR, R0
+    MOV SP, R3
+    MOV R0, R1
+    MOV R1, R2
+    BX LR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CpuPause:
+    nop
+    nop
+    nop
+    nop
+    nop
+    BX LR

@@ -1,0 +1,145 @@
+## @file
+# This module provide an SMM CIS compliant implementation of SMM Core.
+#
+# Copyright (c) 2009 - 2015, Intel Corporation. All rights reserved.<BR>
+# Copyright (c) 2016 - 2018, ARM Limited. All rights reserved.<BR>
+#
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+##
+
+# DO NOT EDIT
+# FILE auto-generated
+
+[Defines]
+  INF_VERSION                = 0x0001001a
+  BASE_NAME                  = StandaloneMmCore
+  FILE_GUID                  = 6E14B6FD-3600-4DD6-A17A-206B3B6DCE16
+  MODULE_TYPE                = MM_CORE_STANDALONE
+  VERSION_STRING             = 1.0
+  PI_SPECIFICATION_VERSION   = 0x00010032
+  ENTRY_POINT                = StandaloneMmMain
+
+[Packages.X64]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  StandaloneMmPkg/StandaloneMmPkg.dec
+
+[Binaries.X64]
+  PE32|StandaloneMmCore.efi
+
+[PatchPcd.X64]
+
+[Protocols.X64]
+  ## UNDEFINED # SmiHandlerRegister
+  gEfiDxeMmReadyToLockProtocolGuid
+
+  ## PRODUCES
+  gEfiMmReadyToLockProtocolGuid
+
+  ## PRODUCES
+  gEfiMmEndOfDxeProtocolGuid
+
+  ## PRODUCES
+  gEfiLoadedImageProtocolGuid
+
+  ## CONSUMES
+  gEfiMmConfigurationProtocolGuid
+
+
+[Ppis.X64]
+
+[Guids.X64]
+  ## SOMETIMES_CONSUMES   ## File
+  gAprioriGuid
+
+  ## PRODUCES             ## GUID # SmiHandlerRegister
+  gEfiEventDxeDispatchGuid
+
+  ## PRODUCES             ## GUID # SmiHandlerRegister
+  gEfiEndOfDxeEventGroupGuid
+
+  ## SOMETIMES_CONSUMES   ## GUID # Locate protocol
+  ## SOMETIMES_PRODUCES   ## GUID # SmiHandlerRegister
+  gEdkiiMemoryProfileGuid
+
+  ## SOMETIMES_CONSUMES   ## GUID
+  gZeroGuid
+
+  ## CONSUMES  ## SystemTable
+  gEfiHobListGuid
+
+  gEfiHobMemoryAllocModuleGuid
+
+  ## SOMETIMES_CONSUMES ## HOB
+  gMmCoreDataHobGuid
+
+  gMmFvDispatchGuid
+
+  gEfiEventLegacyBootGuid
+
+  gEfiEventExitBootServicesGuid
+
+  gEfiEventReadyToBootGuid
+
+  ## SOMETIMES_CONSUMES ## HOB
+  gEfiMmPeiMmramMemoryReserveGuid
+
+  gMpInformationHobGuid
+
+  gEfiStandaloneMmNonSecureBufferGuid
+
+  gEfiArmTfCpuDriverEpDescriptorGuid
+
+
+[PcdEx.X64]
+
+[LibraryClasses.X64]
+## @LIB_INSTANCES
+#  MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull.inf
+#  MdePkg/Library/BasePcdLibNull/BasePcdLibNull.inf
+#  MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull.inf
+#  MdePkg/Library/BaseMemoryLib/BaseMemoryLib.inf
+#  MdePkg/Library/BaseLib/BaseLib.inf
+#  StandaloneMmPkg/Library/StandaloneMmCoreHobLib/StandaloneMmCoreHobLib.inf
+#  StandaloneMmPkg/Library/StandaloneMmCoreMemoryAllocationLib/StandaloneMmCoreMemoryAllocationLib.inf
+#  MdePkg/Library/BasePeCoffExtraActionLibNull/BasePeCoffExtraActionLibNull.inf
+#  MdePkg/Library/BaseCacheMaintenanceLib/BaseCacheMaintenanceLib.inf
+#  EmbeddedPkg/Library/PrePiExtractGuidedSectionLib/PrePiExtractGuidedSectionLib.inf
+#  StandaloneMmPkg/Library/FvLib/FvLib.inf
+#  StandaloneMmPkg/Library/StandaloneMmMemLib/StandaloneMmMemLib.inf
+#  MdePkg/Library/BasePeCoffLib/BasePeCoffLib.inf
+#  MdePkg/Library/BaseReportStatusCodeLibNull/BaseReportStatusCodeLibNull.inf
+#  StandaloneMmPkg/Library/StandaloneMmCoreEntryPoint/StandaloneMmCoreEntryPoint.inf
+
+[Depex.X64]
+
+
+
+
+#  VALID_ARCHITECTURES           = IA32 X64 AARCH64
+
+[BuildOptions.X64]
+## @AsBuilt
+##   GCC:DEBUG_GCC5_X64_ASMLINK_FLAGS = /nologo /tiny
+##   GCC:DEBUG_GCC5_X64_OPTROM_FLAGS = -e
+##   GCC:DEBUG_GCC5_X64_DTC_FLAGS = -H epapr
+##   GCC:DEBUG_GCC5_X64_APP_FLAGS = 
+##   GCC:DEBUG_GCC5_X64_OBJCOPY_FLAGS = 
+##   GCC:DEBUG_GCC5_X64_ASL_FLAGS = 
+##   GCC:DEBUG_GCC5_X64_GENFW_FLAGS = 
+##   GCC:DEBUG_GCC5_X64_ASLDLINK_FLAGS = -nostdlib -Wl,-n,-q,--gc-sections -z common-page-size=0x40 -Wl,--defsym=PECOFF_HEADER_SIZE=0 -Wl,--script=$(EDK_TOOLS_PATH)/Scripts/GccBase.lds -Wl,--entry,ReferenceAcpiTable -u ReferenceAcpiTable -Wl,-m,elf_x86_64
+##   GCC:DEBUG_GCC5_X64_ASM_FLAGS = -c -x assembler -imacros AutoGen.h -m64
+##   GCC:DEBUG_GCC5_X64_RC_FLAGS = -I binary -O elf64-x86-64        -B i386    --rename-section .data=.hii
+##   GCC:DEBUG_GCC5_X64_SYMRENAME_FLAGS = Symbol renaming not needed for
+##   GCC:DEBUG_GCC5_X64_NASM_FLAGS = -f elf64
+##   GCC:DEBUG_GCC5_X64_DEPS_FLAGS = -MMD -MF $@.deps
+##   GCC:DEBUG_GCC5_X64_ASLPP_FLAGS = -x c -E -include AutoGen.h
+##   GCC:DEBUG_GCC5_X64_ASLCC_FLAGS = -x c -fno-lto -m64
+##   GCC:DEBUG_GCC5_X64_CC_FLAGS = -g -Os -fshort-wchar -fno-builtin -fno-strict-aliasing -Wall -Werror -Wno-array-bounds -include AutoGen.h -fno-common -ffunction-sections -fdata-sections -DSTRING_ARRAY_NAME=$(BASE_NAME)Strings -m64 -fno-stack-protector "-DEFIAPI=__attribute__((ms_abi))" -maccumulate-outgoing-args -mno-red-zone -Wno-address -mcmodel=small -fpie -fno-asynchronous-unwind-tables -Wno-address -flto -DUSING_LTO -Os -fpie
+##   GCC:DEBUG_GCC5_X64_PP_FLAGS = -E -x assembler-with-cpp -include AutoGen.h -DOPENSBI_EXTERNAL_SBI_TYPES=OpensbiTypes.h
+##   GCC:DEBUG_GCC5_X64_VFRPP_FLAGS = -x c -E -P -DVFRCOMPILE --include $(MODULE_NAME)StrDefs.h
+##   GCC:DEBUG_GCC5_X64_VFR_FLAGS = -l -n
+##   GCC:DEBUG_GCC5_X64_DLINK2_FLAGS = -Wl,--defsym=PECOFF_HEADER_SIZE=0x228 -Wl,--script=$(EDK_TOOLS_PATH)/Scripts/GccBase.lds -Wno-error
+##   GCC:DEBUG_GCC5_X64_DLINK_FLAGS = -nostdlib -Wl,-n,-q,--gc-sections -z common-page-size=0x40 -Wl,--entry,$(IMAGE_ENTRY_POINT) -u $(IMAGE_ENTRY_POINT) -Wl,-Map,$(DEST_DIR_DEBUG)/$(BASE_NAME).map,--whole-archive -Wl,-melf_x86_64,--oformat=elf64-x86-64,-pie -flto -Os -Wl,-z,text,-Bsymbolic,-pie
+##   GCC:DEBUG_GCC5_X64_NASMB_FLAGS = -f bin

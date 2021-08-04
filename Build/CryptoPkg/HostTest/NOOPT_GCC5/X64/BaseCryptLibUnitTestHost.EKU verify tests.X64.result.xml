@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite name="EKU verify tests" time="0.000" tests="11" failures="0" errors="0" skipped="0" >
+    <testcase name="TestVerifyEKUsInSignature()" time="0.000" >
+    </testcase>
+    <testcase name="TestVerifyEKUsWith3CertsInSignature()" time="0.000" >
+    </testcase>
+    <testcase name="TestVerifyEKUsWith2CertsInSignature()" time="0.000" >
+    </testcase>
+    <testcase name="TestVerifyEKUsWith1CertInSignature()" time="0.000" >
+    </testcase>
+    <testcase name="TestVerifyEKUsWithMultipleEKUsInCert()" time="0.000" >
+    </testcase>
+    <testcase name="TestEkusNotPresentInSignature()" time="0.000" >
+    </testcase>
+    <testcase name="TestProductId10001PresentInSignature()" time="0.000" >
+    </testcase>
+    <testcase name="TestOnlyOneEkuInListRequired()" time="0.000" >
+    </testcase>
+    <testcase name="TestNoEKUsInSignature()" time="0.000" >
+    </testcase>
+    <testcase name="TestInvalidParameters()" time="0.000" >
+    </testcase>
+    <testcase name="TestEKUSubsetSupersetFails()" time="0.000" >
+    </testcase>
+  </testsuite>
+</testsuites>

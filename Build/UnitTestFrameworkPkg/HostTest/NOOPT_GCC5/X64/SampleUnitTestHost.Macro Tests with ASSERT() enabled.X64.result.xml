@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite name="Macro Tests with ASSERT() enabled" time="0.000" tests="13" failures="0" errors="0" skipped="0" >
+    <testcase name="Test UT_ASSERT_TRUE() macro" time="0.000" >
+    </testcase>
+    <testcase name="Test UT_ASSERT_FALSE() macro" time="0.000" >
+    </testcase>
+    <testcase name="Test UT_ASSERT_EQUAL() macro" time="0.000" >
+    </testcase>
+    <testcase name="Test UT_ASSERT_MEM_EQUAL() macro" time="0.000" >
+    </testcase>
+    <testcase name="Test UT_ASSERT_NOT_EQUAL() macro" time="0.000" >
+    </testcase>
+    <testcase name="Test UT_ASSERT_NOT_EFI_ERROR() macro" time="0.000" >
+    </testcase>
+    <testcase name="Test UT_ASSERT_STATUS_EQUAL() macro" time="0.000" >
+    </testcase>
+    <testcase name="Test UT_ASSERT_NOT_NULL() macro" time="0.000" >
+    </testcase>
+    <testcase name="Test UT_EXPECT_ASSERT_FAILURE() macro" time="0.000" >
+    </testcase>
+    <testcase name="Test UT_LOG_ERROR() macro" time="0.000" >
+    </testcase>
+    <testcase name="Test UT_LOG_WARNING() macro" time="0.000" >
+    </testcase>
+    <testcase name="Test UT_LOG_INFO() macro" time="0.000" >
+    </testcase>
+    <testcase name="Test UT_LOG_VERBOSE() macro" time="0.000" >
+    </testcase>
+  </testsuite>
+</testsuites>

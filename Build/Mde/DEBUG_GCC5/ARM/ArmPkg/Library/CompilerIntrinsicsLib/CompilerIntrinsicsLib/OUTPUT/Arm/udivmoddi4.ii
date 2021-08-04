@@ -1,0 +1,359 @@
+# 1 "/home/xephyr/Documents/edk2/ArmPkg/Library/CompilerIntrinsicsLib/Arm/udivmoddi4.S"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "/home/xephyr/Documents/edk2/BaseTools/Bin/gcc_arm_linux_extdep/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h" 1 3 4
+# 1 "<command-line>" 2
+# 1 "/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/ARM/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/DEBUG/AutoGen.h" 1
+# 16 "/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/ARM/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/DEBUG/AutoGen.h"
+# 1 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h" 1
+# 22 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h"
+# 1 "/home/xephyr/Documents/edk2/MdePkg/Include/Arm/ProcessorBind.h" 1
+# 101 "/home/xephyr/Documents/edk2/MdePkg/Include/Arm/ProcessorBind.h"
+  typedef unsigned long long UINT64;
+  typedef long long INT64;
+  typedef unsigned int UINT32;
+  typedef int INT32;
+  typedef unsigned short UINT16;
+  typedef unsigned short CHAR16;
+  typedef short INT16;
+  typedef unsigned char BOOLEAN;
+  typedef unsigned char UINT8;
+  typedef char CHAR8;
+  typedef signed char INT8;
+
+
+
+
+
+
+typedef UINT32 UINTN;
+
+
+
+
+
+typedef INT32 INTN;
+# 23 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h" 2
+# 222 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h"
+typedef struct {
+  UINT32 Data1;
+  UINT16 Data2;
+  UINT16 Data3;
+  UINT8 Data4[8];
+} GUID;
+
+
+
+
+typedef struct {
+  UINT8 Addr[4];
+} IPv4_ADDRESS;
+
+
+
+
+typedef struct {
+  UINT8 Addr[16];
+} IPv6_ADDRESS;
+
+
+
+
+typedef UINT64 PHYSICAL_ADDRESS;
+
+
+
+
+typedef struct _LIST_ENTRY LIST_ENTRY;
+
+
+
+
+struct _LIST_ENTRY {
+  LIST_ENTRY *ForwardLink;
+  LIST_ENTRY *BackLink;
+};
+# 657 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h"
+typedef __builtin_va_list VA_LIST;
+# 742 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h"
+typedef UINTN *BASE_LIST;
+# 813 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h"
+_Static_assert (sizeof (BOOLEAN) == 1, "sizeof (BOOLEAN) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (INT8) == 1, "sizeof (INT8) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (UINT8) == 1, "sizeof (UINT8) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (INT16) == 2, "sizeof (INT16) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (UINT16) == 2, "sizeof (UINT16) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (INT32) == 4, "sizeof (INT32) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (UINT32) == 4, "sizeof (UINT32) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (INT64) == 8, "sizeof (INT64) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (UINT64) == 8, "sizeof (UINT64) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (CHAR8) == 1, "sizeof (CHAR8) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (CHAR16) == 2, "sizeof (CHAR16) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (L'A') == 2, "sizeof (L'A') does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (L"A") == 4, "sizeof (L\"A\") does not meet UEFI Specification Data Type requirements");
+# 834 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h"
+typedef enum {
+  __VerifyUint8EnumValue = 0xff
+} __VERIFY_UINT8_ENUM_SIZE;
+
+typedef enum {
+  __VerifyUint16EnumValue = 0xffff
+} __VERIFY_UINT16_ENUM_SIZE;
+
+typedef enum {
+  __VerifyUint32EnumValue = 0xffffffff
+} __VERIFY_UINT32_ENUM_SIZE;
+
+_Static_assert (sizeof (__VERIFY_UINT8_ENUM_SIZE) == 4, "Size of enum does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (__VERIFY_UINT16_ENUM_SIZE) == 4, "Size of enum does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (__VERIFY_UINT32_ENUM_SIZE) == 4, "Size of enum does not meet UEFI Specification Data Type requirements");
+# 962 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h"
+typedef UINTN RETURN_STATUS;
+# 17 "/home/xephyr/Documents/edk2/Build/Mde/DEBUG_GCC5/ARM/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/DEBUG/AutoGen.h" 2
+
+extern GUID gEfiCallerIdGuid;
+extern GUID gEdkiiDscPlatformGuid;
+extern CHAR8 *gEfiCallerBaseName;
+
+
+
+extern UINT64 _gPcd_SkuId_Array[];
+# 1 "<command-line>" 2
+# 1 "/home/xephyr/Documents/edk2/ArmPkg/Library/CompilerIntrinsicsLib/Arm/udivmoddi4.S"
+#------------------------------------------------------------------------------
+
+# Copyright (c) 2008 - 2009, Apple Inc. All rights reserved.<BR>
+
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+
+#------------------------------------------------------------------------------
+
+# 1 "/home/xephyr/Documents/edk2/ArmPkg/Include/AsmMacroIoLib.h" 1
+# 10 "/home/xephyr/Documents/edk2/ArmPkg/Library/CompilerIntrinsicsLib/Arm/udivmoddi4.S" 2
+
+  .syntax unified
+
+.global __udivmoddi4 ; .section ".text.__udivmoddi4", "ax" ; .type __udivmoddi4, %function ; .p2align 2 ; __udivmoddi4:
+  stmfd sp!, {r4, r5, r6, r7, lr}
+  add r7, sp, #12
+  stmfd sp!, {r10, r11}
+  sub sp, sp, #20
+  stmia sp, {r2-r3}
+  ldr r6, [sp, #48]
+  orrs r2, r2, r3
+  mov r10, r0
+  mov r11, r1
+  beq L2
+  subs ip, r1, #0
+  bne L4
+  cmp r3, #0
+  bne L6
+  cmp r6, #0
+  beq L8
+  mov r1, r2
+  bl __umodsi3
+  mov r1, #0
+  stmia r6, {r0-r1}
+L8:
+  ldr r1, [sp, #0]
+  mov r0, r10
+  b L45
+L6:
+  cmp r6, #0
+  movne r1, #0
+  stmiane r6, {r0-r1}
+  b L2
+L4:
+  ldr r1, [sp, #0]
+  cmp r1, #0
+  bne L12
+  ldr r2, [sp, #4]
+  cmp r2, #0
+  bne L14
+  cmp r6, #0
+  beq L16
+  mov r1, r2
+  mov r0, r11
+  bl __umodsi3
+  mov r1, #0
+  stmia r6, {r0-r1}
+L16:
+  ldr r1, [sp, #4]
+  mov r0, r11
+L45:
+  bl __udivsi3
+L46:
+  mov r10, r0
+  mov r11, #0
+  b L10
+L14:
+  subs r1, r0, #0
+  bne L18
+  cmp r6, #0
+  beq L16
+  ldr r1, [sp, #4]
+  mov r0, r11
+  bl __umodsi3
+  mov r4, r10
+  mov r5, r0
+  stmia r6, {r4-r5}
+  b L16
+L18:
+  sub r3, r2, #1
+  tst r2, r3
+  bne L22
+  cmp r6, #0
+  movne r4, r0
+  andne r5, ip, r3
+  stmiane r6, {r4-r5}
+L24:
+  rsb r3, r2, #0
+  and r3, r2, r3
+  clz r3, r3
+  rsb r3, r3, #31
+  mov r0, ip, lsr r3
+  b L46
+L22:
+  clz r2, r2
+  clz r3, ip
+  rsb r3, r3, r2
+  cmp r3, #30
+  bhi L48
+  rsb r2, r3, #31
+  add lr, r3, #1
+  mov r3, r1, asl r2
+  str r3, [sp, #12]
+  mov r3, r1, lsr lr
+  ldr r0, [sp, #0]
+  mov r5, ip, lsr lr
+  orr r4, r3, ip, asl r2
+  str r0, [sp, #8]
+  b L29
+L12:
+  ldr r3, [sp, #4]
+  cmp r3, #0
+  bne L30
+  sub r3, r1, #1
+  tst r1, r3
+  bne L32
+  cmp r6, #0
+  andne r3, r3, r0
+  movne r2, r3
+  movne r3, #0
+  stmiane r6, {r2-r3}
+L34:
+  cmp r1, #1
+  beq L10
+  rsb r3, r1, #0
+  and r3, r1, r3
+  clz r3, r3
+  rsb r0, r3, #31
+  mov r1, ip, lsr r0
+  rsb r3, r0, #32
+  mov r0, r10, lsr r0
+  orr ip, r0, ip, asl r3
+  str r1, [sp, #12]
+  str ip, [sp, #8]
+  ldrd r10, [sp, #8]
+  b L10
+L32:
+  clz r2, r1
+  clz r3, ip
+  rsb r3, r3, r2
+  rsb r4, r3, #31
+  mov r2, r0, asl r4
+  mvn r1, r3
+  and r2, r2, r1, asr #31
+  add lr, r3, #33
+  str r2, [sp, #8]
+  add r2, r3, #1
+  mov r3, r3, asr #31
+  and r0, r3, r0, asl r1
+  mov r3, r10, lsr r2
+  orr r3, r3, ip, asl r4
+  and r3, r3, r1, asr #31
+  orr r0, r0, r3
+  mov r3, ip, lsr lr
+  str r0, [sp, #12]
+  mov r0, r10, lsr lr
+  and r5, r3, r2, asr #31
+  rsb r3, lr, #31
+  mov r3, r3, asr #31
+  orr r0, r0, ip, asl r1
+  and r3, r3, ip, lsr r2
+  and r0, r0, r2, asr #31
+  orr r4, r3, r0
+  b L29
+L30:
+  clz r2, r3
+  clz r3, ip
+  rsb r3, r3, r2
+  cmp r3, #31
+  bls L37
+L48:
+  cmp r6, #0
+  stmiane r6, {r10-r11}
+  b L2
+L37:
+  rsb r1, r3, #31
+  mov r0, r0, asl r1
+  add lr, r3, #1
+  mov r2, #0
+  str r0, [sp, #12]
+  mov r0, r10, lsr lr
+  str r2, [sp, #8]
+  sub r2, r3, #31
+  and r0, r0, r2, asr #31
+  mov r3, ip, lsr lr
+  orr r4, r0, ip, asl r1
+  and r5, r3, r2, asr #31
+L29:
+  mov ip, #0
+  mov r10, ip
+  b L40
+L41:
+  ldr r1, [sp, #12]
+  ldr r2, [sp, #8]
+  mov r3, r4, lsr #31
+  orr r5, r3, r5, asl #1
+  mov r3, r1, lsr #31
+  orr r4, r3, r4, asl #1
+  mov r3, r2, lsr #31
+  orr r0, r3, r1, asl #1
+  orr r1, ip, r2, asl #1
+  ldmia sp, {r2-r3}
+  str r0, [sp, #12]
+  subs r2, r2, r4
+  sbc r3, r3, r5
+  str r1, [sp, #8]
+  subs r0, r2, #1
+  sbc r1, r3, #0
+  mov r2, r1, asr #31
+  ldmia sp, {r0-r1}
+  mov r3, r2
+  and ip, r2, #1
+  and r3, r3, r1
+  and r2, r2, r0
+  subs r4, r4, r2
+  sbc r5, r5, r3
+  add r10, r10, #1
+L40:
+  cmp r10, lr
+  bne L41
+  ldrd r0, [sp, #8]
+  adds r0, r0, r0
+  adc r1, r1, r1
+  cmp r6, #0
+  orr r10, r0, ip
+  mov r11, r1
+  stmiane r6, {r4-r5}
+  b L10
+L2:
+  mov r10, #0
+  mov r11, #0
+L10:
+  mov r0, r10
+  mov r1, r11
+  sub sp, r7, #20
+  ldmfd sp!, {r10, r11}
+  ldmfd sp!, {r4, r5, r6, r7, pc}

@@ -1,0 +1,1 @@
+/home/xephyr/Documents/edk2/Build/NetworkPkg/DEBUG_GCC5/X64/NetworkPkg/WifiConnectionManagerDxe/WifiConnectionManagerDxe/GNUmakefile

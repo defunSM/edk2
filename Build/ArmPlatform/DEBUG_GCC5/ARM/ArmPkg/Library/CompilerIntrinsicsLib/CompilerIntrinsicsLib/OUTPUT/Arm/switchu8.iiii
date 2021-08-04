@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+
+.syntax unified
+
+.global __switchu8 ; .section ".text.__switchu8", "ax" ; .type __switchu8, %function ; .p2align 2 ; __switchu8:
+    ldrb ip,[lr,#-1]
+    cmp r0,ip
+    ldrbcc r0,[lr,r0]
+    ldrbcs r0,[lr,ip]
+    add ip,lr,r0,LSL #1
+    bx ip

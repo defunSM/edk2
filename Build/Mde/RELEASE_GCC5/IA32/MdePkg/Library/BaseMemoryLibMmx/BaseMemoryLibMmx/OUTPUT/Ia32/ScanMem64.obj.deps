@@ -1,0 +1,5 @@
+ScanMem64.o: \
+ /home/xephyr/Documents/edk2/MdePkg/Library/BaseMemoryLibMmx/Ia32/ScanMem64.nasm \
+ /home/xephyr/Documents/edk2/Build/Mde/RELEASE_GCC5/IA32/MdePkg/Library/BaseMemoryLibMmx/BaseMemoryLibMmx/DEBUG/AutoGen.h \
+ /home/xephyr/Documents/edk2/MdePkg/Include/Base.h \
+ /home/xephyr/Documents/edk2/MdePkg/Include/Ia32/ProcessorBind.h

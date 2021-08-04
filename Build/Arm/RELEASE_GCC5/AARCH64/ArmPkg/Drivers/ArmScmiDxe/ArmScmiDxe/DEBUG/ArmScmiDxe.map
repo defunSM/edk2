@@ -1,0 +1,308 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib(memcpy.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (memcpy)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib(memset.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (memset)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseStackCheckLib/BaseStackCheckLib/OUTPUT/BaseStackCheckLib.lib(BaseStackCheckGcc.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (__stack_chk_fail)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint/OUTPUT/UefiDriverEntryPoint.lib(DriverEntryPoint.obj)
+                              (_ModuleEntryPoint)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/ArmPkg/Drivers/ArmScmiDxe/ArmScmiDxe/OUTPUT/ArmScmiDxe.lib(AutoGen.obj)
+                              DriverEntryPoint.obj (symbol from plugin) (ProcessLibraryConstructorList)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/ArmPkg/Drivers/ArmScmiDxe/ArmScmiDxe/OUTPUT/ArmScmiDxe.lib(ScmiDxe.obj)
+                              AutoGen.obj (symbol from plugin) (ArmScmiDxeEntryPoint)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/ArmPkg/Drivers/ArmScmiDxe/ArmScmiDxe/OUTPUT/ArmScmiDxe.lib(ScmiPerformanceProtocol.obj)
+                              ScmiDxe.obj (symbol from plugin) (ScmiPerformanceProtocolInit)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/ArmPkg/Drivers/ArmScmiDxe/ArmScmiDxe/OUTPUT/ArmScmiDxe.lib(ScmiBaseProtocol.obj)
+                              ScmiDxe.obj (symbol from plugin) (ScmiBaseProtocolInit)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/ArmPkg/Drivers/ArmScmiDxe/ArmScmiDxe/OUTPUT/ArmScmiDxe.lib(Scmi.obj)
+                              ScmiPerformanceProtocol.obj (symbol from plugin) (ScmiCommandGetPayload)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/ArmPkg/Drivers/ArmScmiDxe/ArmScmiDxe/OUTPUT/ArmScmiDxe.lib(ScmiClockProtocol.obj)
+                              ScmiDxe.obj (symbol from plugin) (ScmiClockProtocolInit)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMemWrapper.obj)
+                              ScmiPerformanceProtocol.obj (symbol from plugin) (CopyMem)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMem.obj)
+                              CopyMemWrapper.obj (symbol from plugin) (InternalMemCopyMem)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuDeadLoop.obj)
+                              BaseStackCheckGcc.obj (symbol from plugin) (CpuDeadLoop)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SafeString.obj)
+                              ScmiBaseProtocol.obj (symbol from plugin) (AsciiStrCpyS)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(String.obj)
+                              SafeString.obj (symbol from plugin) (InternalIsDecimalDigitCharacter)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+                              CpuDeadLoop.obj (symbol from plugin) (CpuPause)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+                              BaseStackCheckGcc.obj (symbol from plugin) (CpuBreakpoint)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes32.obj)
+                              SafeString.obj (symbol from plugin) (SwapBytes32)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes16.obj)
+                              SafeString.obj (symbol from plugin) (SwapBytes16)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RShiftU64.obj)
+                              SafeString.obj (symbol from plugin) (RShiftU64)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultU64x32.obj)
+                              SafeString.obj (symbol from plugin) (MultU64x32)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LShiftU64.obj)
+                              SafeString.obj (symbol from plugin) (LShiftU64)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32.obj)
+                              SafeString.obj (symbol from plugin) (DivU64x32)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Math64.obj)
+                              LShiftU64.obj (symbol from plugin) (InternalMathLShiftU64)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib(UefiBootServicesTableLib.obj)
+                              AutoGen.obj (symbol from plugin) (UefiBootServicesTableLibConstructor)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmMtlNullLib/ArmMtlNullLib/OUTPUT/ArmMtlNullLib.lib(ArmMtlNullLib.obj)
+                              Scmi.obj (symbol from plugin) (MtlWaitUntilChannelFree)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ZeroMemWrapper.obj)
+                              SafeString.obj (symbol from plugin) (ZeroMem)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGeneric.obj)
+                              ZeroMemWrapper.obj (symbol from plugin) (InternalMemZeroMem)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGuid.obj)
+                              SafeString.obj (symbol from plugin) (CopyGuid)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem.obj)
+                              MemLibGeneric.obj (symbol from plugin) (InternalMemSetMem)
+/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Unaligned.obj)
+                              MemLibGuid.obj (symbol from plugin) (ReadUnaligned64)
+
+Discarded input sections
+
+ .text          0x0000000000000000       0x10 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .text          0x0000000000000000        0x0 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text._DriverUnloadHandler
+                0x0000000000000000        0x8 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.__stack_chk_fail
+                0x0000000000000000        0x4 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.__memset
+                0x0000000000000000       0x1c /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.memcpy   0x0000000000000000       0x20 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .data.__stack_chk_guard
+                0x0000000000000000        0x8 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .comment       0x0000000000000000       0x75 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text          0x0000000000000000        0x0 memcpy.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 memset.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 BaseStackCheckGcc.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DriverEntryPoint.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AutoGen.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ScmiDxe.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ScmiPerformanceProtocol.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ScmiBaseProtocol.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Scmi.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ScmiClockProtocol.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CopyMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CopyMem.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CpuDeadLoop.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SafeString.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 String.obj (symbol from plugin)
+ .text          0x0000000000000000       0x30 /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .text          0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .text          0x0000000000000000        0x0 SwapBytes32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SwapBytes16.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 RShiftU64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MultU64x32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 LShiftU64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DivU64x32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Math64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UefiBootServicesTableLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ArmMtlNullLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ZeroMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MemLibGeneric.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MemLibGuid.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SetMem.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Unaligned.obj (symbol from plugin)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+LOAD /tmp/ccueJqLA.ltrans0.ltrans.o
+START GROUP
+LOAD /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/ArmPkg/Drivers/ArmScmiDxe/ArmScmiDxe/OUTPUT/ArmScmiDxe.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BasePcdLibNull/BasePcdLibNull/OUTPUT/BasePcdLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseStackCheckLib/BaseStackCheckLib/OUTPUT/BaseStackCheckLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull/OUTPUT/BaseDebugLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull/OUTPUT/FilterLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/ArmPkg/Library/ArmMtlNullLib/ArmMtlNullLib/OUTPUT/ArmMtlNullLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib
+LOAD /home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint/OUTPUT/UefiDriverEntryPoint.lib
+END GROUP
+                0x0000000000000228                . = PECOFF_HEADER_SIZE
+
+.text           0x0000000000001000      0xef0
+ *(.text .text.* .stub .gnu.linkonce.t.*)
+ .text.MtlGetChannelPayload.constprop.9
+                0x0000000000001000        0x8 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.MtlReceiveMessage.constprop.8
+                0x0000000000001008        0x8 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.MtlSendMessage.constprop.7
+                0x0000000000001010        0x8 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.MtlGetChannel.constprop.6
+                0x0000000000001018        0x8 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.MtlWaitUntilChannelFree.constprop.5
+                0x0000000000001020        0x8 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.AsciiStrCpyS.constprop.0
+                0x0000000000001028       0x98 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.CopyMem  0x00000000000010c0      0x1c8 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.ScmiClockProtocolInit
+                0x0000000000001288       0x34 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.ScmiCommandExecute
+                0x00000000000012bc       0x5c /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.ScmiProtocolDiscoveryCommon
+                0x0000000000001318       0x24 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.ClockGetTotalClocks
+                0x000000000000133c       0x38 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.ScmiGetProtocolVersion
+                0x0000000000001374       0x34 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.ClockGetVersion
+                0x00000000000013a8        0x8 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.ScmiCommandGetPayload
+                0x00000000000013b0       0x30 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.ClockEnable
+                0x00000000000013e0       0x64 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.ClockRateSet
+                0x0000000000001444       0x68 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.ClockRateGet
+                0x00000000000014ac       0x68 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.ClockDescribeRates
+                0x0000000000001514      0x180 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.ClockGetClockAttributes
+                0x0000000000001694       0x74 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.ScmiBaseProtocolInit
+                0x0000000000001708       0x24 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.BaseDiscoverImplVersion
+                0x000000000000172c       0x48 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.BaseDiscoverVendorDetails
+                0x0000000000001774       0x44 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.BaseDiscoverSubVendor
+                0x00000000000017b8        0x8 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.BaseDiscoverVendor
+                0x00000000000017c0        0x8 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.BaseGetTotalProtocols
+                0x00000000000017c8       0x38 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.BaseDiscoverListProtocols
+                0x0000000000001800       0xd0 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.BaseGetVersion
+                0x00000000000018d0        0x8 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.ScmiPerformanceProtocolInit
+                0x00000000000018d8       0x24 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.PerformanceLevelGet
+                0x00000000000018fc       0x68 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.PerformanceLevelSet
+                0x0000000000001964       0x60 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.PerformanceLimitsGet
+                0x00000000000019c4       0x70 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.PerformanceLimitsSet
+                0x0000000000001a34       0x78 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.PerformanceDescribeLevels
+                0x0000000000001aac      0x10c /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.PerformanceDomainAttributes
+                0x0000000000001bb8       0x6c /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.PerformanceGetAttributes
+                0x0000000000001c24       0x3c /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text.PerformanceGetVersion
+                0x0000000000001c60        0x8 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .text._ModuleEntryPoint
+                0x0000000000001c68      0x1a4 /tmp/ccueJqLA.ltrans0.ltrans.o
+                0x0000000000001c68                _ModuleEntryPoint
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ *fill*         0x0000000000001e0c        0x4 
+ .rodata.BaseProtocol
+                0x0000000000001e10       0x30 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .rodata.PerformanceProtocol
+                0x0000000000001e40       0x40 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .rodata.ScmiClock2Protocol
+                0x0000000000001e80       0x40 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .rodata.ScmiClockProtocol
+                0x0000000000001ec0       0x30 /tmp/ccueJqLA.ltrans0.ltrans.o
+ *(.got .got.*)
+ *:AutoGen.obj(.data.g*Guid)
+
+.iplt           0x0000000000001ef0        0x0
+ .iplt          0x0000000000001ef0        0x0 /tmp/ccueJqLA.ltrans0.ltrans.o
+
+.data           0x0000000000002000       0x50
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.gArmScmiBaseProtocolGuid
+                0x0000000000002000       0x10 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .data.gArmScmiClock2ProtocolGuid
+                0x0000000000002010       0x10 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .data.gArmScmiClockProtocolGuid
+                0x0000000000002020       0x10 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .data.gArmScmiPerformanceProtocolGuid
+                0x0000000000002030       0x10 /tmp/ccueJqLA.ltrans0.ltrans.o
+ *(.bss .bss.*)
+ .bss.gBS       0x0000000000002040        0x8 /tmp/ccueJqLA.ltrans0.ltrans.o
+ .bss.gST       0x0000000000002048        0x8 /tmp/ccueJqLA.ltrans0.ltrans.o
+
+.igot.plt       0x0000000000002050        0x0
+ .igot.plt      0x0000000000002050        0x0 /tmp/ccueJqLA.ltrans0.ltrans.o
+
+.eh_frame
+ *(.eh_frame)
+
+.rela           0x0000000000002050        0x0
+ *(.rela .rela.*)
+ .rela.iplt     0x0000000000002050        0x0 /tmp/ccueJqLA.ltrans0.ltrans.o
+
+.hii
+ *(.hii)
+
+.build-id       0x0000000000002050       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x0000000000002050       0x24 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.interp)
+ *(.dynsym)
+ *(.dynstr)
+ *(.dynamic)
+ *(.hash .gnu.hash)
+ *(.comment)
+                0x0000000000000228                PECOFF_HEADER_SIZE = 0x228
+OUTPUT(/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/AARCH64/ArmPkg/Drivers/ArmScmiDxe/ArmScmiDxe/DEBUG/ArmScmiDxe.dll elf64-littleaarch64)
+
+.debug_info     0x0000000000000000     0x44f4
+ .debug_info    0x0000000000000000     0x44f4 /tmp/ccueJqLA.ltrans0.ltrans.o
+
+.debug_abbrev   0x0000000000000000      0x4bd
+ .debug_abbrev  0x0000000000000000      0x4bd /tmp/ccueJqLA.ltrans0.ltrans.o
+
+.debug_loc      0x0000000000000000     0x3266
+ .debug_loc     0x0000000000000000     0x3266 /tmp/ccueJqLA.ltrans0.ltrans.o
+
+.debug_aranges  0x0000000000000000      0x2b0
+ .debug_aranges
+                0x0000000000000000      0x2b0 /tmp/ccueJqLA.ltrans0.ltrans.o
+
+.debug_ranges   0x0000000000000000      0x560
+ .debug_ranges  0x0000000000000000      0x560 /tmp/ccueJqLA.ltrans0.ltrans.o
+
+.debug_line     0x0000000000000000      0xc88
+ .debug_line    0x0000000000000000      0xc88 /tmp/ccueJqLA.ltrans0.ltrans.o
+
+.debug_str      0x0000000000000000     0x2448
+ .debug_str     0x0000000000000000     0x2448 /tmp/ccueJqLA.ltrans0.ltrans.o
+                                       0x27c3 (size before relaxing)
+
+.debug_frame    0x0000000000000000      0x578
+ .debug_frame   0x0000000000000000      0x578 /tmp/ccueJqLA.ltrans0.ltrans.o

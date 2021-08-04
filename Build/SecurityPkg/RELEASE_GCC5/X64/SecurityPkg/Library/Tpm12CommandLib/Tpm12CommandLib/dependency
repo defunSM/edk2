@@ -1,0 +1,17 @@
+
+
+-include /home/xephyr/Documents/edk2/Build/SecurityPkg/RELEASE_GCC5/X64/SecurityPkg/Library/Tpm12CommandLib/Tpm12CommandLib/OUTPUT/Tpm12PhysicalPresence.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/SecurityPkg/RELEASE_GCC5/X64/SecurityPkg/Library/Tpm12CommandLib/Tpm12CommandLib/OUTPUT/Tpm12NvStorage.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/SecurityPkg/RELEASE_GCC5/X64/SecurityPkg/Library/Tpm12CommandLib/Tpm12CommandLib/OUTPUT/Tpm12GetCapability.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/SecurityPkg/RELEASE_GCC5/X64/SecurityPkg/Library/Tpm12CommandLib/Tpm12CommandLib/OUTPUT/Tpm12Startup.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/SecurityPkg/RELEASE_GCC5/X64/SecurityPkg/Library/Tpm12CommandLib/Tpm12CommandLib/OUTPUT/Tpm12Pcr.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/SecurityPkg/RELEASE_GCC5/X64/SecurityPkg/Library/Tpm12CommandLib/Tpm12CommandLib/OUTPUT/Tpm12SelfTest.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/SecurityPkg/RELEASE_GCC5/X64/SecurityPkg/Library/Tpm12CommandLib/Tpm12CommandLib/OUTPUT/Tpm12Ownership.obj.deps
+
+               

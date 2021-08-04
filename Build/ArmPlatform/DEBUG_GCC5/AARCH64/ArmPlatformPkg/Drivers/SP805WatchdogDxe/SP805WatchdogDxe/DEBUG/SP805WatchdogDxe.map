@@ -1,0 +1,249 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint/OUTPUT/UefiDriverEntryPoint.lib(DriverEntryPoint.obj)
+                              (_ModuleEntryPoint)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseStackCheckLib/BaseStackCheckLib/OUTPUT/BaseStackCheckLib.lib(BaseStackCheckGcc.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (__stack_chk_fail)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib(memcpy.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (memcpy)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib(memset.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (memset)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Drivers/SP805WatchdogDxe/SP805WatchdogDxe/OUTPUT/SP805WatchdogDxe.lib(AutoGen.obj)
+                              DriverEntryPoint.obj (symbol from plugin) (ProcessLibraryConstructorList)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Drivers/SP805WatchdogDxe/SP805WatchdogDxe/OUTPUT/SP805WatchdogDxe.lib(SP805Watchdog.obj)
+                              AutoGen.obj (symbol from plugin) (SP805Initialize)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull/OUTPUT/BaseDebugLibNull.lib(DebugLib.obj)
+                              DriverEntryPoint.obj (symbol from plugin) (DebugPrint)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultU64x32.obj)
+                              SP805Watchdog.obj (symbol from plugin) (MultU64x32)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32.obj)
+                              SP805Watchdog.obj (symbol from plugin) (DivU64x32)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuDeadLoop.obj)
+                              BaseStackCheckGcc.obj (symbol from plugin) (CpuDeadLoop)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Math64.obj)
+                              MultU64x32.obj (symbol from plugin) (InternalMathMultU64x32)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+                              CpuDeadLoop.obj (symbol from plugin) (CpuPause)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+                              BaseStackCheckGcc.obj (symbol from plugin) (CpuBreakpoint)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes32.obj)
+                              Math64.obj (symbol from plugin) (SwapBytes32)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes16.obj)
+                              SwapBytes32.obj (symbol from plugin) (SwapBytes16)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib(UefiBootServicesTableLib.obj)
+                              AutoGen.obj (symbol from plugin) (UefiBootServicesTableLibConstructor)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib(IoHighLevel.obj)
+                              SP805Watchdog.obj (symbol from plugin) (MmioOr32)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib(IoLibNoIo.obj)
+                              IoHighLevel.obj (symbol from plugin) (IoRead8)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib/OUTPUT/UefiRuntimeServicesTableLib.lib(UefiRuntimeServicesTableLib.obj)
+                              AutoGen.obj (symbol from plugin) (UefiRuntimeServicesTableLibConstructor)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(BitField.obj)
+                              IoHighLevel.obj (symbol from plugin) (BitFieldRead8)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RShiftU64.obj)
+                              BitField.obj (symbol from plugin) (RShiftU64)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LShiftU64.obj)
+                              BitField.obj (symbol from plugin) (LShiftU64)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull/OUTPUT/FilterLibNull.lib(RegisterFilterLibNull.obj)
+                              IoLibNoIo.obj (symbol from plugin) (FilterBeforeMmIoRead)
+
+Discarded input sections
+
+ .text          0x0000000000000000       0x10 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .text          0x0000000000000000        0x0 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .text.DebugAssert.constprop.9
+                0x0000000000000000        0x4 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .text.DebugPrint.constprop.8
+                0x0000000000000000        0x4 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .text.DebugPrintLevelEnabled.constprop.7
+                0x0000000000000000        0x8 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .text.SP805InterruptHandler
+                0x0000000000000000       0x78 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .text._DriverUnloadHandler
+                0x0000000000000000        0x8 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .text.__memset
+                0x0000000000000000       0x1c /tmp/ccbun0wr.ltrans0.ltrans.o
+ .text.memcpy   0x0000000000000000       0x20 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .text.__stack_chk_fail
+                0x0000000000000000        0x4 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .data.__stack_chk_guard
+                0x0000000000000000        0x8 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .comment       0x0000000000000000       0x75 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .text          0x0000000000000000        0x0 DriverEntryPoint.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 BaseStackCheckGcc.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 memcpy.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 memset.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AutoGen.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SP805Watchdog.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DebugLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MultU64x32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DivU64x32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CpuDeadLoop.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Math64.obj (symbol from plugin)
+ .text          0x0000000000000000       0x30 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .text          0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .text          0x0000000000000000        0x0 SwapBytes32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SwapBytes16.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UefiBootServicesTableLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 IoHighLevel.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 IoLibNoIo.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 UefiRuntimeServicesTableLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 BitField.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 RShiftU64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 LShiftU64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 RegisterFilterLibNull.obj (symbol from plugin)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+LOAD /tmp/ccbun0wr.ltrans0.ltrans.o
+START GROUP
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Drivers/SP805WatchdogDxe/SP805WatchdogDxe/OUTPUT/SP805WatchdogDxe.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePcdLibNull/BasePcdLibNull/OUTPUT/BasePcdLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull/OUTPUT/BaseDebugLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull/OUTPUT/FilterLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint/OUTPUT/UefiDriverEntryPoint.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib/OUTPUT/UefiRuntimeServicesTableLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseStackCheckLib/BaseStackCheckLib/OUTPUT/BaseStackCheckLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib
+END GROUP
+                0x0000000000000228                . = PECOFF_HEADER_SIZE
+
+.text           0x0000000000001000      0x30c
+ *(.text .text.* .stub .gnu.linkonce.t.*)
+ .text.DebugAssertEnabled
+                0x0000000000001000        0x8 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .text.MmioWrite32
+                0x0000000000001008        0xc /tmp/ccbun0wr.ltrans0.ltrans.o
+ .text.MmioRead32
+                0x0000000000001014        0x8 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .text.MmioAnd32.constprop.4
+                0x000000000000101c       0x20 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .text.MmioOr32
+                0x000000000000103c       0x20 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .text.MultU64x32
+                0x000000000000105c        0xc /tmp/ccbun0wr.ltrans0.ltrans.o
+ .text.SP805GetTimerPeriod
+                0x0000000000001068       0x24 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .text.SP805RegisterHandler
+                0x000000000000108c       0x34 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .text.SP805Stop
+                0x00000000000010c0       0x2c /tmp/ccbun0wr.ltrans0.ltrans.o
+ .text.SP805Lock
+                0x00000000000010ec       0x2c /tmp/ccbun0wr.ltrans0.ltrans.o
+ .text.SP805Unlock
+                0x0000000000001118       0x34 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .text.ExitBootServicesEvent
+                0x000000000000114c       0x18 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .text.DivU64x32.constprop.0
+                0x0000000000001164       0x10 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .text.SP805SetTimerPeriod
+                0x0000000000001174       0x84 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .text._ModuleEntryPoint
+                0x00000000000011f8      0x114 /tmp/ccbun0wr.ltrans0.ltrans.o
+                0x00000000000011f8                _ModuleEntryPoint
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ *(.got .got.*)
+ *:AutoGen.obj(.data.g*Guid)
+
+.iplt           0x000000000000130c        0x0
+ .iplt          0x000000000000130c        0x0 /tmp/ccbun0wr.ltrans0.ltrans.o
+
+.data           0x0000000000002000       0x78
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.gEfiWatchdogTimerArchProtocolGuid
+                0x0000000000002000       0x10 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .data.gHardwareInterruptProtocolGuid
+                0x0000000000002010       0x10 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .data.mWatchdogTimer
+                0x0000000000002020       0x18 /tmp/ccbun0wr.ltrans0.ltrans.o
+ *(.bss .bss.*)
+ .bss.gBS       0x0000000000002038        0x8 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .bss.gImageHandle
+                0x0000000000002040        0x8 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .bss.gRT       0x0000000000002048        0x8 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .bss.gST       0x0000000000002050        0x8 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .bss.mEfiExitBootServicesEvent
+                0x0000000000002058        0x8 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .bss.mInterrupt
+                0x0000000000002060        0x8 /tmp/ccbun0wr.ltrans0.ltrans.o
+ .bss.mTimerPeriod
+                0x0000000000002068        0x4 /tmp/ccbun0wr.ltrans0.ltrans.o
+ *fill*         0x000000000000206c        0x4 
+ .bss.mWatchdogNotify
+                0x0000000000002070        0x8 /tmp/ccbun0wr.ltrans0.ltrans.o
+
+.igot.plt       0x0000000000002078        0x0
+ .igot.plt      0x0000000000002078        0x0 /tmp/ccbun0wr.ltrans0.ltrans.o
+
+.eh_frame
+ *(.eh_frame)
+
+.rela           0x0000000000002078        0x0
+ *(.rela .rela.*)
+ .rela.iplt     0x0000000000002078        0x0 /tmp/ccbun0wr.ltrans0.ltrans.o
+
+.hii
+ *(.hii)
+
+.build-id       0x0000000000002078       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x0000000000002078       0x24 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.interp)
+ *(.dynsym)
+ *(.dynstr)
+ *(.dynamic)
+ *(.hash .gnu.hash)
+ *(.comment)
+                0x0000000000000228                PECOFF_HEADER_SIZE = 0x228
+OUTPUT(/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Drivers/SP805WatchdogDxe/SP805WatchdogDxe/DEBUG/SP805WatchdogDxe.dll elf64-littleaarch64)
+
+.debug_info     0x0000000000000000     0x3e0c
+ .debug_info    0x0000000000000000     0x3e0c /tmp/ccbun0wr.ltrans0.ltrans.o
+
+.debug_abbrev   0x0000000000000000      0x51c
+ .debug_abbrev  0x0000000000000000      0x51c /tmp/ccbun0wr.ltrans0.ltrans.o
+
+.debug_loc      0x0000000000000000      0x8a5
+ .debug_loc     0x0000000000000000      0x8a5 /tmp/ccbun0wr.ltrans0.ltrans.o
+
+.debug_aranges  0x0000000000000000      0x190
+ .debug_aranges
+                0x0000000000000000      0x190 /tmp/ccbun0wr.ltrans0.ltrans.o
+
+.debug_ranges   0x0000000000000000      0x250
+ .debug_ranges  0x0000000000000000      0x250 /tmp/ccbun0wr.ltrans0.ltrans.o
+
+.debug_line     0x0000000000000000      0x8ff
+ .debug_line    0x0000000000000000      0x8ff /tmp/ccbun0wr.ltrans0.ltrans.o
+
+.debug_str      0x0000000000000000     0x1e72
+ .debug_str     0x0000000000000000     0x1e72 /tmp/ccbun0wr.ltrans0.ltrans.o
+                                       0x2022 (size before relaxing)
+
+.debug_frame    0x0000000000000000      0x308
+ .debug_frame   0x0000000000000000      0x308 /tmp/ccbun0wr.ltrans0.ltrans.o

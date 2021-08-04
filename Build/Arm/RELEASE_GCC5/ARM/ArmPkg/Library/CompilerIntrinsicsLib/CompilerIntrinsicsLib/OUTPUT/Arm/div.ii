@@ -1,0 +1,269 @@
+# 1 "/home/xephyr/Documents/edk2/ArmPkg/Library/CompilerIntrinsicsLib/Arm/div.S"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "/home/xephyr/Documents/edk2/BaseTools/Bin/gcc_arm_linux_extdep/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h" 1 3 4
+# 1 "<command-line>" 2
+# 1 "/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/ARM/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/DEBUG/AutoGen.h" 1
+# 16 "/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/ARM/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/DEBUG/AutoGen.h"
+# 1 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h" 1
+# 22 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h"
+# 1 "/home/xephyr/Documents/edk2/MdePkg/Include/Arm/ProcessorBind.h" 1
+# 101 "/home/xephyr/Documents/edk2/MdePkg/Include/Arm/ProcessorBind.h"
+  typedef unsigned long long UINT64;
+  typedef long long INT64;
+  typedef unsigned int UINT32;
+  typedef int INT32;
+  typedef unsigned short UINT16;
+  typedef unsigned short CHAR16;
+  typedef short INT16;
+  typedef unsigned char BOOLEAN;
+  typedef unsigned char UINT8;
+  typedef char CHAR8;
+  typedef signed char INT8;
+
+
+
+
+
+
+typedef UINT32 UINTN;
+
+
+
+
+
+typedef INT32 INTN;
+# 23 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h" 2
+# 222 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h"
+typedef struct {
+  UINT32 Data1;
+  UINT16 Data2;
+  UINT16 Data3;
+  UINT8 Data4[8];
+} GUID;
+
+
+
+
+typedef struct {
+  UINT8 Addr[4];
+} IPv4_ADDRESS;
+
+
+
+
+typedef struct {
+  UINT8 Addr[16];
+} IPv6_ADDRESS;
+
+
+
+
+typedef UINT64 PHYSICAL_ADDRESS;
+
+
+
+
+typedef struct _LIST_ENTRY LIST_ENTRY;
+
+
+
+
+struct _LIST_ENTRY {
+  LIST_ENTRY *ForwardLink;
+  LIST_ENTRY *BackLink;
+};
+# 657 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h"
+typedef __builtin_va_list VA_LIST;
+# 742 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h"
+typedef UINTN *BASE_LIST;
+# 813 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h"
+_Static_assert (sizeof (BOOLEAN) == 1, "sizeof (BOOLEAN) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (INT8) == 1, "sizeof (INT8) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (UINT8) == 1, "sizeof (UINT8) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (INT16) == 2, "sizeof (INT16) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (UINT16) == 2, "sizeof (UINT16) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (INT32) == 4, "sizeof (INT32) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (UINT32) == 4, "sizeof (UINT32) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (INT64) == 8, "sizeof (INT64) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (UINT64) == 8, "sizeof (UINT64) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (CHAR8) == 1, "sizeof (CHAR8) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (CHAR16) == 2, "sizeof (CHAR16) does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (L'A') == 2, "sizeof (L'A') does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (L"A") == 4, "sizeof (L\"A\") does not meet UEFI Specification Data Type requirements");
+# 834 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h"
+typedef enum {
+  __VerifyUint8EnumValue = 0xff
+} __VERIFY_UINT8_ENUM_SIZE;
+
+typedef enum {
+  __VerifyUint16EnumValue = 0xffff
+} __VERIFY_UINT16_ENUM_SIZE;
+
+typedef enum {
+  __VerifyUint32EnumValue = 0xffffffff
+} __VERIFY_UINT32_ENUM_SIZE;
+
+_Static_assert (sizeof (__VERIFY_UINT8_ENUM_SIZE) == 4, "Size of enum does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (__VERIFY_UINT16_ENUM_SIZE) == 4, "Size of enum does not meet UEFI Specification Data Type requirements");
+_Static_assert (sizeof (__VERIFY_UINT32_ENUM_SIZE) == 4, "Size of enum does not meet UEFI Specification Data Type requirements");
+# 962 "/home/xephyr/Documents/edk2/MdePkg/Include/Base.h"
+typedef UINTN RETURN_STATUS;
+# 17 "/home/xephyr/Documents/edk2/Build/Arm/RELEASE_GCC5/ARM/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/DEBUG/AutoGen.h" 2
+
+extern GUID gEfiCallerIdGuid;
+extern GUID gEdkiiDscPlatformGuid;
+extern CHAR8 *gEfiCallerBaseName;
+
+
+
+extern UINT64 _gPcd_SkuId_Array[];
+# 1 "<command-line>" 2
+# 1 "/home/xephyr/Documents/edk2/ArmPkg/Library/CompilerIntrinsicsLib/Arm/div.S"
+#------------------------------------------------------------------------------
+
+# Copyright (c) 2011, ARM. All rights reserved.<BR>
+
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+
+#------------------------------------------------------------------------------
+
+.text
+.align 2
+.global __aeabi_uidiv ; .type __aeabi_uidiv, %function
+.global __aeabi_uidivmod ; .type __aeabi_uidivmod, %function
+.global __aeabi_idiv ; .type __aeabi_idiv, %function
+.global __aeabi_idivmod ; .type __aeabi_idivmod, %function
+
+ # AREA Math, CODE, READONLY
+
+
+#UINT32
+#
+ #__aeabi_uidivmode (
+# UINT32 Dividen
+# UINT32 Divisor
+# );
+
+
+__aeabi_uidiv:
+__aeabi_uidivmod:
+  rsbs r12, r1, r0, LSR #4
+  mov r2, #0
+  bcc __arm_div4
+  rsbs r12, r1, r0, LSR #8
+  bcc __arm_div8
+  mov r3, #0
+  b __arm_div_large
+
+
+ #INT32
+#
+ #__aeabi_idivmode (
+# INT32 Dividen
+# INT32 Divisor
+# );
+
+__aeabi_idiv:
+__aeabi_idivmod:
+  orrs r12, r0, r1
+  bmi __arm_div_negative
+  rsbs r12, r1, r0, LSR #1
+  mov r2, #0
+  bcc __arm_div1
+  rsbs r12, r1, r0, LSR #4
+  bcc __arm_div4
+  rsbs r12, r1, r0, LSR #8
+  bcc __arm_div8
+  mov r3, #0
+  b __arm_div_large
+__arm_div8:
+  rsbs r12, r1, r0, LSR #7
+  subcs r0, r0, r1, LSL #7
+  adc r2, r2, r2
+  rsbs r12, r1, r0,LSR #6
+  subcs r0, r0, r1, LSL #6
+  adc r2, r2, r2
+  rsbs r12, r1, r0, LSR #5
+  subcs r0, r0, r1, LSL #5
+  adc r2, r2, r2
+  rsbs r12, r1, r0, LSR #4
+  subcs r0, r0, r1, LSL #4
+  adc r2, r2, r2
+__arm_div4:
+  rsbs r12, r1, r0, LSR #3
+  subcs r0, r0, r1, LSL #3
+  adc r2, r2, r2
+  rsbs r12, r1, r0, LSR #2
+  subcs r0, r0, r1, LSL #2
+  adcs r2, r2, r2
+  rsbs r12, r1, r0, LSR #1
+  subcs r0, r0, r1, LSL #1
+  adc r2, r2, r2
+__arm_div1:
+  subs r1, r0, r1
+  movcc r1, r0
+  adc r0, r2, r2
+  bx r14
+__arm_div_negative:
+  ands r2, r1, #0x80000000
+  rsbmi r1, r1, #0
+  eors r3, r2, r0, ASR #32
+  rsbcs r0, r0, #0
+  rsbs r12, r1, r0, LSR #4
+  bcc label1
+  rsbs r12, r1, r0, LSR #8
+  bcc label2
+__arm_div_large:
+  lsl r1, r1, #6
+  rsbs r12, r1, r0, LSR #8
+  orr r2, r2, #0xfc000000
+  bcc label2
+  lsl r1, r1, #6
+  rsbs r12, r1, r0, LSR #8
+  orr r2, r2, #0x3f00000
+  bcc label2
+  lsl r1, r1, #6
+  rsbs r12, r1, r0, LSR #8
+  orr r2, r2, #0xfc000
+  orrcs r2, r2, #0x3f00
+  lslcs r1, r1, #6
+  rsbs r12, r1, #0
+  bcs __aeabi_idiv0
+label3:
+  lsrcs r1, r1, #6
+label2:
+  rsbs r12, r1, r0, LSR #7
+  subcs r0, r0, r1, LSL #7
+  adc r2, r2, r2
+  rsbs r12, r1, r0, LSR #6
+  subcs r0, r0, r1, LSL #6
+  adc r2, r2, r2
+  rsbs r12, r1, r0, LSR #5
+  subcs r0, r0, r1, LSL #5
+  adc r2, r2, r2
+  rsbs r12, r1, r0, LSR #4
+  subcs r0, r0, r1, LSL #4
+  adc r2, r2, r2
+label1:
+  rsbs r12, r1, r0, LSR #3
+  subcs r0, r0, r1, LSL #3
+  adc r2, r2, r2
+  rsbs r12, r1, r0, LSR #2
+  subcs r0, r0, r1, LSL #2
+  adcs r2, r2, r2
+  bcs label3
+  rsbs r12, r1, r0, LSR #1
+  subcs r0, r0, r1, LSL #1
+  adc r2, r2, r2
+  subs r1, r0, r1
+  movcc r1, r0
+  adc r0, r2, r2
+  asrs r3, r3, #31
+  rsbmi r0, r0, #0
+  rsbcs r1, r1, #0
+  bx r14
+
+  @ What to do about division by zero? For now, just return.
+__aeabi_idiv0:
+  bx r14

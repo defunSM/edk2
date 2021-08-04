@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuites><testsuite id="0" name="ArmPkg" package="Edk2CiBuild.Edk2.ArmPkg" errors="0" tests="12" failures="0" skipped="5"><testcase classname="Edk2CiBuild.Edk2.ArmPkg.LicenseCheck" name="Check for license for Edk2CiBuild.Edk2.ArmPkg" time="0.0031430721282958984"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmPkg.LibraryClassCheck" name="Check library class declarations in Edk2CiBuild.Edk2.ArmPkg" time="0.0017273426055908203"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmPkg.GuidCheck" name="Confirm GUIDs are unique in Edk2CiBuild.Edk2.ArmPkg" time="1.6874635219573975"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmPkg.HostUnitTestDscCompleteCheck" name="Check the Edk2CiBuild.Edk2.ArmPkg Host Unit Test DSC for a being complete" time="9.441375732421875e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>Package Host Unit Test Dsc not found
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmPkg.HostUnitTestCompiler.X64" name="Compile and Run Host-Based UnitTests for Edk2CiBuild.Edk2.ArmPkg on arch X64" time="0.0001068115234375"><skipped type="skipped"></skipped><system-out></system-out><system-err>Package HostBasedUnitTest Dsc not found.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmPkg.SpellCheck" name="Spell check files in Edk2CiBuild.Edk2.ArmPkg" time="0.017086267471313477"><skipped type="skipped">Node version: v12.21.0
+ </skipped><system-out>Node version: v12.21.0
+ </system-out><system-err>cspell not installed.  Test can't run
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmPkg.CharEncodingCheck" name="Check for valid file encoding for Edk2CiBuild.Edk2.ArmPkg" time="0.0959010124206543"><system-out>Tested Encoding on 737 files
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmPkg.Compiler.DEBUG" name="Compile Edk2CiBuild.Edk2.ArmPkg DEBUG" time="0.005276918411254883"><skipped type="skipped"></skipped><system-out></system-out><system-err>No supported architecutres to build
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmPkg.Compiler.RELEASE" name="Compile Edk2CiBuild.Edk2.ArmPkg RELEASE" time="0.0050890445709228516"><skipped type="skipped"></skipped><system-out></system-out><system-err>No supported architecutres to build
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmPkg.DscCompleteCheck" name="Check the Edk2CiBuild.Edk2.ArmPkg DSC for a being complete" time="0.010010004043579102"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmPkg.DependencyCheck" name="Test Package Dependencies for modules in Edk2CiBuild.Edk2.ArmPkg" time="0.017482519149780273"><system-out>Acceptable Dependencies:
+ ArmPlatformPkg/ArmPlatformPkg.dec
+ArmPkg/ArmPkg.dec
+EmbeddedPkg/EmbeddedPkg.dec
+MdeModulePkg/MdeModulePkg.dec
+MdePkg/MdePkg.dec
+ShellPkg/ShellPkg.dec
+ Additional dependencies for MODULE_TYPE HOST_APPLICATION:
+ UnitTestFrameworkPkg/UnitTestFrameworkPkg.dec
+ Additional dependencies for MODULE_TYPE UEFI_APPLICATION:
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmPkg.EccCheck" name="Check for efi coding style for Edk2CiBuild.Edk2.ArmPkg" time="0.1345221996307373"><system-out></system-out><system-err></system-err></testcase></testsuite><testsuite id="1" name="ArmPlatformPkg" package="Edk2CiBuild.Edk2.ArmPlatformPkg" errors="0" tests="12" failures="0" skipped="5"><testcase classname="Edk2CiBuild.Edk2.ArmPlatformPkg.LicenseCheck" name="Check for license for Edk2CiBuild.Edk2.ArmPlatformPkg" time="0.003259897232055664"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmPlatformPkg.LibraryClassCheck" name="Check library class declarations in Edk2CiBuild.Edk2.ArmPlatformPkg" time="0.0009016990661621094"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmPlatformPkg.GuidCheck" name="Confirm GUIDs are unique in Edk2CiBuild.Edk2.ArmPlatformPkg" time="1.6836271286010742"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmPlatformPkg.HostUnitTestDscCompleteCheck" name="Check the Edk2CiBuild.Edk2.ArmPlatformPkg Host Unit Test DSC for a being complete" time="0.00010228157043457031"><skipped type="skipped"></skipped><system-out></system-out><system-err>Package Host Unit Test Dsc not found
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmPlatformPkg.HostUnitTestCompiler.X64" name="Compile and Run Host-Based UnitTests for Edk2CiBuild.Edk2.ArmPlatformPkg on arch X64" time="0.00010824203491210938"><skipped type="skipped"></skipped><system-out></system-out><system-err>Package HostBasedUnitTest Dsc not found.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmPlatformPkg.SpellCheck" name="Spell check files in Edk2CiBuild.Edk2.ArmPlatformPkg" time="0.016550779342651367"><skipped type="skipped">Node version: v12.21.0
+ </skipped><system-out>Node version: v12.21.0
+ </system-out><system-err>cspell not installed.  Test can't run
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmPlatformPkg.CharEncodingCheck" name="Check for valid file encoding for Edk2CiBuild.Edk2.ArmPlatformPkg" time="0.01679253578186035"><system-out>Tested Encoding on 107 files
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmPlatformPkg.Compiler.DEBUG" name="Compile Edk2CiBuild.Edk2.ArmPlatformPkg DEBUG" time="0.004960775375366211"><skipped type="skipped"></skipped><system-out></system-out><system-err>No supported architecutres to build
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmPlatformPkg.Compiler.RELEASE" name="Compile Edk2CiBuild.Edk2.ArmPlatformPkg RELEASE" time="0.004534006118774414"><skipped type="skipped"></skipped><system-out></system-out><system-err>No supported architecutres to build
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmPlatformPkg.DscCompleteCheck" name="Check the Edk2CiBuild.Edk2.ArmPlatformPkg DSC for a being complete" time="0.008021116256713867"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmPlatformPkg.DependencyCheck" name="Test Package Dependencies for modules in Edk2CiBuild.Edk2.ArmPlatformPkg" time="0.009629011154174805"><system-out>Acceptable Dependencies:
+ ArmPlatformPkg/ArmPlatformPkg.dec
+ArmPkg/ArmPkg.dec
+EmbeddedPkg/EmbeddedPkg.dec
+MdeModulePkg/MdeModulePkg.dec
+MdePkg/MdePkg.dec
+ Additional dependencies for MODULE_TYPE HOST_APPLICATION:
+ UnitTestFrameworkPkg/UnitTestFrameworkPkg.dec
+ Additional dependencies for MODULE_TYPE UEFI_APPLICATION:
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmPlatformPkg.EccCheck" name="Check for efi coding style for Edk2CiBuild.Edk2.ArmPlatformPkg" time="0.10050368309020996"><system-out></system-out><system-err></system-err></testcase></testsuite><testsuite id="2" name="ArmVirtPkg" package="Edk2CiBuild.Edk2.ArmVirtPkg" errors="0" tests="12" failures="0" skipped="6"><testcase classname="Edk2CiBuild.Edk2.ArmVirtPkg.LicenseCheck" name="Check for license for Edk2CiBuild.Edk2.ArmVirtPkg" time="0.002810955047607422"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmVirtPkg.LibraryClassCheck" name="Check library class declarations in Edk2CiBuild.Edk2.ArmVirtPkg" time="0.0005433559417724609"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmVirtPkg.GuidCheck" name="Confirm GUIDs are unique in Edk2CiBuild.Edk2.ArmVirtPkg" time="1.6923377513885498"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmVirtPkg.HostUnitTestDscCompleteCheck" name="Check the Edk2CiBuild.Edk2.ArmVirtPkg Host Unit Test DSC for a being complete" time="9.1552734375e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>Package Host Unit Test Dsc not found
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmVirtPkg.HostUnitTestCompiler.X64" name="Compile and Run Host-Based UnitTests for Edk2CiBuild.Edk2.ArmVirtPkg on arch X64" time="0.00010800361633300781"><skipped type="skipped"></skipped><system-out></system-out><system-err>Package HostBasedUnitTest Dsc not found.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmVirtPkg.SpellCheck" name="Spell check files in Edk2CiBuild.Edk2.ArmVirtPkg" time="0.016999006271362305"><skipped type="skipped">Node version: v12.21.0
+ </skipped><system-out>Node version: v12.21.0
+ </system-out><system-err>cspell not installed.  Test can't run
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmVirtPkg.CharEncodingCheck" name="Check for valid file encoding for Edk2CiBuild.Edk2.ArmVirtPkg" time="0.016764402389526367"><system-out>Tested Encoding on 97 files
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmVirtPkg.Compiler.DEBUG" name="Compile Edk2CiBuild.Edk2.ArmVirtPkg DEBUG" time="7.724761962890625e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>Package Dsc not found.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmVirtPkg.Compiler.RELEASE" name="Compile Edk2CiBuild.Edk2.ArmVirtPkg RELEASE" time="7.033348083496094e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>Package Dsc not found.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmVirtPkg.DscCompleteCheck" name="Check the Edk2CiBuild.Edk2.ArmVirtPkg DSC for a being complete" time="7.081031799316406e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>Package Dsc not found
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmVirtPkg.DependencyCheck" name="Test Package Dependencies for modules in Edk2CiBuild.Edk2.ArmVirtPkg" time="0.014774560928344727"><system-out>Acceptable Dependencies:
+ MdePkg/MdePkg.dec
+MdeModulePkg/MdeModulePkg.dec
+ArmVirtPkg/ArmVirtPkg.dec
+NetworkPkg/NetworkPkg.dec
+ArmPkg/ArmPkg.dec
+OvmfPkg/OvmfPkg.dec
+EmbeddedPkg/EmbeddedPkg.dec
+ArmPlatformPkg/ArmPlatformPkg.dec
+PcAtChipsetPkg/PcAtChipsetPkg.dec
+SecurityPkg/SecurityPkg.dec
+ShellPkg/ShellPkg.dec
+ Additional dependencies for MODULE_TYPE HOST_APPLICATION:
+ UnitTestFrameworkPkg/UnitTestFrameworkPkg.dec
+ Additional dependencies for MODULE_TYPE UEFI_APPLICATION:
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ArmVirtPkg.EccCheck" name="Check for efi coding style for Edk2CiBuild.Edk2.ArmVirtPkg" time="0.09944868087768555"><system-out></system-out><system-err></system-err></testcase></testsuite><testsuite id="3" name="DynamicTablesPkg" package="Edk2CiBuild.Edk2.DynamicTablesPkg" errors="0" tests="12" failures="0" skipped="5"><testcase classname="Edk2CiBuild.Edk2.DynamicTablesPkg.LicenseCheck" name="Check for license for Edk2CiBuild.Edk2.DynamicTablesPkg" time="0.0032806396484375"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.DynamicTablesPkg.LibraryClassCheck" name="Check library class declarations in Edk2CiBuild.Edk2.DynamicTablesPkg" time="0.0006582736968994141"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.DynamicTablesPkg.GuidCheck" name="Confirm GUIDs are unique in Edk2CiBuild.Edk2.DynamicTablesPkg" time="1.6750004291534424"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.DynamicTablesPkg.HostUnitTestDscCompleteCheck" name="Check the Edk2CiBuild.Edk2.DynamicTablesPkg Host Unit Test DSC for a being complete" time="9.202957153320312e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>Package Host Unit Test Dsc not found
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.DynamicTablesPkg.HostUnitTestCompiler.X64" name="Compile and Run Host-Based UnitTests for Edk2CiBuild.Edk2.DynamicTablesPkg on arch X64" time="0.00010800361633300781"><skipped type="skipped"></skipped><system-out></system-out><system-err>Package HostBasedUnitTest Dsc not found.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.DynamicTablesPkg.SpellCheck" name="Spell check files in Edk2CiBuild.Edk2.DynamicTablesPkg" time="0.016464710235595703"><skipped type="skipped">Node version: v12.21.0
+ </skipped><system-out>Node version: v12.21.0
+ </system-out><system-err>cspell not installed.  Test can't run
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.DynamicTablesPkg.CharEncodingCheck" name="Check for valid file encoding for Edk2CiBuild.Edk2.DynamicTablesPkg" time="0.01695394515991211"><system-out>Tested Encoding on 103 files
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.DynamicTablesPkg.Compiler.DEBUG" name="Compile Edk2CiBuild.Edk2.DynamicTablesPkg DEBUG" time="0.00449824333190918"><skipped type="skipped"></skipped><system-out></system-out><system-err>No supported architecutres to build
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.DynamicTablesPkg.Compiler.RELEASE" name="Compile Edk2CiBuild.Edk2.DynamicTablesPkg RELEASE" time="0.003504037857055664"><skipped type="skipped"></skipped><system-out></system-out><system-err>No supported architecutres to build
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.DynamicTablesPkg.DscCompleteCheck" name="Check the Edk2CiBuild.Edk2.DynamicTablesPkg DSC for a being complete" time="0.005120754241943359"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.DynamicTablesPkg.DependencyCheck" name="Test Package Dependencies for modules in Edk2CiBuild.Edk2.DynamicTablesPkg" time="0.007637739181518555"><system-out>Acceptable Dependencies:
+ ArmPlatformPkg/ArmPlatformPkg.dec
+EmbeddedPkg/EmbeddedPkg.dec
+DynamicTablesPkg/DynamicTablesPkg.dec
+MdeModulePkg/MdeModulePkg.dec
+MdePkg/MdePkg.dec
+ Additional dependencies for MODULE_TYPE HOST_APPLICATION:
+ UnitTestFrameworkPkg/UnitTestFrameworkPkg.dec
+ Additional dependencies for MODULE_TYPE UEFI_APPLICATION:
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.DynamicTablesPkg.EccCheck" name="Check for efi coding style for Edk2CiBuild.Edk2.DynamicTablesPkg" time="0.0988626480102539"><system-out></system-out><system-err></system-err></testcase></testsuite><testsuite id="4" name="EmulatorPkg" package="Edk2CiBuild.Edk2.EmulatorPkg" errors="0" tests="12" failures="0" skipped="6"><testcase classname="Edk2CiBuild.Edk2.EmulatorPkg.LicenseCheck" name="Check for license for Edk2CiBuild.Edk2.EmulatorPkg" time="0.003296375274658203"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.EmulatorPkg.LibraryClassCheck" name="Check library class declarations in Edk2CiBuild.Edk2.EmulatorPkg" time="0.0010821819305419922"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.EmulatorPkg.GuidCheck" name="Confirm GUIDs are unique in Edk2CiBuild.Edk2.EmulatorPkg" time="1.6924395561218262"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.EmulatorPkg.HostUnitTestDscCompleteCheck" name="Check the Edk2CiBuild.Edk2.EmulatorPkg Host Unit Test DSC for a being complete" time="9.608268737792969e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>Package Host Unit Test Dsc not found
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.EmulatorPkg.HostUnitTestCompiler.X64" name="Compile and Run Host-Based UnitTests for Edk2CiBuild.Edk2.EmulatorPkg on arch X64" time="0.00010776519775390625"><skipped type="skipped"></skipped><system-out></system-out><system-err>Package HostBasedUnitTest Dsc not found.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.EmulatorPkg.SpellCheck" name="Spell check files in Edk2CiBuild.Edk2.EmulatorPkg" time="0.016357898712158203"><skipped type="skipped">Node version: v12.21.0
+ </skipped><system-out>Node version: v12.21.0
+ </system-out><system-err>cspell not installed.  Test can't run
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.EmulatorPkg.CharEncodingCheck" name="Check for valid file encoding for Edk2CiBuild.Edk2.EmulatorPkg" time="0.027770519256591797"><system-out>Tested Encoding on 169 files
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.EmulatorPkg.Compiler.DEBUG" name="Compile Edk2CiBuild.Edk2.EmulatorPkg DEBUG" time="8.082389831542969e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>Package Dsc not found.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.EmulatorPkg.Compiler.RELEASE" name="Compile Edk2CiBuild.Edk2.EmulatorPkg RELEASE" time="7.104873657226562e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>Package Dsc not found.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.EmulatorPkg.DscCompleteCheck" name="Check the Edk2CiBuild.Edk2.EmulatorPkg DSC for a being complete" time="7.367134094238281e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>Package Dsc not found
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.EmulatorPkg.DependencyCheck" name="Test Package Dependencies for modules in Edk2CiBuild.Edk2.EmulatorPkg" time="0.01683354377746582"><system-out>Acceptable Dependencies:
+ MdePkg/MdePkg.dec
+MdeModulePkg/MdeModulePkg.dec
+EmulatorPkg/EmulatorPkg.dec
+NetworkPkg/NetworkPkg.dec
+RedfishPkg/RedfishPkg.dec
+EmbeddedPkg/EmbeddedPkg.dec
+ Additional dependencies for MODULE_TYPE HOST_APPLICATION:
+ UnitTestFrameworkPkg/UnitTestFrameworkPkg.dec
+ Additional dependencies for MODULE_TYPE UEFI_APPLICATION:
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.EmulatorPkg.EccCheck" name="Check for efi coding style for Edk2CiBuild.Edk2.EmulatorPkg" time="0.10141396522521973"><system-out></system-out><system-err></system-err></testcase></testsuite><testsuite id="5" name="MdePkg" package="Edk2CiBuild.Edk2.MdePkg" errors="0" tests="12" failures="0" skipped="1"><testcase classname="Edk2CiBuild.Edk2.MdePkg.LicenseCheck" name="Check for license for Edk2CiBuild.Edk2.MdePkg" time="0.0032477378845214844"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.MdePkg.LibraryClassCheck" name="Check library class declarations in Edk2CiBuild.Edk2.MdePkg" time="0.01054692268371582"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.MdePkg.GuidCheck" name="Confirm GUIDs are unique in Edk2CiBuild.Edk2.MdePkg" time="1.6807677745819092"><system-out>Ignoring Guid 00000000-0000-0000-0000-000000000000
+ Ignoring Guid gEfiFirmwareVolumeTopFileGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiFirmwareVolumeBlockProtocolGuid=gEfiFirmwareVolumeBlock2ProtocolGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiMmAccessProtocolGuid=gEfiSmmAccess2ProtocolGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiSmmCommunicationProtocolGuid=gEfiMmCommunicationProtocolGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiMmPciRootBridgeIoProtocolGuid=gEfiSmmPciRootBridgeIoProtocolGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiTrEEProtocolGuid=gEfiTcg2ProtocolGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiSmmPowerButtonDispatch2ProtocolGuid=gEfiMmPowerButtonDispatchProtocolGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiSmmBase2ProtocolGuid=gEfiMmBaseProtocolGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiSmmUsbDispatch2ProtocolGuid=gEfiMmUsbDispatchProtocolGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiSmmCpuProtocolGuid=gEfiMmCpuProtocolGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiAcpiTableGuid=gEfiAcpi20TableGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiSmmControl2ProtocolGuid=gEfiMmControlProtocolGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiSmmStandbyButtonDispatch2ProtocolGuid=gEfiMmStandbyButtonDispatchProtocolGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiSmmStatusCodeProtocolGuid=gEfiMmStatusCodeProtocolGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiDxeSmmReadyToLockProtocolGuid=gEfiDxeMmReadyToLockProtocolGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiSmmIoTrapDispatch2ProtocolGuid=gEfiMmIoTrapDispatchProtocolGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiSmmReadyToLockProtocolGuid=gEfiMmReadyToLockProtocolGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiSmmSxDispatch2ProtocolGuid=gEfiMmSxDispatchProtocolGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiPeiCapsulePpiGuid=gPeiCapsulePpiGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiSmmCpuIo2ProtocolGuid=gEfiMmCpuIoProtocolGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiSmmRscHandlerProtocolGuid=gEfiMmRscHandlerProtocolGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiSmmConfigurationProtocolGuid=gEfiMmConfigurationProtocolGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiSmmGpiDispatch2ProtocolGuid=gEfiMmGpiDispatchProtocolGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiSmmEndOfDxeProtocolGuid=gEfiMmEndOfDxeProtocolGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiSmmSwDispatch2ProtocolGuid=gEfiMmSwDispatchProtocolGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiDebugPortProtocolGuid=gEfiDebugPortVariableGuid=gEfiDebugPortDevicePathGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiProcessorSpecificErrorSectionGuid=gEfiIa32X64ProcessorErrorSectionGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiSmmPeriodicTimerDispatch2ProtocolGuid=gEfiMmPeriodicTimerDispatchProtocolGuid
+ GuidCheck.IgnoreDuplicates -&gt; gEfiPeiMmAccessPpiGuid=gPeiSmmAccessPpiGuid
+ GuidCheck.IgnoreDuplicates -&gt; gPeiSmmControlPpiGuid=gEfiPeiMmControlPpiGuid
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.MdePkg.HostUnitTestDscCompleteCheck" name="Check the Edk2CiBuild.Edk2.MdePkg Host Unit Test DSC for a being complete" time="0.05512809753417969"><system-out>Ignoring INF
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Test/UnitTest/Library/BaseSafeIntLib/TestBaseSafeIntLibUefiShell.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Test/UnitTest/Library/BaseSafeIntLib/TestBaseSafeIntLibDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Test/UnitTest/Library/BaseSafeIntLib/TestBaseSafeIntLibPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Test/UnitTest/Library/BaseSafeIntLib/TestBaseSafeIntLibSmm.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Test/UnitTest/Library/BaseLib/BaseLibUnitTestsUefi.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/SmmMemLib/SmmMemLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/SmmPciLibPciRootBridgeIo/SmmPciLibPciRootBridgeIo.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/MmServicesTableLib/MmServicesTableLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseMemoryLibRepStr/BaseMemoryLibRepStr.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseSmbusLibNull/BaseSmbusLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/UefiFileHandleLib/UefiFileHandleLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/SmmIoLib/SmmIoLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/PeiHobLib/PeiHobLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/UefiUsbLib/UefiUsbLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseMemoryLibOptPei/BaseMemoryLibOptPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/PeiSmbusLibSmbus2Ppi/PeiSmbusLibSmbus2Ppi.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/UefiDebugLibConOut/UefiDebugLibConOut.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointerLibIdt.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseMemoryLibOptDxe/BaseMemoryLibOptDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseS3BootScriptLibNull/BaseS3BootScriptLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseReportStatusCodeLibNull/BaseReportStatusCodeLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/PeiIoLibCpuIo/PeiIoLibCpuIo.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/UefiApplicationEntryPoint/UefiApplicationEntryPoint.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/PeiPciSegmentLibPciCfg2/PeiPciSegmentLibPciCfg2.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/DxeHstiLib/DxeHstiLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BasePerformanceLibNull/BasePerformanceLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/DxeRuntimePciExpressLib/DxeRuntimePciExpressLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/DxeCoreHobLib/DxeCoreHobLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/UefiPciLibPciRootBridgeIo/UefiPciLibPciRootBridgeIo.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/UefiDebugLibDebugPortProtocol/UefiDebugLibDebugPortProtocol.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseS3IoLib/BaseS3IoLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BasePeCoffGetEntryPointLib/BasePeCoffGetEntryPointLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseDebugLibSerialPort/BaseDebugLibSerialPort.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/SmmPciExpressLib/SmmPciExpressLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BasePciExpressLib/BasePciExpressLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/DxeRuntimeDebugLibSerialPort/DxeRuntimeDebugLibSerialPort.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/PeiCoreEntryPoint/PeiCoreEntryPoint.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BasePeCoffExtraActionLibNull/BasePeCoffExtraActionLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/UefiMemoryLib/UefiMemoryLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/PeiPcdLib/PeiPcdLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseTimerLibNullTemplate/BaseTimerLibNullTemplate.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/PeiPciLibPciCfg2/PeiPciLibPciCfg2.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/UefiRuntimeLib/UefiRuntimeLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/SmmIoLibSmmCpuIo2/SmmIoLibSmmCpuIo2.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/PeiMemoryAllocationLib/PeiMemoryAllocationLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseS3StallLib/BaseS3StallLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/DxePcdLib/DxePcdLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/DxeExtractGuidedSectionLib/DxeExtractGuidedSectionLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BasePciLibCf8/BasePciLibCf8.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/DxeHobLib/DxeHobLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseRngLibNull/BaseRngLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BasePciCf8Lib/BasePciCf8Lib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseStackCheckLib/BaseStackCheckLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseMemoryLibMmx/BaseMemoryLibMmx.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/MmUnblockMemoryLib/MmUnblockMemoryLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/DxeRngLib/DxeRngLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/SmmLibNull/SmmLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseSerialPortLibNull/BaseSerialPortLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/StandaloneMmServicesTableLib/StandaloneMmServicesTableLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseMemoryLibSse2/BaseMemoryLibSse2.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/UefiScsiLib/UefiScsiLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/PeiServicesTablePointerLib/PeiServicesTablePointerLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/SmmServicesTableLib/SmmServicesTableLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/PeiDxePostCodeLibReportStatusCode/PeiDxePostCodeLibReportStatusCode.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/UefiDevicePathLib/UefiDevicePathLibStandaloneMm.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/UefiDevicePathLib/UefiDevicePathLibOptionalDevicePathProtocol.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseExtractGuidedSectionLib/BaseExtractGuidedSectionLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/SmmMemoryAllocationLib/SmmMemoryAllocationLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/StandaloneMmDriverEntryPoint/StandaloneMmDriverEntryPoint.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseCpuLibNull/BaseCpuLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/DxeIoLibCpuIo2/DxeIoLibCpuIo2.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsicArmVirt.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsicSev.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/PeimEntryPoint/PeimEntryPoint.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/PeiExtractGuidedSectionLib/PeiExtractGuidedSectionLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/PciSegmentLibSegmentInfo/BasePciSegmentLibSegmentInfo.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/PciSegmentLibSegmentInfo/DxeRuntimePciSegmentLibSegmentInfo.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseSafeIntLib/BaseSafeIntLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseLib/BaseLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/SmmPeriodicSmiLib/SmmPeriodicSmiLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseMemoryLib/BaseMemoryLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseRngLib/BaseRngLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/PeiResourcePublicationLib/PeiResourcePublicationLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BasePostCodeLibPort80/BasePostCodeLibPort80.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseRngLibTimerLib/BaseRngLibTimerLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BasePostCodeLibDebug/BasePostCodeLibDebug.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseCacheMaintenanceLib/BaseCacheMaintenanceLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseUefiDecompressLib/BaseUefiDecompressLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseUefiDecompressLib/BaseUefiTianoCustomDecompressLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/DxeCoreEntryPoint/DxeCoreEntryPoint.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BasePrintLib/BasePrintLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BasePeCoffLib/BasePeCoffLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BasePciLibPciExpress/BasePciLibPciExpress.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BasePcdLibNull/BasePcdLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BasePciSegmentInfoLibNull/BasePciSegmentInfoLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseS3PciSegmentLib/BaseS3PciSegmentLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/SecPeiDxeTimerLibCpu/SecPeiDxeTimerLibCpu.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/PeiMemoryLib/PeiMemoryLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseCacheMaintenanceLibNull/BaseCacheMaintenanceLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseS3SmbusLib/BaseS3SmbusLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseCpuLib/BaseCpuLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/UefiDevicePathLibDevicePathProtocol/UefiDevicePathLibDevicePathProtocol.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/UefiPciSegmentLibPciRootBridgeIo/UefiPciSegmentLibPciRootBridgeIo.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/DxeServicesLib/DxeServicesLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseOrderedCollectionRedBlackTreeLib/BaseOrderedCollectionRedBlackTreeLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BasePciSegmentLibPci/BasePciSegmentLibPci.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/DxeSmbusLib/DxeSmbusLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/UefiLib/UefiLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseSynchronizationLib/BaseSynchronizationLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/PeiServicesLib/PeiServicesLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/UefiDebugLibStdErr/UefiDebugLibStdErr.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/BaseS3PciLib/BaseS3PciLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdePkg/Library/SmiHandlerProfileLibNull/SmiHandlerProfileLibNull.inf
+ </system-out><system-err>HostUnitTestDscCompleteCheck.IgnoreInf -&gt;  not found in filesystem.  Invalid ignore file
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.MdePkg.HostUnitTestCompiler.X64" name="Compile and Run Host-Based UnitTests for Edk2CiBuild.Edk2.MdePkg on arch X64" time="1.0417091846466064"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.MdePkg.SpellCheck" name="Spell check files in Edk2CiBuild.Edk2.MdePkg" time="0.016333580017089844"><skipped type="skipped">Node version: v12.21.0
+ </skipped><system-out>Node version: v12.21.0
+ </system-out><system-err>cspell not installed.  Test can't run
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.MdePkg.CharEncodingCheck" name="Check for valid file encoding for Edk2CiBuild.Edk2.MdePkg" time="0.21822643280029297"><system-out>Tested Encoding on 1689 files
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.MdePkg.Compiler.DEBUG" name="Compile Edk2CiBuild.Edk2.MdePkg DEBUG" time="3.0092551708221436"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.MdePkg.Compiler.RELEASE" name="Compile Edk2CiBuild.Edk2.MdePkg RELEASE" time="3.0063958168029785"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.MdePkg.DscCompleteCheck" name="Check the Edk2CiBuild.Edk2.MdePkg DSC for a being complete" time="0.0215456485748291"><system-out>Ignoring INF
+ Ignoring INF.  Module type is HOST_APPLICATION MdePkg/Test/UnitTest/Library/BaseSafeIntLib/TestBaseSafeIntLibHost.inf
+ Ignoring INF.  Module type is HOST_APPLICATION MdePkg/Test/UnitTest/Library/BaseLib/BaseLibUnitTestsHost.inf
+ Ignoring Library INF due to only supporting type HOST_APPLICATION MdePkg/Library/BaseLib/UnitTestHostBaseLib.inf
+ </system-out><system-err>DscCompleteCheck.IgnoreInf -&gt;  not found in filesystem.  Invalid ignore file
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.MdePkg.DependencyCheck" name="Test Package Dependencies for modules in Edk2CiBuild.Edk2.MdePkg" time="0.05099344253540039"><system-out>Acceptable Dependencies:
+ MdePkg/MdePkg.dec
+ Additional dependencies for MODULE_TYPE HOST_APPLICATION:
+ UnitTestFrameworkPkg/UnitTestFrameworkPkg.dec
+ Additional dependencies for MODULE_TYPE UEFI_APPLICATION:
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.MdePkg.EccCheck" name="Check for efi coding style for Edk2CiBuild.Edk2.MdePkg" time="0.10249471664428711"><system-out></system-out><system-err></system-err></testcase></testsuite><testsuite id="6" name="MdeModulePkg" package="Edk2CiBuild.Edk2.MdeModulePkg" errors="0" tests="12" failures="0" skipped="1"><testcase classname="Edk2CiBuild.Edk2.MdeModulePkg.LicenseCheck" name="Check for license for Edk2CiBuild.Edk2.MdeModulePkg" time="0.006382942199707031"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.MdeModulePkg.LibraryClassCheck" name="Check library class declarations in Edk2CiBuild.Edk2.MdeModulePkg" time="0.00808095932006836"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.MdeModulePkg.GuidCheck" name="Confirm GUIDs are unique in Edk2CiBuild.Edk2.MdeModulePkg" time="1.7002747058868408"><system-out>Ignoring Guid 00000000-0000-0000-0000-000000000000
+ GuidCheck.IgnoreDuplicates -&gt; gEfiPeiMmAccessPpiGuid=gPeiSmmAccessPpiGuid
+ GuidCheck.IgnoreDuplicates -&gt; gPeiSmmControlPpiGuid=gEfiPeiMmControlPpiGuid
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.MdeModulePkg.HostUnitTestDscCompleteCheck" name="Check the Edk2CiBuild.Edk2.MdeModulePkg Host Unit Test DSC for a being complete" time="0.0974569320678711"><system-out>Ignoring INF
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Core/DxeIplPeim/DxeIpl.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Core/RuntimeDxe/RuntimeDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Core/PiSmmCore/PiSmmCore.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Core/PiSmmCore/PiSmmIpl.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Core/Pei/PeiMain.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Core/Dxe/DxeMain.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Application/BootManagerMenuApp/BootManagerMenuApp.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Application/HelloWorld/HelloWorld.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Application/UiApp/UiApp.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Application/SmiHandlerProfileInfo/SmiHandlerProfileInfo.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Application/VariableInfo/VariableInfo.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Application/DumpDynPcd/DumpDynPcd.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Application/CapsuleApp/CapsuleApp.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/FaultTolerantWriteDxe/FaultTolerantWriteSmm.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/FaultTolerantWriteDxe/FaultTolerantWriteStandaloneMm.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/FaultTolerantWriteDxe/FaultTolerantWriteDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/FaultTolerantWriteDxe/FaultTolerantWriteSmmDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/TimestampDxe/TimestampDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/FvSimpleFileSystemDxe/FvSimpleFileSystemDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/PlatformDriOverrideDxe/PlatformDriOverrideDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/FaultTolerantWritePei/FaultTolerantWritePei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/SerialDxe/SerialDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/SmbiosMeasurementDxe/SmbiosMeasurementDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Metronome/Metronome.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/PrintDxe/PrintDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/CapsuleOnDiskLoadPei/CapsuleOnDiskLoadPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/PCD/Pei/Pcd.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/PCD/Dxe/Pcd.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/EbcDxe/EbcDebugger.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/EbcDxe/EbcDebuggerConfig.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/EbcDxe/EbcDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/BootManagerPolicyDxe/BootManagerPolicyDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/ReportStatusCodeRouter/RuntimeDxe/ReportStatusCodeRouterRuntimeDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/ReportStatusCodeRouter/Pei/ReportStatusCodeRouterPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/ReportStatusCodeRouter/Smm/ReportStatusCodeRouterSmm.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/ReportStatusCodeRouter/Smm/ReportStatusCodeRouterStandaloneMm.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/MonotonicCounterRuntimeDxe/MonotonicCounterRuntimeDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Disk/PartitionDxe/PartitionDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Disk/CdExpressPei/CdExpressPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Disk/UdfDxe/UdfDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/SmbiosDxe/SmbiosDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Console/ConPlatformDxe/ConPlatformDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Console/ConSplitterDxe/ConSplitterDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Console/TerminalDxe/TerminalDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Console/GraphicsOutputDxe/GraphicsOutputDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Console/GraphicsConsoleDxe/GraphicsConsoleDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/PcatSingleSegmentPciCfg2Pei/PcatSingleSegmentPciCfg2Pei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Acpi/FirmwarePerformanceDataTableSmm/FirmwarePerformanceStandaloneMm.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Acpi/FirmwarePerformanceDataTableSmm/FirmwarePerformanceSmm.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Acpi/AcpiPlatformDxe/AcpiPlatformDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Acpi/BootGraphicsResourceTableDxe/BootGraphicsResourceTableDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Acpi/S3SaveStateDxe/S3SaveStateDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Acpi/BootScriptExecutorDxe/BootScriptExecutorDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Acpi/SmmS3SaveState/SmmS3SaveState.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Acpi/FirmwarePerformanceDataTableDxe/FirmwarePerformanceDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Acpi/FirmwarePerformanceDataTablePei/FirmwarePerformancePei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/ResetSystemPei/ResetSystemPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/SectionExtractionPei/SectionExtractionPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/LockBox/SmmLockBox/SmmLockBox.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/EsrtFmpDxe/EsrtFmpDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/EsrtDxe/EsrtDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/DriverSampleDxe/DriverSampleDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/MemoryTest/NullMemoryTestDxe/NullMemoryTestDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/MemoryTest/GenericMemoryTestDxe/GenericMemoryTestDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/DebugPortDxe/DebugPortDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/DevicePathDxe/DevicePathDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Variable/RuntimeDxe/VariableStandaloneMm.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmm.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Variable/RuntimeDxe/VariableSmmRuntimeDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/Variable/Pei/VariablePei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/DisplayEngineDxe/DisplayEngineDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/SectionExtractionDxe/SectionExtractionDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/LegacyRegion2Dxe/LegacyRegion2Dxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/SmmCommunicationBufferDxe/SmmCommunicationBufferDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/FileExplorerDxe/FileExplorerDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/LoadFileOnFv2/LoadFileOnFv2.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/CapsulePei/CapsulePei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/CapsulePei/CapsuleX64.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/DebugServicePei/DebugServicePei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/WatchdogTimerDxe/WatchdogTimer.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/CapsuleRuntimeDxe/CapsuleRuntimeDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/ResetSystemRuntimeDxe/ResetSystemRuntimeDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/HiiResourcesSampleDxe/HiiResourcesSampleDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/StatusCodeHandler/RuntimeDxe/StatusCodeHandlerRuntimeDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/StatusCodeHandler/Pei/StatusCodeHandlerPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerStandaloneMm.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/StatusCodeHandler/Smm/StatusCodeHandlerSmm.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Ufs/UfsPassThruDxe/UfsPassThruDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Ufs/UfsBlockIoPei/UfsBlockIoPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/I2c/I2cDxe/I2cBusDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/I2c/I2cDxe/I2cDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/I2c/I2cDxe/I2cHostDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Usb/UsbBotPei/UsbBotPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Usb/UsbMouseAbsolutePointerDxe/UsbMouseAbsolutePointerDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Usb/UsbBusPei/UsbBusPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Usb/UsbBusDxe/UsbBusDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Usb/UsbKbDxe/UsbKbDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Usb/UsbMouseDxe/UsbMouseDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Isa/Ps2MouseDxe/Ps2MouseDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Isa/IsaBusDxe/IsaBusDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Isa/Ps2KeyboardDxe/Ps2KeyboardDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Pci/IncompatiblePciDeviceSupportDxe/IncompatiblePciDeviceSupportDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Pci/EhciDxe/EhciDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Pci/UfsPciHcDxe/UfsPciHcDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Pci/UfsPciHcPei/UfsPciHcPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Pci/XhciPei/XhciPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Pci/EhciPei/EhciPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Pci/UhciPei/UhciPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Pci/XhciDxe/XhciDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Pci/UhciDxe/UhciDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Pci/IdeBusPei/IdeBusPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Pci/SdMmcPciHcPei/SdMmcPciHcPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Pci/NvmExpressPei/NvmExpressPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Pci/PciSioSerialDxe/PciSioSerialDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Pci/NonDiscoverablePciDeviceDxe/NonDiscoverablePciDeviceDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Pci/PciHostBridgeDxe/PciHostBridgeDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Pci/SataControllerDxe/SataControllerDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Sd/EmmcBlockIoPei/EmmcBlockIoPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Sd/SdDxe/SdDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Sd/SdBlockIoPei/SdBlockIoPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Sd/EmmcDxe/EmmcDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Ata/AhciPei/AhciPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Ata/AtaAtapiPassThru/AtaAtapiPassThru.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Scsi/ScsiDiskDxe/ScsiDiskDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Bus/Scsi/ScsiBusDxe/ScsiBusDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/DxeDebugPrintErrorLevelLib/DxeDebugPrintErrorLevelLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/SmmMemoryAllocationProfileLib/SmmMemoryAllocationProfileLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/DxeCapsuleLibFmp/DxeCapsuleLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/DxeCapsuleLibFmp/DxeRuntimeCapsuleLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/VarCheckLib/VarCheckLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/PlatformBootManagerLibNull/PlatformBootManagerLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/DxeResetSystemLib/DxeResetSystemLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/VarCheckPcdLib/VarCheckPcdLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/BootLogoLib/BootLogoLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/PlatformHookLibSerialPortPpi/PlatformHookLibSerialPortPpi.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/SmmLockBoxLib/SmmLockBoxStandaloneMmLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/SmmLockBoxLib/SmmLockBoxPeiLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/SmmLockBoxLib/SmmLockBoxDxeLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/SmmLockBoxLib/SmmLockBoxSmmLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/DxeCoreMemoryAllocationLib/DxeCoreMemoryAllocationLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/DxeCoreMemoryAllocationLib/DxeCoreMemoryAllocationProfileLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/DxeSecurityManagementLib/DxeSecurityManagementLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/PeiDxeDebugLibReportStatusCode/PeiDxeDebugLibReportStatusCode.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/PeiReportStatusCodeLib/PeiReportStatusCodeLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/UefiHiiLib/UefiHiiLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/DeviceManagerUiLib/DeviceManagerUiLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/VarCheckUefiLib/VarCheckUefiLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/UefiMemoryAllocationProfileLib/UefiMemoryAllocationProfileLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/BaseSortLib/BaseSortLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/BootDiscoveryPolicyUiLib/BootDiscoveryPolicyUiLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/BaseResetSystemLibNull/BaseResetSystemLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/OemHookStatusCodeLibNull/OemHookStatusCodeLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/BaseBmpSupportLib/BaseBmpSupportLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/SmmIpmiLibSmmIpmiProtocol/SmmIpmiLibSmmIpmiProtocol.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/DebugAgentLibNull/DebugAgentLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/BaseHobLibNull/BaseHobLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/VariablePolicyHelperLib/VariablePolicyHelperLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/SmmCorePlatformHookLibNull/SmmCorePlatformHookLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/CustomizedDisplayLib/CustomizedDisplayLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/SmmPerformanceLib/SmmPerformanceLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/UefiBootManagerLib/UefiBootManagerLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/RuntimeResetSystemLib/RuntimeResetSystemLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/PiSmmCoreSmmServicesTableLib/PiSmmCoreSmmServicesTableLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/PeiResetSystemLib/PeiResetSystemLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/ResetUtilityLib/ResetUtilityLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/RuntimeDxeReportStatusCodeLib/RuntimeDxeReportStatusCodeLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/VarCheckPolicyLib/VarCheckPolicyLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/VarCheckPolicyLib/VarCheckPolicyLibStandaloneMm.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/FrameBufferBltLib/FrameBufferBltLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/PciHostBridgeLibNull/PciHostBridgeLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/BasePlatformHookLibNull/BasePlatformHookLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/SmmReportStatusCodeLib/StandaloneMmReportStatusCodeLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/SmmReportStatusCodeLib/SmmReportStatusCodeLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/NonDiscoverableDeviceRegistrationLib/NonDiscoverableDeviceRegistrationLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/BootMaintenanceManagerUiLib/BootMaintenanceManagerUiLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/TpmMeasurementLibNull/TpmMeasurementLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/FmpAuthenticationLibNull/FmpAuthenticationLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/DisplayUpdateProgressLibText/DisplayUpdateProgressLibText.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/AuthVariableLibNull/AuthVariableLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/DisplayUpdateProgressLibGraphics/DisplayUpdateProgressLibGraphics.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/PeiCrc32GuidedSectionExtractLib/PeiCrc32GuidedSectionExtractLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/BaseIpmiLibNull/BaseIpmiLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/UefiSortLib/UefiSortLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/BaseMemoryAllocationLibNull/BaseMemoryAllocationLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/SmmCorePerformanceLib/SmmCorePerformanceLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/PlatformVarCleanupLib/PlatformVarCleanupLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/PeiPerformanceLib/PeiPerformanceLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/VarCheckHiiLib/VarCheckHiiLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/DxePrintLibPrint2Protocol/DxePrintLibPrint2Protocol.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/DxeReportStatusCodeLib/DxeReportStatusCodeLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/BaseSerialPortLib16550/BaseSerialPortLib16550.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/PiDxeS3BootScriptLib/DxeS3BootScriptLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLibRuntimeDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/DxeFileExplorerProtocol/DxeFileExplorerProtocol.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/DxeCapsuleLibNull/DxeCapsuleLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/DxeCorePerformanceLib/DxeCorePerformanceLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/BrotliCustomDecompressLib/BrotliCustomDecompressLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/PiSmmCoreMemoryAllocationLib/PiSmmCoreMemoryAllocationProfileLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/PiSmmCoreMemoryAllocationLib/PiSmmCoreMemoryAllocationLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/DxeIpmiLibIpmiProtocol/DxeIpmiLibIpmiProtocol.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/FileExplorerLib/FileExplorerLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/CpuExceptionHandlerLibNull/CpuExceptionHandlerLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/PeiDebugPrintHobLib/PeiDebugPrintHobLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/DxePerformanceLib/DxePerformanceLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/PeiDebugLibDebugPpi/PeiDebugLibDebugPpi.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/LzmaCustomDecompressLib/LzmaArchCustomDecompressLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/LzmaCustomDecompressLib/LzmaCustomDecompressLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/LockBoxNullLib/LockBoxNullLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/SmmSmiHandlerProfileLib/StandaloneMmSmiHandlerProfileLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/SmmSmiHandlerProfileLib/SmmSmiHandlerProfileLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/DxeCrc32GuidedSectionExtractLib/DxeCrc32GuidedSectionExtractLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Library/PeiIpmiLibIpmiPpi/PeiIpmiLibIpmiPpi.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Logo/LogoDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION MdeModulePkg/Logo/Logo.inf
+ </system-out><system-err>HostUnitTestDscCompleteCheck.IgnoreInf -&gt;  not found in filesystem.  Invalid ignore file
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.MdeModulePkg.HostUnitTestCompiler.X64" name="Compile and Run Host-Based UnitTests for Edk2CiBuild.Edk2.MdeModulePkg on arch X64" time="1.5998427867889404"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.MdeModulePkg.SpellCheck" name="Spell check files in Edk2CiBuild.Edk2.MdeModulePkg" time="0.016324520111083984"><skipped type="skipped">Node version: v12.21.0
+ </skipped><system-out>Node version: v12.21.0
+ </system-out><system-err>cspell not installed.  Test can't run
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.MdeModulePkg.CharEncodingCheck" name="Check for valid file encoding for Edk2CiBuild.Edk2.MdeModulePkg" time="0.2646918296813965"><system-out>Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c
+ Ignoring File MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c
+ Tested Encoding on 1857 files
+ </system-out><system-err>CharEncodingCheck.IgnoreInf -&gt; MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c not found in filesystem.  Invalid ignore file
+ CharEncodingCheck.IgnoreInf -&gt; MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c not found in filesystem.  Invalid ignore file
+ CharEncodingCheck.IgnoreInf -&gt; MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c not found in filesystem.  Invalid ignore file
+ CharEncodingCheck.IgnoreInf -&gt; MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c not found in filesystem.  Invalid ignore file
+ CharEncodingCheck.IgnoreInf -&gt; MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c not found in filesystem.  Invalid ignore file
+ CharEncodingCheck.IgnoreInf -&gt; MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c not found in filesystem.  Invalid ignore file
+ CharEncodingCheck.IgnoreInf -&gt; MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c not found in filesystem.  Invalid ignore file
+ CharEncodingCheck.IgnoreInf -&gt; MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c not found in filesystem.  Invalid ignore file
+ CharEncodingCheck.IgnoreInf -&gt; MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c not found in filesystem.  Invalid ignore file
+ CharEncodingCheck.IgnoreInf -&gt; MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c not found in filesystem.  Invalid ignore file
+ CharEncodingCheck.IgnoreInf -&gt; MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c not found in filesystem.  Invalid ignore file
+ CharEncodingCheck.IgnoreInf -&gt; MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c not found in filesystem.  Invalid ignore file
+ CharEncodingCheck.IgnoreInf -&gt; MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c not found in filesystem.  Invalid ignore file
+ CharEncodingCheck.IgnoreInf -&gt; MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c not found in filesystem.  Invalid ignore file
+ CharEncodingCheck.IgnoreInf -&gt; MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c not found in filesystem.  Invalid ignore file
+ CharEncodingCheck.IgnoreInf -&gt; MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c not found in filesystem.  Invalid ignore file
+ CharEncodingCheck.IgnoreInf -&gt; MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c not found in filesystem.  Invalid ignore file
+ CharEncodingCheck.IgnoreInf -&gt; MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c not found in filesystem.  Invalid ignore file
+ CharEncodingCheck.IgnoreInf -&gt; MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c not found in filesystem.  Invalid ignore file
+ CharEncodingCheck.IgnoreInf -&gt; MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c not found in filesystem.  Invalid ignore file
+ CharEncodingCheck.IgnoreInf -&gt; MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c not found in filesystem.  Invalid ignore file
+ CharEncodingCheck.IgnoreInf -&gt; MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c not found in filesystem.  Invalid ignore file
+ CharEncodingCheck.IgnoreInf -&gt; MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/test/testc.c not found in filesystem.  Invalid ignore file
+ CharEncodingCheck.IgnoreInf -&gt; MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/windows/testc.c not found in filesystem.  Invalid ignore file
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.MdeModulePkg.Compiler.DEBUG" name="Compile Edk2CiBuild.Edk2.MdeModulePkg DEBUG" time="10.922452688217163"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.MdeModulePkg.Compiler.RELEASE" name="Compile Edk2CiBuild.Edk2.MdeModulePkg RELEASE" time="11.313517570495605"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.MdeModulePkg.DscCompleteCheck" name="Check the Edk2CiBuild.Edk2.MdeModulePkg DSC for a being complete" time="0.04259204864501953"><system-out>Ignoring INF.  Module type is HOST_APPLICATION MdeModulePkg/Universal/Variable/RuntimeDxe/RuntimeDxeUnitTest/VariableLockRequestToLockUnitTest.inf
+ Ignoring Library INF due to only supporting type HOST_APPLICATION MdeModulePkg/Library/DxeResetSystemLib/UnitTest/MockUefiRuntimeServicesTableLib.inf
+ Ignoring INF.  Module type is HOST_APPLICATION MdeModulePkg/Library/DxeResetSystemLib/UnitTest/DxeResetSystemLibUnitTestHost.inf
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.MdeModulePkg.DependencyCheck" name="Test Package Dependencies for modules in Edk2CiBuild.Edk2.MdeModulePkg" time="0.09759140014648438"><system-out>Acceptable Dependencies:
+ MdePkg/MdePkg.dec
+MdeModulePkg/MdeModulePkg.dec
+StandaloneMmPkg/StandaloneMmPkg.dec
+ArmPkg/ArmPkg.dec
+ Additional dependencies for MODULE_TYPE HOST_APPLICATION:
+ UnitTestFrameworkPkg/UnitTestFrameworkPkg.dec
+ Additional dependencies for MODULE_TYPE UEFI_APPLICATION:
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.MdeModulePkg.EccCheck" name="Check for efi coding style for Edk2CiBuild.Edk2.MdeModulePkg" time="0.25443410873413086"><system-out></system-out><system-err></system-err></testcase></testsuite><testsuite id="7" name="NetworkPkg" package="Edk2CiBuild.Edk2.NetworkPkg" errors="0" tests="12" failures="0" skipped="3"><testcase classname="Edk2CiBuild.Edk2.NetworkPkg.LicenseCheck" name="Check for license for Edk2CiBuild.Edk2.NetworkPkg" time="0.0025780200958251953"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.NetworkPkg.LibraryClassCheck" name="Check library class declarations in Edk2CiBuild.Edk2.NetworkPkg" time="0.0013320446014404297"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.NetworkPkg.GuidCheck" name="Confirm GUIDs are unique in Edk2CiBuild.Edk2.NetworkPkg" time="1.6895439624786377"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.NetworkPkg.HostUnitTestDscCompleteCheck" name="Check the Edk2CiBuild.Edk2.NetworkPkg Host Unit Test DSC for a being complete" time="2.8133392333984375e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>DscPath not found in config file.  Nothing to check.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.NetworkPkg.HostUnitTestCompiler.X64" name="Compile and Run Host-Based UnitTests for Edk2CiBuild.Edk2.NetworkPkg on arch X64" time="5.2928924560546875e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>DscPath not found in config file.  Nothing to compile for HostBasedUnitTests.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.NetworkPkg.SpellCheck" name="Spell check files in Edk2CiBuild.Edk2.NetworkPkg" time="0.016219615936279297"><skipped type="skipped">Node version: v12.21.0
+ </skipped><system-out>Node version: v12.21.0
+ </system-out><system-err>cspell not installed.  Test can't run
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.NetworkPkg.CharEncodingCheck" name="Check for valid file encoding for Edk2CiBuild.Edk2.NetworkPkg" time="0.05013322830200195"><system-out>Tested Encoding on 397 files
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.NetworkPkg.Compiler.DEBUG" name="Compile Edk2CiBuild.Edk2.NetworkPkg DEBUG" time="2.6856634616851807"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.NetworkPkg.Compiler.RELEASE" name="Compile Edk2CiBuild.Edk2.NetworkPkg RELEASE" time="2.579819679260254"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.NetworkPkg.DscCompleteCheck" name="Check the Edk2CiBuild.Edk2.NetworkPkg DSC for a being complete" time="0.015379667282104492"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.NetworkPkg.DependencyCheck" name="Test Package Dependencies for modules in Edk2CiBuild.Edk2.NetworkPkg" time="0.012725591659545898"><system-out>Acceptable Dependencies:
+ MdePkg/MdePkg.dec
+MdeModulePkg/MdeModulePkg.dec
+NetworkPkg/NetworkPkg.dec
+CryptoPkg/CryptoPkg.dec
+ Additional dependencies for MODULE_TYPE HOST_APPLICATION:
+ Additional dependencies for MODULE_TYPE UEFI_APPLICATION:
+ ShellPkg/ShellPkg.dec
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.NetworkPkg.EccCheck" name="Check for efi coding style for Edk2CiBuild.Edk2.NetworkPkg" time="0.10115766525268555"><system-out></system-out><system-err></system-err></testcase></testsuite><testsuite id="8" name="PcAtChipsetPkg" package="Edk2CiBuild.Edk2.PcAtChipsetPkg" errors="0" tests="12" failures="0" skipped="3"><testcase classname="Edk2CiBuild.Edk2.PcAtChipsetPkg.LicenseCheck" name="Check for license for Edk2CiBuild.Edk2.PcAtChipsetPkg" time="0.0029702186584472656"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.PcAtChipsetPkg.LibraryClassCheck" name="Check library class declarations in Edk2CiBuild.Edk2.PcAtChipsetPkg" time="0.0005729198455810547"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.PcAtChipsetPkg.GuidCheck" name="Confirm GUIDs are unique in Edk2CiBuild.Edk2.PcAtChipsetPkg" time="1.6862258911132812"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.PcAtChipsetPkg.HostUnitTestDscCompleteCheck" name="Check the Edk2CiBuild.Edk2.PcAtChipsetPkg Host Unit Test DSC for a being complete" time="2.8133392333984375e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>DscPath not found in config file.  Nothing to check.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.PcAtChipsetPkg.HostUnitTestCompiler.X64" name="Compile and Run Host-Based UnitTests for Edk2CiBuild.Edk2.PcAtChipsetPkg on arch X64" time="5.221366882324219e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>DscPath not found in config file.  Nothing to compile for HostBasedUnitTests.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.PcAtChipsetPkg.SpellCheck" name="Spell check files in Edk2CiBuild.Edk2.PcAtChipsetPkg" time="0.016689538955688477"><skipped type="skipped">Node version: v12.21.0
+ </skipped><system-out>Node version: v12.21.0
+ </system-out><system-err>cspell not installed.  Test can't run
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.PcAtChipsetPkg.CharEncodingCheck" name="Check for valid file encoding for Edk2CiBuild.Edk2.PcAtChipsetPkg" time="0.007512569427490234"><system-out>Tested Encoding on 47 files
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.PcAtChipsetPkg.Compiler.DEBUG" name="Compile Edk2CiBuild.Edk2.PcAtChipsetPkg DEBUG" time="1.3629741668701172"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.PcAtChipsetPkg.Compiler.RELEASE" name="Compile Edk2CiBuild.Edk2.PcAtChipsetPkg RELEASE" time="1.3606479167938232"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.PcAtChipsetPkg.DscCompleteCheck" name="Check the Edk2CiBuild.Edk2.PcAtChipsetPkg DSC for a being complete" time="0.0035135746002197266"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.PcAtChipsetPkg.DependencyCheck" name="Test Package Dependencies for modules in Edk2CiBuild.Edk2.PcAtChipsetPkg" time="0.00409698486328125"><system-out>Acceptable Dependencies:
+ MdePkg/MdePkg.dec
+PcAtChipsetPkg/PcAtChipsetPkg.dec
+UefiCpuPkg/UefiCpuPkg.dec
+ Additional dependencies for MODULE_TYPE HOST_APPLICATION:
+ Additional dependencies for MODULE_TYPE UEFI_APPLICATION:
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.PcAtChipsetPkg.EccCheck" name="Check for efi coding style for Edk2CiBuild.Edk2.PcAtChipsetPkg" time="0.10042500495910645"><system-out></system-out><system-err></system-err></testcase></testsuite><testsuite id="9" name="SecurityPkg" package="Edk2CiBuild.Edk2.SecurityPkg" errors="0" tests="12" failures="0" skipped="3"><testcase classname="Edk2CiBuild.Edk2.SecurityPkg.LicenseCheck" name="Check for license for Edk2CiBuild.Edk2.SecurityPkg" time="0.003215312957763672"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.SecurityPkg.LibraryClassCheck" name="Check library class declarations in Edk2CiBuild.Edk2.SecurityPkg" time="0.002300262451171875"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.SecurityPkg.GuidCheck" name="Confirm GUIDs are unique in Edk2CiBuild.Edk2.SecurityPkg" time="1.6858794689178467"><system-out>Ignoring Guid 00000000-0000-0000-0000-000000000000
+ GuidCheck.IgnoreDuplicates -&gt; Tpm2InstanceLibDTpm=gEfiTpmDeviceInstanceTpm20DtpmGuid
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.SecurityPkg.HostUnitTestDscCompleteCheck" name="Check the Edk2CiBuild.Edk2.SecurityPkg Host Unit Test DSC for a being complete" time="2.86102294921875e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>DscPath not found in config file.  Nothing to check.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.SecurityPkg.HostUnitTestCompiler.X64" name="Compile and Run Host-Based UnitTests for Edk2CiBuild.Edk2.SecurityPkg on arch X64" time="5.221366882324219e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>DscPath not found in config file.  Nothing to compile for HostBasedUnitTests.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.SecurityPkg.SpellCheck" name="Spell check files in Edk2CiBuild.Edk2.SecurityPkg" time="0.016084671020507812"><skipped type="skipped">Node version: v12.21.0
+ </skipped><system-out>Node version: v12.21.0
+ </system-out><system-err>cspell not installed.  Test can't run
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.SecurityPkg.CharEncodingCheck" name="Check for valid file encoding for Edk2CiBuild.Edk2.SecurityPkg" time="0.04975104331970215"><system-out>Tested Encoding on 344 files
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.SecurityPkg.Compiler.DEBUG" name="Compile Edk2CiBuild.Edk2.SecurityPkg DEBUG" time="3.567819356918335"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.SecurityPkg.Compiler.RELEASE" name="Compile Edk2CiBuild.Edk2.SecurityPkg RELEASE" time="3.5568625926971436"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.SecurityPkg.DscCompleteCheck" name="Check the Edk2CiBuild.Edk2.SecurityPkg DSC for a being complete" time="0.016963720321655273"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.SecurityPkg.DependencyCheck" name="Test Package Dependencies for modules in Edk2CiBuild.Edk2.SecurityPkg" time="0.02770376205444336"><system-out>Acceptable Dependencies:
+ MdePkg/MdePkg.dec
+MdeModulePkg/MdeModulePkg.dec
+SecurityPkg/SecurityPkg.dec
+StandaloneMmPkg/StandaloneMmPkg.dec
+CryptoPkg/CryptoPkg.dec
+ Additional dependencies for MODULE_TYPE HOST_APPLICATION:
+ Additional dependencies for MODULE_TYPE UEFI_APPLICATION:
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.SecurityPkg.EccCheck" name="Check for efi coding style for Edk2CiBuild.Edk2.SecurityPkg" time="0.10007452964782715"><system-out></system-out><system-err></system-err></testcase></testsuite><testsuite id="10" name="UefiCpuPkg" package="Edk2CiBuild.Edk2.UefiCpuPkg" errors="0" tests="12" failures="0" skipped="1"><testcase classname="Edk2CiBuild.Edk2.UefiCpuPkg.LicenseCheck" name="Check for license for Edk2CiBuild.Edk2.UefiCpuPkg" time="0.0027344226837158203"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.UefiCpuPkg.LibraryClassCheck" name="Check library class declarations in Edk2CiBuild.Edk2.UefiCpuPkg" time="0.0015270709991455078"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.UefiCpuPkg.GuidCheck" name="Confirm GUIDs are unique in Edk2CiBuild.Edk2.UefiCpuPkg" time="1.672532320022583"><system-out>Ignoring Guid SecCore
+ Ignoring Guid ResetVector
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.UefiCpuPkg.HostUnitTestDscCompleteCheck" name="Check the Edk2CiBuild.Edk2.UefiCpuPkg Host Unit Test DSC for a being complete" time="0.02502894401550293"><system-out>Ignoring INF
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Application/Cpuid/Cpuid.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Universal/Acpi/S3Resume2Pei/S3Resume2Pei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/CpuMpPei/CpuMpPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/CpuIo2Smm/CpuIo2StandaloneMm.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/CpuIo2Smm/CpuIo2Smm.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/PiSmmCommunication/PiSmmCommunicationSmm.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/PiSmmCommunication/PiSmmCommunicationPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/PiSmmCpuDxeSmm/PiSmmCpuDxeSmm.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/CpuIo2Dxe/CpuIo2Dxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/SecCore/SecCore.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/CpuDxe/CpuDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/CpuS3DataDxe/CpuS3DataDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/SecMigrationPei/SecMigrationPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/CpuFeatures/CpuFeaturesPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/CpuFeatures/CpuFeaturesDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/ResetVector/FixupVtf/Vtf.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/ResetVector/Vtf0/Vtf0.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/ResetVector/Vtf0/Bin/ResetVector.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/CpuIoPei/CpuIoPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/SmmCpuPlatformHookLibNull/SmmCpuPlatformHookLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/MpInitLibUp/MpInitLibUp.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/VmgExitLibNull/VmgExitLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/RegisterCpuFeaturesLib/DxeRegisterCpuFeaturesLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/RegisterCpuFeaturesLib/PeiRegisterCpuFeaturesLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/BaseUefiCpuLib/BaseUefiCpuLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/MpInitLib/DxeMpInitLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/MpInitLib/PeiMpInitLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/MtrrLib/MtrrLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/BaseXApicX2ApicLib/BaseXApicX2ApicLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/BaseXApicLib/BaseXApicLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/CpuCommonFeaturesLib/CpuCommonFeaturesLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/PlatformSecLibNull/PlatformSecLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/MicrocodeLib/MicrocodeLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/CpuCacheInfoLib/PeiCpuCacheInfoLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/CpuCacheInfoLib/DxeCpuCacheInfoLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/CpuExceptionHandlerLib/SmmCpuExceptionHandlerLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/CpuExceptionHandlerLib/DxeCpuExceptionHandlerLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/CpuExceptionHandlerLib/SecPeiCpuExceptionHandlerLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/CpuExceptionHandlerLib/Xcode5SecPeiCpuExceptionHandlerLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/CpuTimerLib/BaseCpuTimerLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/SmmCpuFeaturesLib/StandaloneMmCpuFeaturesLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/SmmCpuFeaturesLib/SmmCpuFeaturesLibStm.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/SmmCpuFeaturesLib/SmmCpuFeaturesLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UefiCpuPkg/Library/SecPeiDxeTimerLibUefiCpu/SecPeiDxeTimerLibUefiCpu.inf
+ </system-out><system-err>HostUnitTestDscCompleteCheck.IgnoreInf -&gt;  not found in filesystem.  Invalid ignore file
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.UefiCpuPkg.HostUnitTestCompiler.X64" name="Compile and Run Host-Based UnitTests for Edk2CiBuild.Edk2.UefiCpuPkg on arch X64" time="2.4955034255981445"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.UefiCpuPkg.SpellCheck" name="Spell check files in Edk2CiBuild.Edk2.UefiCpuPkg" time="0.01929473876953125"><skipped type="skipped">Node version: v12.21.0
+ </skipped><system-out>Node version: v12.21.0
+ </system-out><system-err>cspell not installed.  Test can't run
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.UefiCpuPkg.CharEncodingCheck" name="Check for valid file encoding for Edk2CiBuild.Edk2.UefiCpuPkg" time="0.04379153251647949"><system-out>Tested Encoding on 303 files
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.UefiCpuPkg.Compiler.DEBUG" name="Compile Edk2CiBuild.Edk2.UefiCpuPkg DEBUG" time="2.7600882053375244"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.UefiCpuPkg.Compiler.RELEASE" name="Compile Edk2CiBuild.Edk2.UefiCpuPkg RELEASE" time="8.628663301467896"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.UefiCpuPkg.DscCompleteCheck" name="Check the Edk2CiBuild.Edk2.UefiCpuPkg DSC for a being complete" time="0.012001752853393555"><system-out>Ignoring INF UefiCpuPkg/ResetVector/FixupVtf/Vtf.inf
+ Ignoring INF UefiCpuPkg/ResetVector/Vtf0/Vtf0.inf
+ Ignoring INF.  Module type is HOST_APPLICATION UefiCpuPkg/Library/MtrrLib/UnitTest/MtrrLibUnitTestHost.inf
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.UefiCpuPkg.DependencyCheck" name="Test Package Dependencies for modules in Edk2CiBuild.Edk2.UefiCpuPkg" time="0.01881122589111328"><system-out>Acceptable Dependencies:
+ MdePkg/MdePkg.dec
+MdeModulePkg/MdeModulePkg.dec
+UefiCpuPkg/UefiCpuPkg.dec
+ Additional dependencies for MODULE_TYPE HOST_APPLICATION:
+ UnitTestFrameworkPkg/UnitTestFrameworkPkg.dec
+ Additional dependencies for MODULE_TYPE UEFI_APPLICATION:
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.UefiCpuPkg.EccCheck" name="Check for efi coding style for Edk2CiBuild.Edk2.UefiCpuPkg" time="0.10264277458190918"><system-out></system-out><system-err></system-err></testcase></testsuite><testsuite id="11" name="FmpDevicePkg" package="Edk2CiBuild.Edk2.FmpDevicePkg" errors="0" tests="12" failures="0" skipped="1"><testcase classname="Edk2CiBuild.Edk2.FmpDevicePkg.LicenseCheck" name="Check for license for Edk2CiBuild.Edk2.FmpDevicePkg" time="0.004140615463256836"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.FmpDevicePkg.LibraryClassCheck" name="Check library class declarations in Edk2CiBuild.Edk2.FmpDevicePkg" time="0.0009698867797851562"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.FmpDevicePkg.GuidCheck" name="Confirm GUIDs are unique in Edk2CiBuild.Edk2.FmpDevicePkg" time="1.7149553298950195"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.FmpDevicePkg.HostUnitTestDscCompleteCheck" name="Check the Edk2CiBuild.Edk2.FmpDevicePkg Host Unit Test DSC for a being complete" time="0.012192487716674805"><system-out>Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION FmpDevicePkg/CapsuleUpdatePolicyDxe/CapsuleUpdatePolicyDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION FmpDevicePkg/Test/UnitTest/Library/FmpDependencyLib/FmpDependencyLibUnitTestsUefi.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION FmpDevicePkg/FmpDxe/FmpDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION FmpDevicePkg/FmpDxe/FmpDxeLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION FmpDevicePkg/Library/FmpDeviceLibNull/FmpDeviceLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION FmpDevicePkg/Library/FmpDependencyCheckLibNull/FmpDependencyCheckLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION FmpDevicePkg/Library/FmpDependencyLib/FmpDependencyLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION FmpDevicePkg/Library/CapsuleUpdatePolicyLibNull/CapsuleUpdatePolicyLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION FmpDevicePkg/Library/FmpDependencyCheckLib/FmpDependencyCheckLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION FmpDevicePkg/Library/CapsuleUpdatePolicyLibOnProtocol/CapsuleUpdatePolicyLibOnProtocol.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION FmpDevicePkg/Library/FmpDependencyDeviceLibNull/FmpDependencyDeviceLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION FmpDevicePkg/Library/FmpPayloadHeaderLibV1/FmpPayloadHeaderLibV1.inf
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.FmpDevicePkg.HostUnitTestCompiler.X64" name="Compile and Run Host-Based UnitTests for Edk2CiBuild.Edk2.FmpDevicePkg on arch X64" time="2.2278072834014893"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.FmpDevicePkg.SpellCheck" name="Spell check files in Edk2CiBuild.Edk2.FmpDevicePkg" time="0.015667200088500977"><skipped type="skipped">Node version: v12.21.0
+ </skipped><system-out>Node version: v12.21.0
+ </system-out><system-err>cspell not installed.  Test can't run
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.FmpDevicePkg.CharEncodingCheck" name="Check for valid file encoding for Edk2CiBuild.Edk2.FmpDevicePkg" time="0.009360790252685547"><system-out>Tested Encoding on 55 files
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.FmpDevicePkg.Compiler.DEBUG" name="Compile Edk2CiBuild.Edk2.FmpDevicePkg DEBUG" time="5.65729022026062"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.FmpDevicePkg.Compiler.RELEASE" name="Compile Edk2CiBuild.Edk2.FmpDevicePkg RELEASE" time="5.674946069717407"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.FmpDevicePkg.DscCompleteCheck" name="Check the Edk2CiBuild.Edk2.FmpDevicePkg DSC for a being complete" time="0.008556604385375977"><system-out>Ignoring INF.  Module type is HOST_APPLICATION FmpDevicePkg/Test/UnitTest/Library/FmpDependencyLib/FmpDependencyLibUnitTestsHost.inf
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.FmpDevicePkg.DependencyCheck" name="Test Package Dependencies for modules in Edk2CiBuild.Edk2.FmpDevicePkg" time="0.005112409591674805"><system-out>Acceptable Dependencies:
+ MdePkg/MdePkg.dec
+MdeModulePkg/MdeModulePkg.dec
+FmpDevicePkg/FmpDevicePkg.dec
+CryptoPkg/CryptoPkg.dec
+ Additional dependencies for MODULE_TYPE HOST_APPLICATION:
+ UnitTestFrameworkPkg/UnitTestFrameworkPkg.dec
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.FmpDevicePkg.EccCheck" name="Check for efi coding style for Edk2CiBuild.Edk2.FmpDevicePkg" time="0.09952354431152344"><system-out></system-out><system-err></system-err></testcase></testsuite><testsuite id="12" name="ShellPkg" package="Edk2CiBuild.Edk2.ShellPkg" errors="0" tests="12" failures="0" skipped="3"><testcase classname="Edk2CiBuild.Edk2.ShellPkg.LicenseCheck" name="Check for license for Edk2CiBuild.Edk2.ShellPkg" time="0.003465890884399414"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ShellPkg.LibraryClassCheck" name="Check library class declarations in Edk2CiBuild.Edk2.ShellPkg" time="0.0010747909545898438"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ShellPkg.GuidCheck" name="Confirm GUIDs are unique in Edk2CiBuild.Edk2.ShellPkg" time="1.6714553833007812"><system-out>GuidCheck.IgnoreDuplicates -&gt; Shell=gUefiShellFileGuid
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ShellPkg.HostUnitTestDscCompleteCheck" name="Check the Edk2CiBuild.Edk2.ShellPkg Host Unit Test DSC for a being complete" time="2.9087066650390625e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>DscPath not found in config file.  Nothing to check.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ShellPkg.HostUnitTestCompiler.X64" name="Compile and Run Host-Based UnitTests for Edk2CiBuild.Edk2.ShellPkg on arch X64" time="5.245208740234375e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>DscPath not found in config file.  Nothing to compile for HostBasedUnitTests.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ShellPkg.SpellCheck" name="Spell check files in Edk2CiBuild.Edk2.ShellPkg" time="0.016814231872558594"><skipped type="skipped">Node version: v12.21.0
+ </skipped><system-out>Node version: v12.21.0
+ </system-out><system-err>cspell not installed.  Test can't run
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ShellPkg.CharEncodingCheck" name="Check for valid file encoding for Edk2CiBuild.Edk2.ShellPkg" time="0.03676414489746094"><system-out>Tested Encoding on 259 files
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ShellPkg.Compiler.DEBUG" name="Compile Edk2CiBuild.Edk2.ShellPkg DEBUG" time="16.143605947494507"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ShellPkg.Compiler.RELEASE" name="Compile Edk2CiBuild.Edk2.ShellPkg RELEASE" time="15.492526531219482"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ShellPkg.DscCompleteCheck" name="Check the Edk2CiBuild.Edk2.ShellPkg DSC for a being complete" time="0.008347511291503906"><system-out>Ignoring INF ShellPkg/Application/ShellCTestApp/ShellCTestApp.inf
+ Ignoring INF ShellPkg/Application/ShellExecTestApp/SA.inf
+ Ignoring INF ShellPkg/Application/ShellSortTestApp/ShellSortTestApp.inf
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ShellPkg.DependencyCheck" name="Test Package Dependencies for modules in Edk2CiBuild.Edk2.ShellPkg" time="0.011005640029907227"><system-out>Acceptable Dependencies:
+ MdePkg/MdePkg.dec
+MdeModulePkg/MdeModulePkg.dec
+ShellPkg/ShellPkg.dec
+NetworkPkg/NetworkPkg.dec
+ Additional dependencies for MODULE_TYPE HOST_APPLICATION:
+ Additional dependencies for MODULE_TYPE UEFI_APPLICATION:
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.ShellPkg.EccCheck" name="Check for efi coding style for Edk2CiBuild.Edk2.ShellPkg" time="0.10120105743408203"><system-out></system-out><system-err></system-err></testcase></testsuite><testsuite id="13" name="StandaloneMmPkg" package="Edk2CiBuild.Edk2.StandaloneMmPkg" errors="0" tests="12" failures="0" skipped="3"><testcase classname="Edk2CiBuild.Edk2.StandaloneMmPkg.LicenseCheck" name="Check for license for Edk2CiBuild.Edk2.StandaloneMmPkg" time="0.0032286643981933594"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.StandaloneMmPkg.LibraryClassCheck" name="Check library class declarations in Edk2CiBuild.Edk2.StandaloneMmPkg" time="0.0007450580596923828"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.StandaloneMmPkg.GuidCheck" name="Confirm GUIDs are unique in Edk2CiBuild.Edk2.StandaloneMmPkg" time="1.7032742500305176"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.StandaloneMmPkg.HostUnitTestDscCompleteCheck" name="Check the Edk2CiBuild.Edk2.StandaloneMmPkg Host Unit Test DSC for a being complete" time="0.00010180473327636719"><skipped type="skipped"></skipped><system-out></system-out><system-err>Package Host Unit Test Dsc not found
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.StandaloneMmPkg.HostUnitTestCompiler.X64" name="Compile and Run Host-Based UnitTests for Edk2CiBuild.Edk2.StandaloneMmPkg on arch X64" time="0.00011682510375976562"><skipped type="skipped"></skipped><system-out></system-out><system-err>Package HostBasedUnitTest Dsc not found.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.StandaloneMmPkg.SpellCheck" name="Spell check files in Edk2CiBuild.Edk2.StandaloneMmPkg" time="0.0172579288482666"><skipped type="skipped">Node version: v12.21.0
+ </skipped><system-out>Node version: v12.21.0
+ </system-out><system-err>cspell not installed.  Test can't run
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.StandaloneMmPkg.CharEncodingCheck" name="Check for valid file encoding for Edk2CiBuild.Edk2.StandaloneMmPkg" time="0.009784460067749023"><system-out>Tested Encoding on 56 files
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.StandaloneMmPkg.Compiler.DEBUG" name="Compile Edk2CiBuild.Edk2.StandaloneMmPkg DEBUG" time="5.070998907089233"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.StandaloneMmPkg.Compiler.RELEASE" name="Compile Edk2CiBuild.Edk2.StandaloneMmPkg RELEASE" time="5.094862461090088"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.StandaloneMmPkg.DscCompleteCheck" name="Check the Edk2CiBuild.Edk2.StandaloneMmPkg DSC for a being complete" time="0.004922628402709961"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.StandaloneMmPkg.DependencyCheck" name="Test Package Dependencies for modules in Edk2CiBuild.Edk2.StandaloneMmPkg" time="0.004531383514404297"><system-out>Acceptable Dependencies:
+ ArmPkg/ArmPkg.dec
+EmbeddedPkg/EmbeddedPkg.dec
+StandaloneMmPkg/StandaloneMmPkg.dec
+MdeModulePkg/MdeModulePkg.dec
+MdePkg/MdePkg.dec
+ Additional dependencies for MODULE_TYPE HOST_APPLICATION:
+ UnitTestFrameworkPkg/UnitTestFrameworkPkg.dec
+ Additional dependencies for MODULE_TYPE UEFI_APPLICATION:
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.StandaloneMmPkg.EccCheck" name="Check for efi coding style for Edk2CiBuild.Edk2.StandaloneMmPkg" time="0.09742307662963867"><system-out></system-out><system-err></system-err></testcase></testsuite><testsuite id="14" name="FatPkg" package="Edk2CiBuild.Edk2.FatPkg" errors="0" tests="12" failures="0" skipped="4"><testcase classname="Edk2CiBuild.Edk2.FatPkg.LicenseCheck" name="Check for license for Edk2CiBuild.Edk2.FatPkg" time="0.003292083740234375"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.FatPkg.LibraryClassCheck" name="Check library class declarations in Edk2CiBuild.Edk2.FatPkg" time="0.00026154518127441406"><skipped type="skipped"></skipped><system-out></system-out><system-err>No Library include folder in any Include path
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.FatPkg.GuidCheck" name="Confirm GUIDs are unique in Edk2CiBuild.Edk2.FatPkg" time="1.689967393875122"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.FatPkg.HostUnitTestDscCompleteCheck" name="Check the Edk2CiBuild.Edk2.FatPkg Host Unit Test DSC for a being complete" time="3.0040740966796875e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>DscPath not found in config file.  Nothing to check.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.FatPkg.HostUnitTestCompiler.X64" name="Compile and Run Host-Based UnitTests for Edk2CiBuild.Edk2.FatPkg on arch X64" time="5.221366882324219e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>DscPath not found in config file.  Nothing to compile for HostBasedUnitTests.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.FatPkg.SpellCheck" name="Spell check files in Edk2CiBuild.Edk2.FatPkg" time="0.0164487361907959"><skipped type="skipped">Node version: v12.21.0
+ </skipped><system-out>Node version: v12.21.0
+ </system-out><system-err>cspell not installed.  Test can't run
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.FatPkg.CharEncodingCheck" name="Check for valid file encoding for Edk2CiBuild.Edk2.FatPkg" time="0.005113363265991211"><system-out>Tested Encoding on 40 files
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.FatPkg.Compiler.DEBUG" name="Compile Edk2CiBuild.Edk2.FatPkg DEBUG" time="5.679653167724609"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.FatPkg.Compiler.RELEASE" name="Compile Edk2CiBuild.Edk2.FatPkg RELEASE" time="5.528577566146851"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.FatPkg.DscCompleteCheck" name="Check the Edk2CiBuild.Edk2.FatPkg DSC for a being complete" time="0.0027947425842285156"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.FatPkg.DependencyCheck" name="Test Package Dependencies for modules in Edk2CiBuild.Edk2.FatPkg" time="0.0009493827819824219"><system-out>Acceptable Dependencies:
+ MdePkg/MdePkg.dec
+MdeModulePkg/MdeModulePkg.dec
+ Additional dependencies for MODULE_TYPE HOST_APPLICATION:
+ Additional dependencies for MODULE_TYPE UEFI_APPLICATION:
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.FatPkg.EccCheck" name="Check for efi coding style for Edk2CiBuild.Edk2.FatPkg" time="0.10352683067321777"><system-out></system-out><system-err></system-err></testcase></testsuite><testsuite id="15" name="CryptoPkg" package="Edk2CiBuild.Edk2.CryptoPkg" errors="0" tests="12" failures="0" skipped="2"><testcase classname="Edk2CiBuild.Edk2.CryptoPkg.LicenseCheck" name="Check for license for Edk2CiBuild.Edk2.CryptoPkg" time="0.0033979415893554688"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.CryptoPkg.LibraryClassCheck" name="Check library class declarations in Edk2CiBuild.Edk2.CryptoPkg" time="0.000698089599609375"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.CryptoPkg.GuidCheck" name="Confirm GUIDs are unique in Edk2CiBuild.Edk2.CryptoPkg" time="1.6726889610290527"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.CryptoPkg.HostUnitTestDscCompleteCheck" name="Check the Edk2CiBuild.Edk2.CryptoPkg Host Unit Test DSC for a being complete" time="3.0040740966796875e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>DscPath not found in config file.  Nothing to check.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.CryptoPkg.HostUnitTestCompiler.X64" name="Compile and Run Host-Based UnitTests for Edk2CiBuild.Edk2.CryptoPkg on arch X64" time="24.260971307754517"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.CryptoPkg.SpellCheck" name="Spell check files in Edk2CiBuild.Edk2.CryptoPkg" time="0.0002620220184326172"><skipped type="skipped"></skipped><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.CryptoPkg.CharEncodingCheck" name="Check for valid file encoding for Edk2CiBuild.Edk2.CryptoPkg" time="0.36602067947387695"><system-out>Tested Encoding on 1446 files
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.CryptoPkg.Compiler.DEBUG" name="Compile Edk2CiBuild.Edk2.CryptoPkg DEBUG" time="23.147717714309692"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.CryptoPkg.Compiler.RELEASE" name="Compile Edk2CiBuild.Edk2.CryptoPkg RELEASE" time="23.260939836502075"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.CryptoPkg.DscCompleteCheck" name="Check the Edk2CiBuild.Edk2.CryptoPkg DSC for a being complete" time="0.029654741287231445"><system-out>Ignoring INF CryptoPkg/Library/OpensslLib/OpensslLibX64.inf
+ Ignoring INF CryptoPkg/Library/OpensslLib/OpensslLibX64Gcc.inf
+ Ignoring INF.  Module type is HOST_APPLICATION CryptoPkg/Test/UnitTest/Library/BaseCryptLib/TestBaseCryptLibHost.inf
+ Ignoring Library INF due to only supporting type HOST_APPLICATION CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib.inf
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.CryptoPkg.DependencyCheck" name="Test Package Dependencies for modules in Edk2CiBuild.Edk2.CryptoPkg" time="0.02628779411315918"><system-out>Acceptable Dependencies:
+ MdePkg/MdePkg.dec
+MdeModulePkg/MdeModulePkg.dec
+CryptoPkg/CryptoPkg.dec
+ Additional dependencies for MODULE_TYPE HOST_APPLICATION:
+ Additional dependencies for MODULE_TYPE UEFI_APPLICATION:
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.CryptoPkg.EccCheck" name="Check for efi coding style for Edk2CiBuild.Edk2.CryptoPkg" time="0.9939594268798828"><system-out></system-out><system-err></system-err></testcase></testsuite><testsuite id="16" name="UnitTestFrameworkPkg" package="Edk2CiBuild.Edk2.UnitTestFrameworkPkg" errors="0" tests="12" failures="0" skipped="1"><testcase classname="Edk2CiBuild.Edk2.UnitTestFrameworkPkg.LicenseCheck" name="Check for license for Edk2CiBuild.Edk2.UnitTestFrameworkPkg" time="0.004536628723144531"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.UnitTestFrameworkPkg.LibraryClassCheck" name="Check library class declarations in Edk2CiBuild.Edk2.UnitTestFrameworkPkg" time="0.0006921291351318359"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.UnitTestFrameworkPkg.GuidCheck" name="Confirm GUIDs are unique in Edk2CiBuild.Edk2.UnitTestFrameworkPkg" time="1.679271936416626"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.UnitTestFrameworkPkg.HostUnitTestDscCompleteCheck" name="Check the Edk2CiBuild.Edk2.UnitTestFrameworkPkg Host Unit Test DSC for a being complete" time="0.013196468353271484"><system-out>Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UnitTestFrameworkPkg/Test/UnitTest/Sample/SampleUnitTest/SampleUnitTestPei.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UnitTestFrameworkPkg/Test/UnitTest/Sample/SampleUnitTest/SampleUnitTestUefiShell.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UnitTestFrameworkPkg/Test/UnitTest/Sample/SampleUnitTest/SampleUnitTestSmm.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UnitTestFrameworkPkg/Test/UnitTest/Sample/SampleUnitTest/SampleUnitTestDxe.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UnitTestFrameworkPkg/Library/UnitTestPersistenceLibSimpleFileSystem/UnitTestPersistenceLibSimpleFileSystem.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UnitTestFrameworkPkg/Library/UnitTestLib/UnitTestLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UnitTestFrameworkPkg/Library/UnitTestDebugAssertLib/UnitTestDebugAssertLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UnitTestFrameworkPkg/Library/UnitTestBootLibNull/UnitTestBootLibNull.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UnitTestFrameworkPkg/Library/UnitTestResultReportLib/UnitTestResultReportLibDebugLib.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UnitTestFrameworkPkg/Library/UnitTestResultReportLib/UnitTestResultReportLibConOut.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UnitTestFrameworkPkg/Library/UnitTestBootLibUsbClass/UnitTestBootLibUsbClass.inf
+ Ignoring INF. MODULE_TYPE or suppored phases not HOST_APPLICATION UnitTestFrameworkPkg/Library/UnitTestPersistenceLibNull/UnitTestPersistenceLibNull.inf
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.UnitTestFrameworkPkg.HostUnitTestCompiler.X64" name="Compile and Run Host-Based UnitTests for Edk2CiBuild.Edk2.UnitTestFrameworkPkg on arch X64" time="2.2221648693084717"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.UnitTestFrameworkPkg.SpellCheck" name="Spell check files in Edk2CiBuild.Edk2.UnitTestFrameworkPkg" time="0.017851829528808594"><skipped type="skipped">Node version: v12.21.0
+ </skipped><system-out>Node version: v12.21.0
+ </system-out><system-err>cspell not installed.  Test can't run
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.UnitTestFrameworkPkg.CharEncodingCheck" name="Check for valid file encoding for Edk2CiBuild.Edk2.UnitTestFrameworkPkg" time="0.01906895637512207"><system-out>Tested Encoding on 110 files
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.UnitTestFrameworkPkg.Compiler.DEBUG" name="Compile Edk2CiBuild.Edk2.UnitTestFrameworkPkg DEBUG" time="4.684964179992676"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.UnitTestFrameworkPkg.Compiler.RELEASE" name="Compile Edk2CiBuild.Edk2.UnitTestFrameworkPkg RELEASE" time="4.561242341995239"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.UnitTestFrameworkPkg.DscCompleteCheck" name="Check the Edk2CiBuild.Edk2.UnitTestFrameworkPkg DSC for a being complete" time="0.006542682647705078"><system-out>Ignoring INF.  Module type is HOST_APPLICATION UnitTestFrameworkPkg/Test/UnitTest/Sample/SampleUnitTest/SampleUnitTestHost.inf
+ Ignoring Library INF due to only supporting type HOST_APPLICATION UnitTestFrameworkPkg/Library/CmockaLib/CmockaLib.inf
+ Ignoring Library INF due to only supporting type HOST_APPLICATION UnitTestFrameworkPkg/Library/UnitTestLib/UnitTestLibCmocka.inf
+ Ignoring Library INF due to only supporting type HOST_APPLICATION UnitTestFrameworkPkg/Library/Posix/DebugLibPosix/DebugLibPosix.inf
+ Ignoring Library INF due to only supporting type HOST_APPLICATION UnitTestFrameworkPkg/Library/Posix/MemoryAllocationLibPosix/MemoryAllocationLibPosix.inf
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.UnitTestFrameworkPkg.DependencyCheck" name="Test Package Dependencies for modules in Edk2CiBuild.Edk2.UnitTestFrameworkPkg" time="0.006652116775512695"><system-out>Acceptable Dependencies:
+ MdePkg/MdePkg.dec
+UnitTestFrameworkPkg/UnitTestFrameworkPkg.dec
+ Additional dependencies for MODULE_TYPE HOST_APPLICATION:
+ Additional dependencies for MODULE_TYPE UEFI_APPLICATION:
+ MdeModulePkg/MdeModulePkg.dec
+ShellPkg/ShellPkg.dec
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.UnitTestFrameworkPkg.EccCheck" name="Check for efi coding style for Edk2CiBuild.Edk2.UnitTestFrameworkPkg" time="0.12016916275024414"><system-out></system-out><system-err></system-err></testcase></testsuite><testsuite id="17" name="OvmfPkg" package="Edk2CiBuild.Edk2.OvmfPkg" errors="0" tests="12" failures="0" skipped="7"><testcase classname="Edk2CiBuild.Edk2.OvmfPkg.LicenseCheck" name="Check for license for Edk2CiBuild.Edk2.OvmfPkg" time="0.003061532974243164"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.OvmfPkg.LibraryClassCheck" name="Check library class declarations in Edk2CiBuild.Edk2.OvmfPkg" time="0.0024230480194091797"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.OvmfPkg.GuidCheck" name="Confirm GUIDs are unique in Edk2CiBuild.Edk2.OvmfPkg" time="1.6856350898742676"><system-out>Ignoring Guid ResetVector
+ Ignoring Guid XenResetVector
+ GuidCheck.IgnoreDuplicates -&gt; gGrubFileGuid=Grub
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.OvmfPkg.HostUnitTestDscCompleteCheck" name="Check the Edk2CiBuild.Edk2.OvmfPkg Host Unit Test DSC for a being complete" time="9.34600830078125e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>Package Host Unit Test Dsc not found
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.OvmfPkg.HostUnitTestCompiler.X64" name="Compile and Run Host-Based UnitTests for Edk2CiBuild.Edk2.OvmfPkg on arch X64" time="0.0001163482666015625"><skipped type="skipped"></skipped><system-out></system-out><system-err>Package HostBasedUnitTest Dsc not found.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.OvmfPkg.SpellCheck" name="Spell check files in Edk2CiBuild.Edk2.OvmfPkg" time="0.018482208251953125"><skipped type="skipped">Node version: v12.21.0
+ </skipped><system-out>Node version: v12.21.0
+ </system-out><system-err>cspell not installed.  Test can't run
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.OvmfPkg.CharEncodingCheck" name="Check for valid file encoding for Edk2CiBuild.Edk2.OvmfPkg" time="0.09406232833862305"><system-out>Tested Encoding on 645 files
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.OvmfPkg.Compiler.DEBUG" name="Compile Edk2CiBuild.Edk2.OvmfPkg DEBUG" time="9.34600830078125e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>Package Dsc not found.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.OvmfPkg.Compiler.RELEASE" name="Compile Edk2CiBuild.Edk2.OvmfPkg RELEASE" time="7.271766662597656e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>Package Dsc not found.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.OvmfPkg.DscCompleteCheck" name="Check the Edk2CiBuild.Edk2.OvmfPkg DSC for a being complete" time="7.414817810058594e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>Package Dsc not found
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.OvmfPkg.DependencyCheck" name="Test Package Dependencies for modules in Edk2CiBuild.Edk2.OvmfPkg" time="0.04938626289367676"><system-out>Acceptable Dependencies:
+ CryptoPkg/CryptoPkg.dec
+MdePkg/MdePkg.dec
+MdeModulePkg/MdeModulePkg.dec
+OvmfPkg/OvmfPkg.dec
+NetworkPkg/NetworkPkg.dec
+SecurityPkg/SecurityPkg.dec
+UefiCpuPkg/UefiCpuPkg.dec
+ShellPkg/ShellPkg.dec
+EmbeddedPkg/EmbeddedPkg.dec
+SourceLevelDebugPkg/SourceLevelDebugPkg.dec
+ Additional dependencies for MODULE_TYPE HOST_APPLICATION:
+ UnitTestFrameworkPkg/UnitTestFrameworkPkg.dec
+ Additional dependencies for MODULE_TYPE UEFI_APPLICATION:
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.OvmfPkg.EccCheck" name="Check for efi coding style for Edk2CiBuild.Edk2.OvmfPkg" time="2.7894973754882812e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err></system-err></testcase></testsuite><testsuite id="18" name="RedfishPkg" package="Edk2CiBuild.Edk2.RedfishPkg" errors="0" tests="12" failures="0" skipped="3"><testcase classname="Edk2CiBuild.Edk2.RedfishPkg.LicenseCheck" name="Check for license for Edk2CiBuild.Edk2.RedfishPkg" time="0.004549980163574219"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.RedfishPkg.LibraryClassCheck" name="Check library class declarations in Edk2CiBuild.Edk2.RedfishPkg" time="0.001077890396118164"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.RedfishPkg.GuidCheck" name="Confirm GUIDs are unique in Edk2CiBuild.Edk2.RedfishPkg" time="1.685039758682251"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.RedfishPkg.HostUnitTestDscCompleteCheck" name="Check the Edk2CiBuild.Edk2.RedfishPkg Host Unit Test DSC for a being complete" time="2.9802322387695312e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>DscPath not found in config file.  Nothing to check.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.RedfishPkg.HostUnitTestCompiler.X64" name="Compile and Run Host-Based UnitTests for Edk2CiBuild.Edk2.RedfishPkg on arch X64" time="5.817413330078125e-05"><skipped type="skipped"></skipped><system-out></system-out><system-err>DscPath not found in config file.  Nothing to compile for HostBasedUnitTests.
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.RedfishPkg.SpellCheck" name="Spell check files in Edk2CiBuild.Edk2.RedfishPkg" time="0.01764059066772461"><skipped type="skipped">Node version: v12.21.0
+ </skipped><system-out>Node version: v12.21.0
+ </system-out><system-err>cspell not installed.  Test can't run
+ </system-err></testcase><testcase classname="Edk2CiBuild.Edk2.RedfishPkg.CharEncodingCheck" name="Check for valid file encoding for Edk2CiBuild.Edk2.RedfishPkg" time="0.037119150161743164"><system-out>Tested Encoding on 125 files
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.RedfishPkg.Compiler.DEBUG" name="Compile Edk2CiBuild.Edk2.RedfishPkg DEBUG" time="5.096325397491455"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.RedfishPkg.Compiler.RELEASE" name="Compile Edk2CiBuild.Edk2.RedfishPkg RELEASE" time="5.353658437728882"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.RedfishPkg.DscCompleteCheck" name="Check the Edk2CiBuild.Edk2.RedfishPkg DSC for a being complete" time="0.0073506832122802734"><system-out></system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.RedfishPkg.DependencyCheck" name="Test Package Dependencies for modules in Edk2CiBuild.Edk2.RedfishPkg" time="0.006829500198364258"><system-out>Acceptable Dependencies:
+ MdePkg/MdePkg.dec
+MdeModulePkg/MdeModulePkg.dec
+NetworkPkg/NetworkPkg.dec
+RedfishPkg/RedfishPkg.dec
+ Additional dependencies for MODULE_TYPE HOST_APPLICATION:
+ Additional dependencies for MODULE_TYPE UEFI_APPLICATION:
+ ShellPkg/ShellPkg.dec
+ </system-out><system-err></system-err></testcase><testcase classname="Edk2CiBuild.Edk2.RedfishPkg.EccCheck" name="Check for efi coding style for Edk2CiBuild.Edk2.RedfishPkg" time="0.10551190376281738"><system-out></system-out><system-err></system-err></testcase></testsuite></testsuites>

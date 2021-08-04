@@ -1,0 +1,1 @@
+/home/xephyr/Documents/edk2/Build/MdeModule/RELEASE_GCC5/X64/MdeModulePkg/Library/DeviceManagerUiLib/DeviceManagerUiLib/GNUmakefile

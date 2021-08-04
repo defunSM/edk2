@@ -1,0 +1,385 @@
+INFO - Log Started: Wednesday, August 04, 2021 04:49PM
+SECTION - Init SDE
+DEBUG - --- self_describing_environment.load_workspace()
+DEBUG - Loading workspace: /home/xephyr/Documents/edk2/BaseTools
+DEBUG -   Including scopes: global
+DEBUG - Adding descriptor '/home/xephyr/Documents/edk2/BaseTools/basetools_calling_path_env.yaml' to the environment with scope 'global'.
+DEBUG - Adding descriptor '/home/xephyr/Documents/edk2/BaseTools/basetools_path_env.yaml' to the environment with scope 'global'.
+DEBUG - Adding descriptor '/home/xephyr/Documents/edk2/BaseTools/Source/Python/basetool_tiano_python_path_env.yaml' to the environment with scope 'global'.
+DEBUG - Adding descriptor '/home/xephyr/Documents/edk2/BaseTools/Plugin/BuildToolsReport/BuildToolsReportGenerator_plug_in.yaml' to the environment with scope 'global'.
+DEBUG - --- self_describing_environment.update_simple_paths()
+DEBUG - --- self_describing_environment.update_extdep_paths()
+DEBUG - --- self_describing_environment.report_extdep_version()
+SECTION - Loading Plugins
+DEBUG - Loading Plugin from /home/xephyr/Documents/edk2/BaseTools/Plugin/BuildToolsReport/BuildToolsReportGenerator.py
+SECTION - Start Invocable Tool
+INFO - Running Python version: sys.version_info(major=3, minor=9, micro=5, releaselevel='final', serial=0)
+INFO - Cmd to run is: make -C .  -j 20
+INFO - ------------------------------------------------
+INFO - --------------Cmd Output Starting---------------
+INFO - ------------------------------------------------
+INFO - make: Entering directory '/home/xephyr/Documents/edk2/BaseTools'
+INFO - make -C Source/C
+INFO - make -C Source/Python
+INFO - make[1]: Entering directory '/home/xephyr/Documents/edk2/BaseTools/Source/C'
+INFO - Attempting to detect HOST_ARCH from 'uname -m': x86_64
+INFO - make[1]: Entering directory '/home/xephyr/Documents/edk2/BaseTools/Source/Python'
+INFO - make[1]: Nothing to be done for 'all'.
+INFO - make[1]: Leaving directory '/home/xephyr/Documents/edk2/BaseTools/Source/Python'
+INFO - Detected HOST_ARCH of X64 using uname.
+INFO - mkdir -p .
+INFO - make -C Common
+INFO - make[2]: Entering directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/Common'
+INFO - make[2]: Nothing to be done for 'all'.
+INFO - make[2]: Leaving directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/Common'
+INFO - make -C BrotliCompress
+INFO - make -C VfrCompile
+INFO - make -C EfiRom
+INFO - make -C GenFfs
+INFO - make[2]: Entering directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/BrotliCompress'
+INFO - make -C GenFv
+INFO - make[2]: Entering directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/VfrCompile'
+INFO - make -C GenFw
+INFO - make[2]: Entering directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/EfiRom'
+INFO - make -C GenSec
+INFO - make[2]: Entering directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/GenFfs'
+INFO - make -C GenCrc32
+INFO - make -C LzmaCompress
+INFO - make[2]: Entering directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/GenFv'
+INFO - make -C TianoCompress
+INFO - make[2]: Entering directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/GenFw'
+INFO - make[2]: Entering directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/GenSec'
+INFO - make -C VolInfo
+INFO - make -C DevicePath
+INFO - make[2]: Entering directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/GenCrc32'
+INFO - make[2]: Entering directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/LzmaCompress'
+INFO - make[2]: Entering directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/TianoCompress'
+INFO - make[2]: Entering directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/VolInfo'
+INFO - make[2]: Nothing to be done for 'all'.
+INFO - make[2]: Leaving directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/EfiRom'
+INFO - make[2]: Nothing to be done for 'all'.
+INFO - make[2]: Leaving directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/VfrCompile'
+INFO - make[2]: Entering directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/DevicePath'
+INFO - make[2]: Nothing to be done for 'all'.
+INFO - make[2]: Leaving directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/GenFfs'
+INFO - make[2]: Nothing to be done for 'all'.
+INFO - make[2]: Leaving directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/GenFv'
+INFO - make[2]: Nothing to be done for 'all'.
+INFO - make[2]: Leaving directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/TianoCompress'
+INFO - make[2]: Nothing to be done for 'all'.
+INFO - make[2]: Leaving directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/GenCrc32'
+INFO - make[2]: Nothing to be done for 'all'.
+INFO - make[2]: Leaving directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/GenFw'
+INFO - make[2]: Nothing to be done for 'all'.
+INFO - make[2]: Leaving directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/GenSec'
+INFO - make[2]: Nothing to be done for 'all'.
+INFO - make[2]: Leaving directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/LzmaCompress'
+INFO - make[2]: Nothing to be done for 'all'.
+INFO - make[2]: Leaving directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/VolInfo'
+INFO - make[2]: Nothing to be done for 'all'.
+INFO - make[2]: Leaving directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/DevicePath'
+INFO - make[2]: Nothing to be done for 'all'.
+INFO - make[2]: Leaving directory '/home/xephyr/Documents/edk2/BaseTools/Source/C/BrotliCompress'
+INFO - Finished building BaseTools C Tools with HOST_ARCH=X64
+INFO - make[1]: Leaving directory '/home/xephyr/Documents/edk2/BaseTools/Source/C'
+INFO - make -C Tests
+INFO - make[1]: Entering directory '/home/xephyr/Documents/edk2/BaseTools/Tests'
+INFO - testHelp (TianoCompress.Tests) ... ok
+INFO - testRandomDataCycles (TianoCompress.Tests) ... ok
+INFO - test_AmlToC_AmlToC (CheckPythonSyntax.Tests) ... ok
+INFO - test_AutoGen_AutoGen (CheckPythonSyntax.Tests) ... ok
+INFO - test_AutoGen_AutoGenWorker (CheckPythonSyntax.Tests) ... ok
+INFO - test_AutoGen_BuildEngine (CheckPythonSyntax.Tests) ... ok
+INFO - test_AutoGen_DataPipe (CheckPythonSyntax.Tests) ... ok
+INFO - test_AutoGen_GenC (CheckPythonSyntax.Tests) ... ok
+INFO - test_AutoGen_GenDepex (CheckPythonSyntax.Tests) ... ok
+INFO - test_AutoGen_GenMake (CheckPythonSyntax.Tests) ... ok
+INFO - test_AutoGen_GenPcdDb (CheckPythonSyntax.Tests) ... ok
+INFO - test_AutoGen_GenVar (CheckPythonSyntax.Tests) ... ok
+INFO - test_AutoGen_IdfClassObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_AutoGen_IncludesAutoGen (CheckPythonSyntax.Tests) ... ok
+INFO - test_AutoGen_InfSectionParser (CheckPythonSyntax.Tests) ... ok
+INFO - test_AutoGen_ModuleAutoGen (CheckPythonSyntax.Tests) ... ok
+INFO - test_AutoGen_ModuleAutoGenHelper (CheckPythonSyntax.Tests) ... ok
+INFO - test_AutoGen_PlatformAutoGen (CheckPythonSyntax.Tests) ... ok
+INFO - test_AutoGen_StrGather (CheckPythonSyntax.Tests) ... ok
+INFO - test_AutoGen_UniClassObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_AutoGen_ValidCheckingInfoObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_AutoGen_WorkspaceAutoGen (CheckPythonSyntax.Tests) ... ok
+INFO - test_AutoGen___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_BPDG_BPDG (CheckPythonSyntax.Tests) ... ok
+INFO - test_BPDG_GenVpd (CheckPythonSyntax.Tests) ... ok
+INFO - test_BPDG_StringTable (CheckPythonSyntax.Tests) ... ok
+INFO - test_BPDG___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_Capsule_GenerateCapsule (CheckPythonSyntax.Tests) ... ok
+INFO - test_Capsule_GenerateWindowsDriver (CheckPythonSyntax.Tests) ... ok
+INFO - test_Capsule_WindowsCapsuleSupportHelper (CheckPythonSyntax.Tests) ... ok
+INFO - test_CommonDataClass_CommonClass (CheckPythonSyntax.Tests) ... ok
+INFO - test_CommonDataClass_DataClass (CheckPythonSyntax.Tests) ... ok
+INFO - test_CommonDataClass_Exceptions (CheckPythonSyntax.Tests) ... ok
+INFO - test_CommonDataClass_FdfClass (CheckPythonSyntax.Tests) ... ok
+INFO - test_CommonDataClass___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_BuildToolError (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_BuildVersion (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_DataType (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_Edk2_Capsule_FmpPayloadHeader (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_Edk2_Capsule___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_Edk2___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_EdkLogger (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_Expression (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_GlobalData (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_LongFilePathOs (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_LongFilePathOsPath (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_LongFilePathSupport (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_Misc (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_MultipleWorkspace (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_Parsing (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_RangeExpression (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_StringUtils (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_TargetTxtClassObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_ToolDefClassObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_Uefi_Capsule_CapsuleDependency (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_Uefi_Capsule_FmpAuthHeader (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_Uefi_Capsule_FmpCapsuleHeader (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_Uefi_Capsule_UefiCapsuleHeader (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_Uefi_Capsule___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_Uefi___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_VariableAttributes (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_VpdInfoFile (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_Common_caching (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_CParser3_CLexer (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_CParser3_CParser (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_CParser3___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_CParser4_CLexer (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_CParser4_CListener (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_CParser4_CParser (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_CParser4___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_Check (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_CodeFragment (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_CodeFragmentCollector (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_Configuration (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_Database (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_EccGlobalData (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_EccMain (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_EccToolError (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_Exception (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_FileProfile (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_MetaDataParser (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_MetaFileWorkspace_MetaDataTable (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_MetaFileWorkspace_MetaFileParser (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_MetaFileWorkspace_MetaFileTable (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_MetaFileWorkspace___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_ParserWarning (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_Xml_XmlRoutines (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_Xml___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_Ecc_c (CheckPythonSyntax.Tests) ... ok
+INFO - test_Eot_CParser3_CLexer (CheckPythonSyntax.Tests) ... ok
+INFO - test_Eot_CParser3_CParser (CheckPythonSyntax.Tests) ... ok
+INFO - test_Eot_CParser3___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_Eot_CParser4_CLexer (CheckPythonSyntax.Tests) ... ok
+INFO - test_Eot_CParser4_CListener (CheckPythonSyntax.Tests) ... ok
+INFO - test_Eot_CParser4_CParser (CheckPythonSyntax.Tests) ... ok
+INFO - test_Eot_CParser4___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_Eot_CodeFragment (CheckPythonSyntax.Tests) ... ok
+INFO - test_Eot_CodeFragmentCollector (CheckPythonSyntax.Tests) ... ok
+INFO - test_Eot_Database (CheckPythonSyntax.Tests) ... ok
+INFO - test_Eot_EotGlobalData (CheckPythonSyntax.Tests) ... ok
+INFO - test_Eot_EotMain (CheckPythonSyntax.Tests) ... ok
+INFO - test_Eot_EotToolError (CheckPythonSyntax.Tests) ... ok
+INFO - test_Eot_FileProfile (CheckPythonSyntax.Tests) ... ok
+INFO - test_Eot_Identification (CheckPythonSyntax.Tests) ... ok
+INFO - test_Eot_InfParserLite (CheckPythonSyntax.Tests) ... ok
+INFO - test_Eot_Parser (CheckPythonSyntax.Tests) ... ok
+INFO - test_Eot_ParserWarning (CheckPythonSyntax.Tests) ... ok
+INFO - test_Eot_Report (CheckPythonSyntax.Tests) ... ok
+INFO - test_Eot___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_Eot_c (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_AprioriSection (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_Capsule (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_CapsuleData (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_CompressSection (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_DataSection (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_DepexSection (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_EfiSection (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_Fd (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_FdfParser (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_Ffs (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_FfsFileStatement (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_FfsInfStatement (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_Fv (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_FvImageSection (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_GenFds (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_GenFdsGlobalVariable (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_GuidSection (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_OptRomFileStatement (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_OptRomInfStatement (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_OptionRom (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_Region (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_Rule (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_RuleComplexFile (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_RuleSimpleFile (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_Section (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_UiSection (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds_VerSection (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenFds___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenPatchPcdTable_GenPatchPcdTable (CheckPythonSyntax.Tests) ... ok
+INFO - test_GenPatchPcdTable___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_PatchPcdValue_PatchPcdValue (CheckPythonSyntax.Tests) ... ok
+INFO - test_PatchPcdValue___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_Pkcs7Sign_Pkcs7Sign (CheckPythonSyntax.Tests) ... ok
+INFO - test_Rsa2048Sha256Sign_Rsa2048Sha256GenerateKeys (CheckPythonSyntax.Tests) ... ok
+INFO - test_Rsa2048Sha256Sign_Rsa2048Sha256Sign (CheckPythonSyntax.Tests) ... ok
+INFO - test_Split_Split (CheckPythonSyntax.Tests) ... ok
+INFO - test_Split___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_Table_Table (CheckPythonSyntax.Tests) ... ok
+INFO - test_Table_TableDataModel (CheckPythonSyntax.Tests) ... ok
+INFO - test_Table_TableDec (CheckPythonSyntax.Tests) ... ok
+INFO - test_Table_TableDsc (CheckPythonSyntax.Tests) ... ok
+INFO - test_Table_TableEotReport (CheckPythonSyntax.Tests) ... ok
+INFO - test_Table_TableFdf (CheckPythonSyntax.Tests) ... ok
+INFO - test_Table_TableFile (CheckPythonSyntax.Tests) ... ok
+INFO - test_Table_TableFunction (CheckPythonSyntax.Tests) ... ok
+INFO - test_Table_TableIdentifier (CheckPythonSyntax.Tests) ... ok
+INFO - test_Table_TableInf (CheckPythonSyntax.Tests) ... ok
+INFO - test_Table_TablePcd (CheckPythonSyntax.Tests) ... ok
+INFO - test_Table_TableQuery (CheckPythonSyntax.Tests) ... ok
+INFO - test_Table_TableReport (CheckPythonSyntax.Tests) ... ok
+INFO - test_Table___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_TargetTool_TargetTool (CheckPythonSyntax.Tests) ... ok
+INFO - test_TargetTool___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_Trim_Trim (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_BuildVersion (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Core_DependencyRules (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Core_DistributionPackageClass (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Core_FileHook (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Core_IpiDb (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Core_PackageFile (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Core___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_GenMetaFile_GenDecFile (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_GenMetaFile_GenInfFile (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_GenMetaFile_GenMetaFileMisc (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_GenMetaFile_GenXmlFile (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_GenMetaFile___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_InstallPkg (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_InventoryWs (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Library_CommentGenerating (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Library_CommentParsing (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Library_DataType (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Library_ExpressionValidate (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Library_GlobalData (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Library_Misc (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Library_ParserValidate (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Library_Parsing (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Library_StringUtils (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Library_UniClassObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Library_Xml_XmlRoutines (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Library_Xml___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Library___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Logger_Log (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Logger_StringTable (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Logger_ToolError (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Logger___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_MkPkg (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Object_POM_CommonObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Object_POM_ModuleObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Object_POM_PackageObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Object_POM___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Object_Parser_DecObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Object_Parser_InfBinaryObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Object_Parser_InfBuildOptionObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Object_Parser_InfCommonObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Object_Parser_InfDefineCommonObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Object_Parser_InfDefineObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Object_Parser_InfDepexObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Object_Parser_InfGuidObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Object_Parser_InfHeaderObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Object_Parser_InfLibraryClassesObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Object_Parser_InfMisc (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Object_Parser_InfPackagesObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Object_Parser_InfPcdObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Object_Parser_InfPpiObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Object_Parser_InfProtocolObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Object_Parser_InfSoucesObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Object_Parser_InfUserExtensionObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Object_Parser___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Object___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Parser_DecParser (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Parser_DecParserMisc (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Parser_InfAsBuiltProcess (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Parser_InfBinarySectionParser (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Parser_InfBuildOptionSectionParser (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Parser_InfDefineSectionParser (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Parser_InfDepexSectionParser (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Parser_InfGuidPpiProtocolSectionParser (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Parser_InfLibrarySectionParser (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Parser_InfPackageSectionParser (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Parser_InfParser (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Parser_InfParserMisc (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Parser_InfPcdSectionParser (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Parser_InfSectionParser (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Parser_InfSourceSectionParser (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Parser___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_PomAdapter_DecPomAlignment (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_PomAdapter_InfPomAlignment (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_PomAdapter_InfPomAlignmentMisc (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_PomAdapter___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_ReplacePkg (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_RmPkg (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_TestInstall (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_UPT (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_UnitTest_CommentGeneratingUnitTest (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_UnitTest_CommentParsingUnitTest (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_UnitTest_DecParserTest (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_UnitTest_DecParserUnitTest (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_UnitTest_InfBinarySectionTest (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Xml_CommonXml (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Xml_GuidProtocolPpiXml (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Xml_IniToXml (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Xml_ModuleSurfaceAreaXml (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Xml_PackageSurfaceAreaXml (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Xml_PcdXml (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Xml_XmlParser (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Xml_XmlParserMisc (CheckPythonSyntax.Tests) ... ok
+INFO - test_UPT_Xml___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_Workspace_BuildClassObject (CheckPythonSyntax.Tests) ... ok
+INFO - test_Workspace_DecBuildData (CheckPythonSyntax.Tests) ... ok
+INFO - test_Workspace_DscBuildData (CheckPythonSyntax.Tests) ... ok
+INFO - test_Workspace_InfBuildData (CheckPythonSyntax.Tests) ... ok
+INFO - test_Workspace_MetaDataTable (CheckPythonSyntax.Tests) ... ok
+INFO - test_Workspace_MetaFileCommentParser (CheckPythonSyntax.Tests) ... ok
+INFO - test_Workspace_MetaFileParser (CheckPythonSyntax.Tests) ... ok
+INFO - test_Workspace_MetaFileTable (CheckPythonSyntax.Tests) ... ok
+INFO - test_Workspace_WorkspaceCommon (CheckPythonSyntax.Tests) ... ok
+INFO - test_Workspace_WorkspaceDatabase (CheckPythonSyntax.Tests) ... ok
+INFO - test_Workspace___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_build_BuildReport (CheckPythonSyntax.Tests) ... ok
+INFO - test_build___init__ (CheckPythonSyntax.Tests) ... ok
+INFO - test_build_build (CheckPythonSyntax.Tests) ... ok
+INFO - test_build_buildoptions (CheckPythonSyntax.Tests) ... ok
+INFO - test_sitecustomize (CheckPythonSyntax.Tests) ... ok
+INFO - test_tests_Split_test_split (CheckPythonSyntax.Tests) ... ok
+INFO - test32bitUnicodeCharInUtf8Comment (CheckUnicodeSourceFiles.Tests) ... ok
+INFO - test32bitUnicodeCharInUtf8File (CheckUnicodeSourceFiles.Tests) ... ok
+INFO - testSupplementaryPlaneUnicodeCharInUtf16File (CheckUnicodeSourceFiles.Tests) ... ok
+INFO - testSurrogatePairUnicodeCharInUtf16File (CheckUnicodeSourceFiles.Tests) ... ok
+INFO - testSurrogatePairUnicodeCharInUtf8File (CheckUnicodeSourceFiles.Tests) ... ok
+INFO - testSurrogatePairUnicodeCharInUtf8FileWithBom (CheckUnicodeSourceFiles.Tests) ... ok
+INFO - testUtf16InUniFile (CheckUnicodeSourceFiles.Tests) ... ok
+INFO - testValidUtf8File (CheckUnicodeSourceFiles.Tests) ... ok
+INFO - testValidUtf8FileWithBom (CheckUnicodeSourceFiles.Tests) ... ok
+INFO - 
+INFO - ----------------------------------------------------------------------
+INFO - Ran 285 tests in 0.713s
+INFO - 
+INFO - OK
+INFO - make[1]: Leaving directory '/home/xephyr/Documents/edk2/BaseTools/Tests'
+INFO - make: Leaving directory '/home/xephyr/Documents/edk2/BaseTools'
+INFO - ------------------------------------------------
+INFO - --------------Cmd Output Finished---------------
+INFO - --------- Running Time (mm:ss): 00:00 ----------
+INFO - ----------- Return Code: 0x00000000 ------------
+INFO - ------------------------------------------------
+SECTION - Summary
+PROGRESS - Success

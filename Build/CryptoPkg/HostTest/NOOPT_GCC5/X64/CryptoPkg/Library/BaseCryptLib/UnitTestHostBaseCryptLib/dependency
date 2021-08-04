@@ -1,0 +1,53 @@
+
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/Pem/CryptPem.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/Kdf/CryptHkdf.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/Cipher/CryptAes.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/Rand/CryptRandTsc.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/Pk/CryptPkcs7VerifyCommon.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/Pk/CryptPkcs7VerifyEku.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/Pk/CryptTs.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/Pk/CryptRsaPss.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/Pk/CryptAuthenticode.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/Pk/CryptRsaPssSign.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/Pk/CryptRsaExt.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/Pk/CryptRsaBasic.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/Pk/CryptX509.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/Pk/CryptPkcs5Pbkdf2.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/Pk/CryptPkcs1Oaep.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/Pk/CryptDh.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/Pk/CryptPkcs7VerifyBase.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/Pk/CryptPkcs7Sign.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/SysCall/UnitTestHostCrtWrapper.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/Hmac/CryptHmacSha256.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/Hash/CryptSha256.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/Hash/CryptSha512.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/Hash/CryptMd5.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/Hash/CryptSha1.obj.deps
+
+-include /home/xephyr/Documents/edk2/Build/CryptoPkg/HostTest/NOOPT_GCC5/X64/CryptoPkg/Library/BaseCryptLib/UnitTestHostBaseCryptLib/OUTPUT/Hash/CryptSm3.obj.deps
+
+               

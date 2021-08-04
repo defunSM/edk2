@@ -1,0 +1,14 @@
+-I/home/xephyr/Documents/edk2/OvmfPkg/Sec/X64
+-I/home/xephyr/Documents/edk2/OvmfPkg/Sec
+-I/home/xephyr/Documents/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Sec/SecMain/DEBUG
+-I/home/xephyr/Documents/edk2/MdePkg
+-I/home/xephyr/Documents/edk2/MdePkg/Include
+-I/home/xephyr/Documents/edk2/MdePkg/Test/UnitTest/Include
+-I/home/xephyr/Documents/edk2/MdePkg/Include/X64
+-I/home/xephyr/Documents/edk2/MdeModulePkg
+-I/home/xephyr/Documents/edk2/MdeModulePkg/Include
+-I/home/xephyr/Documents/edk2/UefiCpuPkg
+-I/home/xephyr/Documents/edk2/UefiCpuPkg/Include
+-I/home/xephyr/Documents/edk2/OvmfPkg
+-I/home/xephyr/Documents/edk2/OvmfPkg/Include
+-I/home/xephyr/Documents/edk2/OvmfPkg/Csm/Include

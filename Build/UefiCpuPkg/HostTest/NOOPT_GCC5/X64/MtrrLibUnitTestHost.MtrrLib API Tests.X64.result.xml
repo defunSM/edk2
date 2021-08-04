@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite name="MtrrLib API Tests" time="0.000" tests="460" failures="0" errors="0" skipped="0" >
+    <testcase name="Test IsMtrrSupported" time="0.000" >
+    </testcase>
+    <testcase name="Test GetVariableMtrrCount" time="0.000" >
+    </testcase>
+    <testcase name="Test GetFirmwareVariableMtrrCount" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrGetMemoryAttribute" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrGetFixedMtrr" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrGetAllMtrrs" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetAllMtrrs" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrGetMemoryAttributeInVariableMtrr" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrDebugPrintAllMtrrs" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrGetDefaultMemoryType" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test InvalidMemoryLayouts" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributeInMtrrSettings" time="0.000" >
+    </testcase>
+    <testcase name="Test MtrrSetMemoryAttributesInMtrrSettings" time="0.000" >
+    </testcase>
+  </testsuite>
+</testsuites>

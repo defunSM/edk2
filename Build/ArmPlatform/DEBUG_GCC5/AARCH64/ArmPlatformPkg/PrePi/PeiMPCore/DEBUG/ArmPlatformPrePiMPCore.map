@@ -1,0 +1,766 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/PrePi/PeiMPCore/OUTPUT/ArmPlatformPrePiMPCore.lib(ModuleEntryPoint.obj)
+                              (_ModuleEntryPoint)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/PrePi/PeiMPCore/OUTPUT/ArmPlatformPrePiMPCore.lib(PrePi.obj)
+                              /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/PrePi/PeiMPCore/OUTPUT/ArmPlatformPrePiMPCore.lib(ModuleEntryPoint.obj) (mSystemMemoryEnd)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/PrePi/PeiMPCore/OUTPUT/ArmPlatformPrePiMPCore.lib(MainMPCore.obj)
+                              PrePi.obj (symbol from plugin) (PrimaryMain)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/PrePi/PeiMPCore/OUTPUT/ArmPlatformPrePiMPCore.lib(ArchPrePi.obj)
+                              PrePi.obj (symbol from plugin) (ArchInitialize)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/PrePi/PeiMPCore/OUTPUT/ArmPlatformPrePiMPCore.lib(AutoGen.obj)
+                              PrePi.obj (symbol from plugin) (ProcessLibraryConstructorList)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGuid.obj)
+                              PrePi.obj (symbol from plugin) (CompareGuid)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib(IoLibNoIo.obj)
+                              MainMPCore.obj (symbol from plugin) (MmioRead32)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Drivers/ArmGic/ArmGicLib/OUTPUT/ArmGicLib.lib(ArmGicLib.obj)
+                              MainMPCore.obj (symbol from plugin) (ArmGicGetMaxNumInterrupts)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Drivers/ArmGic/ArmGicLib/OUTPUT/ArmGicLib.lib(ArmGicNonSecLib.obj)
+                              MainMPCore.obj (symbol from plugin) (ArmGicEnableDistributor)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Drivers/ArmGic/ArmGicLib/OUTPUT/ArmGicLib.lib(ArmGicV2Lib.obj)
+                              ArmGicLib.obj (symbol from plugin) (ArmGicV2AcknowledgeInterrupt)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Drivers/ArmGic/ArmGicLib/OUTPUT/ArmGicLib.lib(ArmGicV2NonSecLib.obj)
+                              ArmGicLib.obj (symbol from plugin) (ArmGicV2EnableInterruptInterface)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Drivers/ArmGic/ArmGicLib/OUTPUT/ArmGicLib.lib(ArmGicV3.obj)
+                              ArmGicLib.obj (symbol from plugin) (ArmGicV3EnableInterruptInterface)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+                              PrePi.obj (symbol from plugin) (ArmCallWFE)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+                              PrePi.obj (symbol from plugin) (ArmIsMpCore)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                              PrePi.obj (symbol from plugin) (ArmInvalidateInstructionCache)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull/OUTPUT/BaseDebugLibNull.lib(DebugLib.obj)
+                              PrePi.obj (symbol from plugin) (DebugPrint)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Unaligned.obj)
+                              MemLibGuid.obj (symbol from plugin) (ReadUnaligned64)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RShiftU64.obj)
+                              Unaligned.obj (symbol from plugin) (RShiftU64)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LShiftU64.obj)
+                              Unaligned.obj (symbol from plugin) (LShiftU64)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Math64.obj)
+                              LShiftU64.obj (symbol from plugin) (InternalMathLShiftU64)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes32.obj)
+                              Math64.obj (symbol from plugin) (SwapBytes32)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes16.obj)
+                              SwapBytes32.obj (symbol from plugin) (SwapBytes16)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib(memcpy.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (memcpy)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib(memset.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (memset)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseStackCheckLib/BaseStackCheckLib/OUTPUT/BaseStackCheckLib.lib(BaseStackCheckGcc.obj)
+                              /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a (__stack_chk_fail)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Library/PrePiHobListPointerLib/PrePiHobListPointerLib/OUTPUT/PrePiHobListPointerLib.lib(PrePiHobListPointer.obj)
+                              PrePi.obj (symbol from plugin) (PrePeiSetHobList)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePerformanceLibNull/BasePerformanceLibNull/OUTPUT/BasePerformanceLibNull.lib(PerformanceLib.obj)
+                              PrePi.obj (symbol from plugin) (StartPerformanceMeasurement)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib(PrintLib.obj)
+                              PrePi.obj (symbol from plugin) (AsciiSPrint)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib(PrintLibInternal.obj)
+                              PrintLib.obj (symbol from plugin) (BasePrintLibConvertValueToStringS)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/EmbeddedPkg/Library/PrePiHobLib/PrePiHobLib/OUTPUT/PrePiHobLib.lib(Hob.obj)
+                              PrePi.obj (symbol from plugin) (HobConstructor)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/EmbeddedPkg/Library/PrePiExtractGuidedSectionLib/PrePiExtractGuidedSectionLib/OUTPUT/PrePiExtractGuidedSectionLib.lib(PrePiExtractGuidedSectionLib.obj)
+                              AutoGen.obj (symbol from plugin) (ExtractGuidedSectionLibConstructor)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseSerialPortLibNull/BaseSerialPortLibNull/OUTPUT/BaseSerialPortLibNull.lib(BaseSerialPortLibNull.obj)
+                              PrePi.obj (symbol from plugin) (SerialPortInitialize)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseTimerLibNullTemplate/BaseTimerLibNullTemplate/OUTPUT/BaseTimerLibNullTemplate.lib(TimerLibNull.obj)
+                              PrePi.obj (symbol from plugin) (GetPerformanceCounter)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmCacheMaintenanceLib/ArmCacheMaintenanceLib/OUTPUT/ArmCacheMaintenanceLib.lib(ArmCacheMaintenanceLib.obj)
+                              PrePi.obj (symbol from plugin) (InvalidateDataCacheRange)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/EmbeddedPkg/Library/PrePiLib/PrePiLib/OUTPUT/PrePiLib.lib(PrePiLib.obj)
+                              PrePi.obj (symbol from plugin) (LoadDxeCoreFromFv)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/EmbeddedPkg/Library/PrePiLib/PrePiLib/OUTPUT/PrePiLib.lib(FwVol.obj)
+                              PrePiLib.obj (symbol from plugin) (FfsFindSectionData)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/EmbeddedPkg/Library/PrePiMemoryAllocationLib/PrePiMemoryAllocationLib/OUTPUT/PrePiMemoryAllocationLib.lib(MemoryAllocationLib.obj)
+                              PrePiLib.obj (symbol from plugin) (AllocatePages)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Library/ArmPlatformLibNull/ArmPlatformLibNull/OUTPUT/ArmPlatformLibNull.lib(ArmPlatformLibNull.obj)
+                              PrePi.obj (symbol from plugin) (TimerConstructor)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Library/ArmPlatformLibNull/ArmPlatformLibNull/OUTPUT/ArmPlatformLibNull.lib(ArmPlatformHelper.obj)
+                              /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/PrePi/PeiMPCore/OUTPUT/ArmPlatformPrePiMPCore.lib(ModuleEntryPoint.obj) (ArmPlatformPeiBootAction)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmMmuLib/ArmMmuBaseLib/OUTPUT/ArmMmuBaseLib.lib(ArmMmuLibCore.obj)
+                              AutoGen.obj (symbol from plugin) (ArmMmuBaseLibConstructor)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmMmuLib/ArmMmuBaseLib/OUTPUT/ArmMmuBaseLib.lib(ArmMmuLibReplaceEntry.obj)
+                              ArmMmuLibCore.obj (symbol from plugin) (ArmReplaceLiveTranslationEntry)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdeModulePkg/Library/DebugAgentLibNull/DebugAgentLibNull/OUTPUT/DebugAgentLibNull.lib(DebugAgentLibNull.obj)
+                              PrePi.obj (symbol from plugin) (InitializeDebugAgent)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdeModulePkg/Library/LzmaCustomDecompressLib/LzmaCustomDecompressLib/OUTPUT/LzmaDecompressLib.lib(GuidedSectionExtraction.obj)
+                              AutoGen.obj (symbol from plugin) (LzmaDecompressLibConstructor)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdeModulePkg/Library/LzmaCustomDecompressLib/LzmaCustomDecompressLib/OUTPUT/LzmaDecompressLib.lib(LzmaDecompress.obj)
+                              GuidedSectionExtraction.obj (symbol from plugin) (LzmaUefiDecompressGetInfo)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdeModulePkg/Library/LzmaCustomDecompressLib/LzmaCustomDecompressLib/OUTPUT/LzmaDecompressLib.lib(LzmaDec.obj)
+                              LzmaDecompress.obj (symbol from plugin) (LzmaDecode)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Library/ArmPlatformStackLib/ArmPlatformStackLib/OUTPUT/ArmPlatformStackLib.lib(ArmPlatformStackLib.obj)
+                              /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/PrePi/PeiMPCore/OUTPUT/ArmPlatformPrePiMPCore.lib(ModuleEntryPoint.obj) (ArmPlatformStackSet)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/PlatformPei/PlatformPeiLib/OUTPUT/ArmPlatformPeiLib.lib(PlatformPeiLib.obj)
+                              PrePi.obj (symbol from plugin) (PlatformPeim)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/MemoryInitPei/MemoryInitPeiLib/OUTPUT/ArmMemoryInitPeiLib.lib(MemoryInitPeiLib.obj)
+                              PrePi.obj (symbol from plugin) (MemoryPeim)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmGicArchSecLib/ArmGicArchSecLib/OUTPUT/ArmGicArchSecLib.lib(ArmGicArchLib.obj)
+                              ArmGicLib.obj (symbol from plugin) (ArmGicGetSupportedArchRevision)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull/OUTPUT/FilterLibNull.lib(RegisterFilterLibNull.obj)
+                              IoLibNoIo.obj (symbol from plugin) (FilterBeforeMmIoRead)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ZeroMemWrapper.obj)
+                              Hob.obj (symbol from plugin) (ZeroMem)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMemWrapper.obj)
+                              Hob.obj (symbol from plugin) (CopyMem)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGeneric.obj)
+                              ZeroMemWrapper.obj (symbol from plugin) (InternalMemZeroMem)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMem.obj)
+                              CopyMemWrapper.obj (symbol from plugin) (InternalMemCopyMem)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem.obj)
+                              MemLibGeneric.obj (symbol from plugin) (InternalMemSetMem)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib(IoHighLevel.obj)
+                              ArmGicNonSecLib.obj (symbol from plugin) (MmioOr32)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLib.obj)
+                              ArmCacheMaintenanceLib.obj (symbol from plugin) (ArmDataCacheLineLength)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Lib.obj)
+                              ArmGicArchLib.obj (symbol from plugin) (ArmHasGicSystemRegisters)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+                              PrePiLib.obj (symbol from plugin) (SwitchStack)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32Remainder.obj)
+                              PrintLibInternal.obj (symbol from plugin) (DivU64x32Remainder)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(BitField.obj)
+                              IoHighLevel.obj (symbol from plugin) (BitFieldRead8)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuDeadLoop.obj)
+                              BaseStackCheckGcc.obj (symbol from plugin) (CpuDeadLoop)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SafeString.obj)
+                              PrintLibInternal.obj (symbol from plugin) (StrnLenS)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(String.obj)
+                              SafeString.obj (symbol from plugin) (InternalIsDecimalDigitCharacter)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(InternalSwitchStack.obj)
+                              SwitchStack.obj (symbol from plugin) (InternalSwitchStack)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+                              InternalSwitchStack.obj (symbol from plugin) (InternalSwitchStackAsm)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+                              BaseStackCheckGcc.obj (symbol from plugin) (CpuBreakpoint)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultU64x32.obj)
+                              SafeString.obj (symbol from plugin) (MultU64x32)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32.obj)
+                              SafeString.obj (symbol from plugin) (DivU64x32)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePeCoffLib/BasePeCoffLib/OUTPUT/BasePeCoffLib.lib(BasePeCoff.obj)
+                              Hob.obj (symbol from plugin) (PeCoffLoaderGetImageInfo)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePeCoffLib/BasePeCoffLib/OUTPUT/BasePeCoffLib.lib(PeCoffLoaderEx.obj)
+                              BasePeCoff.obj (symbol from plugin) (PeCoffLoaderRelocateImageEx)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseUefiDecompressLib/BaseUefiDecompressLib/OUTPUT/BaseUefiDecompressLib.lib(BaseUefiDecompressLib.obj)
+                              FwVol.obj (symbol from plugin) (UefiDecompressGetInfo)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Library/ArmPlatformLibNull/ArmPlatformLibNull/OUTPUT/ArmPlatformLibNull.lib(ArmPlatformLibNullMem.obj)
+                              MemoryInitPeiLib.obj (symbol from plugin) (ArmPlatformGetVirtualMemoryMap)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem16Wrapper.obj)
+                              BaseUefiDecompressLib.obj (symbol from plugin) (SetMem16)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMemWrapper.obj)
+                              BaseUefiDecompressLib.obj (symbol from plugin) (SetMem)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem64Wrapper.obj)
+                              SetMemWrapper.obj (symbol from plugin) (SetMem64)
+/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePeCoffExtraActionLibNull/BasePeCoffExtraActionLibNull/OUTPUT/PeCoffExtraActionLibNull.lib(PeCoffExtraActionLib.obj)
+                              BasePeCoff.obj (symbol from plugin) (PeCoffLoaderRelocateImageExtraAction)
+
+Discarded input sections
+
+ .text          0x0000000000000000       0x10 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+ .text          0x0000000000000000        0x0 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.StrnLenS
+                0x0000000000000000       0x3c /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.FreePageTablesRecursive
+                0x0000000000000000       0x60 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.ReplaceTableEntry
+                0x0000000000000000       0x68 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.UpdateRegionMappingRecursive.constprop.20
+                0x0000000000000000      0x240 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.__stack_chk_fail
+                0x0000000000000000        0x4 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.__memset
+                0x0000000000000000       0x1c /tmp/cclj7GcX.ltrans0.ltrans.o
+ .data.__stack_chk_guard
+                0x0000000000000000        0x8 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .comment       0x0000000000000000       0x75 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/PrePi/PeiMPCore/OUTPUT/ArmPlatformPrePiMPCore.lib(ModuleEntryPoint.obj)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/PrePi/PeiMPCore/OUTPUT/ArmPlatformPrePiMPCore.lib(ModuleEntryPoint.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/PrePi/PeiMPCore/OUTPUT/ArmPlatformPrePiMPCore.lib(ModuleEntryPoint.obj)
+ .text          0x0000000000000000        0x0 PrePi.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MainMPCore.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ArchPrePi.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AutoGen.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MemLibGuid.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 IoLibNoIo.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ArmGicLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ArmGicNonSecLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ArmGicV2Lib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ArmGicV2NonSecLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Drivers/ArmGic/ArmGicLib/OUTPUT/ArmGicLib.lib(ArmGicV3.obj)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Drivers/ArmGic/ArmGicLib/OUTPUT/ArmGicLib.lib(ArmGicV3.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Drivers/ArmGic/ArmGicLib/OUTPUT/ArmGicLib.lib(ArmGicV3.obj)
+ .text.ArmGicV3EnableInterruptInterface
+                0x0000000000000000        0xc /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Drivers/ArmGic/ArmGicLib/OUTPUT/ArmGicLib.lib(ArmGicV3.obj)
+ .text.ArmGicV3DisableInterruptInterface
+                0x0000000000000000        0xc /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Drivers/ArmGic/ArmGicLib/OUTPUT/ArmGicLib.lib(ArmGicV3.obj)
+ .text.ArmGicV3SetPriorityMask
+                0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Drivers/ArmGic/ArmGicLib/OUTPUT/ArmGicLib.lib(ArmGicV3.obj)
+ .text.ArmGicV3SetBinaryPointer
+                0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Drivers/ArmGic/ArmGicLib/OUTPUT/ArmGicLib.lib(ArmGicV3.obj)
+ .text          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmReadMidr
+                0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmGetInterruptState
+                0x0000000000000000       0x10 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmGetFiqState
+                0x0000000000000000       0x10 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmWriteCpacr
+                0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmWriteAuxCr
+                0x0000000000000000       0x28 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmReadAuxCr
+                0x0000000000000000       0x28 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmSetTTBR0
+                0x0000000000000000       0x34 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmGetTTBR0BaseAddress
+                0x0000000000000000       0x30 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmGetTCR
+                0x0000000000000000       0x34 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmSetTCR
+                0x0000000000000000       0x34 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmGetMAIR
+                0x0000000000000000       0x34 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmSetMAIR
+                0x0000000000000000       0x34 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmUpdateTranslationTableEntry
+                0x0000000000000000       0x54 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmInvalidateTlb
+                0x0000000000000000       0x38 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmWriteCptr
+                0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmWriteScr
+                0x0000000000000000        0xc /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmWriteMVBar
+                0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmReadCpuActlr
+                0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmWriteCpuActlr
+                0x0000000000000000       0x10 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmReadSctlr
+                0x0000000000000000       0x30 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text.ArmWriteSctlr
+                0x0000000000000000       0x30 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+ .text          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .text.ArmEnableAsynchronousAbort
+                0x0000000000000000        0xc /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .text.ArmDisableAsynchronousAbort
+                0x0000000000000000        0xc /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .text.ArmEnableIrq
+                0x0000000000000000        0xc /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .text.ArmDisableIrq
+                0x0000000000000000        0xc /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .text.ArmEnableFiq
+                0x0000000000000000        0xc /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .text.ArmDisableFiq
+                0x0000000000000000        0xc /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .text.ArmEnableInterrupts
+                0x0000000000000000        0xc /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .text.ArmDisableInterrupts
+                0x0000000000000000        0xc /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .text.ArmDisableAllExceptions
+                0x0000000000000000        0xc /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .text.ReadCCSIDR
+                0x0000000000000000       0x10 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .text.ReadCLIDR
+                0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+ .text          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmCleanInvalidateDataCacheEntryByMVA
+                0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmInvalidateDataCacheEntryBySetWay
+                0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmCleanInvalidateDataCacheEntryBySetWay
+                0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmCleanDataCacheEntryBySetWay
+                0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmEnableMmu
+                0x0000000000000000       0x88 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmDisableMmu
+                0x0000000000000000       0x74 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmDisableCachesAndMmu
+                0x0000000000000000       0x6c /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmMmuEnabled
+                0x0000000000000000       0x34 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmEnableDataCache
+                0x0000000000000000       0x68 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmDisableInstructionCache
+                0x0000000000000000       0x68 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmEnableAlignmentCheck
+                0x0000000000000000       0x58 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmDisableAlignmentCheck
+                0x0000000000000000       0x68 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmEnableStackAlignmentCheck
+                0x0000000000000000       0x58 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmDisableStackAlignmentCheck
+                0x0000000000000000       0x68 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmEnableBranchPrediction
+                0x0000000000000000        0x4 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmDisableBranchPrediction
+                0x0000000000000000        0x4 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.AArch64AllDataCachesOperation
+                0x0000000000000000       0xa8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmDataMemoryBarrier
+                0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmWriteVBar
+                0x0000000000000000       0x34 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmReadVBar
+                0x0000000000000000       0x30 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmEnableVFP
+                0x0000000000000000       0x64 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmReadIdAA64Mmfr2
+                0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmIsArchTimerImplemented
+                0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmReadHcr
+                0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text.ArmReadCntHctl
+                0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+ .text          0x0000000000000000        0x0 DebugLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Unaligned.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 RShiftU64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 LShiftU64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Math64.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SwapBytes32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SwapBytes16.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 memcpy.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 memset.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 BaseStackCheckGcc.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 PrePiHobListPointer.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 PerformanceLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 PrintLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 PrintLibInternal.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 Hob.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 PrePiExtractGuidedSectionLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 BaseSerialPortLibNull.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 TimerLibNull.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ArmCacheMaintenanceLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 PrePiLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 FwVol.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MemoryAllocationLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ArmPlatformLibNull.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Library/ArmPlatformLibNull/ArmPlatformLibNull/OUTPUT/ArmPlatformLibNull.lib(ArmPlatformHelper.obj)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Library/ArmPlatformLibNull/ArmPlatformLibNull/OUTPUT/ArmPlatformLibNull.lib(ArmPlatformHelper.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Library/ArmPlatformLibNull/ArmPlatformLibNull/OUTPUT/ArmPlatformLibNull.lib(ArmPlatformHelper.obj)
+ .text          0x0000000000000000        0x0 ArmMmuLibCore.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmMmuLib/ArmMmuBaseLib/OUTPUT/ArmMmuBaseLib.lib(ArmMmuLibReplaceEntry.obj)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmMmuLib/ArmMmuBaseLib/OUTPUT/ArmMmuBaseLib.lib(ArmMmuLibReplaceEntry.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmMmuLib/ArmMmuBaseLib/OUTPUT/ArmMmuBaseLib.lib(ArmMmuLibReplaceEntry.obj)
+ .text          0x0000000000000000        0x0 DebugAgentLibNull.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 GuidedSectionExtraction.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 LzmaDecompress.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 LzmaDec.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Library/ArmPlatformStackLib/ArmPlatformStackLib/OUTPUT/ArmPlatformStackLib.lib(ArmPlatformStackLib.obj)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Library/ArmPlatformStackLib/ArmPlatformStackLib/OUTPUT/ArmPlatformStackLib.lib(ArmPlatformStackLib.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Library/ArmPlatformStackLib/ArmPlatformStackLib/OUTPUT/ArmPlatformStackLib.lib(ArmPlatformStackLib.obj)
+ .text          0x0000000000000000        0x0 PlatformPeiLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MemoryInitPeiLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ArmGicArchLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 RegisterFilterLibNull.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ZeroMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CopyMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 MemLibGeneric.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CopyMem.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SetMem.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 IoHighLevel.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ArmLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 AArch64Lib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SwitchStack.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DivU64x32Remainder.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 BitField.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 CpuDeadLoop.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SafeString.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 String.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 InternalSwitchStack.obj (symbol from plugin)
+ .text          0x0000000000000000       0x30 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+ .text          0x0000000000000000        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .data          0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .bss           0x0000000000000000        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuBreakpoint.obj)
+ .text          0x0000000000000000        0x0 MultU64x32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 DivU64x32.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 BasePeCoff.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 PeCoffLoaderEx.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 BaseUefiDecompressLib.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 ArmPlatformLibNullMem.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SetMem16Wrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SetMemWrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 SetMem64Wrapper.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 PeCoffExtraActionLib.obj (symbol from plugin)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+LOAD /tmp/cclj7GcX.ltrans0.ltrans.o
+START GROUP
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/PrePi/PeiMPCore/OUTPUT/ArmPlatformPrePiMPCore.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmGicArchSecLib/ArmGicArchSecLib/OUTPUT/ArmGicArchSecLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull/OUTPUT/FilterLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePcdLibNull/BasePcdLibNull/OUTPUT/BasePcdLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Drivers/ArmGic/ArmGicLib/OUTPUT/ArmGicLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull/OUTPUT/BaseDebugLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib/OUTPUT/CompilerIntrinsicsLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseStackCheckLib/BaseStackCheckLib/OUTPUT/BaseStackCheckLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePeCoffExtraActionLibNull/BasePeCoffExtraActionLibNull/OUTPUT/PeCoffExtraActionLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Library/PrePiHobListPointerLib/PrePiHobListPointerLib/OUTPUT/PrePiHobListPointerLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePerformanceLibNull/BasePerformanceLibNull/OUTPUT/BasePerformanceLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BasePeCoffLib/BasePeCoffLib/OUTPUT/BasePeCoffLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseUefiDecompressLib/BaseUefiDecompressLib/OUTPUT/BaseUefiDecompressLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/EmbeddedPkg/Library/PrePiHobLib/PrePiHobLib/OUTPUT/PrePiHobLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/EmbeddedPkg/Library/PrePiExtractGuidedSectionLib/PrePiExtractGuidedSectionLib/OUTPUT/PrePiExtractGuidedSectionLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseSerialPortLibNull/BaseSerialPortLibNull/OUTPUT/BaseSerialPortLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdePkg/Library/BaseTimerLibNullTemplate/BaseTimerLibNullTemplate/OUTPUT/BaseTimerLibNullTemplate.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmCacheMaintenanceLib/ArmCacheMaintenanceLib/OUTPUT/ArmCacheMaintenanceLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/EmbeddedPkg/Library/PrePiLib/PrePiLib/OUTPUT/PrePiLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/EmbeddedPkg/Library/PrePiMemoryAllocationLib/PrePiMemoryAllocationLib/OUTPUT/PrePiMemoryAllocationLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Library/ArmPlatformLibNull/ArmPlatformLibNull/OUTPUT/ArmPlatformLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmMmuLib/ArmMmuBaseLib/OUTPUT/ArmMmuBaseLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdeModulePkg/Library/DebugAgentLibNull/DebugAgentLibNull/OUTPUT/DebugAgentLibNull.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/MdeModulePkg/Library/LzmaCustomDecompressLib/LzmaCustomDecompressLib/OUTPUT/LzmaDecompressLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Library/ArmPlatformStackLib/ArmPlatformStackLib/OUTPUT/ArmPlatformStackLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/PlatformPei/PlatformPeiLib/OUTPUT/ArmPlatformPeiLib.lib
+LOAD /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/MemoryInitPei/MemoryInitPeiLib/OUTPUT/ArmMemoryInitPeiLib.lib
+END GROUP
+                0x0000000000000228                . = PECOFF_HEADER_SIZE
+
+.text           0x0000000000000240     0x5c2f
+ *(.text .text.* .stub .gnu.linkonce.t.*)
+ .text.InternalMemSetMem.constprop.38
+                0x0000000000000240       0x9c /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.SetMem.constprop.29
+                0x00000000000002dc        0xc /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.SetMem16.part.0
+                0x00000000000002e8       0x20 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.MakeTable
+                0x0000000000000308      0x27c /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.FillBuf  0x0000000000000584       0x90 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.GetBits  0x0000000000000614       0x2c /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.ReadPTLen
+                0x0000000000000640      0x178 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.PeCoffLoaderImageAddress
+                0x00000000000007b8       0x30 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.PeCoffLoaderGetImageInfo
+                0x00000000000007e8      0x7f0 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.AsciiStrnLenS
+                0x0000000000000fd8       0x3c /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.CopyMem  0x0000000000001014      0x224 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.PeCoffLoaderImageReadFromMemory
+                0x0000000000001238       0x24 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.ZeroMem  0x000000000000125c        0x4 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.LzmaDec_TryDummy
+                0x0000000000001260      0x60c /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.LzmaDec_WriteRem
+                0x000000000000186c       0x84 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.LzmaDec_DecodeReal2
+                0x00000000000018f0      0xa80 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.SzFree   0x0000000000002370        0x4 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.LzmaUefiDecompress
+                0x0000000000002374      0x3dc /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.SzAlloc  0x0000000000002750       0x2c /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.FfsGetVolumeInfo
+                0x000000000000277c       0x8c /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.GetNextHob
+                0x0000000000002808       0x34 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.BasePrintLibFillBuffer
+                0x000000000000283c       0x34 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.WriteUnaligned32
+                0x0000000000002870       0x2c /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.ReadUnaligned16
+                0x000000000000289c       0x30 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.ReadUnaligned32
+                0x00000000000028cc       0x28 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.ReadUnaligned64
+                0x00000000000028f4       0x28 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.MmioWrite32
+                0x000000000000291c        0xc /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.MmioRead32
+                0x0000000000002928        0x8 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.CompareGuid
+                0x0000000000002930       0x4c /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.LzmaGuidedSectionExtraction
+                0x000000000000297c       0xe8 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.LzmaGuidedSectionGetInfo
+                0x0000000000002a64      0x12c /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.GetPlatformPpi.constprop.43
+                0x0000000000002b90       0x98 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.PrePeiCoreGetMpCoreInfo
+                0x0000000000002c28       0x4c /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.WriteUnaligned64
+                0x0000000000002c74       0x2c /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.CopyGuid
+                0x0000000000002ca0       0x44 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.unlikely.BasePrintLibSPrint.constprop.10
+                0x0000000000002ce4       0x54 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.BasePrintLibSPrintMarker.constprop.9
+                0x0000000000002d38      0xb90 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.AsciiSPrint.constprop.7
+                0x00000000000038c8       0x64 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.ArmDataCacheLineLength
+                0x000000000000392c       0x24 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.ArmGicGetSupportedArchRevision
+                0x0000000000003950       0x3c /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.FfsAnyFvFindFirstFile
+                0x000000000000398c      0x200 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.GetSavedData
+                0x0000000000003b8c       0x60 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.CreateHob
+                0x0000000000003bec       0x7c /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.BuildResourceDescriptorHob.constprop.17
+                0x0000000000003c68       0x40 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.AllocatePool
+                0x0000000000003ca8       0x40 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.BuildMemoryAllocationHob
+                0x0000000000003ce8       0x58 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.AllocatePages
+                0x0000000000003d40       0x68 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.FfsProcessSection
+                0x0000000000003da8      0x72c /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.BuildGuidDataHob
+                0x00000000000044d4       0x54 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.CacheRangeOperation
+                0x0000000000004528       0x4c /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.InvalidateDataCacheRange
+                0x0000000000004574       0x40 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.PrePiMain
+                0x00000000000045b4      0xdd4 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .text.memcpy   0x0000000000005388       0x20 /tmp/cclj7GcX.ltrans0.ltrans.o
+                0x0000000000005388                memcpy
+ .text.CEntryPoint
+                0x00000000000053a8      0x1fc /tmp/cclj7GcX.ltrans0.ltrans.o
+                0x00000000000053a8                CEntryPoint
+ *fill*         0x00000000000055a4        0x4 
+ .text._ModuleEntryPoint
+                0x00000000000055a8       0xd0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/PrePi/PeiMPCore/OUTPUT/ArmPlatformPrePiMPCore.lib(ModuleEntryPoint.obj)
+                0x00000000000055a8                _ModuleEntryPoint
+ .text.ArmGicV3GetControlSystemRegisterEnable
+                0x0000000000005678       0x30 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Drivers/ArmGic/ArmGicLib/OUTPUT/ArmGicLib.lib(ArmGicV3.obj)
+                0x0000000000005678                ArmGicV3GetControlSystemRegisterEnable
+ .text.ArmGicV3SetControlSystemRegisterEnable
+                0x00000000000056a8       0x34 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Drivers/ArmGic/ArmGicLib/OUTPUT/ArmGicLib.lib(ArmGicV3.obj)
+                0x00000000000056a8                ArmGicV3SetControlSystemRegisterEnable
+ .text.ArmGicV3EndOfInterrupt
+                0x00000000000056dc        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Drivers/ArmGic/ArmGicLib/OUTPUT/ArmGicLib.lib(ArmGicV3.obj)
+                0x00000000000056dc                ArmGicV3EndOfInterrupt
+ .text.ArmGicV3AcknowledgeInterrupt
+                0x00000000000056e4        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Drivers/ArmGic/ArmGicLib/OUTPUT/ArmGicLib.lib(ArmGicV3.obj)
+                0x00000000000056e4                ArmGicV3AcknowledgeInterrupt
+ .text.ArmCacheInfo
+                0x00000000000056ec        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+                0x00000000000056ec                ArmCacheInfo
+ .text.ArmCallWFE
+                0x00000000000056f4        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+                0x00000000000056f4                ArmCallWFE
+ .text.ArmCallSEV
+                0x00000000000056fc        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+                0x00000000000056fc                ArmCallSEV
+ .text.ArmGetPhysicalAddressBits
+                0x0000000000005704       0x24 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupport.obj)
+                0x0000000000005704                ArmGetPhysicalAddressBits
+ .text.ArmIsMpCore
+                0x0000000000005728       0x14 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(ArmLibSupportV8.obj)
+                0x0000000000005728                ArmIsMpCore
+ .text.ArmInvalidateDataCacheEntryByMVA
+                0x000000000000573c        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x000000000000573c                ArmInvalidateDataCacheEntryByMVA
+ .text.ArmCleanDataCacheEntryByMVA
+                0x0000000000005744        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x0000000000005744                ArmCleanDataCacheEntryByMVA
+ .text.ArmCleanDataCacheEntryToPoUByMVA
+                0x000000000000574c        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x000000000000574c                ArmCleanDataCacheEntryToPoUByMVA
+ .text.ArmInvalidateInstructionCacheEntryToPoUByMVA
+                0x0000000000005754        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x0000000000005754                ArmInvalidateInstructionCacheEntryToPoUByMVA
+ .text.ArmInvalidateInstructionCache
+                0x000000000000575c       0x10 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x000000000000575c                ArmInvalidateInstructionCache
+ .text.ArmDisableDataCache
+                0x000000000000576c       0x68 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x000000000000576c                ArmDisableDataCache
+ .text.ArmEnableInstructionCache
+                0x00000000000057d4       0x68 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x00000000000057d4                ArmEnableInstructionCache
+ .text.ArmDataSynchronizationBarrier
+                0x000000000000583c        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x000000000000583c                ArmDataSynchronizationBarrier
+ .text.ArmInstructionSynchronizationBarrier
+                0x0000000000005844        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x0000000000005844                ArmInstructionSynchronizationBarrier
+ .text.ArmCallWFI
+                0x000000000000584c        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x000000000000584c                ArmCallWFI
+ .text.ArmReadMpidr
+                0x0000000000005854        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x0000000000005854                ArmReadMpidr
+ .text.ArmReadTpidrurw
+                0x000000000000585c        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x000000000000585c                ArmReadTpidrurw
+ .text.ArmWriteTpidrurw
+                0x0000000000005864        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x0000000000005864                ArmWriteTpidrurw
+ .text.ArmReadIdAA64Pfr0
+                0x000000000000586c        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x000000000000586c                ArmReadIdAA64Pfr0
+ .text.ArmWriteHcr
+                0x0000000000005874        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x0000000000005874                ArmWriteHcr
+ .text.ArmReadCurrentEL
+                0x000000000000587c        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x000000000000587c                ArmReadCurrentEL
+ .text.ArmWriteCntHctl
+                0x0000000000005884        0x8 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmLib/ArmBaseLib/OUTPUT/ArmBaseLib.lib(AArch64Support.obj)
+                0x0000000000005884                ArmWriteCntHctl
+ .text.ArmPlatformPeiBootAction
+                0x000000000000588c        0x4 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Library/ArmPlatformLibNull/ArmPlatformLibNull/OUTPUT/ArmPlatformLibNull.lib(ArmPlatformHelper.obj)
+                0x000000000000588c                ArmPlatformPeiBootAction
+ .text.ArmPlatformGetCorePosition
+                0x0000000000005890       0x10 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Library/ArmPlatformLibNull/ArmPlatformLibNull/OUTPUT/ArmPlatformLibNull.lib(ArmPlatformHelper.obj)
+                0x0000000000005890                ArmPlatformGetCorePosition
+ .text.ArmPlatformGetPrimaryCoreMpId
+                0x00000000000058a0        0xc /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Library/ArmPlatformLibNull/ArmPlatformLibNull/OUTPUT/ArmPlatformLibNull.lib(ArmPlatformHelper.obj)
+                0x00000000000058a0                ArmPlatformGetPrimaryCoreMpId
+ .text.ArmPlatformIsPrimaryCore
+                0x00000000000058ac       0x28 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Library/ArmPlatformLibNull/ArmPlatformLibNull/OUTPUT/ArmPlatformLibNull.lib(ArmPlatformHelper.obj)
+                0x00000000000058ac                ArmPlatformIsPrimaryCore
+ .text.ArmReplaceLiveTranslationEntry
+                0x00000000000058d4       0xd0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPkg/Library/ArmMmuLib/ArmMmuBaseLib/OUTPUT/ArmMmuBaseLib.lib(ArmMmuLibReplaceEntry.obj)
+                0x00000000000058d4                ArmReplaceLiveTranslationEntry
+                0x00000000000059a0                ArmReplaceLiveTranslationEntrySize
+ .text.ArmPlatformStackSet
+                0x00000000000059a4       0x40 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Library/ArmPlatformStackLib/ArmPlatformStackLib/OUTPUT/ArmPlatformStackLib.lib(ArmPlatformStackLib.obj)
+                0x00000000000059a4                ArmPlatformStackSet
+ .text.ArmPlatformStackSetPrimary
+                0x00000000000059e4       0x18 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Library/ArmPlatformStackLib/ArmPlatformStackLib/OUTPUT/ArmPlatformStackLib.lib(ArmPlatformStackLib.obj)
+                0x00000000000059e4                ArmPlatformStackSetPrimary
+ .text.ArmPlatformStackSetSecondary
+                0x00000000000059fc       0x30 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/Library/ArmPlatformStackLib/ArmPlatformStackLib/OUTPUT/ArmPlatformStackLib.lib(ArmPlatformStackLib.obj)
+                0x00000000000059fc                ArmPlatformStackSetSecondary
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.PrePiMain
+                0x0000000000005a2c       0x16 /tmp/cclj7GcX.ltrans0.ltrans.o
+ *fill*         0x0000000000005a42        0x2 
+ .rodata        0x0000000000005a44       0x10 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .rodata.AsciiSPrint.constprop.7.str1.1
+                0x0000000000005a54       0x2f /tmp/cclj7GcX.ltrans0.ltrans.o
+ .rodata.BasePrintLibSPrintMarker.constprop.9.str1.1
+                0x0000000000005a83       0x79 /tmp/cclj7GcX.ltrans0.ltrans.o
+                                         0x7b (size before relaxing)
+ .rodata.PrePiMain.str1.1
+                0x0000000000005afc       0x15 /tmp/cclj7GcX.ltrans0.ltrans.o
+ *fill*         0x0000000000005b11        0x1 
+ .rodata._gPcd_FixedAtBuild_PcdFirmwareVersionString
+                0x0000000000005b12        0x2 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .rodata.mErrorString
+                0x0000000000005b14      0x2b5 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .rodata.mHexStr
+                0x0000000000005dc9       0x10 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .rodata.mWarningString
+                0x0000000000005dd9       0x96 /tmp/cclj7GcX.ltrans0.ltrans.o
+ *(.got .got.*)
+ *:AutoGen.obj(.data.g*Guid)
+
+.iplt           0x0000000000005e70        0x0
+ .iplt          0x0000000000005e70        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/PrePi/PeiMPCore/OUTPUT/ArmPlatformPrePiMPCore.lib(ModuleEntryPoint.obj)
+
+.data           0x0000000000005e80      0x128
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.gArmMpCoreInfoGuid
+                0x0000000000005e80       0x10 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .data.gArmMpCoreInfoPpiGuid
+                0x0000000000005e90       0x10 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .data.gEfiFirmwarePerformanceGuid
+                0x0000000000005ea0       0x10 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .data.gEfiHobMemoryAllocModuleGuid
+                0x0000000000005eb0       0x10 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .data.gEfiHobMemoryAllocStackGuid
+                0x0000000000005ec0       0x10 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .data.gLzmaCustomDecompressGuid
+                0x0000000000005ed0       0x10 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .data.gPlatformPpiTable
+                0x0000000000005ee0       0x18 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .data.mArmPlatformNullMpCoreInfoTable
+                0x0000000000005ef8       0xa0 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .data.mMpCoreInfoPpi
+                0x0000000000005f98        0x8 /tmp/cclj7GcX.ltrans0.ltrans.o
+ .data.mSystemMemoryEnd
+                0x0000000000005fa0        0x8 /tmp/cclj7GcX.ltrans0.ltrans.o
+                0x0000000000005fa0                mSystemMemoryEnd
+ *(.bss .bss.*)
+
+.igot.plt       0x0000000000005fa8        0x0
+ .igot.plt      0x0000000000005fa8        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/PrePi/PeiMPCore/OUTPUT/ArmPlatformPrePiMPCore.lib(ModuleEntryPoint.obj)
+
+.eh_frame
+ *(.eh_frame)
+
+.rela           0x0000000000005fa8        0x0
+ *(.rela .rela.*)
+ .rela.iplt     0x0000000000005fa8        0x0 /home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/PrePi/PeiMPCore/OUTPUT/ArmPlatformPrePiMPCore.lib(ModuleEntryPoint.obj)
+
+.hii
+ *(.hii)
+
+.build-id       0x0000000000005fa8       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x0000000000005fa8       0x24 /home/xephyr/Documents/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.interp)
+ *(.dynsym)
+ *(.dynstr)
+ *(.dynamic)
+ *(.hash .gnu.hash)
+ *(.comment)
+                0x0000000000000228                PECOFF_HEADER_SIZE = 0x228
+OUTPUT(/home/xephyr/Documents/edk2/Build/ArmPlatform/DEBUG_GCC5/AARCH64/ArmPlatformPkg/PrePi/PeiMPCore/DEBUG/ArmPlatformPrePiMPCore.dll elf64-littleaarch64)
+
+.debug_info     0x0000000000000000     0xa020
+ .debug_info    0x0000000000000000     0xa020 /tmp/cclj7GcX.ltrans0.ltrans.o
+
+.debug_abbrev   0x0000000000000000      0x6f6
+ .debug_abbrev  0x0000000000000000      0x6f6 /tmp/cclj7GcX.ltrans0.ltrans.o
+
+.debug_loc      0x0000000000000000    0x110da
+ .debug_loc     0x0000000000000000    0x110da /tmp/cclj7GcX.ltrans0.ltrans.o
+
+.debug_aranges  0x0000000000000000      0x3e0
+ .debug_aranges
+                0x0000000000000000      0x3e0 /tmp/cclj7GcX.ltrans0.ltrans.o
+
+.debug_ranges   0x0000000000000000     0x2cc0
+ .debug_ranges  0x0000000000000000     0x2cc0 /tmp/cclj7GcX.ltrans0.ltrans.o
+
+.debug_line     0x0000000000000000     0x2794
+ .debug_line    0x0000000000000000     0x2794 /tmp/cclj7GcX.ltrans0.ltrans.o
+
+.debug_str      0x0000000000000000     0x392b
+ .debug_str     0x0000000000000000     0x392b /tmp/cclj7GcX.ltrans0.ltrans.o
+                                       0x3d3d (size before relaxing)
+
+.debug_frame    0x0000000000000000      0xa68
+ .debug_frame   0x0000000000000000      0xa68 /tmp/cclj7GcX.ltrans0.ltrans.o

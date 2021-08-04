@@ -1,0 +1,141 @@
+/**
+  DO NOT EDIT
+  FILE auto-generated
+  Module name:
+    AutoGen.c
+  Abstract:       Auto-generated AutoGen.c for building module or library.
+**/
+#include <Base.h>
+#include <Library/DebugLib.h>
+
+GLOBAL_REMOVE_IF_UNREFERENCED GUID gEfiCallerIdGuid = {0xA1542D84, 0xB64D, 0x4847, {0x88, 0x5E, 0x05, 0x09, 0x08, 0x43, 0x76, 0xAB}};
+
+GLOBAL_REMOVE_IF_UNREFERENCED GUID gEdkiiDscPlatformGuid = {0xE00B9599, 0x5B74, 0x4FF7, {0xAB, 0x9F, 0x81, 0x83, 0xFB, 0x13, 0xB2, 0xF9}};
+
+GLOBAL_REMOVE_IF_UNREFERENCED CHAR8 *gEfiCallerBaseName = "MtrrLibUnitTestHost";
+
+// Guids
+GLOBAL_REMOVE_IF_UNREFERENCED GUID gUefiCpuPkgTokenSpaceGuid = { 0xac05bf33, 0x995a, 0x4ed4, { 0xaa, 0xb8, 0xef, 0x7a, 0xe8, 0xf, 0x5c, 0xb0 }};
+GLOBAL_REMOVE_IF_UNREFERENCED GUID gEfiMdePkgTokenSpaceGuid = { 0x914AEBE7, 0x4635, 0x459b, { 0xAA, 0x1C, 0x11, 0xE2, 0x19, 0xB0, 0x3A, 0x10 }};
+GLOBAL_REMOVE_IF_UNREFERENCED GUID gUnitTestFrameworkPkgTokenSpaceGuid = { 0x833d3aba, 0x39b4, 0x43a2, { 0xb9, 0x30, 0x7a, 0x34, 0x53, 0x39, 0x31, 0xb3 } };
+
+// Definition of SkuId Array
+GLOBAL_REMOVE_IF_UNREFERENCED UINT64 _gPcd_SkuId_Array[] = {0x0};
+
+// Definition of PCDs used in this module
+volatile  UINT32 _gPcd_BinaryPatch_PcdCpuNumberOfReservedVariableMtrrs = _PCD_PATCHABLE_VALUE_PcdCpuNumberOfReservedVariableMtrrs;
+GLOBAL_REMOVE_IF_UNREFERENCED UINTN _gPcd_BinaryPatch_Size_PcdCpuNumberOfReservedVariableMtrrs = 4;
+
+// Definition of PCDs used in libraries
+
+#define _PCD_TOKEN_PcdMaximumAsciiStringLength  5U
+#define _PCD_SIZE_PcdMaximumAsciiStringLength 4
+#define _PCD_GET_MODE_SIZE_PcdMaximumAsciiStringLength  _PCD_SIZE_PcdMaximumAsciiStringLength 
+#define _PCD_VALUE_PcdMaximumAsciiStringLength  1000000U
+GLOBAL_REMOVE_IF_UNREFERENCED const UINT32 _gPcd_FixedAtBuild_PcdMaximumAsciiStringLength = _PCD_VALUE_PcdMaximumAsciiStringLength;
+extern const  UINT32  _gPcd_FixedAtBuild_PcdMaximumAsciiStringLength;
+#define _PCD_GET_MODE_32_PcdMaximumAsciiStringLength  _gPcd_FixedAtBuild_PcdMaximumAsciiStringLength
+//#define _PCD_SET_MODE_32_PcdMaximumAsciiStringLength  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
+
+#define _PCD_TOKEN_PcdMaximumUnicodeStringLength  7U
+#define _PCD_SIZE_PcdMaximumUnicodeStringLength 4
+#define _PCD_GET_MODE_SIZE_PcdMaximumUnicodeStringLength  _PCD_SIZE_PcdMaximumUnicodeStringLength 
+#define _PCD_VALUE_PcdMaximumUnicodeStringLength  1000000U
+GLOBAL_REMOVE_IF_UNREFERENCED const UINT32 _gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength = _PCD_VALUE_PcdMaximumUnicodeStringLength;
+extern const  UINT32  _gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength;
+#define _PCD_GET_MODE_32_PcdMaximumUnicodeStringLength  _gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength
+//#define _PCD_SET_MODE_32_PcdMaximumUnicodeStringLength  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
+
+#define _PCD_TOKEN_PcdDebugClearMemoryValue  2U
+#define _PCD_SIZE_PcdDebugClearMemoryValue 1
+#define _PCD_GET_MODE_SIZE_PcdDebugClearMemoryValue  _PCD_SIZE_PcdDebugClearMemoryValue 
+#define _PCD_VALUE_PcdDebugClearMemoryValue  0xAFU
+GLOBAL_REMOVE_IF_UNREFERENCED const UINT8 _gPcd_FixedAtBuild_PcdDebugClearMemoryValue = _PCD_VALUE_PcdDebugClearMemoryValue;
+extern const  UINT8  _gPcd_FixedAtBuild_PcdDebugClearMemoryValue;
+#define _PCD_GET_MODE_8_PcdDebugClearMemoryValue  _gPcd_FixedAtBuild_PcdDebugClearMemoryValue
+//#define _PCD_SET_MODE_8_PcdDebugClearMemoryValue  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
+
+#define _PCD_TOKEN_PcdDebugPropertyMask  3U
+#define _PCD_SIZE_PcdDebugPropertyMask 1
+#define _PCD_GET_MODE_SIZE_PcdDebugPropertyMask  _PCD_SIZE_PcdDebugPropertyMask 
+#define _PCD_VALUE_PcdDebugPropertyMask  0x17U
+GLOBAL_REMOVE_IF_UNREFERENCED const UINT8 _gPcd_FixedAtBuild_PcdDebugPropertyMask = _PCD_VALUE_PcdDebugPropertyMask;
+extern const  UINT8  _gPcd_FixedAtBuild_PcdDebugPropertyMask;
+#define _PCD_GET_MODE_8_PcdDebugPropertyMask  _gPcd_FixedAtBuild_PcdDebugPropertyMask
+//#define _PCD_SET_MODE_8_PcdDebugPropertyMask  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
+
+#define _PCD_TOKEN_PcdFixedDebugPrintErrorLevel  4U
+#define _PCD_SIZE_PcdFixedDebugPrintErrorLevel 4
+#define _PCD_GET_MODE_SIZE_PcdFixedDebugPrintErrorLevel  _PCD_SIZE_PcdFixedDebugPrintErrorLevel 
+#define _PCD_VALUE_PcdFixedDebugPrintErrorLevel  0xFFFFFFFFU
+GLOBAL_REMOVE_IF_UNREFERENCED const UINT32 _gPcd_FixedAtBuild_PcdFixedDebugPrintErrorLevel = _PCD_VALUE_PcdFixedDebugPrintErrorLevel;
+extern const  UINT32  _gPcd_FixedAtBuild_PcdFixedDebugPrintErrorLevel;
+#define _PCD_GET_MODE_32_PcdFixedDebugPrintErrorLevel  _gPcd_FixedAtBuild_PcdFixedDebugPrintErrorLevel
+//#define _PCD_SET_MODE_32_PcdFixedDebugPrintErrorLevel  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
+
+#define _PCD_TOKEN_PcdVerifyNodeInList  9U
+#define _PCD_SIZE_PcdVerifyNodeInList 1
+#define _PCD_GET_MODE_SIZE_PcdVerifyNodeInList  _PCD_SIZE_PcdVerifyNodeInList 
+#define _PCD_VALUE_PcdVerifyNodeInList  ((BOOLEAN)0U)
+GLOBAL_REMOVE_IF_UNREFERENCED const BOOLEAN _gPcd_FixedAtBuild_PcdVerifyNodeInList = _PCD_VALUE_PcdVerifyNodeInList;
+extern const  BOOLEAN  _gPcd_FixedAtBuild_PcdVerifyNodeInList;
+#define _PCD_GET_MODE_BOOL_PcdVerifyNodeInList  _gPcd_FixedAtBuild_PcdVerifyNodeInList
+//#define _PCD_SET_MODE_BOOL_PcdVerifyNodeInList  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
+
+#define _PCD_TOKEN_PcdMaximumLinkedListLength  6U
+#define _PCD_SIZE_PcdMaximumLinkedListLength 4
+#define _PCD_GET_MODE_SIZE_PcdMaximumLinkedListLength  _PCD_SIZE_PcdMaximumLinkedListLength 
+#define _PCD_VALUE_PcdMaximumLinkedListLength  1000000U
+GLOBAL_REMOVE_IF_UNREFERENCED const UINT32 _gPcd_FixedAtBuild_PcdMaximumLinkedListLength = _PCD_VALUE_PcdMaximumLinkedListLength;
+extern const  UINT32  _gPcd_FixedAtBuild_PcdMaximumLinkedListLength;
+#define _PCD_GET_MODE_32_PcdMaximumLinkedListLength  _gPcd_FixedAtBuild_PcdMaximumLinkedListLength
+//#define _PCD_SET_MODE_32_PcdMaximumLinkedListLength  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
+
+#define _PCD_TOKEN_PcdControlFlowEnforcementPropertyMask  1U
+#define _PCD_SIZE_PcdControlFlowEnforcementPropertyMask 4
+#define _PCD_GET_MODE_SIZE_PcdControlFlowEnforcementPropertyMask  _PCD_SIZE_PcdControlFlowEnforcementPropertyMask 
+#define _PCD_VALUE_PcdControlFlowEnforcementPropertyMask  0x0U
+GLOBAL_REMOVE_IF_UNREFERENCED const UINT32 _gPcd_FixedAtBuild_PcdControlFlowEnforcementPropertyMask = _PCD_VALUE_PcdControlFlowEnforcementPropertyMask;
+extern const  UINT32  _gPcd_FixedAtBuild_PcdControlFlowEnforcementPropertyMask;
+#define _PCD_GET_MODE_32_PcdControlFlowEnforcementPropertyMask  _gPcd_FixedAtBuild_PcdControlFlowEnforcementPropertyMask
+//#define _PCD_SET_MODE_32_PcdControlFlowEnforcementPropertyMask  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
+
+#define _PCD_TOKEN_PcdSpeculationBarrierType  8U
+#define _PCD_SIZE_PcdSpeculationBarrierType 1
+#define _PCD_GET_MODE_SIZE_PcdSpeculationBarrierType  _PCD_SIZE_PcdSpeculationBarrierType 
+#define _PCD_VALUE_PcdSpeculationBarrierType  0x01U
+GLOBAL_REMOVE_IF_UNREFERENCED const UINT8 _gPcd_FixedAtBuild_PcdSpeculationBarrierType = _PCD_VALUE_PcdSpeculationBarrierType;
+extern const  UINT8  _gPcd_FixedAtBuild_PcdSpeculationBarrierType;
+#define _PCD_GET_MODE_8_PcdSpeculationBarrierType  _gPcd_FixedAtBuild_PcdSpeculationBarrierType
+//#define _PCD_SET_MODE_8_PcdSpeculationBarrierType  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
+
+#define _PCD_TOKEN_PcdUnitTestLogLevel  11U
+#define _PCD_SIZE_PcdUnitTestLogLevel 4
+#define _PCD_GET_MODE_SIZE_PcdUnitTestLogLevel  _PCD_SIZE_PcdUnitTestLogLevel 
+#define _PCD_VALUE_PcdUnitTestLogLevel  0xFFFFFFFFU
+GLOBAL_REMOVE_IF_UNREFERENCED const UINT32 _gPcd_FixedAtBuild_PcdUnitTestLogLevel = _PCD_VALUE_PcdUnitTestLogLevel;
+extern const  UINT32  _gPcd_FixedAtBuild_PcdUnitTestLogLevel;
+#define _PCD_GET_MODE_32_PcdUnitTestLogLevel  _gPcd_FixedAtBuild_PcdUnitTestLogLevel
+//#define _PCD_SET_MODE_32_PcdUnitTestLogLevel  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
+
+
+
+VOID
+EFIAPI
+ProcessLibraryConstructorList (
+  VOID
+  )
+{
+
+}
+
+
+
+VOID
+EFIAPI
+ProcessLibraryDestructorList (
+  VOID
+  )
+{
+
+}

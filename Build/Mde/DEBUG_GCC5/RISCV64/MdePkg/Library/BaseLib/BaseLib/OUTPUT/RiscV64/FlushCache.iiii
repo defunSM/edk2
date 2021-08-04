@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+.align 3
+.globl RiscVInvalidateInstCacheAsm
+.globl RiscVInvalidateDataCacheAsm
+
+RiscVInvalidateInstCacheAsm:
+    fence.i
+    ret
+
+RiscVInvalidateDataCacheAsm:
+    fence
+    ret

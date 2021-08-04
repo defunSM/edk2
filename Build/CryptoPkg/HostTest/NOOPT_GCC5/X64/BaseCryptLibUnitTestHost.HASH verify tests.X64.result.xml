@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite name="HASH verify tests" time="0.000" tests="5" failures="0" errors="0" skipped="0" >
+    <testcase name="TestVerifyMd5()" time="0.000" >
+    </testcase>
+    <testcase name="TestVerifySha1()" time="0.000" >
+    </testcase>
+    <testcase name="TestVerifySha256()" time="0.000" >
+    </testcase>
+    <testcase name="TestVerifySha384()" time="0.000" >
+    </testcase>
+    <testcase name="TestVerifySha512()" time="0.000" >
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite name="Evaluate Dependency Test" time="0.000" tests="12" failures="0" errors="0" skipped="0" >
+    <testcase name="Evaluate to True - 1" time="0.000" >
+    </testcase>
+    <testcase name="Evaluate to True - 2" time="0.000" >
+    </testcase>
+    <testcase name="Evaluate to False - 1" time="0.000" >
+    </testcase>
+    <testcase name="Evaluate to False - 2" time="0.000" >
+    </testcase>
+    <testcase name="Error: Non-END-terminated expression" time="0.000" >
+    </testcase>
+    <testcase name="Error: UNKNOWN Op-Code" time="0.000" >
+    </testcase>
+    <testcase name="Error: Non-Null-terminated string" time="0.000" >
+    </testcase>
+    <testcase name="Error: GUID size is not 16" time="0.000" >
+    </testcase>
+    <testcase name="Error: Version size is not 4" time="0.000" >
+    </testcase>
+    <testcase name="Error: Operand and operator mismatch" time="0.000" >
+    </testcase>
+    <testcase name="Error: GUID is NOT FOUND" time="0.000" >
+    </testcase>
+    <testcase name="Error: Stack Underflow" time="0.000" >
+    </testcase>
+  </testsuite>
+</testsuites>

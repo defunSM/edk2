@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+
+
+
+.text
+.p2align 2
+
+.globl MemoryFence
+
+
+
+
+
+MemoryFence:
+    fence
+    ret

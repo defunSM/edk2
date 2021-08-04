@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+
+
+
+
+.syntax unified
+
+.global __switch32 ; .section ".text.__switch32", "ax" ; .type __switch32, %function ; .p2align 2 ; __switch32:
+    ldr ip, [lr, #-1]
+    cmp r0, ip
+    add r0, lr, r0, lsl #2
+    ldrcc r0, [r0, #3]
+    add ip, lr, ip, lsl #2
+    ldrcs r0, [ip, #3]
+    add ip, lr, r0
+    bx ip

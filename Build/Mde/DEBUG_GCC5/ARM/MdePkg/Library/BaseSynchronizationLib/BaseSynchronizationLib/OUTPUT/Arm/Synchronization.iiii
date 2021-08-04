@@ -1,0 +1,207 @@
+
+
+
+
+
+
+
+
+
+.text
+.align 3
+
+.global InternalSyncCompareExchange16 ; .type InternalSyncCompareExchange16, %function
+.global InternalSyncCompareExchange32 ; .type InternalSyncCompareExchange32, %function
+.global InternalSyncCompareExchange64 ; .type InternalSyncCompareExchange64, %function
+.global InternalSyncIncrement ; .type InternalSyncIncrement, %function
+.global InternalSyncDecrement ; .type InternalSyncDecrement, %function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+InternalSyncCompareExchange16:
+  dmb
+
+InternalSyncCompareExchange16Again:
+  ldrexh r3, [r0]
+  cmp r3, r1
+  bne InternalSyncCompareExchange16Fail
+
+InternalSyncCompareExchange16Exchange:
+  strexh ip, r2, [r0]
+  cmp ip, #0
+  bne InternalSyncCompareExchange16Again
+
+InternalSyncCompareExchange16Fail:
+  dmb
+  mov r0, r3
+  bx lr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+InternalSyncCompareExchange32:
+  dmb
+
+InternalSyncCompareExchange32Again:
+  ldrex r3, [r0]
+  cmp r3, r1
+  bne InternalSyncCompareExchange32Fail
+
+InternalSyncCompareExchange32Exchange:
+  strex ip, r2, [r0]
+  cmp ip, #0
+  bne InternalSyncCompareExchange32Again
+
+InternalSyncCompareExchange32Fail:
+  dmb
+  mov r0, r3
+  bx lr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+InternalSyncCompareExchange64:
+  push { r4-r7 }
+  ldrd r4, r5, [sp, #16]
+  dmb
+
+InternalSyncCompareExchange64Again:
+  ldrexd r6, r7, [r0]
+  cmp r6, r2
+  cmpeq r7, r3
+  bne InternalSyncCompareExchange64Fail
+
+InternalSyncCompareExchange64Exchange:
+  strexd ip, r4, r5, [r0]
+  cmp ip, #0
+  bne InternalSyncCompareExchange64Again
+
+InternalSyncCompareExchange64Fail:
+  dmb
+  mov r0, r6
+  mov r1, r7
+  pop { r4-r7 }
+  bx lr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+InternalSyncIncrement:
+  dmb
+TryInternalSyncIncrement:
+  ldrex r1, [r0]
+  add r1, r1, #1
+  strex r2, r1, [r0]
+  cmp r2, #0
+  bne TryInternalSyncIncrement
+  dmb
+  mov r0, r1
+  bx lr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+InternalSyncDecrement:
+  dmb
+TryInternalSyncDecrement:
+  ldrex r1, [r0]
+  sub r1, r1, #1
+  strex r2, r1, [r0]
+  cmp r2, #0
+  bne TryInternalSyncDecrement
+  dmb
+  mov r0, r1
+  bx lr

@@ -1,0 +1,29 @@
+#------------------------------------------------------------------------------
+
+# Copyright (c) 2008 - 2010, Apple Inc. All rights reserved.<BR>
+
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+
+#------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.global GccSemihostCall ; .section ".text.GccSemihostCall", "ax" ; .type GccSemihostCall, %function ; .p2align 2 ; GccSemihostCall:
+  stmfd sp!, {lr}
+  svc #0x123456
+  ldmfd sp!, {lr}
+  bx lr

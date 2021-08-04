@@ -1,0 +1,84 @@
+## @file
+# Host OS based Application that Unit Tests the SafeIntLib
+#
+# Copyright (c) Microsoft Corporation.<BR>
+# Copyright (c) 2019 - 2020, Intel Corporation. All rights reserved.<BR>
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+##
+
+# DO NOT EDIT
+# FILE auto-generated
+
+[Defines]
+  INF_VERSION                = 0x00010017
+  BASE_NAME                  = TestBaseSafeIntLibHost
+  FILE_GUID                  = 95487689-9E30-41AD-B773-3650C94BCBE2
+  MODULE_TYPE                = HOST_APPLICATION
+  VERSION_STRING             = 1.0
+  MODULE_UNI_FILE            = TestBaseSafeIntLib.uni
+
+[Packages.X64]
+
+[Binaries.X64]
+  BIN|TestBaseSafeIntLibHost
+
+[PatchPcd.X64]
+
+[Protocols.X64]
+
+[Ppis.X64]
+
+[Guids.X64]
+
+[PcdEx.X64]
+
+[LibraryClasses.X64]
+## @LIB_INSTANCES
+#  MdePkg/Library/BasePrintLib/BasePrintLib.inf
+#  MdePkg/Library/BasePcdLibNull/BasePcdLibNull.inf
+#  MdePkg/Library/BaseMemoryLib/BaseMemoryLib.inf
+#  UnitTestFrameworkPkg/Library/Posix/DebugLibPosix/DebugLibPosix.inf
+#  MdePkg/Library/BaseLib/UnitTestHostBaseLib.inf
+#  UnitTestFrameworkPkg/Library/CmockaLib/CmockaLib.inf
+#  UnitTestFrameworkPkg/Library/UnitTestResultReportLib/UnitTestResultReportLibDebugLib.inf
+#  UnitTestFrameworkPkg/Library/UnitTestPersistenceLibNull/UnitTestPersistenceLibNull.inf
+#  UnitTestFrameworkPkg/Library/Posix/MemoryAllocationLibPosix/MemoryAllocationLibPosix.inf
+#  UnitTestFrameworkPkg/Library/UnitTestLib/UnitTestLibCmocka.inf
+#  MdePkg/Library/BaseSafeIntLib/BaseSafeIntLib.inf
+#  UnitTestFrameworkPkg/Library/UnitTestDebugAssertLib/UnitTestDebugAssertLib.inf
+
+[Depex.X64]
+
+
+
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64
+#
+
+[BuildOptions.X64]
+## @AsBuilt
+##   GCC:NOOPT_GCC5_X64_ASMLINK_FLAGS = /nologo /tiny
+##   GCC:NOOPT_GCC5_X64_OPTROM_FLAGS = -e
+##   GCC:NOOPT_GCC5_X64_DTC_FLAGS = -H epapr
+##   GCC:NOOPT_GCC5_X64_APP_FLAGS = 
+##   GCC:NOOPT_GCC5_X64_OBJCOPY_FLAGS = 
+##   GCC:NOOPT_GCC5_X64_ASL_FLAGS = 
+##   GCC:NOOPT_GCC5_X64_GENFW_FLAGS = 
+##   GCC:NOOPT_GCC5_X64_ASLDLINK_FLAGS = -nostdlib -Wl,-n,-q,--gc-sections -z common-page-size=0x40 -Wl,--defsym=PECOFF_HEADER_SIZE=0 -Wl,--script=$(EDK_TOOLS_PATH)/Scripts/GccBase.lds -Wl,--entry,ReferenceAcpiTable -u ReferenceAcpiTable -Wl,-m,elf_x86_64
+##   GCC:NOOPT_GCC5_X64_ASM_FLAGS = -c -x assembler -imacros AutoGen.h -m64
+##   GCC:NOOPT_GCC5_X64_RC_FLAGS = -I binary -O elf64-x86-64        -B i386    --rename-section .data=.hii
+##   GCC:NOOPT_GCC5_X64_SYMRENAME_FLAGS = Symbol renaming not needed for
+##   GCC:NOOPT_GCC5_X64_NASM_FLAGS = -f elf64
+##   GCC:NOOPT_GCC5_X64_DEPS_FLAGS = -MMD -MF $@.deps
+##   GCC:NOOPT_GCC5_X64_ASLPP_FLAGS = -x c -E -include AutoGen.h
+##   GCC:NOOPT_GCC5_X64_ASLCC_FLAGS = -x c -fno-lto -m64
+##   GCC:NOOPT_GCC5_X64_CC_FLAGS = -g -Os -fshort-wchar -fno-builtin -fno-strict-aliasing -Wall -Werror -Wno-array-bounds -include AutoGen.h -fno-common -ffunction-sections -fdata-sections -DSTRING_ARRAY_NAME=$(BASE_NAME)Strings -m64 -fno-stack-protector "-DEFIAPI=__attribute__((ms_abi))" -maccumulate-outgoing-args -mno-red-zone -Wno-address -mcmodel=small -fpie -fno-asynchronous-unwind-tables -Wno-address -O0 -D DISABLE_NEW_DEPRECATED_INTERFACES -D EDKII_UNIT_TEST_FRAMEWORK_ENABLED -fno-pie
+##   GCC:NOOPT_GCC5_X64_PP_FLAGS = -E -x assembler-with-cpp -include AutoGen.h -DOPENSBI_EXTERNAL_SBI_TYPES=OpensbiTypes.h
+##   GCC:NOOPT_GCC5_X64_VFRPP_FLAGS = -x c -E -P -DVFRCOMPILE --include $(MODULE_NAME)StrDefs.h
+##   GCC:NOOPT_GCC5_X64_VFR_FLAGS = -l -n
+##   GCC:NOOPT_GCC5_X64_DLINK2_FLAGS = -lgcov
+##   GCC:NOOPT_GCC5_X64_DLINK_FLAGS = -o $(BIN_DIR)/$(BASE_NAME) -m64 -no-pie
+##   GCC:NOOPT_GCC5_X64_NASMB_FLAGS = -f bin

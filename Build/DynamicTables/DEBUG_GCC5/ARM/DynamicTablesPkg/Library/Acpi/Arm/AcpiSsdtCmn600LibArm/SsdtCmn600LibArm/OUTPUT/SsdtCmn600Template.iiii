@@ -1,0 +1,83 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DefinitionBlock ("SsdtCmn600.aml", "SSDT", 2, "ARMLTD", "CMN-600", 1) {
+  Scope (_SB) {
+
+    Device (CMN0) {
+      Name (_HID, "ARMHC600")
+      Name (_UID, 0x0)
+
+      Name (_CRS, ResourceTemplate () {
+
+        QWordMemory (
+          ResourceConsumer,
+          PosDecode,
+          MinFixed,
+          MaxFixed,
+          NonCacheable,
+          ReadWrite,
+          0x00000000,
+          0xA0000000,
+          0xAFFFFFFF,
+          0x00000000,
+          0x10000000,
+          ,
+          ,
+          CFGR
+        )
+
+
+
+
+        QWordMemory (
+          ResourceConsumer,
+          PosDecode,
+          MinFixed,
+          MaxFixed,
+          NonCacheable,
+          ReadWrite,
+          0x00000000,
+          0xA0000000,
+          0xAFFFFFFF,
+          0x00000000,
+          0x10000000,
+          ,
+          ,
+          ROOT
+        )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      })
+    }
+  }
+}
